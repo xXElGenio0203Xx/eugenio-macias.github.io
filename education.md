@@ -6,7 +6,7 @@ title: Education
 # Education
 
 <div class="education-entry">
-  <div class="education-text">
+  <div class="education-text animated-text">
     - **Brown University**
       - **B.S. Applied Mathematics-Computer Science** (_Class of 2026_)
       - **B.S. Mathematics** (_Class of 2026_)
@@ -19,12 +19,10 @@ title: Education
 </div>
 
 <div class="education-entry">
-  <div class="education-text">
+  <div class="education-text animated-text">
     - **United World College in Mostar**
       - **International Baccalaureate** (_Class of 2022_)
       - Shelby Davis Scholar: Awarded $40,000/year scholarship
   </div>
   <div class="education-logo">
-    <img src="/assets/images/UWC_logo.png" alt="UWC Logo">
-  </div>
-</div>
+    <img src="/
