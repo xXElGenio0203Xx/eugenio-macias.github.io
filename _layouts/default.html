@@ -20,7 +20,7 @@
       <li><a href="{{ '/experience' | relative_url }}">Experience</a></li>
       <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
       <li><a href="{{ '/awards' | relative_url }}">Awards</a></li>
-      <li><a href="{{ '/skills' | relative_url }}">Skills & Interests</a></li>
+      <li><a href="{{ '/skills-interests' | relative_url }}">Skills & Interests</a></li>
     </ul>
   </nav>
   <script>
@@ -34,6 +34,33 @@
           window.location.href = link;
         }, 500);
       });
+
+      // Apply the falling animation to text
+      function animateText() {
+        const textElements = document.querySelectorAll('.animated-text span');
+        textElements.forEach((span, index) => {
+          setTimeout(() => {
+            span.classList.add('show');
+          }, index * 100); // Adjust the delay for each word
+        });
+      }
+
+      // Split text into spans
+      function splitText() {
+        const elements = document.querySelectorAll('.animated-text');
+        elements.forEach(element => {
+          const words = element.textContent.split(' ');
+          element.textContent = '';
+          words.forEach(word => {
+            const span = document.createElement('span');
+            span.textContent = word + ' ';
+            element.appendChild(span);
+          });
+        });
+      }
+
+      splitText();
+      animateText();
     });
 
     $(window).on('pageshow', function() {
