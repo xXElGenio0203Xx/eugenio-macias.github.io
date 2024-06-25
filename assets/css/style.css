@@ -128,24 +128,23 @@ main a:hover {
 }
 
 /* Animation styles */
-@keyframes dropBounce {
+@keyframes fall {
   0% {
     transform: translateY(-50px);
     opacity: 0;
   }
-  50% {
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
-  70% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
-.bounce-in {
-  animation: dropBounce 0.8s ease-in-out;
-  animation-fill-mode: forwards; /* Ensure the final state is maintained */
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  white-space: pre; /* Preserve white spaces */
+}
+
+.animated-text span.show {
+  animation: fall 0.3s forwards; /* Make the animation faster */
 }
