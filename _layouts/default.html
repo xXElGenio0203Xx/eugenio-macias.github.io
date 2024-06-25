@@ -22,8 +22,12 @@
       text-align: center;
     }
     nav {
-      margin-top: auto;
       background-color: #444;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
     }
     nav ul {
       list-style-type: none;
@@ -37,11 +41,12 @@
     }
     nav ul li a {
       display: block;
-      padding: 10px 20px;
+      padding: 15px 30px;
       background-color: #003366; /* Dark blue background */
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 18px; /* Larger text */
       transition: background-color 0.3s, color 0.3s;
     }
     nav ul li a:hover {
@@ -51,6 +56,8 @@
     main {
       padding: 20px;
       flex: 1;
+      margin-top: 60px; /* Adjust based on your header height */
+      margin-bottom: 80px; /* Space for the fixed nav at the bottom */
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
     }
@@ -73,7 +80,7 @@
       <li><a href="{{ '/experience' | relative_url }}">Experience</a></li>
       <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
       <li><a href="{{ '/awards' | relative_url }}">Awards</a></li>
-      <li><a href="{{ '/skills' | relative_url }}">Skills & Interests</a></li>
+      <li><a href="{{ '/skills-interests' | relative_url }}">Skills & Interests</a></li>
     </ul>
   </nav>
   <script>
