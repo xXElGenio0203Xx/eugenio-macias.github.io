@@ -7,11 +7,13 @@ title: Education
 
 <div class="education-entry">
   <div class="education-text">
-    - **Brown University**
-      - **B.S. Applied Mathematics-Computer Science** (_Class of 2026_)
-      - **B.S. Mathematics** (_Class of 2026_)
-      - Recipient of full scholarship, GPA: 4.0
-      - Clubs: Quant Trading at Brown, Poker Club, LATAM Society, Brown Chess
+    <p><strong>Brown University</strong></p>
+    <ul>
+      <li><strong>B.S. Applied Mathematics-Computer Science</strong> (_Class of 2026_)</li>
+      <li><strong>B.S. Mathematics</strong> (_Class of 2026_)</li>
+      <li>Recipient of full scholarship, GPA: 4.0</li>
+      <li>Clubs: Quant Trading at Brown, Poker Club, LATAM Society, Brown Chess</li>
+    </ul>
   </div>
   <div class="education-logo">
     <img src="/assets/images/Brown_Logo.jpeg" alt="Brown University Logo">
@@ -20,9 +22,11 @@ title: Education
 
 <div class="education-entry">
   <div class="education-text">
-    - **United World College in Mostar**
-      - **International Baccalaureate** (_Class of 2022_)
-      - Shelby Davis Scholar: Awarded $40,000/year scholarship
+    <p><strong>United World College in Mostar</strong></p>
+    <ul>
+      <li><strong>International Baccalaureate</strong> (_Class of 2022_)</li>
+      <li>Shelby Davis Scholar: Awarded $40,000/year scholarship</li>
+    </ul>
   </div>
   <div class="education-logo">
     <img src="/assets/images/UWC_logo.png" alt="UWC Logo">
