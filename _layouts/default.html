@@ -35,17 +35,32 @@
         }, 500);
       });
 
-      // Apply the bounce-in animation to paragraphs
-      function animateParagraphs() {
-        const paragraphs = document.querySelectorAll('main p, main .education-entry');
-        paragraphs.forEach((paragraph, index) => {
+      // Apply the falling animation to text
+      function animateText() {
+        const textElements = document.querySelectorAll('.animated-text span');
+        textElements.forEach((span, index) => {
           setTimeout(() => {
-            paragraph.classList.add('bounce-in');
-          }, index * 200); // Delay each paragraph
+            span.classList.add('show');
+          }, index * 50); // Adjust the delay for each word
         });
       }
 
-      animateParagraphs();
+      // Split text into spans
+      function splitText() {
+        const elements = document.querySelectorAll('.animated-text');
+        elements.forEach(element => {
+          const words = element.textContent.split(' ');
+          element.textContent = '';
+          words.forEach(word => {
+            const span = document.createElement('span');
+            span.textContent = word + ' ';
+            element.appendChild(span);
+          });
+        });
+      }
+
+      splitText();
+      animateText();
     });
 
     $(window).on('pageshow', function() {
