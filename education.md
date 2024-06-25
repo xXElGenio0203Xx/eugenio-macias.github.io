@@ -6,7 +6,7 @@ title: Education
 # Education
 
 <div class="education-entry">
-  <div class="education-text">
+  <div class="education-text animated-text">
     <p><strong>Brown University</strong></p>
     <ul>
       <li><strong>B.S. Applied Mathematics-Computer Science</strong> (_Class of 2026_)</li>
@@ -21,7 +21,7 @@ title: Education
 </div>
 
 <div class="education-entry">
-  <div class="education-text">
+  <div class="education-text animated-text">
     <p><strong>United World College in Mostar</strong></p>
     <ul>
       <li><strong>International Baccalaureate</strong> (_Class of 2022_)</li>
