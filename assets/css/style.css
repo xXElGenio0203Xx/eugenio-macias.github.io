@@ -3,26 +3,32 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #fff; /* Changed to white */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
+  background-color: #fff; /* Changed to white */
+  color: #000; /* Changed to black */
+  padding: 20px 0;
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+}
+
 nav {
-  background-color: #444;
+  background-color: #fff; /* Changed to white */
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -34,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 nav ul li a {
@@ -54,10 +60,10 @@ nav ul li a:hover {
 }
 
 main {
-  padding: 20px;
+  padding: 20px 40px; /* Added padding for left and right */
   flex: 1;
   margin-top: 60px; /* Adjust based on your header height */
-  margin-bottom: 80px; /* Space for the fixed nav at the bottom */
+  margin-bottom: 100px; /* Space for the fixed nav at the bottom */
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -106,4 +112,33 @@ img {
 .education-logo img {
   max-width: 100px; /* Adjust the size of the logos */
   height: auto;
+}
+
+/* Colorful text styles */
+.education-text,
+header h1,
+main p,
+main li {
+  color: #333;
+}
+
+.education-text strong,
+main h1 {
+  color: #003366; /* Dark blue */
+}
+
+main h2 {
+  color: #0059b3; /* Slightly lighter blue */
+}
+
+main h3 {
+  color: #0073e6; /* Even lighter blue */
+}
+
+main a {
+  color: #1a75ff; /* Bright blue for links */
+}
+
+main a:hover {
+  color: #0059b3; /* Slightly lighter blue on hover */
 }
