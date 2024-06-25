@@ -158,9 +158,9 @@ main a:hover {
 .animated-text span {
   display: inline-block;
   opacity: 0;
-  white-space: pre;
+  white-space: pre; /* Preserve white spaces */
 }
 
 .animated-text span.show {
-  animation: fall 0.3s forwards; /* Make the animation faster */
+  animation: fall 0.1s forwards; /* Make the animation faster */
 }
