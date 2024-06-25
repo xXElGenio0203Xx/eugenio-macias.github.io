@@ -9,8 +9,9 @@ title: Awards
 - Issued by DE Shaw Group
 
 **84th PUTNAM Mathematics Competition**  
-- Issued by the Mathematical Association of America MAA
-- Represented Brown at the world's leading university-level mathematics competition. Placed in top 20% of scorers.
+- Issued by the Mathematical Association of America (MAA)
+- World's leading university-level mathematics competition.
+- Placed in top 20% of scorers.
 
 **POINT72 Data Scholar**  
 - Issued by Point 72
