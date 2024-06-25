@@ -130,20 +130,22 @@ main a:hover {
 /* Animation styles */
 @keyframes dropBounce {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
     opacity: 0;
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(0);
     opacity: 1;
+  }
+  70% {
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 
 .bounce-in {
-  animation: dropBounce 0.6s ease;
-  animation-fill-mode: forwards;
+  animation: dropBounce 0.8s ease-in-out;
+  animation-fill-mode: forwards; /* Ensure the final state is maintained */
 }
