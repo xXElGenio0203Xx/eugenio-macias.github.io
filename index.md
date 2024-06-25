@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Eugenio Macias
+# Future Mathematician & Computer Scientist
 
 ![Profile Picture](/assets/images/picture.png){: .profile-pic }
 
