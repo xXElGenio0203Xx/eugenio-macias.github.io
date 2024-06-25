@@ -25,4 +25,6 @@ title: Education
       - Shelby Davis Scholar: Awarded $40,000/year scholarship
   </div>
   <div class="education-logo">
-    <img src="/
+    <img src="/assets/images/UWC_logo.png" alt="UWC Logo">
+  </div>
+</div>
