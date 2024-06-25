@@ -93,6 +93,10 @@ img {
   margin-right: 20px;
 }
 
+.education-logo {
+  flex-shrink: 0;
+}
+
 .education-logo img {
   max-width: 150px; /* Adjust the size of the logos */
   height: auto;
