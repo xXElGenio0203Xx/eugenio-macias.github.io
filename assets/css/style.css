@@ -83,7 +83,7 @@ img {
 
 .education-entry {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Adjusted for better alignment */
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -139,27 +139,11 @@ main a:hover {
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
 .bounce-in {
   animation: dropBounce 0.6s ease;
-  opacity: 0;
   animation-fill-mode: forwards;
-}
-
-.bounce-in:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.bounce-in:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.bounce-in:nth-child(4) {
-  animation-delay: 0.6s;
-}
-
-.bounce-in:nth-child(5) {
-  animation-delay: 0.8s;
 }
