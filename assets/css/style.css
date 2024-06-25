@@ -90,3 +90,20 @@ img {
     transform: scale(1.1);
   }
 }
+
+.education-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.education-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.education-logo img {
+  max-width: 100px; /* Adjust the size of the logos */
+  height: auto;
+}
