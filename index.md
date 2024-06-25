@@ -18,4 +18,4 @@ title: Home
 - [Experience](experience.md)
 - [Projects](projects.md)
 - [Awards](awards.md)
-- [Skills & Interests](skills.md)
+- [Skills & Interests](skills-interests.md)
