@@ -12,4 +12,4 @@ Hi, I am Eugenio Macias, an international student at Brown University majoring i
 - [Experience](experience.md)
 - [Projects](projects.md)
 - [Awards](awards.md)
-- [Skills & Interests](skills-interests.md)
+- [Skills & Interests](skills.md)
