@@ -1,41 +1,92 @@
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-}
-#content h1 {
-  text-align: center;
-  color: #003366;
-}
-
-#content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#content ul li {
-  margin-bottom: 10px;
-}
-
-#content ul li::before {
-  content: "•";
-  color: #003366;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-#content ul ul {
-  list-style-type: circle;
-  margin-left: 20px;
-}
-
-#content ul ul li {
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #333
-  
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 30px;
+  background-color: #003366; /* Dark blue background */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px; /* Larger text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0059b3; /* Slightly lighter blue on hover */
+  color: #ddd;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+  margin-top: 60px; /* Adjust based on your header height */
+  margin-bottom: 80px; /* Space for the fixed nav at the bottom */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+main.visible {
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-pic {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden;
+  animation: zoomIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
