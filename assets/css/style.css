@@ -142,3 +142,24 @@ main a {
 main a:hover {
   color: #0059b3; /* Slightly lighter blue on hover */
 }
+
+/* Animation styles */
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+}
+
+.animated-text span.show {
+  animation: fall 0.5s forwards;
+}
