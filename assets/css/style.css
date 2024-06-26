@@ -37,26 +37,44 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping */
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 5px 10px; /* Adjust margin for spacing */
 }
 
 nav ul li a {
   display: block;
-  padding: 15px 30px;
+  padding: 10px 20px;
   background-color: #003366; /* Dark blue background */
   color: #fff; /* White text */
   text-decoration: none;
   border-radius: 5px;
-  font-size: 18px; /* Larger text */
+  font-size: 16px; /* Adjust font size */
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
   background-color: #0059b3; /* Slightly lighter blue on hover */
   color: #ddd;
+}
+
+/* Responsive navigation */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Adjust margin for spacing */
+  }
+
+  nav ul li a {
+    padding: 10px 30px;
+    font-size: 18px; /* Adjust font size */
+  }
 }
 
 main {
@@ -157,6 +175,6 @@ main a:hover {
 .stars {
   display: inline-block;
   font-size: 16px; /* Adjust size as needed */
-  color: #FFD700;
+  color: #FFD700; /* Golden color */
   text-shadow: 1px 1px 1px #000;
 }
