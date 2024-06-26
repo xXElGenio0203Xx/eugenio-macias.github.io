@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const symbolsContainer = document.getElementById('math-symbols-container');
-    const symbols = ['√', 'π', '∑', '∫', '∞', '∂', '∆', '∇', '∫', '⊕', '⊗', '∃', '∀', '∴', '∵', '≈', '≠', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
+    const symbols = ['√', 'π', '∑', '∫', '∞', '∂', '∆', '∇', '∫', '∬', '∭', '∮', '∯', '∰''⊕', '⊗', '∃', '∀', '∴', '∵', '≈', '≠', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
 
     function getRandomPosition() {
         const x = Math.floor(Math.random() * window.innerWidth);
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         symbolsContainer.appendChild(symbolElement);
     }
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 30; i++) {
         createSymbol();
     }
 });
