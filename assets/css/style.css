@@ -72,29 +72,17 @@ header h1 {
     color: #000; /* Black color for Eugenio Macias title */
     font-size: 2.5em; /* Increase the header size */
     font-weight: bold; /* Make the header bolder */
-    background: linear-gradient(45deg, #ff0066, #ffcc00, #33cc33, #0066ff);
+    background: linear-gradient(45deg, #98FB98 , #87CEEB, #DDA0DD, #FF6347);
     background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient-animation 10s ease infinite, text-shadow-animation 5s ease infinite;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: gradient 10s ease infinite
     text-align: center; /* Center the header text */
 }
 
-@keyframes gradient-animation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
 
-@keyframes text-shadow-animation {
-    0%, 100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 0, 102, 0.6), 0 0 30px rgba(255, 204, 0, 0.6), 0 0 40px rgba(51, 204, 51, 0.6), 0 0 50px rgba(0, 102, 255, 0.6); }
-    50% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(0, 102, 255, 0.6), 0 0 30px rgba(51, 204, 51, 0.6), 0 0 40px rgba(255, 204, 0, 0.6), 0 0 50px rgba(255, 0, 102, 0.6); }
-}
 .header-links-left, .header-links-right {
     display: flex;
     gap: 50px;
-    padding: 0 30px
+    padding: 30 30px
 }
 
 .header-links-left a, .header-links-right a {
