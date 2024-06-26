@@ -218,3 +218,26 @@ main a:hover {
   color: #FFD700; /* Golden color */
   text-shadow: 1px 1px 1px #000; /* Black border */
 }
+/* Math symbols animation /
+#math-symbols-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+pointer-events: none; / Allow clicks to pass through */
+overflow: hidden;
+}
+
+.math-symbol {
+position: absolute;
+font-size: 24px;
+color: #FFD700; /* Golden color for symbols /
+pointer-events: auto; / Allow interaction with symbols */
+transition: transform 0.2s, opacity 0.2s;
+}
+
+.math-symbol:hover {
+transform: scale(1.5);
+opacity: 0;
+}
