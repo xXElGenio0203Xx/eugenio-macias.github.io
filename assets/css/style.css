@@ -316,33 +316,48 @@ transform: scale(1.2);
 }
 
 
-math-symbols-container {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-pointer-events: none; 
-overflow: hidden;
+#math-symbols-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
 }
 
 .math-symbol {
-position: absolute;
-font-size: 24px;
-color: #FFD700; 
-pointer-events: auto; 
-transition: transform 0.2s, opacity 0.2s;
+    position: absolute;
+    font-size: 24px;
+    color: #808080; /* Grey color for symbols */
+    pointer-events: auto; /* Allow interaction with symbols */
+    transition: transform 0.2s, opacity 0.2s;
 }
 
-.math-symbol:hover {
-animation: bubblePop 0.5s forwards;
+.math-symbol.bubblePop {
+    animation: bubblePop 0.5s forwards;
+}
+
+@keyframes bubblePop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 
 @keyframes moveSymbol {
-0% {
-transform: translate(0, 0);
-}
-100% {
-transform: translate(calc(var(–direction-x) * 100vw), calc(var(–direction-y) * 100vh));
-}
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(calc(var(--direction-x) * 100vw), calc(var(--direction-y) * 100vh));
+    }
 }
