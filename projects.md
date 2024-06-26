@@ -38,21 +38,19 @@ title: Projects
 <br>
 
 **ReasonML-Racket Interpreter (School-Related)**
-• Developed an interpreter in ReasonML capable of interpreting and processing all inputs from Racket
-• Implemented advanced pattern matching techniques to efficiently analyze and interpret Racket code entered into the ReasonML environment. It accurately replicates the 
+- Developed an interpreter in ReasonML capable of interpreting and processing all inputs from Racket
+- Implemented advanced pattern matching techniques to efficiently analyze and interpret Racket code entered into the ReasonML environment. It accurately replicates the 
   behavior of DrRacket, providing precise Racket code output while executing within the ReasonML environment.
-• Successfully processed complex DrRacket programs, including those exceeding 500+ lines of code, demonstrating the scalability of the interpreter.
-• Used extensive error handling and debugging mechanisms to ensure the interpreter's execution of Racket programs.
+- Successfully processed complex DrRacket programs, including those exceeding 500+ lines of code, demonstrating the scalability of the interpreter.
 
 <br>
 
 **Mutex-Safe Database (C) (School-Related)**
-Associated with Brown UniversityAssociated with Brown University
-• Implemented a multithreaded server database that listens for client connections, tested to work with 100+ server clients
-• The server utilizes dynamic thread management, and a flexible mutex mechanism to allow concurrency between clients
+- Implemented a multithreaded server database that listens for client connections, tested to work with 100+ server clients
+- The server utilizes dynamic thread management, and a flexible mutex mechanism to allow concurrency between clients
 
 <br>
 
 **Unix Shell (C) (School-Related)**
-• Implemented a custom Unix shell using C, working with system calls and process management
-• Developed features such as command parsing, executing external commands, handling signals, and file redirections
+- Implemented a custom Unix shell using C, working with system calls and process management
+- Developed features such as command parsing, executing external commands, handling signals, and file redirections
