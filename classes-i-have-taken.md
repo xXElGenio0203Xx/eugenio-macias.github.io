@@ -5,8 +5,7 @@ title: Classes I Have Taken
 
 # Classes I Have Taken
 ## Math Classes
-| Course                                    | Difficulty | Time Commitment |
-|-------------------------------------------|------------|-----------------|
+ Course                                          Difficulty   Time Commitment 
 | MATH 0180: Multivariable Calculus         | 6.5/10     | 6/10            |
 | MATH 0190: Single Variable Calculus, II   | 4.5/10     | 4/10            |
 | MATH 0540: Linear Algebra with Theory     | 8/10       | 6.5/10          |
@@ -14,24 +13,21 @@ title: Classes I Have Taken
 | MATH 1530: Abstract Algebra               | 7/10       | 6/10            |
 
 ## Applied Math Classes
-| Course                                              | Difficulty | Time Commitment |
-|-----------------------------------------------------|------------|-----------------|
+ Course                                          Difficulty   Time Commitment 
 | APMA 0350: Applied Ordinary Differential Equations  | 4.5/10     | 5/10            |
 | APMA 0360: Applied Partial Differential Equations   | 6.5/10     | 5/10            |
 | APMA 1655: Honors Statistical Inference I           | 7/10       | 6.5/10          |
 | APMA 1660: Statistical Inference II                 | 6/10       | 4.5/10          |
 
 ## Computer Science Classes
-| Course                                                            | Difficulty | Time Commitment |
-|-------------------------------------------------------------------|------------|-----------------|
+ Course                                          Difficulty   Time Commitment 
 | CSCI 0170: Computer Science, An Integrated Introduction           | 8/10       | 9/10            |
 | CSCI 0200: Programming Design, Data Structures & Algorithms       | 7/10       | 8/10            |
 | CSCI 0330: Introduction to Computer Systems                       | 8.5/10     | 10/10           |
 | CSCI 1515: Applied Cryptography                                   | 7/10       | 7/10            |
 
 ## Other Areas
-| Course                                        | Difficulty | Time Commitment |
-|-----------------------------------------------|------------|-----------------|
+ Course                                          Difficulty   Time Commitment 
 | ECON 1210: Intermediate Macroeconomics        | 4/10       | 5.5/10          |
 | ECON 1620: Introduction to Econometrics       | 4.5/10     | 6/10            |
 | GRMN 0300: Intermediate German I              | 3/10       | 4/10            |
