@@ -9,8 +9,6 @@ title: Education
   <tr>
     <td style="vertical-align:top;">
 
-      <h2>Education</h2><br> 
-
       <h3 style="font-weight: bold;">Brown University (_USA_)</h3><br> 
       <p><strong>B.S. Applied Mathematics-Computer Science</strong> (_Class of 2026_)<br>
       <strong>B.S. Mathematics</strong> (_Class of 2026_)<br>
