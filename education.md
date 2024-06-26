@@ -42,12 +42,12 @@ title: Education
     <td style="vertical-align:top;">
       
       <h3 style="font-weight: bold;">Tecnológico de Monterrey (Mexico)</h3>
-      <p><strong>Multicultural High school Diploma<br>
+      <p><strong>Multicultural High school Diploma<strong><br>
       Grade: 97/100<br></p><br>
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:200px; height:auto; margin-right: 70px;">
+      <img src="{{ site.baseurl }}/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:230px; height:auto; margin-right: 70px;">
     </td>
   </tr>
 </table>
