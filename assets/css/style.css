@@ -70,7 +70,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px auto; /* Center images with margin */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profile-pic {
@@ -78,4 +79,72 @@ img {
   height: auto;
   border-radius: 50%; /* Make it circular */
   overflow: hidden;
+}
+
+.education-entry {
+  display: flex;
+  align-items: flex-start; /* Adjusted for better alignment */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.education-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.education-logo img {
+  max-width: 150px; /* Adjust the size of the logos */
+  height: auto;
+}
+
+/* Colorful text styles */
+.education-text,
+header h1,
+main p,
+main li {
+  color: #333;
+}
+
+.education-text strong,
+main h1 {
+  color: #003366; /* Dark blue */
+}
+
+main h2 {
+  color: #0059b3; /* Slightly lighter blue */
+}
+
+main h3 {
+  color: #0073e6; /* Even lighter blue */
+}
+
+main a {
+  color: #1a75ff; /* Bright blue for links */
+}
+
+main a:hover {
+  color: #0059b3; /* Slightly lighter blue on hover */
+}
+
+/* Animation styles */
+@keyframes fall {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  white-space: pre; /* Preserve white spaces */
+}
+
+.animated-text span.show {
+  animation: fall 0.3s forwards; /* Make the animation faster */
 }
