@@ -193,7 +193,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-left: auto;
+    margin-left: 400;
     margin-right: auto;
 }
 
@@ -297,7 +297,7 @@ transition: transform 0.3s; / Smooth transition for zoom effect */
 }
 
 .stars:hover {
-transform: scale(1.5); 
+transform: scale(1.2); 
 }
 
 
