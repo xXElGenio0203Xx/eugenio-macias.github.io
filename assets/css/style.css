@@ -79,6 +79,24 @@ header h1 {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     text-align: center; /* Center the header text */
 }
+.header-links-left, .header-links-right {
+    display: flex;
+    gap: 15px;
+}
+
+.header-links-left a, .header-links-right a {
+    color: #000; /* Black color for the links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-links-left a:hover, .header-links-right a:hover {
+    text-decoration: underline;
+}
+
+.header-links-left i, .header-links-right i {
+    font-size: 1.5em; /* Adjust the size of the icons */
+}
 
 @keyframes gradient-animation {
     0% { background-position: 0% 50%; }
