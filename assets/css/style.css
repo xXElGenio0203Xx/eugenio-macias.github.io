@@ -285,7 +285,7 @@ white-space: pre; /* Preserve white spaces */
 animation: fall 0.3s forwards; /* Make the animation faster */
 }
 
-/* Stars styles /
+
 .stars {
 display: inline-block;
 font-size: 2em; / Adjust size as needed /
