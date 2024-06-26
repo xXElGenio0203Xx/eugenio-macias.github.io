@@ -70,7 +70,7 @@ header h1 {
     color: #000; /* Black color for Eugenio Macias title */
     font-size: 2.5em; /* Increase the header size */
     font-weight: bold; /* Make the header bolder */
-    background: linear-gradient(-5deg, #98FB98 , #87CEEB, #DDA0DD, #FF634798FB98);
+    background: linear-gradient(-5deg, #2E8B57, #4682B4, #6A5ACD, #8B0000);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
