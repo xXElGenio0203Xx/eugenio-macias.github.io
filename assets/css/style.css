@@ -298,7 +298,7 @@ transform: scale(1.2);
     }
     50% {
         transform: scale(1.5);
-        opacity: 1.5;
+        opacity: 0.75;
     }
     100% {
         transform: scale(0);
@@ -325,5 +325,5 @@ transform: scale(1.2);
 }
 
 .math-symbol:hover {
-    animation: bubblePop 0.9s forwards;
+    animation: bubblePop 0.5s forwards;
 }
