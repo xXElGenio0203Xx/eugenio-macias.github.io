@@ -20,6 +20,7 @@ header {
 
 header h1 {
   margin: 0;
+  color: #000; /* Black color for Eugenio Macias title */
 }
 
 nav {
@@ -54,12 +55,36 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px; /* Adjust font size */
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
 nav ul li a:hover {
   background-color: #0059b3; /* Slightly lighter blue on hover */
-  color: #ddd;
+  color: #ffd700; /* Gold text on hover */
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, transparent, rgba(255, 215, 0, 0.7), transparent);
+  transition: left 0.7s ease-in-out;
+  transform: rotate(25deg);
+  z-index: 1;
+}
+
+nav ul li a:hover::before {
+  left: 100%;
+}
+
+nav ul li a span {
+  position: relative;
+  z-index: 2;
 }
 
 /* Responsive navigation */
@@ -101,12 +126,20 @@ img {
   height: auto;
   border-radius: 50%; /* Make it circular */
   overflow: hidden;
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for hover effect */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .profile-pic:hover {
-  transform: rotate(10deg) translateY(-10px); /* Slight rotation and lift on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  animation: rotate infinite 1s linear; /* Continuous rotation on hover */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .education-entry {
@@ -138,12 +171,16 @@ main li {
   color: #f0f0f0; /* Light grey for readability */
 }
 
+main h1 {
+  color: #d0d0d0; /* Darker color for page titles */
+}
+
 main h2 {
-  color: #d0d0d0; /* Slightly darker grey for subtitles */
+  color: #e0e0e0; /* Slightly lighter grey for subtitles */
 }
 
 main h3 {
-  color: #b0b0b0; /* Even darker grey for subtitles */
+  color: #d0d0d0; /* Slightly darker grey for subtitles */
 }
 
 main a {
