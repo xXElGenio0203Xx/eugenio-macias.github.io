@@ -3,8 +3,11 @@ layout: default
 title: Education
 ---
 
-# #Education
-<br><br>
+<div class="center">
+    <h1>#Education</h1>
+</div>
+<br>
+<br>
 <table style="width:100%;">
   <tr>
     <td style="vertical-align:top;">
