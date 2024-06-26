@@ -61,3 +61,6 @@ title: Awards
 **Olimpiada del Conocimiento Infantil 2015**  
 &nbsp;&nbsp;- Issued by SEP  
 &nbsp;&nbsp;- Winner of the local and Regional General Knowledge Olympiad in Mexico.
+<br>
+<br>
+<br>
