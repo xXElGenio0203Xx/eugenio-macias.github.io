@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Aspiring Mathematician & Computer Scientist
+# #Aspiring Mathematician & Computer Scientist
 
 ![Profile Picture](/assets/images/gportfolio_profile_picture.png){: class="profile-pic" }
 <br>
