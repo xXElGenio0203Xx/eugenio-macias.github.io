@@ -200,13 +200,13 @@ img {
 .profile-pic {
     width: 200px; /* Adjust size as needed */
     height: auto;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 40%; /* Make it circular */
     overflow: hidden;
     transition: transform 1.5s ease-in-out; /* Smooth transition for hover effect, slower rotation */
     margin-top: 20px; /* Add space between header and text */
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: center;
+    margin-right: center;
 }
 
 .profile-pic:hover {
