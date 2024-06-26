@@ -59,10 +59,9 @@ html, body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 7%;
-    min-width: 100%;
+    padding: 10px 20px;
     background-color: rgb(221, 221, 251);
 }
 
@@ -134,7 +133,7 @@ main {
     width: 100%;
     background: linear-gradient(-45deg, #FF6347 , #87CEEB, #DDA0DD, #98FB98); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
-    animation: gradient 12s ease infinite;
+    animation: gradient 10s ease infinite;
     backdrop-filter: blur(8px);
     overflow: auto;
 }
