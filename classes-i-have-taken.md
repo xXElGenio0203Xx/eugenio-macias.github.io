@@ -3,7 +3,9 @@ layout: default
 title: Classes I Have Taken
 ---
 
-# #Brown Coursework 
+<div class="center">
+    <h1>#Brown Coursework</h1>
+</div>
 <br> 
 
 <table style="width:100%;">
