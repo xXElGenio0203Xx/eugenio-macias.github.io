@@ -34,23 +34,25 @@ header {
 header h1 {
     margin: 0;
     color: #000; /* Black color for Eugenio Macias title */
-    font-size: 3em; /* Make the header bigger */
+    font-size: 2em; /* Reduce the header size */
     font-weight: bold; /* Make the header bolder */
 }
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Change to vertical scrolling */
+    align-items: center;
 
     min-height: 86%;
     min-width: 100%;
 
-    background: linear-gradient(-45deg, #6452ee, #b73ce7, #1e91bb, #32b395);
+    background: linear-gradient(-45deg, #228B22, #006400, #87CEEB, #00008B); /* Green, dark green, light blue, dark blue */
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 
     backdrop-filter: blur(8px);
-    overflow: scroll;
+    overflow: auto;
+    padding: 20px;
 }
 
 footer {
@@ -151,14 +153,17 @@ img {
 header h1,
 main h1 {
     color: #000; /* Black for headers */
+    font-size: 2em; /* Reduce the header size */
 }
 
 main h2 {
     color: #333; /* Dark grey for subtitles */
+    font-size: 1.5em; /* Reduce the subtitle size */
 }
 
 main h3 {
     color: #666; /* Lighter grey for less important subtitles */
+    font-size: 1.2em; /* Reduce the size for less important subtitles */
 }
 
 main p,
@@ -224,6 +229,6 @@ main a:hover {
 }
 
 .math-symbol:hover {
-transform: scale(1.5);
-opacity: 0;
+    transform: scale(1.5);
+    opacity: 0;
 }
