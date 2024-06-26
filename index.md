@@ -20,4 +20,4 @@ title: Home
 
 <p class="animated-text">I'm excited to keep learning, traveling, trying new food, and making friends along the way!</p>
 
-[LinkedIn](https://www.linkedin.com/in/eugenio-macias/)
+![LinkedIn](https://www.linkedin.com/in/eugenio-macias/)
