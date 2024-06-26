@@ -21,4 +21,5 @@ title: Education
 - Classical Guitar Group Leader
 - School nominated for the Nobel Peace Prize 2022
 - I attended the UWC campus in Mostar, Bosnia and Herzegovina
+  
 ![UWC Logo](/assets/images/UWC_logo.png)
