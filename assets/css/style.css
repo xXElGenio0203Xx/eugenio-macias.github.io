@@ -1,243 +1,226 @@
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url('/assets/images/background.png') no-repeat center center fixed;
-  background-size: cover;
-  color: #f0f0f0; /* Light grey text for readability */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code', sans-serif;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for readability */
-  color: #000; /* Black text for Eugenio Macias title */
-  padding: 20px 0;
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 7%;
+    min-width: 100%;
+
+    background-color: rgb(221, 221, 251);
 }
 
 header h1 {
-  margin: 0;
-  color: #000; /* Black color for Eugenio Macias title */
-  font-size: 3em; /* Make the header bigger */
-  font-weight: bold; /* Make the header bolder */
-}
-
-nav {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  padding: 10px 0;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow wrapping */
-}
-
-nav ul li {
-  margin: 5px 10px; /* Adjust margin for spacing */
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 20px;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px; /* Adjust font size */
-  transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
-  position: relative;
-  overflow: hidden;
-}
-
-nav ul li a:hover {
-  background-color: #333; /* Dark grey on hover */
-  color: #ffd700; /* Gold text on hover */
-}
-
-nav ul li a::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(120deg, transparent, rgba(255, 215, 0, 0.7), transparent);
-  transition: left 0.7s ease-in-out;
-  transform: rotate(25deg);
-  z-index: 1;
-}
-
-nav ul li a:hover::before {
-  left: 100%;
-}
-
-nav ul li a span {
-  position: relative;
-  z-index: 2;
-}
-
-/* Responsive navigation */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 5px 0; /* Adjust margin for spacing */
-  }
-
-  nav ul li a {
-    padding: 10px 30px;
-    font-size: 18px; /* Adjust font size */
-  }
+    margin: 0;
+    color: #000; /* Black color for Eugenio Macias title */
+    font-size: 3em; /* Make the header bigger */
+    font-weight: bold; /* Make the header bolder */
 }
 
 main {
-  padding: 20px 40px; /* Added padding for left and right */
-  flex: 1;
-  margin-top: 60px; /* Adjust based on your header height */
-  margin-bottom: 100px; /* Space for the fixed nav at the bottom */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
-  color: #f0f0f0; /* Light grey text for readability */
+    display: flex;
+    flex-direction: row;
+
+    min-height: 86%;
+    min-width: 100%;
+
+    background: linear-gradient(-45deg, #6452ee, #b73ce7, #1e91bb, #32b395);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    backdrop-filter: blur(8px);
+    overflow: scroll;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 7%;
+    min-width: 100%;
+    
+    background-color: rgb(221, 221, 251);
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+footer ul li {
+    margin: 5px 10px; /* Adjust margin for spacing */
+}
+
+footer ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size */
+    transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+footer ul li a:hover {
+    background-color: #333; /* Dark grey on hover */
+    color: #ffd700; /* Gold text on hover */
+}
+
+footer ul li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, transparent, rgba(255, 215, 0, 0.7), transparent);
+    transition: left 0.7s ease-in-out;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+
+footer ul li a:hover::before {
+    left: 100%;
+}
+
+footer ul li a span {
+    position: relative;
+    z-index: 2;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile-pic {
-  width: 200px; /* Adjust size as needed */
-  height: auto;
-  border-radius: 50%; /* Make it circular */
-  overflow: hidden;
-  transition: transform 1.5s ease-in-out; /* Smooth transition for hover effect, slower rotation */
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+    transition: transform 1.5s ease-in-out; /* Smooth transition for hover effect, slower rotation */
 }
 
 .profile-pic:hover {
-  animation: rotate infinite 3s linear; /* Continuous rotation on hover, slower speed */
+    animation: rotate infinite 3s linear; /* Continuous rotation on hover, slower speed */
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.education-entry {
-  display: flex;
-  align-items: flex-start; /* Adjusted for better alignment */
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.education-text {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.education-logo {
-  flex-shrink: 0;
-}
-
-.education-logo img {
-  max-width: 100px; /* Adjust the size of the logos */
-  height: auto;
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Colorful text styles */
 header h1,
 main h1 {
-  color: #000; /* Black for headers */
+    color: #000; /* Black for headers */
 }
 
 main h2 {
-  color: #333; /* Dark grey for subtitles */
+    color: #333; /* Dark grey for subtitles */
 }
 
 main h3 {
-  color: #666; /* Lighter grey for less important subtitles */
+    color: #666; /* Lighter grey for less important subtitles */
 }
 
 main p,
 main li {
-  color: #f0f0f0; /* Light grey for readability */
+    color: #f0f0f0; /* Light grey for readability */
 }
 
 main a {
-  color: #c0c0c0; /* Light grey for links */
+    color: #c0c0c0; /* Light grey for links */
 }
 
 main a:hover {
-  color: #a0a0a0; /* Slightly darker grey on hover */
+    color: #a0a0a0; /* Slightly darker grey on hover */
 }
 
 /* Animation styles */
 @keyframes fall {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .animated-text span {
-  display: inline-block;
-  opacity: 0;
-  white-space: pre; /* Preserve white spaces */
+    display: inline-block;
+    opacity: 0;
+    white-space: pre; /* Preserve white spaces */
 }
 
 .animated-text span.show {
-  animation: fall 0.3s forwards; /* Make the animation faster */
+    animation: fall 0.3s forwards; /* Make the animation faster */
 }
 
 /* Stars styles */
 .stars {
-  display: inline-block;
-  font-size: 16px; /* Adjust size as needed */
-  color: #FFD700; /* Golden color */
-  text-shadow: 1px 1px 1px #000; /* Black border */
+    display: inline-block;
+    font-size: 16px; /* Adjust size as needed */
+    color: #FFD700; /* Golden color */
+    text-shadow: 1px 1px 1px #000; /* Black border */
 }
-/* Math symbols animation /
+
+/* Math symbols animation */
 #math-symbols-container {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-pointer-events: none; / Allow clicks to pass through */
-overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    overflow: hidden;
 }
 
 .math-symbol {
-position: absolute;
-font-size: 24px;
-color: #FFD700; /* Golden color for symbols /
-pointer-events: auto; / Allow interaction with symbols */
-transition: transform 0.2s, opacity 0.2s;
+    position: absolute;
+    font-size: 24px;
+    color: #FFD700; /* Golden color for symbols */
+    pointer-events: auto; /* Allow interaction with symbols */
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 .math-symbol:hover {
