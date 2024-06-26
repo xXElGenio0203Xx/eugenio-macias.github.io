@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 ---
-<center><h1>#Projects</h1></center>
+# #Projects
 <br>
 
 **Research: Fourier Analysis and Laplace’s Equation**  
