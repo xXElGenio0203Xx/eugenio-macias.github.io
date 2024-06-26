@@ -3,15 +3,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Changed to white */
+  background-color: #fff; /* White background */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 header {
-  background-color: #fff; /* Changed to white */
-  color: #000; /* Changed to black */
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
   padding: 20px 0;
   text-align: center;
 }
@@ -21,7 +21,7 @@ header h1 {
 }
 
 nav {
-  background-color: #fff; /* Changed to white */
+  background-color: #fff; /* White background */
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -47,7 +47,7 @@ nav ul li a {
   display: block;
   padding: 15px 30px;
   background-color: #003366; /* Dark blue background */
-  color: #fff;
+  color: #fff; /* White text */
   text-decoration: none;
   border-radius: 5px;
   font-size: 18px; /* Larger text */
@@ -70,8 +70,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto; /* Center images with margin */
 }
 
 .profile-pic {
@@ -79,76 +78,4 @@ img {
   height: auto;
   border-radius: 50%; /* Make it circular */
   overflow: hidden;
-}
-
-.education-entry {
-  display: flex;
-  align-items: flex-start; /* Adjusted for better alignment */
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.education-text {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.education-logo {
-  flex-shrink: 0;
-}
-
-.education-logo img {
-  max-width: 150px; /* Adjust the size of the logos */
-  height: auto;
-}
-
-/* Colorful text styles */
-.education-text,
-header h1,
-main p,
-main li {
-  color: #333;
-}
-
-.education-text strong,
-main h1 {
-  color: #003366; /* Dark blue */
-}
-
-main h2 {
-  color: #0059b3; /* Slightly lighter blue */
-}
-
-main h3 {
-  color: #0073e6; /* Even lighter blue */
-}
-
-main a {
-  color: #1a75ff; /* Bright blue for links */
-}
-
-main a:hover {
-  color: #0059b3; /* Slightly lighter blue on hover */
-}
-
-/* Animation styles */
-@keyframes fall {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animated-text span {
-  display: inline-block;
-  opacity: 0;
-  white-space: pre; /* Preserve white spaces */
-}
-
-.animated-text span.show {
-  animation: fall 0.3s forwards; /* Make the animation faster */
 }
