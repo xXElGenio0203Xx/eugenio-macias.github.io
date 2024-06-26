@@ -120,35 +120,4 @@ main h2 {
 }
 
 main h3 {
-  color: #0073e6; /* Even lighter blue */
-}
-
-main a {
-  color: #1a75ff; /* Bright blue for links */
-}
-
-main a:hover {
-  color: #0059b3; /* Slightly lighter blue on hover */
-}
-
-/* Animation styles */
-@keyframes fall {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animated-text span {
-  display: inline-block;
-  opacity: 0;
-  white-space: pre; /* Preserve white spaces */
-}
-
-.animated-text span.show {
-  animation: fall 0.3s forwards; /* Make the animation faster */
-}
+  color: #0073e6; /* Even lighter blue
