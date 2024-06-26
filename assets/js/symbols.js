@@ -1,6 +1,6 @@
 ### JavaScript (symbols.js)
 
-Create a new JavaScript file `symbols.js` in your `assets/js` directory:
+Ensure the JavaScript file handles the animation of math symbols. Create a new JavaScript file `symbols.js` in your `assets/js` directory:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
