@@ -2,7 +2,9 @@
 layout: default
 title: Awards
 ---
-# #Awards
+<div class="center">
+    <h1>Awards</h1>
+</div>
 <br>
 **D.E. Shaw group's Latitude Fellowship**  
 &nbsp;&nbsp;- Issued by DE Shaw Group
