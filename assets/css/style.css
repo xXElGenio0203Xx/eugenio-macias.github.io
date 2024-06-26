@@ -61,7 +61,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: rgb(221, 221, 251);
 }
 
@@ -80,7 +80,8 @@ header h1 {
 }
 .header-links-left, .header-links-right {
     display: flex;
-    gap: 15px;
+    gap: 30px;
+    padding: 0 20px
 }
 
 .header-links-left a, .header-links-right a {
@@ -94,7 +95,7 @@ header h1 {
 }
 
 .header-links-left i, .header-links-right i {
-    font-size: 1.5em; /* Adjust the size of the icons */
+    font-size: 1.8em; /* Adjust the size of the icons */
 }
 
 @keyframes gradient-animation {
