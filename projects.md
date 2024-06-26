@@ -2,7 +2,9 @@
 layout: default
 title: Projects
 ---
-# #Projects
+<div class="center">
+    <h1>#Projects</h1>
+</div>
 <br>
 
 **Research: Fourier Analysis and Laplace’s Equation**  
