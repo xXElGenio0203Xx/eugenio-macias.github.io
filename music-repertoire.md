@@ -27,9 +27,11 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 - Isaac Álbeniz (1860-1909), Spain: Asturias (Leyenda).
 - Agustín Pío Barrios (1885-1940): Una Limosna por el Amor de Dios.
 
+
 ## APPLIED MUSIC PROGRAM, Brown University
 - Final Recital (Sophomore year): Asturias (Leyenda) by Isaac Álbeniz, Riley Hall, December, 2023
 - Final Recital (Freshman year): (i) Una Limosna por el Amor de Dios by Agustín Barrios; (ii) Suite Castellana: Fandanguillo by Federico Moreno Torroba. Grant Recital Hall, May, 2023
+
 
 ## MASTERCLASSES
 - Recuerdos de la Alhambra, revised with Javier Xara (USA) in Guitar Foundation of America XII held in Denver, CO.
@@ -41,6 +43,7 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 - El Colibrí, revised with Hugo Gracián (Mexico) in the Décimo Quinto Festival Internacional Guitarra sin Fronteras.
 - Suite del Plata, revised with Cecilia Siqueira (Uruguay) in Guitar Foundation of America XII held in Fullerton, CA.
 
+
 ## AWARDS & FESTIVALS
 - Honorific Mention for Young Talent in the virtual contest within the Décimo Quinto Festival Internacional Guitarra sin Fronteras.
 - Participation in Décimo Cuarto Festival Internacional Guitarra sin Fronteras.
@@ -51,6 +54,7 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 - Certificate of Participation in Guitar Foundation of America XII held in Fullerton, CA.
 - Certificate of Participation in Guitar Foundation of America XI held in Denver, CO.
 - Honorific Mention in the IV State Contest “Cleofás Villegas”.
+
 
 ## ENSEMBLE EXPERIENCE
 Youth Orchestra directed by Chuck Hulihan, performing “Around the World” by Patrick Roux (1962) In Fullerton, CA.:
