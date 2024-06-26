@@ -114,7 +114,7 @@ main {
     padding: 20px;
     min-height: calc(100% - 14%); /* Adjust to fill screen without footer */
     width: 100%;
-    background: linear-gradient(-45deg, #FFFFE0, #32CD32, #ADD8E6, #FF6347); /* Light yellow, light green, light blue, light red */
+    background: linear-gradient(-45deg, #FF6347 , #87CEEB, #DDA0DD, #98FB98); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     backdrop-filter: blur(8px);
