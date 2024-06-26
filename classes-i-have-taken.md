@@ -37,7 +37,7 @@ title: Classes I Have Taken
       <p><strong>GRMN 0400: Intermediate German II (WRIT)</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
       <p><strong>MUSC 0810: Strings I (AMP)</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
       <p><strong>MUSC 0810: Strings II (AMP)</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
-      <p><strong>PHIL 0640: Logic</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p> <br> <br> <br> <br> 
+      <p><strong>PHIL 0640: Logic</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p> <br> <br> <br> <br><br> <br> 
 
     </td>
     <td style="vertical-align:top;">
