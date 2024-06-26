@@ -14,10 +14,10 @@
 
 @keyframes vibrate {
     0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    60% { transform: translate(1px, 1px); }
+    80% { transform: translate(1px, -1px); }
     100% { transform: translate(0); }
 }
 
@@ -151,6 +151,7 @@ img {
     border-radius: 50%; /* Make it circular */
     overflow: hidden;
     transition: transform 1.5s ease-in-out; /* Smooth transition for hover effect, slower rotation */
+    margin-top: 20px; /* Add space between header and text */
 }
 
 .profile-pic:hover {
@@ -186,6 +187,15 @@ main h3 {
 main p,
 main li {
     color: #f0f0f0; /* Light grey for readability */
+    line-height: 1.6; /* Add extra line between paragraphs */
+}
+
+main p {
+    margin-bottom: 20px; /* Extra space between paragraphs */
+}
+
+main li {
+    padding-left: 15px; /* Tiny indentation to bullet points */
 }
 
 main a {
@@ -194,6 +204,10 @@ main a {
 
 main a:hover {
     color: #a0a0a0; /* Slightly darker grey on hover */
+}
+
+b, strong {
+    color: #333; /* Dark grey for bolded text */
 }
 
 /* Animation styles */
