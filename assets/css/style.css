@@ -21,30 +21,6 @@
     100% { transform: translate(0); }
 }
 
-@keyframes bubblePop {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.5);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-
-@keyframes moveSymbol {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(calc(var(--direction-x) * 100vw), calc(var(--direction-y) * 100vh));
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -315,7 +291,6 @@ transition: transform 0.3s; / Smooth transition for zoom effect */
 transform: scale(1.2); 
 }
 
-
 #math-symbols-container {
     position: fixed;
     top: 0;
@@ -334,30 +309,7 @@ transform: scale(1.2);
     transition: transform 0.2s, opacity 0.2s;
 }
 
-.math-symbol.bubblePop {
-    animation: bubblePop 0.5s forwards;
-}
-
-@keyframes bubblePop {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.5);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-
-@keyframes moveSymbol {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(calc(var(--direction-x) * 100vw), calc(var(--direction-y) * 100vh));
-    }
+.math-symbol:hover {
+    opacity: 0;
+    transition: opacity 0.5s;
 }
