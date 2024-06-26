@@ -3,7 +3,7 @@ layout: default
 title: Music Repertoire
 ---
 
-# Music Repertoire: Eugenio Macias
+# #Music Repertoire: Eugenio Macias
 <br>
 ## TUTELAGE
 I started my career as a guitarist in 2010 under the tutelage of the Professor and Composer Carlos Alfredo Gonzales Olvera in the city of Chihuahua. He was the one from whom I learned the most, an excellent professor whom I admire for his dedication and teaching. In 2022, I formed part of the Applied Music Program at Brown University in the city of Providence, Rhode Island, under the tutelage of Professor Mychal Gendron.
