@@ -215,6 +215,13 @@ img {
 .center {
     text-align: center;
 }
+.centered-title {
+    font-size: 2.5em; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    color: black; /* Or any other color */
+    margin-top: 20px; /* Space between the image and title */
+}
 @keyframes rotate {
     from {
         transform: rotate(0deg);
