@@ -9,27 +9,27 @@ title: Classes I Have Taken
   <tr>
     <td style="vertical-align:top;">
 
-      <h2>Classes I Have Taken</h2><br>
-      <h3 style="font-weight: bold;">Math Classes</h3><br>
+      <h2>Classes I Have Taken</h2><br> 
+      <h3>Math Classes</h3><br> 
       <p><strong>MATH 0180: Multivariable Calculus</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>MATH 0190: Single Variable Calculus, II</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
       <p><strong>MATH 0540: Linear Algebra with Theory (Honors)</strong><br> Difficulty: <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★☆☆☆</span></p>
       <p><strong>MATH 1410: Topology</strong><br> Difficulty: <span class="stars">★★★★★★★★★☆</span><br> Time Commitment: <span class="stars">★★★★★★☆☆☆☆</span></p>
       <p><strong>MATH 1530: Abstract Algebra</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★☆☆☆☆</span></p> 
   
-      <h3 style="font-weight: bold;">Applied Math Classes</h3><br>
+      <h3>Applied Math Classes</h3><br> 
       <p><strong>APMA 0350: Applied Ordinary Differential Equations</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
       <p><strong>APMA 0360: Applied Partial Differential Equations</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>APMA 1655: Honors Statistical Inference I</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>APMA 1660: Statistical Inference II</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★☆☆☆☆☆☆☆</span></p> 
   
-      <h3 style="font-weight: bold;">Computer Science Classes</h3><br> 
+      <h3>Computer Science Classes</h3><br> 
       <p><strong>CSCI 0170: Computer Science, An Integrated Introduction</strong><br> Difficulty: <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★★★☆</span></p>
       <p><strong>CSCI 0200: Programming Design, Data Structures & Algorithms</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★★☆☆</span></p>
       <p><strong>CSCI 0330: Introduction to Computer Systems</strong><br> Difficulty: <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★★★★</span></p>
       <p><strong>CSCI 1515: Applied Cryptography</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★☆☆☆</span></p> 
   
-      <h3 style="font-weight: bold;">Other Areas</h3><br>
+      <h3>Other Areas</h3><br> 
       <p><strong>ECON 1210: Intermediate Macroeconomics</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>ECON 1620: Introduction to Econometrics</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★☆☆☆☆</span></p>
       <p><strong>GRMN 0300: Intermediate German I</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★☆☆☆☆☆☆☆</span></p>
@@ -42,35 +42,10 @@ title: Classes I Have Taken
     <td style="vertical-align:top;">
 
       <h2>Classes I Am Taking in the Future</h2><br> 
-      <h3 style="font-weight: bold;">Math Classes</h3><br> 
+      <h3>Math Classes</h3><br> 
       <p><strong>MATH 1460: Complex Analysis</strong></p>
       <p><strong>MATH 1540: Topics in Abstract Algebra</strong></p>
       <p><strong>MATH 1560: Number Theory</strong></p> 
   
-      <h3 style="font-weight: bold;">Applied Math Classes</h3><br> 
-      <p><strong>APMA 1200: Operations Research, Probabilistic Models</strong></p>
-      <p><strong>APMA 1710: Information Theory</strong></p>
-      <p><strong>APMA 1720: Monte Carlo Simulation with Applications to Finance</strong></p>
-      <p><strong>APMA 1930X (Capstone): Probability, Optimization and Stochastic Calculus</strong></p>
-      <p><strong>APMA 1930Z: Introduction to Mathematical Machine Learning</strong></p>
-      <p><strong>APMA 2110: Real Analysis (Graduate)</strong></p>
-      <p><strong>APMA 1740: Recent Applications of Probability and Statistics</strong></p>
-  
-      <h3 style="font-weight: bold;">Computer Science Classes</h3><br> 
-      <p><strong>CSCI 1010: Theory of Computation</strong></p>
-      <p><strong>CSCI 1411: Artificial Intelligence</strong></p>
-      <p><strong>CSCI 1420: Machine Learning</strong></p>
-      <p><strong>CSCI 1440: Algorithmic Game Theory</strong></p>
-      <p><strong>CSCI 1470: Deep Learning</strong></p>
-      <p><strong>CSCI 1570: Design and Analysis of Algorithms</strong></p>
-      <p><strong>CSCI 1951A: Data Science</strong></p>
-      <p><strong>CSCI 1951L: Blockchains and Cryptocurrencies</strong></p>
-      <p><strong>CSCI 1952Q: Algorithmic Aspects of Machine Learning</strong></p>
-  
-      <h3 style="font-weight: bold;">Other Areas</h3><br>
-      <p><strong>ECON 1630: Mathematical Econometrics</strong></p>
-      <p><strong>ENGL 0930: Introduction to Creative Non-Fiction</strong></p><br><br>
-
-    </td>
-  </tr>
-</table>
+      <h3>Applied Math Classes</h3><br> 
+      <p><strong>APMA
