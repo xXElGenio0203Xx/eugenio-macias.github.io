@@ -3,7 +3,9 @@ layout: default
 title: Experience
 ---
 
-# #Experience
+<div class="center">
+    <h1>#Experience</h1>
+</div>
 <br>
 <h3 style="font-weight: bold; font-size: 1.5em; text-decoration: underline;">
   <a href="https://www.davisuwcscholars.org/" target="_blank" style="color: black;">Shelby Davis Scholars, The Davis UWC Scholars Program</a> <span style="color: black;">(August 2022 - May 2026)</span>
