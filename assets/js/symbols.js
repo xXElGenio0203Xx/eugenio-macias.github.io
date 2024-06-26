@@ -40,12 +40,3 @@ document.addEventListener('DOMContentLoaded', function() {
     createSymbol();
   }
 });
-
-@keyframes moveSymbol {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(var(--direction) * 100vw, var(--direction) * 100vh);
-  }
-}
