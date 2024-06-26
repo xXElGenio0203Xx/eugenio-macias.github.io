@@ -2,7 +2,8 @@
 layout: default
 title: Home
 ---
-![Profile Picture](/assets/images/gportfolio_profile_picture.png){: class="profile-pic" }
+<div class="center-content">
+  <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic">
 <br>
 <div class="center">
     <h1>Aspiring Mathematician & Computer Scientist</h1>
