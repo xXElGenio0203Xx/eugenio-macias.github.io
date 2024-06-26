@@ -226,7 +226,7 @@ main h3 {
 
 main p,
 main li {
-    color: #f0f0f0; /* Light grey for readability */
+    color: #200; /* Light grey for readability */
     line-height: 1.4; /* Add extra line between paragraphs */
 }
 
@@ -275,7 +275,7 @@ b, strong {
 /* Stars styles */
 .stars {
     display: inline-block;
-    font-size: 22px; /* Adjust size as needed */
+    font-size: 25px; /* Adjust size as needed */
     color: #FFD700; /* Golden color */
     text-shadow: 2px 2px 2px #000; /* Black border */
 }
