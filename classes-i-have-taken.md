@@ -3,7 +3,7 @@ layout: default
 title: Classes I Have Taken
 ---
 
-# Classes I Have Taken and Classes I Am Taking in the Future
+# Brown Coursework
 
 <table style="width:100%;">
   <tr>
