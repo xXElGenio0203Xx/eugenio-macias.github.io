@@ -196,6 +196,12 @@ img {
     margin-left: 400;
     margin-right: auto;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 .profile-pic {
     width: 200px; /* Adjust size as needed */
