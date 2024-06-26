@@ -5,9 +5,9 @@ title: Home
 
 # #Aspiring Mathematician & Computer Scientist
 
-<div style="text-align: center;">
-  ![Profile Picture](/assets/images/gportfolio_profile_picture.png){: class="profile-pic" }
-</div>
+<center>
+  <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic" />
+</center>
 <br>
 <p class="animated-text">Hi, I'm Eugenio Macias! I'm an international student at Brown University, majoring in Mathematics and Computer Science. My adventure started in Bosnia and Herzegovina, where I completed the International Baccalaureate at one of the United World Colleges. It was there that I discovered my love for traveling and experiencing new cultures. Since then, I've explored over 20 countries, making friends from all corners of the globe.</p>
 <br>
