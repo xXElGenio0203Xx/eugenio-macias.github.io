@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-# Projects
+# #Projects
 <br>
 **Research: Fourier Analysis and Laplace’s Equation**  
 - Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria
