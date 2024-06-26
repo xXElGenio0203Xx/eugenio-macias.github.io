@@ -4,7 +4,7 @@ title: Home
 ---
 
 
-&nbsp;&nbsp;![Profile Picture](/assets/images/gportfolio_profile_picture.png){: class="profile-pic" }
+  &nbsp;&nbsp;![Profile Picture](/assets/images/gportfolio_profile_picture.png){: class="profile-pic" }
 
 # #Aspiring Mathematician & Computer Scientist
 <br>
