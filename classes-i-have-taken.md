@@ -3,11 +3,11 @@ layout: default
 title: Classes I Have Taken
 ---
 
-# Classes I Have Taken and Classes I Am Taking in the Future
+# Classes I Have Taken 
 
-<div class="columns">
+<div style="display: flex; justify-content: space-between;">
 
-  <div class="column">
+  <div style="width: 48%;">
     ## Classes I Have Taken
   
     <br>
@@ -93,7 +93,7 @@ title: Classes I Have Taken
     <br>
   </div>
 
-  <div class="column">
+  <div style="width: 48%;">
     ## Classes I Am Taking in the Future
 
     <br>
