@@ -51,4 +51,4 @@ title: Experience
 </h3>
 - Oversaw researching and implementing datasets into the data pipeline for ML algorithms
 - Secured a $50,000 Mixpanel credits award to conduct comprehensive analysis of Buddywise UI metrics and KPIs
-- Contributed to automating industrial safety monitoring and risk mitigation by utilizing AI and​⬤
+- Contributed to automating industrial safety monitoring and risk mitigation by utilizing AI and​ computer vision
