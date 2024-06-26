@@ -304,7 +304,7 @@ transform: scale(1.2);
 .math-symbol {
     position: absolute;
     font-size: 24px;
-    color: #808080; /* Grey color for symbols */
+    color: black; /* Grey color for symbols */
     pointer-events: auto; /* Allow interaction with symbols */
     transition: transform 0.2s, opacity 0.2s;
 }
