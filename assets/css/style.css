@@ -62,7 +62,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background-color: rgb(221, 221, 251);
+    background: linear-gradient(45deg, #98FB98 , #87CEEB, #DDA0DD, #FF6347); /* Light yellow, light green, light blue, light red */
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
 }
 
 header h1 {
