@@ -275,7 +275,7 @@ b, strong {
 /* Stars styles */
 .stars {
     display: inline-block;
-    font-size: 25px; /* Adjust size as needed */
+    font-size: 1.5em px; /* Adjust size as needed */
     color: #FFD700; /* Golden color */
     text-shadow: 2px 2px 2px #000; /* Black border */
 }
