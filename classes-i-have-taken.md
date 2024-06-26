@@ -10,7 +10,7 @@ title: Classes I Have Taken
     <td style="vertical-align:top;">
 
       <h2>Classes I Have Taken</h2><br>
-      <h3 style="font-weight: bold;">Math Classes</h3> 
+      <h3 style="font-weight: bold;">Math Classes</h3><br>
       <p><strong>MATH 0180: Multivariable Calculus</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>MATH 0190: Single Variable Calculus, II</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
       <p><strong>MATH 0540: Linear Algebra with Theory (Honors)</strong><br> Difficulty: <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★☆☆☆</span></p>
