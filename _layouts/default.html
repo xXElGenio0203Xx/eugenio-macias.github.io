@@ -12,18 +12,21 @@
   </header>
   <main id="content">
     {{ content }}
-    <img src="/assets/images/picture.png" alt="Profile Picture" class="profile-pic">
+    <!-- Ensure only one profile picture tag -->
+    {% if page.title == "Home" %}
+    <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic">
+    {% endif %}
   </main>
   <nav>
     <ul>
-      <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ '/education' | relative_url }}">Education</a></li>
-      <li><a href="{{ '/experience' | relative_url }}">Experience</a></li>
-      <li><a href="{{ '/classes-i-have-taken' | relative_url }}">Classes I Have Taken</a></li>
-      <li><a href="{{ '/awards' | relative_url }}">Awards</a></li>
-      <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
-      <li><a href="{{ '/music-repertoire' | relative_url }}">Music Repertoire</a></li>
-      <li><a href="{{ '/skills-interests' | relative_url }}">Skills & Interests</a></li>
+      <li><a href="{{ '/' | relative_url }}"><span>Home</span></a></li>
+      <li><a href="{{ '/education' | relative_url }}"><span>Education</span></a></li>
+      <li><a href="{{ '/experience' | relative_url }}"><span>Experience</span></a></li>
+      <li><a href="{{ '/classes-i-have-taken' | relative_url }}"><span>Classes I Have Taken</span></a></li>
+      <li><a href="{{ '/awards' | relative_url }}"><span>Awards</span></a></li>
+      <li><a href="{{ '/projects' | relative_url }}"><span>Projects</span></a></li>
+      <li><a href="{{ '/music-repertoire' | relative_url }}"><span>Music Repertoire</span></a></li>
+      <li><a href="{{ '/skills-interests' | relative_url }}"><span>Skills & Interests</span></a></li>
     </ul>
   </nav>
   <script>
