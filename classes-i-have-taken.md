@@ -4,9 +4,11 @@ title: Classes I Have Taken
 ---
 
 # Classes I Have Taken
+  
+<br>
 
 ## Math Classes
-
+  
 - **MATH 0180: Multivariable Calculus**
   - Difficulty: <span class="stars">★★★★★★☆☆☆☆</span>
   - Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span>
@@ -22,9 +24,11 @@ title: Classes I Have Taken
 - **MATH 1530: Abstract Algebra**
   - Difficulty: <span class="stars">★★★★★★★☆☆☆</span>
   - Time Commitment: <span class="stars">★★★★★★☆☆☆☆</span>
+  
+<br>
 
 ## Applied Math Classes
-
+  
 - **APMA 0350: Applied Ordinary Differential Equations**
   - Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span>
   - Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span>
@@ -37,9 +41,11 @@ title: Classes I Have Taken
 - **APMA 1660: Statistical Inference II**
   - Difficulty: <span class="stars">★★★★★★☆☆☆☆</span>
   - Time Commitment: <span class="stars">★★★☆☆☆☆☆☆☆</span>
+  
+<br>
 
 ## Computer Science Classes
-
+  
 - **CSCI 0170: Computer Science, An Integrated Introduction**
   - Difficulty: <span class="stars">★★★★★★★★☆☆</span>
   - Time Commitment: <span class="stars">★★★★★★★★★☆</span>
@@ -52,9 +58,11 @@ title: Classes I Have Taken
 - **CSCI 1515: Applied Cryptography**
   - Difficulty: <span class="stars">★★★★★★★☆☆☆</span>
   - Time Commitment: <span class="stars">★★★★★★★☆☆☆</span>
+  
+<br>
 
 ## Other Areas
-
+  
 - **ECON 1210: Intermediate Macroeconomics**
   - Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span>
   - Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span>
@@ -78,15 +86,19 @@ title: Classes I Have Taken
   - Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span>
 
 # Classes I Am Taking in the Future
+  
+<br>
 
 ## Math Classes
 
 - MATH 1460: Complex Analysis
 - MATH 1540: Topics in Abstract Algebra
 - MATH 1560: Number Theory
+  
+<br>
 
 ## Applied Math Classes
-
+  
 - APMA 1200: Operations Research, Probabilistic Models
 - APMA 1710: Information Theory
 - APMA 1720: Monte Carlo Simulation with Applications to Finance
@@ -94,9 +106,11 @@ title: Classes I Have Taken
 - APMA 1930Z: Introduction to Mathematical Machine Learning
 - APMA 2110: Real Analysis (Graduate)
 - APMA 1740: Recent Applications of Probability and Statistics
+  
+<br>
 
 ## Computer Science Classes
-
+  
 - CSCI 1010: Theory of Computation
 - CSCI 1411: Artificial Intelligence
 - CSCI 1420: Machine Learning
@@ -106,6 +120,8 @@ title: Classes I Have Taken
 - CSCI 1951A: Data Science
 - CSCI 1951L: Blockchains and Cryptocurrencies
 - CSCI 1952Q: Algorithmic Aspects of Machine Learning
+  
+<br>
 
 ## Economics
 
