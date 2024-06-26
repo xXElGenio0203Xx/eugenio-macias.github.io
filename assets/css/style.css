@@ -5,6 +5,7 @@ body {
   padding: 0;
   background: url('/assets/images/background.png') no-repeat center center fixed;
   background-size: cover;
+  color: #f0f0f0; /* Light grey text for readability */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -12,14 +13,13 @@ body {
 
 header {
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for readability */
-  color: #fff; /* White text */
+  color: #000; /* Black text for Eugenio Macias title */
   padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  color: #000; /* Black color for Eugenio Macias title */
 }
 
 nav {
@@ -49,7 +49,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 10px 20px;
-  background-color: #003366; /* Dark blue background */
+  background-color: #000; /* Black background */
   color: #fff; /* White text */
   text-decoration: none;
   border-radius: 5px;
@@ -60,7 +60,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #0059b3; /* Slightly lighter blue on hover */
+  background-color: #333; /* Dark grey on hover */
   color: #ffd700; /* Gold text on hover */
 }
 
@@ -125,11 +125,11 @@ img {
   height: auto;
   border-radius: 50%; /* Make it circular */
   overflow: hidden;
-  transition: transform 0.5s ease-in-out; /* Smooth transition for hover effect */
+  transition: transform 1.5s ease-in-out; /* Smooth transition for hover effect, slower rotation */
 }
 
 .profile-pic:hover {
-  animation: rotate infinite 1s linear; /* Continuous rotation on hover */
+  animation: rotate infinite 3s linear; /* Continuous rotation on hover, slower speed */
 }
 
 @keyframes rotate {
@@ -163,23 +163,22 @@ img {
 }
 
 /* Colorful text styles */
-.education-text strong,
 header h1,
-main p,
-main li {
-  color: #f0f0f0; /* Light grey for readability */
-}
-
 main h1 {
-  color: #d0d0d0; /* Darker color for page titles */
+  color: #000; /* Black for headers */
 }
 
 main h2 {
-  color: #e0e0e0; /* Slightly lighter grey for subtitles */
+  color: #333; /* Dark grey for subtitles */
 }
 
 main h3 {
-  color: #d0d0d0; /* Slightly darker grey for subtitles */
+  color: #666; /* Lighter grey for less important subtitles */
+}
+
+main p,
+main li {
+  color: #f0f0f0; /* Light grey for readability */
 }
 
 main a {
