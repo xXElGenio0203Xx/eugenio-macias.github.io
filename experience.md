@@ -5,6 +5,12 @@ title: Experience
 
 # Experience
 
+**Shelby Davis Scholars, The Davis UWC Scholars Program** (_August 2022 - May 2026_)  
+- Largest privately funded scholarship for international students in the USA
+- Contributed to transforming collegiate campuses in the USA into globally engaged environments
+
+<br>
+
 **Upcoming Software Engineer @ Scale AI** (_September 2024_)  
 - Translate AI research into practical, scalable software solutions including integrating algorithms into existing systems.
 - Evaluate AI-generated code, develop robust test-cases, and develop new platforms for AI functionalities
@@ -42,6 +48,3 @@ title: Experience
   
 <br>
 
-**Shelby Davis Scholars, The Davis UWC Scholars Program** (_August 2022 - May 2026_)  
-- Largest privately funded scholarship for international students in the USA
-- Contributed to transforming collegiate campuses in the USA into globally engaged environments
