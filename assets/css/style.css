@@ -279,6 +279,9 @@ b, strong {
     color: #FFD700; /* Golden color */
     text-shadow: 2px 2px 2px #000; /* Black border */
 }
+.stars:hover {
+    transform: scale(2.0); /* Zoom effect */
+}
 
 /* Math symbols animation */
 #math-symbols-container {
