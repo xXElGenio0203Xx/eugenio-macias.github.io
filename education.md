@@ -19,7 +19,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:170px; height:auto; margin-right: 40px;">
+      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:200px; height:auto; margin-right: 70px;">
     </td>
   </tr>
   <tr>
@@ -35,7 +35,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/UWC_logo.png" alt="UWC Logo" style="width:170px; height:auto; margin-right: 40px;">
+      <img src="{{ site.baseurl }}/assets/images/UWC_logo.png" alt="UWC Logo" style="width:200px; height:auto; margin-right: 70px;">
     </td>
   </tr>
   <tr>
@@ -47,7 +47,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:170px; height:auto; margin-right: 40px;">
+      <img src="{{ site.baseurl }}/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:200px; height:auto; margin-right: 70px;">
     </td>
   </tr>
 </table>
