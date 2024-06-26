@@ -4,6 +4,7 @@ title: Classes I Have Taken
 ---
 
 # #Brown Coursework 
+<br> 
 
 <table style="width:100%;">
   <tr>
