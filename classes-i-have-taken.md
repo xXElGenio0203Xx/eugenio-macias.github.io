@@ -10,7 +10,7 @@ title: Classes I Have Taken
   <tr>
     <td style="vertical-align:top;">
 
-      <h2 style="color: darkgrey;">Classes I Have Taken</h2><br> 
+      <h2 style="color: slatergrey;">Classes I Have Taken</h2><br> 
       <h3 style="color: black;">Math Classes</h3><br> 
       <p><strong>MATH 0180: Multivariable Calculus</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>MATH 0190: Single Variable Calculus, II</strong><br> Difficulty:   <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p>
@@ -42,7 +42,7 @@ title: Classes I Have Taken
     </td>
     <td style="vertical-align:top;">
 
-      <h2>Classes I Am Taking in the Future</h2><br> 
+      <h2 style="color: slatergrey;">Classes I Am Taking in the Future</h2><br> 
       <h3 style="color: black;">Math Classes</h3><br> 
       <p><strong>MATH 1460: Complex Analysis</strong></p>
       <p><strong>MATH 1540: Topics in Abstract Algebra</strong></p>
