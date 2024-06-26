@@ -3,6 +3,7 @@ layout: default
 title: Awards
 ---
 <br>
+
 **D.E. Shaw group's Latitude Fellowship**  
 &nbsp;&nbsp;- Issued by DE Shaw Group
 
