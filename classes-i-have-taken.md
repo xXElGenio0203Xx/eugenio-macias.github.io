@@ -12,32 +12,32 @@ title: Classes I Have Taken
 
       <h2>Classes I Have Taken</h2><br> 
       <h3 style="color: black;">Math Classes</h3><br> 
-      <p><strong>MATH 0180: Multivariable Calculus</strong><br> Difficulty: <span class="stars">  ★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
-      <p><strong>MATH 0190: Single Variable Calculus, II</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
-      <p><strong>MATH 0540: Linear Algebra with Theory (Honors)</strong><br> Difficulty: <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★☆☆☆</span></p>
-      <p><strong>MATH 1410: Topology</strong><br> Difficulty: <span class="stars">★★★★★★★★★☆</span><br> Time Commitment: <span class="stars">★★★★★★☆☆☆☆</span></p>
-      <p><strong>MATH 1530: Abstract Algebra</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★☆☆☆☆</span></p> 
+      <p><strong>MATH 0180: Multivariable Calculus</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
+      <p><strong>MATH 0190: Single Variable Calculus, II</strong><br> Difficulty:   <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p>
+      <p><strong>MATH 0540: Linear Algebra with Theory (Honors)</strong><br> Difficulty:   <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★☆☆☆</span></p>
+      <p><strong>MATH 1410: Topology</strong><br> Difficulty:   <span class="stars">★★★★★★★★★☆</span><br> Time Commitment:   <span class="stars">★★★★★★☆☆☆☆</span></p>
+      <p><strong>MATH 1530: Abstract Algebra</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★☆☆☆☆</span></p> 
   
       <h3 style="color: black;">Applied Math Classes</h3><br> 
-      <p><strong>APMA 0350: Applied Ordinary Differential Equations</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
-      <p><strong>APMA 0360: Applied Partial Differential Equations</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
-      <p><strong>APMA 1655: Honors Statistical Inference I</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
-      <p><strong>APMA 1660: Statistical Inference II</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★☆☆☆☆☆☆☆</span></p> 
+      <p><strong>APMA 0350: Applied Ordinary Differential Equations</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p>
+      <p><strong>APMA 0360: Applied Partial Differential Equations</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
+      <p><strong>APMA 1655: Honors Statistical Inference I</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
+      <p><strong>APMA 1660: Statistical Inference II</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★☆☆☆☆☆☆☆</span></p> 
   
       <h3 style="color: black;">Computer Science Classes</h3><br> 
-      <p><strong>CSCI 0170: Computer Science, An Integrated Introduction</strong><br> Difficulty: <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★★★☆</span></p>
-      <p><strong>CSCI 0200: Programming Design, Data Structures & Algorithms</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★★☆☆</span></p>
-      <p><strong>CSCI 0330: Introduction to Computer Systems</strong><br> Difficulty: <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★★★★</span></p>
-      <p><strong>CSCI 1515: Applied Cryptography</strong><br> Difficulty: <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★★☆☆☆</span></p> 
+      <p><strong>CSCI 0170: Computer Science, An Integrated Introduction</strong><br> Difficulty:   <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★★☆</span></p>
+      <p><strong>CSCI 0200: Programming Design, Data Structures & Algorithms</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★☆☆</span></p>
+      <p><strong>CSCI 0330: Introduction to Computer Systems</strong><br> Difficulty:   <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★★★</span></p>
+      <p><strong>CSCI 1515: Applied Cryptography</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★☆☆☆</span></p> 
   
       <h3 style="color: black;">Other Areas</h3><br> 
-      <p><strong>ECON 1210: Intermediate Macroeconomics</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★☆☆☆☆☆</span></p>
-      <p><strong>ECON 1620: Introduction to Econometrics</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★★★☆☆☆☆</span></p>
-      <p><strong>GRMN 0300: Intermediate German I</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★☆☆☆☆☆☆☆</span></p>
-      <p><strong>GRMN 0400: Intermediate German II (WRIT)</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
-      <p><strong>MUSC 0810: Strings I (AMP)</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
-      <p><strong>MUSC 0810: Strings II (AMP)</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
-      <p><strong>PHIL 0640: Logic</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p> <br> <br> <br> <br><br> <br> 
+      <p><strong>ECON 1210: Intermediate Macroeconomics</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
+      <p><strong>ECON 1620: Introduction to Econometrics</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★☆☆☆☆</span></p>
+      <p><strong>GRMN 0300: Intermediate German I</strong><br> Difficulty:   <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★☆☆☆☆☆☆☆</span></p>
+      <p><strong>GRMN 0400: Intermediate German II (WRIT)</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p>
+      <p><strong>MUSC 0810: Strings I (AMP)</strong><br> Difficulty:   <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
+      <p><strong>MUSC 0810: Strings II (AMP)</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
+      <p><strong>PHIL 0640: Logic</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p> <br> <br> <br> <br><br> <br> 
 
     </td>
     <td style="vertical-align:top;">
