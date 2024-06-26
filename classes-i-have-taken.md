@@ -36,7 +36,7 @@ title: Classes I Have Taken
       <p><strong>GRMN 0400: Intermediate German II (WRIT)</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p>
       <p><strong>MUSC 0810: Strings I (AMP)</strong><br> Difficulty: <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
       <p><strong>MUSC 0810: Strings II (AMP)</strong><br> Difficulty: <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment: <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
-      <p><strong>PHIL 0640: Logic</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p> 
+      <p><strong>PHIL 0640: Logic</strong><br> Difficulty: <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment: <span class="stars">★★★★☆☆☆☆☆☆</span></p> <br> <br> <br> <br> 
 
     </td>
     <td style="vertical-align:top;">
@@ -45,7 +45,31 @@ title: Classes I Have Taken
       <h3>Math Classes</h3><br> 
       <p><strong>MATH 1460: Complex Analysis</strong></p>
       <p><strong>MATH 1540: Topics in Abstract Algebra</strong></p>
-      <p><strong>MATH 1560: Number Theory</strong></p> 
+      <p><strong>MATH 1560: Number Theory</strong></p> <br> 
   
       <h3>Applied Math Classes</h3><br> 
-      <p><strong>APMA
+      <p><strong>APMA 1200: Operations Research, Probabilistic Models</strong></p>
+<p><strong>APMA 1710: Information Theory</strong></p>
+<p><strong>APMA 1720: Monte Carlo Simulation with Applications to Finance</strong></p>
+<p><strong>APMA 1930X (Capstone): Probability, Optimization and Stochastic Calculus</strong></p>
+<p><strong>APMA 1930Z: Introduction to Mathematical Machine Learning</strong></p>
+<p><strong>APMA 2110: Real Analysis (Graduate)</strong></p>
+<p><strong>APMA 1740: Recent Applications of Probability and Statistics</strong></p><br> 
+  <h3>Computer Science Classes</h3><br> 
+  <p><strong>CSCI 1010: Theory of Computation</strong></p>
+  <p><strong>CSCI 1411: Artificial Intelligence</strong></p>
+  <p><strong>CSCI 1420: Machine Learning</strong></p>
+  <p><strong>CSCI 1440: Algorithmic Game Theory</strong></p>
+  <p><strong>CSCI 1470: Deep Learning</strong></p>
+  <p><strong>CSCI 1570: Design and Analysis of Algorithms</strong></p>
+  <p><strong>CSCI 1951A: Data Science</strong></p>
+  <p><strong>CSCI 1951L: Blockchains and Cryptocurrencies</strong></p>
+  <p><strong>CSCI 1952Q: Algorithmic Aspects of Machine Learning</strong></p>
+
+  <h3>Economics</h3><br> 
+  <p><strong>ECON 1630: Mathematical Econometrics</strong></p>
+
+</td>
+        </tr>
+</table>
+```
