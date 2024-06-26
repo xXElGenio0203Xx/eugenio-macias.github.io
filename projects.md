@@ -54,3 +54,7 @@ title: Projects
 **Unix Shell (C) (School-Related)**
 - Implemented a custom Unix shell using C, working with system calls and process management
 - Developed features such as command parsing, executing external commands, handling signals, and file redirections
+  <br>
+  <br>
+  <br>
+  <br>
