@@ -7,7 +7,8 @@ title: Awards
 
 **D.E. Shaw group's Latitude Fellowship**  
 - Issued by DE Shaw Group
-//
+
+  
 **84th PUTNAM Mathematics Competition**  
 - Issued by the Mathematical Association of America (MAA)
 - World's leading university-level mathematics competition.
