@@ -101,6 +101,12 @@ img {
   height: auto;
   border-radius: 50%; /* Make it circular */
   overflow: hidden;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.profile-pic:hover {
+  transform: rotate(10deg) translateY(-10px); /* Slight rotation and lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 .education-entry {
@@ -133,11 +139,11 @@ main li {
 }
 
 main h2 {
-  color: #e0e0e0; /* Slightly lighter grey */
+  color: #d0d0d0; /* Slightly darker grey for subtitles */
 }
 
 main h3 {
-  color: #d0d0d0; /* Even lighter grey */
+  color: #b0b0b0; /* Even darker grey for subtitles */
 }
 
 main a {
