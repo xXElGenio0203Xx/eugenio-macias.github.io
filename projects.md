@@ -4,7 +4,7 @@ title: Projects
 ---
 
 # Projects
-
+<br>
 **Research: Fourier Analysis and Laplace’s Equation**  
 - Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria
 - Explored the importance of Fourier Series to Laplace’s 2-D Equation solution space with 4 Boundary Dirichlet conditions
