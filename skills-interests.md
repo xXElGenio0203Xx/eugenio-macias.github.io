@@ -3,8 +3,11 @@ layout: default
 title: Skills 
 ---
 
-# Skills
- <br>
+<div class="center">
+    <h1>#Skills</h1>
+</div>
+<br>
+<br>
 
 **Skills**: Proficient in Excel, PowerPoint, Word. Spanish (native), English (native), German & French (B1 proficient)  
 <br>
