@@ -32,8 +32,9 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 ## APPLIED MUSIC PROGRAM, Brown University
 - Final Recital (Sophomore year): Asturias (Leyenda) by Isaac Álbeniz, Riley Hall, December, 2023
 - Final Recital (Freshman year): (i) Una Limosna por el Amor de Dios by Agustín Barrios; (ii) Suite Castellana: Fandanguillo by Federico Moreno Torroba. Grant Recital Hall, May, 2023
-<br>
 
+  
+<br>
 
 ## MASTERCLASSES
 - Recuerdos de la Alhambra, revised with Javier Xara (USA) in Guitar Foundation of America XII held in Denver, CO.
