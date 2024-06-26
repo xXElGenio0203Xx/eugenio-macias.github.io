@@ -531,12 +531,22 @@ b, strong {
     animation: fall 0.3s forwards; /* Make the animation faster */
 }
 
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
 /* Stars styles */
 .stars {
     display: inline-block;
-    font-size: 16px; /* Adjust size as needed */
+    font-size: 18px; /* Adjust size as needed */
     color: #FFD700; /* Golden color */
-    text-shadow: 1px 1px 1px #000; /* Black border */
+    text-shadow: 2px 2px 2px #000; /* Black border */
 }
 
 /* Math symbols animation */
