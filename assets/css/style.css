@@ -21,6 +21,305 @@
     100% { transform: translate(0); }
 }
 
+@keyframes bubblePop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes moveSymbol {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(calc(var(--direction-x) * 100vw), calc(var(--direction-y) * 100vh));
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 7%;
+    min-width: 100%;
+
+    background-color: rgb(221, 221, 251);
+}
+
+header h1 {
+    margin: 0;
+    color: #000; /* Black color for Eugenio Macias title */
+    font-size: 2em; /* Reduce the header size */
+    font-weight: bold; /* Make the header bolder */
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Change to vertical scrolling */
+    align-items: flex-start; /* Align text to the left */
+    justify-content: flex-start; /* Ensure content starts from the top */
+    padding: 20px;
+
+    min-height: calc(100% - 14%); /* Adjust to fill screen without footer */
+    width: 100%;
+
+    background: linear-gradient(-45deg, #228B22, #006400, #87CEEB, #00008B); /* Green, dark green, light blue, dark blue */
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    backdrop-filter: blur(8px);
+    overflow: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 7%;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0;
+    
+    background: linear-gradient(-45deg, #228B22, #006400, #87CEEB, #00008B); /* Green, dark green, light blue, dark blue */
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+footer ul li {
+    margin: 5px 10px; /* Adjust margin for spacing */
+}
+
+footer ul li a {
+    display: block;
+    padding: 10px 20px;
+    background: inherit;
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size */
+    transition: color 0.3s, text-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+footer ul li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+    transition: left 0.7s ease-in-out;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+
+footer ul li a:hover {
+    color: #ffd700; /* Gold text on hover */
+    text-shadow: 0 0 10px #fff; /* White shine effect */
+    animation: vibrate 0.3s linear infinite; /* Vibrate effect */
+}
+
+footer ul li a:hover::before {
+    left: 100%;
+}
+
+footer ul li a span {
+    position: relative;
+    z-index: 2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-pic {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+    transition: transform 1.5s ease-in-out; /* Smooth transition for hover effect, slower rotation */
+    margin-top: 20px; /* Add space between header and text */
+}
+
+.profile-pic:hover {
+    animation: rotate infinite 3s linear; /* Continuous rotation on hover, slower speed */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Colorful text styles */
+header h1,
+main h1 {
+    color: #000; /* Black for headers */
+    font-size: 2em; /* Reduce the header size */
+}
+
+main h2 {
+    color: #333; /* Dark grey for subtitles */
+    font-size: 1.5em; /* Reduce the subtitle size */
+}
+
+main h3 {
+    color: #666; /* Lighter grey for less important subtitles */
+    font-size: 1.2em; /* Reduce the size for less important subtitles */
+}
+
+main p,
+main li {
+    color: #f0f0f0; /* Light grey for readability */
+    line-height: 1.6; /* Add extra line between paragraphs */
+}
+
+main p {
+    margin-bottom: 20px; /* Extra space between paragraphs */
+}
+
+main li {
+    padding-left: 15px; /* Tiny indentation to bullet points */
+}
+
+main a {
+    color: #c0c0c0; /* Light grey for links */
+}
+
+main a:hover {
+    color: #a0a0a0; /* Slightly darker grey on hover */
+}
+
+b, strong {
+    color: #333; /* Dark grey for bolded text */
+}
+
+/* Animation styles */
+@keyframes fall {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    white-space: pre; /* Preserve white spaces */
+}
+
+.animated-text span.show {
+    animation: fall 0.3s forwards; /* Make the animation faster */
+}
+
+/* Stars styles */
+.stars {
+    display: inline-block;
+    font-size: 16px; /* Adjust size as needed */
+    color: #FFD700; /* Golden color */
+    text-shadow: 1px 1px 1px #000; /* Black border */
+}
+
+/* Math symbols animation */
+#math-symbols-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    overflow: hidden;
+}
+
+.math-symbol {
+    position: absolute;
+    font-size: 24px;
+    color: #FFD700; /* Golden color for symbols */
+    pointer-events: auto; /* Allow interaction with symbols */
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.math-symbol:hover {
+    animation: bubblePop 0.5s forwards;
+}
+
+@keyframes moveSymbol {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(calc(var(--direction-x) * 100vw), calc(var(--direction-y) * 100vh));
+    }
+}@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    60% { transform: translate(1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0); }
+}
+
 * {
     margin: 0;
     padding: 0;
