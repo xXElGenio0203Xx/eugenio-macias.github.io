@@ -16,9 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
         symbolElement.style.left = `${position.x}px`;
         symbolElement.style.top = `${position.y}px`;
 
-        symbolElement.addEventListener('mouseover', function() {
-            symbolsContainer.removeChild(symbolElement);
-            createSymbol();
+        symbolElement.addEventListener('animationend', function() {
+            if (symbolElement.style.opacity == 0) {
+                setTimeout(() => {
+                    symbolsContainer.removeChild(symbolElement);
+                    createSymbol();
+                }, 500); // Delay removal to allow animation to complete
+            }
         });
 
         symbolsContainer.appendChild(symbolElement);
