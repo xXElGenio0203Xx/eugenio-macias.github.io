@@ -291,6 +291,21 @@ transition: transform 0.3s; / Smooth transition for zoom effect */
 transform: scale(1.2); 
 }
 
+@keyframes bubblePop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
 #math-symbols-container {
     position: fixed;
     top: 0;
@@ -304,12 +319,11 @@ transform: scale(1.2);
 .math-symbol {
     position: absolute;
     font-size: 24px;
-    color: black; /* Grey color for symbols */
+    color: #1a1a1a; /* Grey color for symbols */
     pointer-events: auto; /* Allow interaction with symbols */
     transition: transform 0.2s, opacity 0.2s;
 }
 
 .math-symbol:hover {
-    opacity: 0;
-    transition: opacity 0.5s;
+    animation: bubblePop 0.5s forwards;
 }
