@@ -17,5 +17,5 @@ title: Home
 <br>
 
 <p class="animated-text">I'm excited to keep learning, traveling, trying new food, and making friends along the way!</p>
+<br><br><br><br><br>
 
-[LinkedIn](https://www.linkedin.com/in/eugenio-macias/)
