@@ -2,9 +2,8 @@
 layout: default
 title: Projects
 ---
-<div style="text-align: center;">
-  <h1>#Projects</h1>
-</div>
+<center><h1>#Projects</h1></center>
+<br>
 
 **Research: Fourier Analysis and Laplace’s Equation**  
 &nbsp;&nbsp;&nbsp;- Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria  
