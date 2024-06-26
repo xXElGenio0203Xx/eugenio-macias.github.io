@@ -13,4 +13,5 @@ title: Education
 **United World College in Mostar**
 - **International Baccalaureate** (_Class of 2022_)
 - Shelby Davis Scholar: Awarded $40,000/year scholarship
+
 ![UWC Logo](/assets/images/UWC_logo.png)
