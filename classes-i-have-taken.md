@@ -72,4 +72,3 @@ title: Classes I Have Taken
 </td>
         </tr>
 </table>
-```
