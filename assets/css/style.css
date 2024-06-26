@@ -12,11 +12,24 @@
     }
 }
 
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cascadia Code', sans-serif;
+}
+
+html, body {
+    height: 100%;
 }
 
 header {
@@ -41,7 +54,9 @@ header h1 {
 main {
     display: flex;
     flex-direction: column; /* Change to vertical scrolling */
-    align-items: center;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: flex-start; /* Ensure content starts from the top */
+    padding: 20px;
 
     min-height: 86%;
     min-width: 100%;
@@ -52,7 +67,6 @@ main {
 
     backdrop-filter: blur(8px);
     overflow: auto;
-    padding: 20px;
 }
 
 footer {
@@ -64,7 +78,9 @@ footer {
     min-height: 7%;
     min-width: 100%;
     
-    background-color: rgb(221, 221, 251);
+    background: linear-gradient(-45deg, #228B22, #006400, #87CEEB, #00008B); /* Green, dark green, light blue, dark blue */
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 footer ul {
@@ -83,19 +99,14 @@ footer ul li {
 footer ul li a {
     display: block;
     padding: 10px 20px;
-    background-color: #000; /* Black background */
+    background: inherit;
     color: #fff; /* White text */
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px; /* Adjust font size */
-    transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+    transition: color 0.3s, text-shadow 0.3s;
     position: relative;
     overflow: hidden;
-}
-
-footer ul li a:hover {
-    background-color: #333; /* Dark grey on hover */
-    color: #ffd700; /* Gold text on hover */
 }
 
 footer ul li a::before {
@@ -105,10 +116,16 @@ footer ul li a::before {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(120deg, transparent, rgba(255, 215, 0, 0.7), transparent);
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.7), transparent);
     transition: left 0.7s ease-in-out;
     transform: rotate(25deg);
     z-index: 1;
+}
+
+footer ul li a:hover {
+    color: #ffd700; /* Gold text on hover */
+    text-shadow: 0 0 10px #fff; /* White shine effect */
+    animation: vibrate 0.3s linear infinite; /* Vibrate effect */
 }
 
 footer ul li a:hover::before {
@@ -231,4 +248,13 @@ main a:hover {
 .math-symbol:hover {
     transform: scale(1.5);
     opacity: 0;
+}
+
+@keyframes moveSymbol {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(var(--direction) * 100vw, var(--direction) * 100vh);
+  }
 }
