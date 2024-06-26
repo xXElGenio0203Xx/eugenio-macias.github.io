@@ -7,9 +7,9 @@ title: Music Repertoire
 
 ## TUTELAGE
 I started my career as a guitarist in 2010 under the tutelage of the Professor and Composer Carlos Alfredo Gonzales Olvera in the city of Chihuahua. He was the one from whom I learned the most, an excellent professor whom I admire for his dedication and teaching. In 2022, I formed part of the Applied Music Program at Brown University in the city of Providence, Rhode Island, under the tutelage of Professor Mychal Gendron.
+<br>
 
 ## REPERTOIRE
-
 - Francisco Tárrega (1852-1909), Spain: Recuerdos de la Alhambra, Lágrima.
 - Leo Brouwer (1939), Cuba: Un día de Noviembre, Etude No. 1
 - Heitor Villa-lobos (1887-1959), Brazil: Choro No.1, Etude No. 1.
@@ -27,10 +27,12 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 - Isaac Álbeniz (1860-1909), Spain: Asturias (Leyenda).
 - Agustín Pío Barrios (1885-1940): Una Limosna por el Amor de Dios.
 
+<br>
 
 ## APPLIED MUSIC PROGRAM, Brown University
 - Final Recital (Sophomore year): Asturias (Leyenda) by Isaac Álbeniz, Riley Hall, December, 2023
 - Final Recital (Freshman year): (i) Una Limosna por el Amor de Dios by Agustín Barrios; (ii) Suite Castellana: Fandanguillo by Federico Moreno Torroba. Grant Recital Hall, May, 2023
+<br>
 
 
 ## MASTERCLASSES
@@ -43,6 +45,7 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 - El Colibrí, revised with Hugo Gracián (Mexico) in the Décimo Quinto Festival Internacional Guitarra sin Fronteras.
 - Suite del Plata, revised with Cecilia Siqueira (Uruguay) in Guitar Foundation of America XII held in Fullerton, CA.
 
+<br>
 
 ## AWARDS & FESTIVALS
 - Honorific Mention for Young Talent in the virtual contest within the Décimo Quinto Festival Internacional Guitarra sin Fronteras.
@@ -55,9 +58,11 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 - Certificate of Participation in Guitar Foundation of America XI held in Denver, CO.
 - Honorific Mention in the IV State Contest “Cleofás Villegas”.
 
+<br>
 
 ## ENSEMBLE EXPERIENCE
 Youth Orchestra directed by Chuck Hulihan, performing “Around the World” by Patrick Roux (1962) In Fullerton, CA.:
 - II C Ayre (Homage to the Air and the Sea)
 - III Ama-zone-E (Homage to the Forests)
 - IV A Round for the World (Homage to the world)
+<br>
