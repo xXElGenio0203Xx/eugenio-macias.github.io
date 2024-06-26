@@ -4,7 +4,7 @@ title: Education
 ---
 
 # Education
-<br><br><br>
+<br><br>
 <table style="width:100%;">
   <tr>
     <td style="vertical-align:top;">
@@ -15,14 +15,14 @@ title: Education
         </a>
       </h3>
       <p><strong>B.S. Applied Mathematics-Computer Science</strong>, Class of 2026<br>
-      <strong>B.S. Mathematics</strong> (_Class of 2026_)<br>
+      <strong>B.S. Mathematics</strong>, Class of 2026<br>
       Recipient of full scholarship, GPA: 4.0<br>
       Clubs: Quant Trading at Brown, Poker Club, LATAM Society, Brown Chess<br>
       Brown Union of Global Students<br></p><br><br>
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:220px; height:auto; margin-right: 100px;">
+      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:220px; height:auto; margin-right: 130px;">
     </td>
   </tr>
   <tr>
@@ -42,7 +42,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/UWC_logo.png" alt="UWC Logo" style="width:220px; height:auto; margin-right: 100px;">
+      <img src="{{ site.baseurl }}/assets/images/UWC_logo.png" alt="UWC Logo" style="width:220px; height:auto; margin-right: 130px;">
     </td>
   </tr>
   <tr>
@@ -58,7 +58,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:260px; height:auto; margin-right: 100px;">
+      <img src="{{ site.baseurl }}/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:250px; height:auto; margin-right: 130px;">
     </td>
   </tr>
 </table>
