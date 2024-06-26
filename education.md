@@ -3,7 +3,7 @@ layout: default
 title: Education
 ---
 
-# Education
+# #Education
 <br><br>
 <table style="width:100%;">
   <tr>
