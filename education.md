@@ -10,6 +10,7 @@ title: Education
 - Recipient of full scholarship, GPA: 4.0
 - Clubs: Quant Trading at Brown, Poker Club, LATAM Society, Brown Chess
 - Brown Union of Global Students
+  
 ![Brown University Logo](/assets/images/Brown_Logo.jpeg)
 
 **United World College in Mostar**
