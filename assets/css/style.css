@@ -296,16 +296,17 @@ transition: transform 0.3s; / Smooth transition for zoom effect */
 
 .stars:hover {
 transform: scale(1.5); /* Zoom effect */
+position: relative
 }
 
 .stars:hover:before {
 content: ‘’;
-position: absolute;
-left: 50%;
+position: relative;
+right: 50%;
 top: 50%;
 width: 100px;
 height: 100px;
-border-radius: 50%;
+border-radius: 40%;
 border: 2px solid black;
 background: rgba(255, 255, 255, 0.3);
 z-index: -1;
