@@ -12,12 +12,13 @@
     <h1>{{ site.title }}</h1>
   </header>
   <main id="content">
-    {{ content }}
     {% if page.title == "Home" %}
-    <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic">
-    <div id="math-symbols-container"></div>
-    <div class="center">
+    <div class="center-content">
+      <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic">
+      <h1 class="centered-title">Aspiring Mathematician & Computer Scientist</h1>
+    </div>
     {% endif %}
+    {{ content }}
   </main>
   <footer>
     <ul>
