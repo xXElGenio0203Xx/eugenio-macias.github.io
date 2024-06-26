@@ -3,7 +3,7 @@ layout: default
 title: Awards
 ---
 <div class="center">
-    <h1>Awards</h1>
+    <h1>#Awards</h1>
 </div>
 <br>
 **D.E. Shaw group's Latitude Fellowship**  
