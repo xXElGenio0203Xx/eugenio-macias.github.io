@@ -1,80 +1,38 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/cascadia-code">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="path_to_your_css_file.css">
+    <style>
+        /* Include the CSS styles here or link to your CSS file */
+    </style>
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-  </header>
-  <main id="content">
-    {{ content }}
-    {% if page.title == "Home" %}
-    <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic">
     <div id="math-symbols-container"></div>
-    {% endif %}
-  </main>
-  <footer>
-    <ul>
-      <li><a href="{{ '/' | relative_url }}"><span>Home</span></a></li>
-      <li><a href="{{ '/education' | relative_url }}"><span>Education</span></a></li>
-      <li><a href="{{ '/experience' | relative_url }}"><span>Experience</span></a></li>
-      <li><a href="{{ '/classes-i-have-taken' | relative_url }}"><span>Classes I Have Taken</span></a></li>
-      <li><a href="{{ '/awards' | relative_url }}"><span>Awards</span></a></li>
-      <li><a href="{{ '/projects' | relative_url }}"><span>Projects</span></a></li>
-      <li><a href="{{ '/music-repertoire' | relative_url }}"><span>Music Repertoire</span></a></li>
-      <li><a href="{{ '/skills-interests' | relative_url }}"><span>Skills & Interests</span></a></li>
-    </ul>
-  </footer>
-  <script src="{{ '/assets/js/symbols.js' | relative_url }}"></script>
-  <script>
-    $(document).ready(function() {
-      $('#content').addClass('visible');
-      $('nav ul li a').click(function(e) {
-        e.preventDefault();
-        var link = $(this).attr('href');
-        $('#content').removeClass('visible');
-        setTimeout(function() {
-          window.location.href = link;
-        }, 500);
-      });
+    <div class="center">
+        <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic">
+    </div>
+    <div class="center">
+        <h1>Aspiring Mathematician & Computer Scientist</h1>
+    </div>
+    <br>
+    <p class="animated-text">Hi, I'm Eugenio Macias! I'm an international student at Brown University, majoring in Mathematics and Computer Science. My adventure started in Bosnia and Herzegovina, where I completed the International Baccalaureate at one of the United World Colleges. It was there that I discovered my love for traveling and experiencing new cultures. Since then, I've explored over 20 countries, making friends from all corners of the globe.</p>
+    <br>
 
-      // Apply the falling animation to text
-      function animateText() {
-        const textElements = document.querySelectorAll('.animated-text span');
-        textElements.forEach((span, index) => {
-          setTimeout(() => {
-            span.classList.add('show');
-          }, index * 50); // Adjust the delay for each word
-        });
-      }
+    <p class="animated-text">Academically, I'm passionate about bringing complex concepts to life, particularly in the fields of differential equations, probability theory, and statistical inference. These subjects aren't just fascinating—they're tools to solve real-world problems.</p>
+    <br>
 
-      // Split text into spans
-      function splitText() {
-        const elements = document.querySelectorAll('.animated-text');
-        elements.forEach(element => {
-          const words = element.textContent.split(' ');
-          element.textContent = '';
-          words.forEach(word => {
-            const span = document.createElement('span');
-            span.textContent = word + ' ';
-            element.appendChild(span);
-          });
-        });
-      }
+    <p class="animated-text">You'll likely find me deep in a game of chess or playing my classical guitar. These hobbies keep me balanced and inspired.</p>
+    <br>
 
-      splitText();
-      animateText();
-    });
+    <p class="animated-text">I'm excited to keep learning, traveling, trying new food, and making friends along the way!</p>
 
-    $(window).on('pageshow', function() {
-      $('#content').addClass('visible');
-    });
-  </script>
+    <a href="https://www.linkedin.com/in/eugenio-macias/">LinkedIn</a>
+
+    <script>
+        /* Include the JavaScript here */
+    </script>
 </body>
 </html>
