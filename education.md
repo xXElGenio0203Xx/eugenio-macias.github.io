@@ -9,14 +9,13 @@ title: Education
   <tr>
     <td style="vertical-align:top;">
 
-      <h2>Education</h2><br> 
 
       <h3 style="font-weight: bold;">Brown University (_USA_)</h3><br> 
       <p><strong>B.S. Applied Mathematics-Computer Science</strong> (_Class of 2026_)<br>
       <strong>B.S. Mathematics</strong> (_Class of 2026_)<br>
       Recipient of full scholarship, GPA: 4.0<br>
       Clubs: Quant Trading at Brown, Poker Club, LATAM Society, Brown Chess<br>
-      Brown Union of Global Students<br></p>
+      Brown Union of Global Students<br></p><br><br>
 
     </td>
     <td style="vertical-align:top; text-align:right;">
@@ -32,7 +31,7 @@ title: Education
       Grade: 42/45<br>
       Chess Team Leader<br>
       Classical Guitar Group Leader<br>
-      School nominated for the Nobel Peace Prize 2022<br></p>
+      School nominated for the Nobel Peace Prize 2022<br></p><br><br>
 
     </td>
     <td style="vertical-align:top; text-align:right;">
@@ -44,7 +43,7 @@ title: Education
       
       <h3 style="font-weight: bold;">Tecnológico de Monterrey (Mexico)</h3><br> 
       <p>Multicultural High school Diploma<br>
-      Grade: 97/100<br></p>
+      Grade: 97/100<br></p><br>
 
     </td>
     <td style="vertical-align:top; text-align:right;">
