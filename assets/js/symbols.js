@@ -1,8 +1,3 @@
-### JavaScript (symbols.js)
-
-Ensure the JavaScript file handles the animation of math symbols. Create a new JavaScript file `symbols.js` in your `assets/js` directory:
-
-```javascript
 document.addEventListener('DOMContentLoaded', function() {
   const symbolsContainer = document.getElementById('math-symbols-container');
   const symbols = ['+', '-', '=', '×', '÷', '√', 'π', '∑', '∫', '∞'];
