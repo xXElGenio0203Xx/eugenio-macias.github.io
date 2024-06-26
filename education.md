@@ -4,6 +4,7 @@ title: Education
 ---
 
 # Education
+**Brown University**
 - **B.S. Applied Mathematics-Computer Science** (_Class of 2026_)
 - **B.S. Mathematics** (_Class of 2026_)
 - Recipient of full scholarship, GPA: 4.0
