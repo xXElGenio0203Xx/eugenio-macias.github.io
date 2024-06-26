@@ -9,23 +9,25 @@ title: Education
   <tr>
     <td style="vertical-align:top;">
 
-      <h3 style="font-weight: bold;">Brown University (USA)</h3><br> 
-      <p><strong>B.S. Applied Mathematics-Computer Science</strong>, Class of 2026<br>
-      <strong>B.S. Mathematics</strong>, Class of 2026<br>
+      <h2>Education</h2><br> 
+
+      <h3 style="font-weight: bold;">Brown University (_USA_)</h3><br> 
+      <p><strong>B.S. Applied Mathematics-Computer Science</strong> (_Class of 2026_)<br>
+      <strong>B.S. Mathematics</strong> (_Class of 2026_)<br>
       Recipient of full scholarship, GPA: 4.0<br>
       Clubs: Quant Trading at Brown, Poker Club, LATAM Society, Brown Chess<br>
       Brown Union of Global Students<br></p>
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:100px; height:auto;">
+      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:100px; height:auto;">
     </td>
   </tr>
   <tr>
     <td style="vertical-align:top;">
       
       <h3 style="font-weight: bold;">United World College in Mostar (Bosnia & Herzegovina)</h3><br> 
-      <p><strong>International Baccalaureate</strong>, Class of 2022<br>
+      <p><strong>International Baccalaureate</strong> (_Class of 2022_)<br>
       Shelby Davis Scholar: Awarded $40,000/year scholarship<br>
       Grade: 42/45<br>
       Chess Team Leader<br>
@@ -34,7 +36,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="/assets/images/UWC_logo.png" alt="UWC Logo" style="width:100px; height:auto;">
+      <img src="{{ site.baseurl }}/assets/images/UWC_logo.png" alt="UWC Logo" style="width:100px; height:auto;">
     </td>
   </tr>
   <tr>
@@ -46,7 +48,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:100px; height:auto;">
+      <img src="{{ site.baseurl }}/assets/images/Tec_logo.webp" alt="Tec Logo" style="width:100px; height:auto;">
     </td>
   </tr>
 </table>
