@@ -4,7 +4,7 @@ title: Skills
 ---
 
 <div class="center">
-    <h1>#Skills</h1>
+    <h1> #Skills</h1>
 </div>
 <br>
 <br>
