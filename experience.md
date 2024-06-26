@@ -52,3 +52,8 @@ title: Experience
 - Oversaw researching and implementing datasets into the data pipeline for ML algorithms
 - Secured a $50,000 Mixpanel credits award to conduct comprehensive analysis of Buddywise UI metrics and KPIs
 - Contributed to automating industrial safety monitoring and risk mitigation by utilizing AI and​ computer vision
+
+<h3 style="font-weight: bold; font-size: 1.5em; text-decoration: underline;">
+  <a href="http://www.byte.com.mx/" target="_blank" style="color: black;">Computacion Byte, IT Sales Intern</a> <span style="color: black;">(May 2020 – July 2022)</span>
+</h3>
+- Seasonally worked as an IT public tender for government and private institutions in 10+ cities - Oversaw field testing and application implementation through error testing, registration processes, and a public phone-app database release for the government administration - More than 20,000 people registered through the software in 80+ localities
