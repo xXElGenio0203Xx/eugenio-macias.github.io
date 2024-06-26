@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <div class="center">
-  <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic">
+  <img src="/assets/images/gportfolio_profile_picture.png" class="profile-pic">
 <br>
 <div class="center">
     <h1>#Aspiring Mathematician & Computer Scientist</h1>
