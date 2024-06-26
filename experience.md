@@ -23,7 +23,7 @@ title: Experience
   
 <br>
 
-**Point72 Data Scholar Program** (_April 2024 - Present_)  
+**Point72 Data Scholar Program** (_April 2024_)  
 - 1/50 students selected to participate in the Data Scholars Program by POINT72 & Correlation1. Participated in data-science case studies using Pandas to model future revenue of different airlines
   
 <br>
