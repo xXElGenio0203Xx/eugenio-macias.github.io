@@ -96,7 +96,7 @@ title: Notes
         </td>
     </tr>
 </table>
-
+<br>
 ## Statistics and Probability
 
 <table>
