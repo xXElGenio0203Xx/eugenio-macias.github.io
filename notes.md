@@ -14,7 +14,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Abstract_Algebra.pdf">
-                <strong>Abstract Algebra:</strong> An in-depth exploration of group theory, rings, and fields, essential for understanding the algebraic structures that underpin modern mathematics.
+                <strong>Abstract Algebra:</strong> An in-depth exploration of group theory,rings, fields, integral domains, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
             </a>
         </td>
         <td style="width: 20%;">
@@ -26,7 +26,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Topology.pdf">
-                <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, and connectedness, which are crucial for advanced mathematical studies.
+                <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the  fundamental groups, covering spaces, path-connectedness, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
             </a>
         </td>
         <td style="width: 20%;">
@@ -38,7 +38,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Partial_Differential_Equations.pdf">
-                <strong>Partial Differential Equations:</strong> An examination of equations involving partial derivatives and their applications in physics and engineering.
+                <strong>Partial Differential Equations:</strong> An examination of equations involving partial derivatives, fourier series & transform, solution of differential equations as infinite series, convergence criteria. Laplace's Equation in rectangular and polar coordinates, wave and heat equations with initial profiles. Dirichlet and Neumann boundary conditions and their applications in physics and engineering.
             </a>
         </td>
         <td style="width: 20%;">
@@ -50,7 +50,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Ordinary_Differential_Equations.pdf">
-                <strong>Ordinary Differential Equations:</strong> A thorough analysis of first-order and second-order differential equations, including methods of solutions and applications.
+                <strong>Ordinary Differential Equations:</strong> A thorough analysis of first-order and second-order differential equations, including methods of solutions and applications: Laplace's Transform, separation of variables, convolution methods, gradient fields, Kronecker and Dirac's Delta, eigenvalues and eigenfunctions, as well as matrix exponentials
             </a>
         </td>
         <td style="width: 20%;">
@@ -62,7 +62,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Linear_Algebra.pdf">
-                <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, and linear transformations in N-Dimensional Euclidian Space.
+                <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, and linear transformations in N-Dimensional Euclidian Space from a theoretical perspective.
             </a>
         </td>
         <td style="width: 20%;">
@@ -74,7 +74,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Multivariable_Calculus.pdf">
-                <strong>Multivariable Calculus:</strong> Detailed notes on partial derivatives, multiple integrals, and vector calculus, focusing on functions of several variables.
+                <strong>Multivariable Calculus:</strong> Detailed notes on partial derivatives, multiple integrals, vector integrals, and vector calculus, focusing on functions of several variables, polar, rectangular, spherical, cylindrical coordinates and their properties in N-dimensional space
             </a>
         </td>
         <td style="width: 20%;">
@@ -86,7 +86,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Applied_Cyrptography.pdf">
-                <strong>Applied Cryptography:</strong> An introduction to the principles and practices of cryptography, covering encryption, decryption, and cryptographic protocols.
+                <strong>Applied Cryptography:</strong> An introduction to the principles and practices of computational cryptography, covering encryption, decryption, and cryptographic protocols.
             </a>
         </td>
         <td style="width: 20%;">
@@ -149,7 +149,7 @@ title: Notes
     }
 
     .course-note img {
-        width: 150px;
+        width: 100%; /* Adjust the image width */
         height: auto;
         display: block;
         margin: 0 auto 10px;
