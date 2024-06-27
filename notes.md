@@ -67,7 +67,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Linear_Algebra.pdf">
-                <img src="/assets/images/thumbnails/Linear_Algebra_thumbnail.jpg" alt="Linear Algebra Thumbnail">
+                <img src="/assets/images/thumbnails/Linear_Algebra_thumbail.jpg" alt="Linear Algebra Thumbnail">
             </a>
         </td>
     </tr>
