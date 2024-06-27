@@ -5,7 +5,7 @@ title: Cheat Sheets
  
 <h2 style="color: #1a1a1a;">Mathematics</h2>
 <div style="position: relative;">
-    <span style="color: white; font-size: 0.9em; position: absolute; right: 1;">
+    <span style="color: white; font-size: 0.9em; position: absolute; right: 100;">
         Click Image for PDF <i class="fas fa-arrow-down"></i>
     </span>
 </div>
