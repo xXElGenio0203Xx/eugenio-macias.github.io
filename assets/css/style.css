@@ -329,3 +329,12 @@ transform: scale(1.2);
 .math-symbol:hover {
     opacity: 0;
 }
+
+@keyframes moveSymbol {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(var(--direction-x) * 100vw), calc(var(--direction-y) * 100vh));
+  }
+}
