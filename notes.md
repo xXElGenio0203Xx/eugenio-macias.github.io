@@ -11,6 +11,15 @@ title: Cheat Sheets
 <h2 style="color: #1a1a1a;">Math</h2>
 
 <table style="width:100%;">
+    <tr>
+    <td colspan="2" style="text-align: right;">
+      <div class="pdf-link-text">
+          Click for PDF
+          <br>
+          <i class="fas fa-arrow-down"></i>
+      </div>
+    </td>
+  </tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Abstract_Algebra.pdf" target="_blank" title="Abstract Algebra">
