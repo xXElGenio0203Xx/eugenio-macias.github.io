@@ -85,12 +85,12 @@ title: Cheat Sheets
   </tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Applied_Cryptography.pdf" target="_blank" title="Applied Cryptography">
+        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cryptography">
             <strong>Applied Cryptography:</strong> An introduction to the principles and practices of computational cryptography, covering encryption, decryption, and cryptographic protocols.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Applied_Cryptography.pdf" target="_blank" title="Applied Cryptography">
+        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cryptography">
             <img src="{{ site.baseurl }}/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
@@ -127,7 +127,7 @@ title: Cheat Sheets
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Econometrics.pdf" target="_blank" title="Econometrics">
-            <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on regression models, hypothesis testing, and time series analysis.
+            <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on linear regression models, hypothesis testing, and natural estimators. <br>
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
@@ -137,6 +137,8 @@ title: Cheat Sheets
     </td>
   </tr>
 </table>
+<br>
+<br>
 <br>
 <br>
 <style>
