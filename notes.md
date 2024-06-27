@@ -42,7 +42,7 @@ title: Notes
     <a href="/assets/files/Linear_Algebra.pdf">
         <img src="/assets/images/thumbnails/Linear_Algebra_thumbnail.jpg" alt="Linear Algebra Thumbnail">
     </a>
-    <p class="white-text"><strong>Linear Algebra:</strong> A comprehensive study of vector spaces, linear transformations, and matrices, with applications in various scientific fields.</p>
+    <p class="white-text"><strong>Linear Algebra:</strong> A comprehensive study of vector spaces, and  linear transformations in N-Dimensional Euclidian Space</p>
 </div>
 
 <div class="course-note">
