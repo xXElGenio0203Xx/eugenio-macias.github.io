@@ -2,7 +2,7 @@
 layout: default
 title: Cheat Sheets
 ---
-
+ 
 <div class="center">
     <h1>#Cheat Sheets</h1>
 </div>
