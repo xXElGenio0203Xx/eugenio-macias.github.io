@@ -14,24 +14,24 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Abstract_Algebra.pdf">
-                <strong>Abstract Algebra:</strong> An in-depth exploration of group theory,rings, fields, integral domains, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
+                <strong>Abstract Algebra:</strong> An in-depth exploration of group theory, rings, fields, integral domains, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
             </a>
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Abstract_Algebra.pdf">
-                <img src="/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100px; height: auto;">
+                <img src="/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: auto; height: auto;">
             </a>
         </td>
     </tr>
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Topology.pdf">
-                <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the  fundamental groups, covering spaces, path-connectedness, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
+                <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the fundamental groups, covering spaces, path-connectedness, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
             </a>
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Topology.pdf">
-                <img src="/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail" style="width: 100px; height: auto;">
+                <img src="/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail" style="width: auto; height: auto;">
             </a>
         </td>
     </tr>
@@ -43,14 +43,14 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Partial_Differential_Equations.pdf">
-                <img src="/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail" style="width: 100px; height: auto;">
+                <img src="/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail" style="width: auto; height: auto;">
             </a>
         </td>
     </tr>
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Ordinary_Differential_Equations.pdf">
-                <strong>Ordinary Differential Equations:</strong> A thorough analysis of first-order and second-order differential equations, including methods of solutions and applications: Laplace's Transform, separation of variables, convolution methods, gradient fields, Kronecker and Dirac's Delta, eigenvalues and eigenfunctions, as well as matrix exponentials
+                <strong>Ordinary Differential Equations:</strong> A thorough analysis of first-order and second-order differential equations, including methods of solutions and applications: Laplace's Transform, separation of variables, convolution methods, gradient fields, Kronecker and Dirac's Delta, eigenvalues and eigenfunctions, as well as matrix exponentials.
             </a>
         </td>
         <td style="width: 20%;">
@@ -74,24 +74,24 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Multivariable_Calculus.pdf">
-                <strong>Multivariable Calculus:</strong> Detailed notes on partial derivatives, multiple integrals, vector integrals, and vector calculus, focusing on functions of several variables, polar, rectangular, spherical, cylindrical coordinates and their properties in N-dimensional space
+                <strong>Multivariable Calculus:</strong> Detailed notes on partial derivatives, multiple integrals, vector integrals, and vector calculus, focusing on functions of several variables, polar, rectangular, spherical, cylindrical coordinates and their properties in N-dimensional space.
             </a>
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Multivariable_Calculus.pdf">
-                <img src="/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100px; height: auto;">
+                <img src="/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 50px; height: auto;">
             </a>
         </td>
     </tr>
     <tr>
         <td style="width: 80%;">
-            <a href="/assets/files/Applied_Cyrptography.pdf">
+            <a href="/assets/files/Applied_Cryptography.pdf">
                 <strong>Applied Cryptography:</strong> An introduction to the principles and practices of computational cryptography, covering encryption, decryption, and cryptographic protocols.
             </a>
         </td>
         <td style="width: 20%;">
-            <a href="/assets/files/Applied_Cyrptography.pdf">
-                <img src="/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 100px; height: auto;">
+            <a href="/assets/files/Applied_Cryptography.pdf">
+                <img src="/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 50px; height: auto;">
             </a>
         </td>
     </tr>
@@ -108,7 +108,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Statistical_InferenceII.pdf">
-                <img src="/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail" style="width: 100px; height: auto;">
+                <img src="/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail" style="width: 50px; height: auto;">
             </a>
         </td>
     </tr>
@@ -120,7 +120,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Probability.pdf">
-                <img src="/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 100px; height: auto;">
+                <img src="/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 50px; height: auto;">
             </a>
         </td>
     </tr>
@@ -128,13 +128,11 @@ title: Notes
         <td style="width: 80%;">
             <a href="/assets/files/Econometrics.pdf">
                 <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on regression models, hypothesis testing, and time series analysis. <br><br><br>
-                <br>
-                <br>
             </a>
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Econometrics.pdf">
-                <img src="/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail" style="width: 100px; height: auto;">
+                <img src="/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail" style="width: 50px; height: auto;">
             </a>
         </td>
     </tr>
