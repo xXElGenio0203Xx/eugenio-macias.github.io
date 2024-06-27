@@ -6,11 +6,11 @@ title: Cheat Sheets
 <div class="center">
     <h1>#Math Cheat Sheets</h1>
 <div style="position: relative;">
- <br>
     <span style="color: white; font-size: 0.9em; position: absolute; right: 0;">
         Click Image for PDF <i class="fas fa-arrow-down"></i>
     </span>
 </div>
+ <br>
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
