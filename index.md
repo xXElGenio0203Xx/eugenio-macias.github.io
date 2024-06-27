@@ -16,6 +16,6 @@ title: Home
 <p class="animated-text">You'll likely find me deep in a game of chess or playing my classical guitar. These hobbies keep me balanced and inspired.</p>
 <br>
 
-<p class="animated-text">I'm excited to keep learning, traveling, trying new food, and making friends along the way! <span style="font-size: larger;"><strong>🌎e</strong></span> </p>
+<p class="animated-text">I'm excited to keep learning, traveling, trying new food, and making friends along the way! <span style="font-size: larger;"><strong>🌎</strong></span> </p>
 <br><br><br><br><br>
 
