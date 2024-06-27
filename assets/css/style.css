@@ -38,9 +38,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background: linear-gradient(45deg, #2F4F4F, #4682B4, #808080, #ADD8E6); /* Light yellow, light green, light blue, light red */
+    background: linear-gradient(45deg, #2F4F4F, #4682B4, #808080, #ADD8E6, #FFFFFF); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 8s ease infinite;
 }
 
 header h1 {
@@ -98,7 +98,7 @@ main {
     width: 100%;
     background: linear-gradient(-45deg, #ADD8E6, #4682B4, #808080, #2F4F4F); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 8s ease infinite;
     backdrop-filter: blur(8px);
     overflow: auto;
 }
@@ -112,9 +112,9 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    background: linear-gradient(45deg, #2F4F4F, #4682B4, #808080, #ADD8E6); /* Light yellow, light green, light blue, light red */
+    background: linear-gradient(45deg, #2F4F4F, #4682B4, #808080, #ADD8E6, #FFFFFF); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 8s ease infinite;
 }
 
 footer ul {
