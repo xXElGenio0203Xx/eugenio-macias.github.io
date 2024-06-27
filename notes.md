@@ -180,6 +180,3 @@ title: Notes
         color: inherit;
     }
 </style>
-<br>
-<br>
-<br>
