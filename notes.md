@@ -55,7 +55,7 @@ title: Notes
 
 <div class="course-note">
     <a href="/assets/files/Applied_Cyrptography.pdf">
-        <img src="/assets/images/thumbnails/Applied_Cyrptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail">
+        <img src="/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail">
     </a>
     <p class="white-text"><strong>Applied Cryptography:</strong> An introduction to the principles and practices of cryptography, covering encryption, decryption, and cryptographic protocols.</p>
 </div>
