@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+  <div id="page-transition" class="page-transition"></div>
   <header>
     <div class="header-links-left">
       <a href="https://www.linkedin.com/in/eugenio-macias/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -26,9 +27,6 @@
     {{ content }}
     {% if page.title == "Home" %}
     <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic center">
-    <div class="center">
-        <h2>Pop them!</h2>
-    </div>
     <div id="math-symbols-container"></div>
     {% endif %}
   </main>
@@ -49,6 +47,15 @@
   <script>
     $(document).ready(function() {
       $('#content').addClass('visible');
+
+      $('nav ul li a, .header-links-left a, .header-links-right a, footer ul li a').click(function(e) {
+        e.preventDefault();
+        var link = $(this).attr('href');
+        $('#page-transition').addClass('page-transition-active');
+        setTimeout(function() {
+          window.location.href = link;
+        }, 1000); // Adjust the timing to match the CSS transition duration
+      });
 
       // Apply the falling animation to text
       function animateText() {
@@ -93,54 +100,36 @@
           symbol.on('mouseenter', function() {
             $(this).css('opacity', '0');
             setTimeout(() => $(this).remove(), 500);
+            setTimeout(createSymbol, 500);
           });
 
           // Add movement animation
-          const pathType = Math.floor(Math.random() * 8);
+          const pathType = Math.floor(Math.random() * 6);
           let pathFunction;
-          let direction = 1;
-          let amplitude = Math.random() * 20 + 10; // Random amplitude between 10 and 30
-          let period = Math.random() * 0.5 + 0.5; // Random period between 0.5 and 1
-
           switch (pathType) {
             case 0:
-              pathFunction = x => amplitude * Math.sin(x / period); // sine wave
+              pathFunction = x => Math.sin(x / 10) * 10; // sine wave
               break;
             case 1:
-              pathFunction = x => amplitude * Math.cos(x / period); // cosine wave
+              pathFunction = x => Math.cos(x / 10) * 10; // cosine wave
               break;
             case 2:
-              pathFunction = x => amplitude * Math.sin(x / period); // sine wave
-              direction = -1;
+              pathFunction = x => Math.pow(x / 10, 2); // x^2
               break;
             case 3:
-              pathFunction = x => amplitude * Math.cos(x / period); // cosine wave
-              direction = -1;
+              pathFunction = x => -Math.pow(x / 10, 2); // x^-2
               break;
             case 4:
-              pathFunction = x => amplitude * Math.sin(x / (period * 2)); // sine wave, longer period
+              pathFunction = x => Math.pow(x / 10, 3); // x^3
               break;
             case 5:
-              pathFunction = x => amplitude * Math.cos(x / (period * 2)); // cosine wave, longer period
-              break;
-            case 6:
-              pathFunction = x => amplitude * Math.sin(x / (period * 2)); // sine wave, longer period
-              direction = -1;
-              break;
-            case 7:
-              pathFunction = x => amplitude * Math.cos(x / (period * 2)); // cosine wave, longer period
-              direction = -1;
+              pathFunction = x => -Math.pow(x / 10, 3); // x^-3
               break;
           }
 
           function moveSymbol(timestamp) {
             const elapsed = timestamp / 1000;
-            const x = elapsed * direction * 20;
-            const y = pathFunction(x);
-            symbol.css('transform', `translate(${x}px, ${y}px)`);
-            if (symbol.position().left > $(window).width() || symbol.position().top > $(window).height() || symbol.position().left < 0 || symbol.position().top < 0) {
-              symbol.remove();
-            }
+            symbol.css('transform', `translate(${elapsed * 20}px, ${pathFunction(elapsed * 20)}px)`);
             requestAnimationFrame(moveSymbol);
           }
 
@@ -149,7 +138,7 @@
           container.append(symbol);
         }
 
-        for (let i = 0; i < 40; i++) {
+        for (let i = 0; i < 30; i++) {
           createSymbol();
         }
       }
