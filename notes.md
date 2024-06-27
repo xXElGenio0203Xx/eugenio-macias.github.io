@@ -13,12 +13,12 @@ title: Cheat Sheets
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
-        <a href="/assets/files/Abstract_Algebra.pdf">
+        <a href="/assets/files/resume.pdf">
             <strong>Abstract Algebra:</strong> An in-depth exploration of group theory, rings, fields, integral domains, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="/assets/files/Abstract_Algebra.pdf">
+        <a href="/assets/files/resume.pdf">
             <img src="{{ site.baseurl }}/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
