@@ -4,7 +4,7 @@ title: Cheat Sheets
 ---
  
 <h2 style="color: #1a1a1a; text-align: center;">Mathematics</h2>
-<h3 style="color: white; font-size: 0.9em, text-align: right;">Click Image for PDF <i class="fas fa-arrow-down"></i></h3>
+Click Image for PDF <i class="fas fa-arrow-down"></i>
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
