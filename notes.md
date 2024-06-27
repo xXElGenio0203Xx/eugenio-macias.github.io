@@ -79,7 +79,7 @@ title: Cheat Sheets
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Multivariable_Calculus.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: 170px;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
   </tr>
