@@ -119,14 +119,15 @@ title: Cheat Sheets
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Probability.pdf“ target=”_blank” title=“Probability”>
-         </tr>
+        <a href="assets/files/Probability.pdf" target="_blank" title="Probability">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 100%; height: 170px;">
+        </a>
+    </td>
+  </tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Econometrics.pdf" target="_blank" title="Econometrics">
-            <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on regression models, hypothesis testing, and time series analysis. <br><br><br>
-            <br>
-            <br>
+            <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on regression models, hypothesis testing, and time series analysis.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
@@ -140,44 +141,4 @@ title: Cheat Sheets
 <br>
 <style>
     .center {
-        text-align: center;
-    }
-.course-note {
-    margin-bottom: 20px;
-    text-align: left; /* Align text to the left within table cells */
-}
-
-.course-note img {
-    width: 100%; /* Adjust the image width */
-    height: auto;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-.white-text {
-    color: #fff; /* White font for descriptions */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1.5px solid white;
-}
-
-td {
-    padding: 10px;
-    vertical-align: top;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-h2, h3, h4, h5, h6 {
-    color: black; /* Black color for headings */
-}
-</style>
-```
+        text-align: center
