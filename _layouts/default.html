@@ -81,7 +81,33 @@
 
       splitText();
       animateText();
-    });
+      if ($('main').has('#math-symbols-container').length) {
+      const symbols = ['√', 'π', '∑', '∫', '∞', '∂', '∆', '∇', '∫', '⊕', '⊗', '∃', '∀', '∴', '∵', '≈', '≠', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
+      const container = $('#math-symbols-container');
+
+      function createSymbol() {
+        const symbol = $('<div class="math-symbol"></div>').text(symbols[Math.floor(Math.random() * symbols.length)]);
+        const posX = Math.random() * 100;
+        const posY = Math.random() * 100;
+        symbol.css({
+          left: `${posX}%`,
+          top: `${posY}%`
+        });
+
+        symbol.on('mouseenter', function() {
+          $(this).css('opacity', '0');
+          setTimeout(() => $(this).remove(), 500);
+          setTimeout(createSymbol, 500);
+        });
+
+        container.append(symbol);
+      }
+
+      for (let i = 0; i < 20; i++) {
+        createSymbol();
+      }
+    }
+  });
 
     $(window).on('pageshow', function() {
       $('#content').addClass('visible');
