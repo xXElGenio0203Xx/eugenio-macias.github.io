@@ -8,9 +8,12 @@ title: Cheat Sheets
 </div>
 <br>
 
-<h2 style="color: #1a1a1a; display: inline-block;">Math                                                 <span style="display: inline-block; float: right; color: white; font-size: 0.8em; margin-top: 10px;">
-    Click Image for PDF <i class="fas fa-arrow-down"></i>
-</span></h2> 
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h2 style="color: #1a1a1a; margin: 0;">Math</h2>
+    <span style="color: white; font-size: 0.8em;">
+        Click Image for PDF <i class="fas fa-arrow-down"></i>
+    </span>
+</div>
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
