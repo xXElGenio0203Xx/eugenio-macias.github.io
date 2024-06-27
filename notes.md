@@ -7,7 +7,6 @@ title: Notes
     <h1>#Notes</h1>
 </div>
 <br>
-## Course Notes
 
 ### Mathematics
 
