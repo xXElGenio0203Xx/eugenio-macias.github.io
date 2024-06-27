@@ -24,9 +24,11 @@
   </header>
   <main id="content">
     {{ content }}
+    {% if page.title == "Home" %}
     <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic center">
     <div id="math-symbols-container"></div>
-  </main>
+    {% endif %}
+</main>
   <footer>
     <ul>
       <li><a href="{{ '/' | relative_url }}"><span>Home</span></a></li>
