@@ -4,7 +4,7 @@ title: Cheat Sheets
 ---
 
 <div class="center">
-    <h1>#Notes</h1>
+    <h1>#Cheat Sheets</h1>
 </div>
 <br>
 
@@ -168,7 +168,7 @@ title: Cheat Sheets
     }
 
     table, th, td {
-        border: 1px solid white;
+        border: 1.5px solid white;
     }
 
     td {
@@ -181,6 +181,6 @@ title: Cheat Sheets
         color: inherit;
     }
     h2, h3, h4, h5, h6 {
-        color: #000; /* Black color for headings */
+        color: black; /* Black color for headings */
     }
 </style>
