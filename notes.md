@@ -6,12 +6,15 @@ title: Cheat Sheets
 <div class="center">
     <h1>#Cheat Sheets</h1>
 </div>
-<br>
-
-<h2 style="color: #1a1a1a; margin: 0;">Math</h2>
-<span style="color: white; font-size: 0.8em; text-align: right;">
+</div>
+    <h2 style="color: #1a1a1a; margin: 0;">Math</h2>
+</div>
+<div style="position: relative;">
+    <h2 style="color: #1a1a1a; display: inline-block;">Math</h2>
+    <span style="color: white; font-size: 0.9em; position: absolute; right: 0;">
         Click Image for PDF <i class="fas fa-arrow-down"></i>
     </span>
+</div>
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
