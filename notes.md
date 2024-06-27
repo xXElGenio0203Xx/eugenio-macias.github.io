@@ -9,10 +9,8 @@ title: Cheat Sheets
 <br>
 
 <h2 style="color: #1a1a1a; display: inline-block;">Math</h2>
-<span style="display: inline-block; margin-left: 20px;">
-    Click Image for PDF <i class="fas fa-arrow-down"></i>
-</span>
-
+<span style="display: inline-block; margin-right: 20px;">
+    Click Image for PDF <i class="fas fa-arrow-down"></i> </span>
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
