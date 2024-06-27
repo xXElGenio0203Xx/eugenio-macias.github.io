@@ -26,6 +26,9 @@
     {{ content }}
     {% if page.title == "Home" %}
     <img src="/assets/images/gportfolio_profile_picture.png" alt="Profile Picture" class="profile-pic center">
+    <div class="center">
+        <h2>Pop them!</h2>
+    </div>
     <div id="math-symbols-container"></div>
     {% endif %}
   </main>
@@ -90,7 +93,6 @@
           symbol.on('mouseenter', function() {
             $(this).css('opacity', '0');
             setTimeout(() => $(this).remove(), 500);
-            setTimeout(createSymbol, 500);
           });
 
           // Add movement animation
@@ -138,7 +140,6 @@
             symbol.css('transform', `translate(${x}px, ${y}px)`);
             if (symbol.position().left > $(window).width() || symbol.position().top > $(window).height() || symbol.position().left < 0 || symbol.position().top < 0) {
               symbol.remove();
-              createSymbol();
             }
             requestAnimationFrame(moveSymbol);
           }
@@ -148,20 +149,15 @@
           container.append(symbol);
         }
 
-        function ensureSymbols() {
-          const symbolsOnScreen = container.children('.math-symbol').length;
-          if (symbolsOnScreen < 25) {
-            createSymbol();
-          }
-          requestAnimationFrame(ensureSymbols);
-        }
-
-        for (let i = 0; i < 25; i++) {
+        for (let i = 0; i < 40; i++) {
           createSymbol();
         }
-
-        ensureSymbols();
       }
     });
 
-    $(window).on('pageshow
+    $(window).on('pageshow', function() {
+      $('#content').addClass('visible');
+    });
+  </script>
+</body>
+</html>
