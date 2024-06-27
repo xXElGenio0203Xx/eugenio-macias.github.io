@@ -9,7 +9,7 @@ title: Skills
 <br>
 <br>
 
-**Skills**: Proficient in Excel, PowerPoint, Word. Spanish (native), English (native), German & French (B1 proficient)  
+**Skills**: Proficient in Excel, PowerPoint, Word. Spanish (native), English (bilingual), German & French (B1 proficient)  
 <br>
 **Programming Tools**: Python, Java, C, C++, R, LaTex, STATA, ReasonML, DrRacket, Docker, GitHub  
 <br>
