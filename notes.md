@@ -79,7 +79,7 @@ title: Cheat Sheets
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Multivariable_Calculus.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: 170px;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
   </tr>
@@ -118,7 +118,7 @@ title: Cheat Sheets
             <strong>Probability:</strong> Comprehensive coverage of probability theory, including random variables, expectation, and distributions, foundational for statistical inference.
         </a>
     </td>
-    <td style="width: 100%; vertical-align:top; text-align:right;">
+    <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Probability.pdf">
             <img src="{{ site.baseurl }}/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 100%; height: 170px;">
         </a>
@@ -181,6 +181,5 @@ title: Cheat Sheets
         color: inherit;
     }
     h2, h3, h4, h5, h6 {
-        color: black; /* Black color for headings */
-    }
+        color: black; /* Black
 </style>
