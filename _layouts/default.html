@@ -94,7 +94,7 @@
           });
 
           // Add movement animation
-          const pathType = Math.floor(Math.random() * 6);
+          const pathType = Math.floor(Math.random() * 8);
           let pathFunction;
           switch (pathType) {
             case 0:
@@ -115,6 +115,12 @@
             case 5:
               pathFunction = x => -Math.pow(x / 10, 3); // x^-3
               break;
+            case 6:
+              pathFunction = x => 20 * Math.sin(x / 10) * Math.cos(x / 10); // circular path
+              break;
+            case 7:
+              pathFunction = x => -Math.sin(x / 10) * 10; // reverse sine wave
+              break;
           }
 
           function moveSymbol(timestamp) {
@@ -128,9 +134,19 @@
           container.append(symbol);
         }
 
+        function ensureSymbols() {
+          const symbolsOnScreen = container.children('.math-symbol').length;
+          if (symbolsOnScreen < 25) {
+            createSymbol();
+          }
+          requestAnimationFrame(ensureSymbols);
+        }
+
         for (let i = 0; i < 25; i++) {
           createSymbol();
         }
+
+        ensureSymbols();
       }
     });
 
