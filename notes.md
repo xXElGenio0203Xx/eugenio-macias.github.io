@@ -19,7 +19,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Abstract_Algebra.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -31,7 +31,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Topology.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -43,7 +43,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Partial_Differential_Equations.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -55,7 +55,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Ordinary_Differential_Equations.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Ordinary_Differential_Equations_thumbnail.jpg" alt="Ordinary Differential Equations Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Ordinary_Differential_Equations_thumbnail.jpg" alt="Ordinary Differential Equations Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -67,7 +67,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Linear_Algebra.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Linear_Algebra_thumbnail.jpg" alt="Linear Algebra Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Linear_Algebra_thumbnail.jpg" alt="Linear Algebra Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -79,7 +79,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Multivariable_Calculus.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -91,7 +91,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Applied_Cryptography.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -108,7 +108,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Statistical_InferenceII.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -120,7 +120,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Probability.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
@@ -134,7 +134,7 @@ title: Notes
     </td>
     <td style="width: 20%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Econometrics.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail" style="width: 100px; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
