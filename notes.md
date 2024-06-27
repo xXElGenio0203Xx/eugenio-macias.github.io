@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Notes
+title: Cheat Sheets
 ---
 
 <div class="center">
@@ -19,7 +19,7 @@ title: Notes
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Abstract_Algebra.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100%; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100%; height: 100px;">
         </a>
     </td>
   </tr>
