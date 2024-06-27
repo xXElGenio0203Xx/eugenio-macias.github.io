@@ -3,10 +3,8 @@ layout: default
 title: Cheat Sheets
 ---
  
-<h2 style="color: #1a1a1a;">Mathematics</h2>
-<span style="color: white; font-size: 0.9em;">
-            Click Image for PDF <i class="fas fa-arrow-down"></i>
-        </span>
+<h2 style="color: #1a1a1a; text-align: center;">Mathematics</h2>
+<h3 style="color: white; font-size: 0.9em, text-align: right;">Click Image for PDF <i class="fas fa-arrow-down"></i></h3>
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
@@ -94,7 +92,7 @@ title: Cheat Sheets
   </tr>
 </table>
 <br>
-<h2 style="color: #1a1a1a;">Statistics & Probability</h2>
+<h2 style="color: #1a1a1a; text-align: center;" >Statistics & Probability</h2>
 
 <table style="width:100%;">
   <tr>
