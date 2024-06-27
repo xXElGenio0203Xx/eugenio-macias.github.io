@@ -308,7 +308,7 @@ transform: scale(1.2);
 }
 
 .math-symbol:hover {
-    opacity: 0;
+    animation: bubblePop 0.5s forwards;
 }
 
 @keyframes moveSymbol {
@@ -317,5 +317,20 @@ transform: scale(1.2);
   }
   100% {
     transform: translate(calc(var(--direction-x) * 100vw), calc(var(--direction-y) * 100vh));
+  }
+}
+
+@keyframes bubblePop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
   }
 }
