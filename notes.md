@@ -57,7 +57,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Linear_Algebra.pdf" target="_blank" title="Linear Algebra">
-            <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, linear transformations in N-Dimensional Euclidian Space, matrixes and their properties from a proof-based perspectives
+            <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, linear transformations in N-Dimensional Euclidian Space, matrixes and their properties from a proof-based perspective
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
