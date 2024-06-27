@@ -94,49 +94,49 @@
           });
 
           // Add movement animation
-          const pathType = Math.floor(Math.random() * 10);
+          const pathType = Math.floor(Math.random() * 8);
           let pathFunction;
           let direction = 1;
+          let amplitude = Math.random() * 20 + 10; // Random amplitude between 10 and 30
+          let period = Math.random() * 0.5 + 0.5; // Random period between 0.5 and 1
+
           switch (pathType) {
             case 0:
-              pathFunction = x => Math.sin(x / 10) * 10; // sine wave
+              pathFunction = x => amplitude * Math.sin(x / period); // sine wave
               break;
             case 1:
-              pathFunction = x => Math.cos(x / 10) * 10; // cosine wave
+              pathFunction = x => amplitude * Math.cos(x / period); // cosine wave
               break;
             case 2:
-              pathFunction = x => Math.pow(x / 10, 2); // x^2
+              pathFunction = x => amplitude * Math.sin(x / period); // sine wave
+              direction = -1;
               break;
             case 3:
-              pathFunction = x => -Math.pow(x / 10, 2); //
-              direction = -1
+              pathFunction = x => amplitude * Math.cos(x / period); // cosine wave
+              direction = -1;
               break;
             case 4:
-              pathFunction = x => Math.pow(x / 10, 3); // x^3
+              pathFunction = x => amplitude * Math.sin(x / (period * 2)); // sine wave, longer period
               break;
             case 5:
-              pathFunction = x => Math.pow(x / 10, 3); //
-              direction = -1
+              pathFunction = x => amplitude * Math.cos(x / (period * 2)); // cosine wave, longer period
               break;
             case 6:
-              pathFunction = x => 20 * Math.sin(x / 10) * Math.cos(x / 10); // circular path
+              pathFunction = x => amplitude * Math.sin(x / (period * 2)); // sine wave, longer period
+              direction = -1;
               break;
             case 7:
-              pathFunction = x => x; // linear
-              break;
-            case 8:
-              pathFunction = x => Math.log(x); // logarithmic
-              break;
-            case 9:
-              pathFunction = x => -Math.sin(x / 10) * 10; // reverse sine wave
+              pathFunction = x => amplitude * Math.cos(x / (period * 2)); // cosine wave, longer period
               direction = -1;
               break;
           }
 
           function moveSymbol(timestamp) {
             const elapsed = timestamp / 1000;
-            symbol.css('transform', `translate(${direction * elapsed * 20}px, ${pathFunction(elapsed * 20)}px)`);
-            if (symbol.position().left > $(window).width() || symbol.position().top > $(window).height()) {
+            const x = elapsed * direction * 20;
+            const y = pathFunction(x);
+            symbol.css('transform', `translate(${x}px, ${y}px)`);
+            if (symbol.position().left > $(window).width() || symbol.position().top > $(window).height() || symbol.position().left < 0 || symbol.position().top < 0) {
               symbol.remove();
               createSymbol();
             }
@@ -164,9 +164,4 @@
       }
     });
 
-    $(window).on('pageshow', function() {
-      $('#content').addClass('visible');
-    });
-  </script>
-</body>
-</html>
+    $(window).on('pageshow
