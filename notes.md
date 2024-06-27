@@ -9,7 +9,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Abstract_Algebra.pdf" target="_blank" title="Abstract Algebra">
-            <strong>Abstract Algebra:</strong> An in-depth exploration of group theory, rings, fields, integral domains, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
+            <strong>Abstract Algebra:</strong> An in-depth exploration of group theory, rings, fields, integral domains, ideals, quaotient and product spaces, cyclical groups (n-throots of unity, dihedral, modulos), permutations, field-extension polynomials, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
@@ -21,7 +21,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Topology.pdf" target="_blank" title="Topology">
-            <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the fundamental groups, covering spaces, Hausdorff properties, path-connectedness, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
+            <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the fundamental groups, covering spaces, Hausdorff properties, path-connectedness, equivalence classes, point compactifications, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
@@ -57,7 +57,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Linear_Algebra.pdf" target="_blank" title="Linear Algebra">
-            <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, and linear transformations in N-Dimensional Euclidian Space from a theoretical perspective.
+            <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, linear transformations in N-Dimensional Euclidian Space, matrixes and their properties from a proof-based perspectives
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
@@ -69,7 +69,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Multivariable_Calculus.pdf" target="_blank" title="Multivariable Calculus">
-            <strong>Multivariable Calculus:</strong> Detailed notes on partial derivatives, multiple integrals, vector integrals, and vector calculus, focusing on functions of several variables, polar, rectangular, spherical, cylindrical coordinates and their properties in N-dimensional space.
+            <strong>Multivariable Calculus:</strong> Detailed notes on partial derivatives, multiple integrals, vector and line integrals, mass centers, hyperplanes, vector calculus, projection functions, Lagrange Multipliers, gradient functions, focusing on functions of several variables, polar, rectangular, spherical, cylindrical coordinates and their properties in N-dimensional space.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
