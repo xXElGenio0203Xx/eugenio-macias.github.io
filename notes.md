@@ -3,13 +3,12 @@ layout: default
 title: Cheat Sheets
 ---
  
-<h2 style="color: #1a1a1a;">Mathematics</h2>
-<div style="position: relative;">
-    <span style="color: white; font-size: 0.9em; position: absolute; right: 0;">
+<h2 style="color: #1a1a1a; display: flex; justify-content: space-between; align-items: center;">
+    Mathematics
+    <span style="color: white; font-size: 0.8em;">
         Click Image for PDF <i class="fas fa-arrow-down"></i>
     </span>
-</div>
- <br>
+</h2>
 <table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
