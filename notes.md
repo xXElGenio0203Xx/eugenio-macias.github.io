@@ -19,7 +19,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Abstract_Algebra.pdf">
-                <img src="/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail">
+                <img src="/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -31,7 +31,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Topology.pdf">
-                <img src="/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail">
+                <img src="/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -43,7 +43,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Partial_Differential_Equations.pdf">
-                <img src="/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail">
+                <img src="/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -55,19 +55,19 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Ordinary_Differential_Equations.pdf">
-                <img src="/assets/images/thumbnails/Ordinary_Differential_Equations_thumbnail.jpg" alt="Ordinary Differential Equations Thumbnail">
+                <img src="/assets/images/thumbnails/Ordinary_Differential_Equations_thumbnail.jpg" alt="Ordinary Differential Equations Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Linear_Algebra.pdf">
-                <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, and  linear transformations in N-Dimensional Euclidian Space.
+                <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, and linear transformations in N-Dimensional Euclidian Space.
             </a>
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Linear_Algebra.pdf">
-                <img src="/assets/images/thumbnails/Linear_Algebra_thumbail.jpg" alt="Linear Algebra Thumbnail">
+                <img src="/assets/images/thumbnails/Linear_Algebra_thumbnail.jpg" alt="Linear Algebra Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -79,7 +79,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Multivariable_Calculus.pdf">
-                <img src="/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail">
+                <img src="/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -91,7 +91,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Applied_Cyrptography.pdf">
-                <img src="/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail">
+                <img src="/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -108,7 +108,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Statistical_InferenceII.pdf">
-                <img src="/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail">
+                <img src="/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -120,7 +120,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Probability.pdf">
-                <img src="/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail">
+                <img src="/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
@@ -132,7 +132,7 @@ title: Notes
         </td>
         <td style="width: 20%;">
             <a href="/assets/files/Econometrics.pdf">
-                <img src="/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail">
+                <img src="/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail" style="width: 100px; height: auto;">
             </a>
         </td>
     </tr>
