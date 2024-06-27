@@ -82,8 +82,8 @@
       splitText();
       animateText();
       if ($('main').has('#math-symbols-container').length) {
-      const symbols = ['√', 'π', '∑', '∫', '∞', '∂', '∆', '∇', '∫', '∬', '∭', '∮', '∯', '∰''⊕', '⊗', '∃', '∀', '∴', '∵', '≈', '≠', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
-      const container = $('#math-symbols-container');
+        const symbols = ['√', 'π', '∑', '∫', '∞', '∂', '∆', '∇', '∫', '∬', '∭', '∮', '∯', '∰''⊕', '⊗', '∃', '∀', '∴', '∵', '≈', '≠', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
+        const container = $('#math-symbols-container');
 
       function createSymbol() {
         const symbol = $('<div class="math-symbol"></div>').text(symbols[Math.floor(Math.random() * symbols.length)]);
@@ -103,7 +103,7 @@
         container.append(symbol);
       }
 
-      for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 40; i++) {
         createSymbol();
       }
     }
