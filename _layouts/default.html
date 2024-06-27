@@ -108,13 +108,15 @@
               pathFunction = x => Math.pow(x / 10, 2); // x^2
               break;
             case 3:
-              pathFunction = x => -Math.pow(x / 10, 2); // x^-2
+              pathFunction = x => -Math.pow(x / 10, 2); //
+              direction = -1
               break;
             case 4:
               pathFunction = x => Math.pow(x / 10, 3); // x^3
               break;
             case 5:
-              pathFunction = x => -Math.pow(x / 10, 3); // x^-3
+              pathFunction = x => Math.pow(x / 10, 3); //
+              direction = -1
               break;
             case 6:
               pathFunction = x => 20 * Math.sin(x / 10) * Math.cos(x / 10); // circular path
