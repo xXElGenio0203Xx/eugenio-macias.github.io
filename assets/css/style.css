@@ -98,7 +98,7 @@ main {
     width: 100%;
     background: linear-gradient(-45deg, #ADD8E6, #4682B4, #808080, #2F4F4F); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 10s ease infinite;
     backdrop-filter: blur(12px);
     overflow: auto;
 }
