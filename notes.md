@@ -128,6 +128,8 @@ title: Notes
         <td style="width: 80%;">
             <a href="/assets/files/Econometrics.pdf">
                 <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on regression models, hypothesis testing, and time series analysis. <br><br><br>
+                <br>
+                <br>
             </a>
         </td>
         <td style="width: 20%;">
@@ -178,3 +180,6 @@ title: Notes
         color: inherit;
     }
 </style>
+<br>
+<br>
+<br>
