@@ -9,7 +9,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-  <div id="page-transition" class="page-transition"></div>
   <header>
     <div class="header-links-left">
       <a href="https://www.linkedin.com/in/eugenio-macias/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -47,15 +46,6 @@
   <script>
     $(document).ready(function() {
       $('#content').addClass('visible');
-
-      $('nav ul li a, .header-links-left a, .header-links-right a, footer ul li a').click(function(e) {
-        e.preventDefault();
-        var link = $(this).attr('href');
-        $('#page-transition').addClass('page-transition-active');
-        setTimeout(function() {
-          window.location.href = link;
-        }, 1000); // Adjust the timing to match the CSS transition duration
-      });
 
       // Apply the falling animation to text
       function animateText() {
