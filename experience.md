@@ -58,4 +58,8 @@ title: Experience
   <a href="http://www.byte.com.mx/" target="_blank" style="color: black;">Computacion Byte, IT Sales Intern</a> <span style="color: black;">(May 2020 – July 2022)</span>
 </h3>
 - Seasonally worked as an IT public tender for government and private institutions in 10+ cities - Oversaw field testing and application implementation through error testing, registration processes, and a public phone-app database release for the government administration - More than 20,000 people registered through the software in 80+ localities
-<br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
