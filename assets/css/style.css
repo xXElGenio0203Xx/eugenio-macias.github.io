@@ -38,7 +38,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background: linear-gradient(45deg, #98FB98 , #87CEEB, #DDA0DD, #FF6347); /* Light yellow, light green, light blue, light red */
+    background: linear-gradient(45deg, #2F4F4F, #4682B4, #808080, #ADD8E6); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -48,16 +48,13 @@ header h1 {
     color: #000; /* Black color for Eugenio Macias title */
     font-size: 2.8em; /* Increase the header size */
     font-weight: bold; /* Make the header bolder */
-    background: linear-gradient(45deg, #98FB98 , #87CEEB, #DDA0DD, #FF6347);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite
     text-align: center; /* Center the header text */
 }
 
 
 .header-links-left, .header-links-right {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     padding: 0 20px
 }
 
@@ -99,7 +96,7 @@ main {
     padding: 20px;
     min-height: calc(100% - 14%); /* Adjust to fill screen without footer */
     width: 100%;
-    background: linear-gradient(-45deg, #FFFFE0, #FFD700, #FFA500, #FF6347); /* Light yellow, light green, light blue, light red */
+    background: linear-gradient(-45deg, #ADD8E6, #4682B4, #808080, #2F4F4F); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     backdrop-filter: blur(8px);
@@ -115,7 +112,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    background: linear-gradient(45deg, #98FB98 , #87CEEB, #DDA0DD, #FF6347); /* Light yellow, light green, light blue, light red */
+    background: linear-gradient(45deg, #2F4F4F, #4682B4, #808080, #ADD8E6); /* Light yellow, light green, light blue, light red */
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
