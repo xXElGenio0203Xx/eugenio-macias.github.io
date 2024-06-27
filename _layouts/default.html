@@ -47,13 +47,14 @@
   <script>
     $(document).ready(function() {
       $('#content').addClass('visible');
-      $('nav ul li a').click(function(e) {
+
+      $('nav ul li a, .header-links-left a, .header-links-right a, footer ul li a').click(function(e) {
         e.preventDefault();
         var link = $(this).attr('href');
-        $('#content').removeClass('visible');
+        $('#page-transition').addClass('page-transition-active');
         setTimeout(function() {
           window.location.href = link;
-        }, 500);
+        }, 1000); // Adjust the timing to match the CSS transition duration
       });
 
       // Apply the falling animation to text
@@ -82,33 +83,34 @@
 
       splitText();
       animateText();
+
       if ($('main').has('#math-symbols-container').length) {
-        const symbols = ['√', 'π', '∑', '∫', '∞', '∂', '∆', '∇', '∫', '∬', '∭', '∮', '∯', '∰''⊕', '⊗', '∃', '∀', '∴', '∵', '≈', '≠', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
+        const symbols = ['√', 'π', '∑', '∫', '∞', '∂', '∆', '∇', '∫', '∬', '∭', '∮', '∯', '∰', '⊕', '⊗', '∃', '∀', '∴', '∵', '≈', '≠', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
         const container = $('#math-symbols-container');
 
-      function createSymbol() {
-        const symbol = $('<div class="math-symbol"></div>').text(symbols[Math.floor(Math.random() * symbols.length)]);
-        const posX = Math.random() * 100;
-        const posY = Math.random() * 100;
-        symbol.css({
-          left: `${posX}%`,
-          top: `${posY}%`
-        });
+        function createSymbol() {
+          const symbol = $('<div class="math-symbol"></div>').text(symbols[Math.floor(Math.random() * symbols.length)]);
+          const posX = Math.random() * 100;
+          const posY = Math.random() * 100;
+          symbol.css({
+            left: `${posX}%`,
+            top: `${posY}%`
+          });
 
-        symbol.on('mouseenter', function() {
-          $(this).css('opacity', '0');
-          setTimeout(() => $(this).remove(), 500);
-          setTimeout(createSymbol, 500);
-        });
+          symbol.on('mouseenter', function() {
+            $(this).css('opacity', '0');
+            setTimeout(() => $(this).remove(), 500);
+            setTimeout(createSymbol, 500);
+          });
 
-        container.append(symbol);
+          container.append(symbol);
+        }
+
+        for (let i = 0; i < 40; i++) {
+          createSymbol();
+        }
       }
-
-      for (let i = 0; i < 40; i++) {
-        createSymbol();
-      }
-    }
-  });
+    });
 
     $(window).on('pageshow', function() {
       $('#content').addClass('visible');
