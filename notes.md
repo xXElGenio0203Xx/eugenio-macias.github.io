@@ -8,7 +8,7 @@ title: Notes
 </div>
 <br>
 
-## Mathematics
+# Mathematics
 
 <table>
     <tr>
@@ -97,8 +97,7 @@ title: Notes
     </tr>
 </table>
 <br>
-## Statistics and Probability
-
+#Statistics and Probability
 <table>
     <tr>
         <td style="width: 80%;">
