@@ -5,16 +5,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: white; /* Change to the color you want */
+  background: white;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  transform-origin: center center;
+  transition: transform 1s ease-in-out, opacity 1s ease;
+  opacity: 1;
 }
 
 .page-transition-active {
-  opacity: 1;
-} 
+  transform: scale(0.1) rotate(360deg);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease;
+}
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
