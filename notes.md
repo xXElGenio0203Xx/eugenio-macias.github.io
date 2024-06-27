@@ -3,8 +3,7 @@ layout: default
 title: Cheat Sheets
 ---
  
-<div class="center">
-    <h1>Mathematics</h1>
+<h2 style="color: #1a1a1a;">Statistics & Probability</h2>
 <div style="position: relative;">
     <span style="color: white; font-size: 0.9em; position: absolute; right: 0;">
         Click Image for PDF <i class="fas fa-arrow-down"></i>
