@@ -8,7 +8,7 @@ title: Notes
 </div>
 <br>
 
-### Mathematics
+## Mathematics
 
 <table>
     <tr>
@@ -97,7 +97,7 @@ title: Notes
     </tr>
 </table>
 
-### Statistics and Probability
+## Statistics and Probability
 
 <table>
     <tr>
@@ -127,7 +127,7 @@ title: Notes
     <tr>
         <td style="width: 80%;">
             <a href="/assets/files/Econometrics.pdf">
-                <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on regression models, hypothesis testing, and time series analysis.
+                <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on regression models, hypothesis testing, and time series analysis. <br><br><br>
             </a>
         </td>
         <td style="width: 20%;">
