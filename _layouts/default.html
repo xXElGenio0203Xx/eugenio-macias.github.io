@@ -150,13 +150,13 @@
 
         function ensureSymbols() {
           const symbolsOnScreen = container.children('.math-symbol').length;
-          if (symbolsOnScreen < 30) {
+          if (symbolsOnScreen < 25) {
             createSymbol();
           }
           requestAnimationFrame(ensureSymbols);
         }
 
-        for (let i = 0; i < 30; i++) {
+        for (let i = 0; i < 25; i++) {
           createSymbol();
         }
 
