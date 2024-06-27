@@ -14,6 +14,11 @@ title: Skills
 **Programming Tools**: Python <i class="fab fa-python python-icon"></i>, Java <i class="fab fa-java java-icon"></i>, C <i class="fas fa-code c-icon"></i>, C++ <i class="fas fa-code cpp-icon"></i>, R <i class="fab fa-r-project r-icon"></i>, LaTex <i class="fas fa-file-alt latex-icon"></i>, STATA <i class="fas fa-chart-bar stata-icon"></i>, ReasonML <i class="fas fa-code reasonml-icon"></i>, DrRacket <i class="fas fa-code drracket-icon"></i>, Docker <i class="fab fa-docker docker-icon"></i>, GitHub <i class="fab fa-github github-icon"></i>  
 <br>
 **Specializations**: Data-Science (IBM) <i class="fas fa-database ibm-icon"></i>, Capital-Options (Akuna Capital) <i class="fas fa-chart-line akuna-icon"></i>  
+<br>
+**Countries I have been to**: 🇲🇽, 🇺🇸, 🇨🇦, 🇨🇴, 🇵🇹, 🇪🇸, 🇫🇷, 🇩🇪, 🇳🇱, 🇨🇿, 🇦🇹, 🇸🇪, 🇨🇭, 🇱🇺, 🇸🇮, 🇭🇷, 🇧🇦, 🇲🇪, 🇬🇷, 🇹🇷, 🇪🇬
+<br>
+**Countries I want to visit soon**: 🇱🇧, 🇲🇦, 🇹🇭, 🇲🇳, 🇻🇳, 🇵🇭, 🇸🇬
+
 
 <style>
     .center {
