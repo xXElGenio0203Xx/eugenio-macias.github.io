@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 <div class="center">
-    <h1> #Projects</h1>
+    <h1> Projects</h1>
 </div>
 <br>
 
