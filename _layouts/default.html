@@ -94,8 +94,9 @@
           });
 
           // Add movement animation
-          const pathType = Math.floor(Math.random() * 8);
+          const pathType = Math.floor(Math.random() * 10);
           let pathFunction;
+          let direction = 1;
           switch (pathType) {
             case 0:
               pathFunction = x => Math.sin(x / 10) * 10; // sine wave
@@ -119,13 +120,24 @@
               pathFunction = x => 20 * Math.sin(x / 10) * Math.cos(x / 10); // circular path
               break;
             case 7:
+              pathFunction = x => x; // linear
+              break;
+            case 8:
+              pathFunction = x => Math.log(x); // logarithmic
+              break;
+            case 9:
               pathFunction = x => -Math.sin(x / 10) * 10; // reverse sine wave
+              direction = -1;
               break;
           }
 
           function moveSymbol(timestamp) {
             const elapsed = timestamp / 1000;
-            symbol.css('transform', `translate(${elapsed * 20}px, ${pathFunction(elapsed * 20)}px)`);
+            symbol.css('transform', `translate(${direction * elapsed * 20}px, ${pathFunction(elapsed * 20)}px)`);
+            if (symbol.position().left > $(window).width() || symbol.position().top > $(window).height()) {
+              symbol.remove();
+              createSymbol();
+            }
             requestAnimationFrame(moveSymbol);
           }
 
@@ -136,13 +148,13 @@
 
         function ensureSymbols() {
           const symbolsOnScreen = container.children('.math-symbol').length;
-          if (symbolsOnScreen < 30) {
+          if (symbolsOnScreen < 25) {
             createSymbol();
           }
           requestAnimationFrame(ensureSymbols);
         }
 
-        for (let i = 0; i < 30; i++) {
+        for (let i = 0; i < 25; i++) {
           createSymbol();
         }
 
