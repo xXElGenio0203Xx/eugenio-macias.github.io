@@ -85,12 +85,12 @@ title: Cheat Sheets
   </tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cryptography">
+        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cyrptography">
             <strong>Applied Cryptography:</strong> An introduction to the principles and practices of computational cryptography, covering encryption, decryption, and cryptographic protocols.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cryptography">
+        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cyrptography">
             <img src="{{ site.baseurl }}/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
@@ -99,7 +99,7 @@ title: Cheat Sheets
 <br>
 <h2 style="color: #1a1a1a;">Statistics & Probability</h2>
 
-<table> style="width:100%;">
+<table style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Statistical_InferenceII.pdf" target="_blank" title="Statistical Inference II">
