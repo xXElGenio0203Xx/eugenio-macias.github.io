@@ -4,7 +4,7 @@ title: Classes I Have Taken
 ---
 
 <div class="center">
-    <h1>#Brown Coursework</h1>
+    <h1>Brown Coursework</h1>
 </div>
 <br> 
 
