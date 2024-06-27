@@ -4,7 +4,7 @@ title: Experience
 ---
 
 <div class="center">
-    <h1> #Experience</h1>
+    <h1> Experience</h1>
 </div>
 <br>
 <h3 style="font-weight: bold; font-size: 1.5em; text-decoration: underline;">
