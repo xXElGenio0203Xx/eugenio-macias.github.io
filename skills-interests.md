@@ -15,9 +15,9 @@ title: Skills
 <br>
 **Specializations**: Data-Science (IBM) <i class="fas fa-database ibm-icon"></i>, Capital-Options (Akuna Capital) <i class="fas fa-chart-line akuna-icon"></i>  
 <br>
-**Countries I have been to**: 🇲🇽, 🇺🇸, 🇨🇦, 🇨🇴, 🇵🇹, 🇪🇸, 🇫🇷, 🇩🇪, 🇳🇱, 🇨🇿, 🇦🇹, 🇸🇪, 🇨🇭, 🇱🇺, 🇸🇮, 🇭🇷, 🇧🇦, 🇲🇪, 🇬🇷, 🇹🇷, 🇪🇬
+**Countries I have been to**: <span class="flag">🇲🇽</span>, <span class="flag">🇺🇸</span>, <span class="flag">🇨🇦</span>, <span class="flag">🇨🇴</span>, <span class="flag">🇵🇹</span>, <span class="flag">🇪🇸</span>, <span class="flag">🇫🇷</span>, <span class="flag">🇩🇪</span>, <span class="flag">🇳🇱</span>, <span class="flag">🇨🇿</span>, <span class="flag">🇦🇹</span>, <span class="flag">🇸🇪</span>, <span class="flag">🇨🇭</span>, <span class="flag">🇱🇺</span>, <span class="flag">🇸🇮</span>, <span class="flag">🇭🇷</span>, <span class="flag">🇧🇦</span>, <span class="flag">🇲🇪</span>, <span class="flag">🇬🇷</span>, <span class="flag">🇹🇷</span>, <span class="flag">🇪🇬</span>
 <br>
-**Countries I want to visit soon**: 🇱🇧, 🇲🇦, 🇹🇭, 🇲🇳, 🇻🇳, 🇵🇭, 🇸🇬
+**Countries I want to visit soon**: <span class="flag">🇱🇧</span>, <span class="flag">🇲🇦</span>, <span class="flag">🇹🇭</span>, <span class="flag">🇲🇳</span>, <span class="flag">🇻🇳</span>, <span class="flag">🇵🇭</span>, <span class="flag">🇸🇬</span>
 
 
 <style>
@@ -74,5 +74,8 @@ title: Skills
     }
     .akuna-icon {
         color: #2ECC71;
+    }
+    .flag {
+        font-size: 1.5em; /* Adjust the size of the emojis */
     }
 </style>
