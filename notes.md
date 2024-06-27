@@ -79,7 +79,7 @@ title: Cheat Sheets
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="assets/files/Multivariable_Calculus.pdf" target="_blank" title="Multivariable Calculus">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: 170px;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
   </tr>
@@ -99,7 +99,7 @@ title: Cheat Sheets
 <br>
 <h2 style="color: #1a1a1a;">Statistics & Probability</h2>
 
-<table style="width:100%;">
+<table> style="width:100%;">
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Statistical_InferenceII.pdf" target="_blank" title="Statistical Inference II">
@@ -141,4 +141,43 @@ title: Cheat Sheets
 <br>
 <style>
     .center {
-        text-align: center
+        text-align: center;
+        }
+    course-note {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left within table cells */
+}
+
+.course-note img {
+    width: 100%; /* Adjust the image width */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.white-text {
+    color: #fff; /* White font for descriptions */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1.5px solid white;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h2, h3, h4, h5, h6 {
+    color: black; /* Black color for headings */
+}
+</style>
