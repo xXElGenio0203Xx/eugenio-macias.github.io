@@ -50,7 +50,7 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 
 <br>
 
-<h2 style="color: #1a1a1a;">AWARDS & FESTIVALS</h2>
+<h2 style="color: #1a1a1a;">FESTIVALS</h2>
 - Honorific Mention for Young Talent in the virtual contest within the Décimo Quinto Festival Internacional Guitarra sin Fronteras.
 - Participation in Décimo Cuarto Festival Internacional Guitarra sin Fronteras.
 - VIII Festival Encuentro Internacional de Guitarra Salamanca 2014.
