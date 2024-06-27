@@ -17,6 +17,7 @@ title: Skills
 <br>
 **Countries I have been to**: <span class="flag">🇲🇽</span>, <span class="flag">🇺🇸</span>, <span class="flag">🇨🇦</span>, <span class="flag">🇨🇴</span>, <span class="flag">🇵🇹</span>, <span class="flag">🇪🇸</span>, <span class="flag">🇫🇷</span>, <span class="flag">🇩🇪</span>, <span class="flag">🇳🇱</span>, <span class="flag">🇨🇿</span>, <span class="flag">🇦🇹</span>, <span class="flag">🇸🇪</span>, <span class="flag">🇨🇭</span>, <span class="flag">🇱🇺</span>, <span class="flag">🇸🇮</span>, <span class="flag">🇭🇷</span>, <span class="flag">🇧🇦</span>, <span class="flag">🇲🇪</span>, <span class="flag">🇬🇷</span>, <span class="flag">🇹🇷</span>, <span class="flag">🇪🇬</span>
 <br>
+<br>
 **Countries I want to visit soon**: <span class="flag">🇱🇧</span>, <span class="flag">🇲🇦</span>, <span class="flag">🇹🇭</span>, <span class="flag">🇲🇳</span>, <span class="flag">🇻🇳</span>, <span class="flag">🇵🇭</span>, <span class="flag">🇸🇬</span>
 
 
