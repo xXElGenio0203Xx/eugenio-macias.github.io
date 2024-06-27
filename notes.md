@@ -4,11 +4,7 @@ title: Cheat Sheets
 ---
  
 <div class="center">
-    <h1>#Cheat Sheets</h1>
-</div>
-</div>
-    <h2 style="color: #1a1a1a; margin: 0;">Math</h2>
-</div>
+    <h1>#Math Cheat Sheets</h1>
 <div style="position: relative;">
     <h2 style="color: #1a1a1a; display: inline-block;">Math</h2>
     <span style="color: white; font-size: 0.9em; position: absolute; right: 0;">
