@@ -10,7 +10,7 @@ title: Cheat Sheets
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h2 style="color: #1a1a1a; margin: 0;">Math</h2>
-    <span style="color: white; font-size: 0.8em;">
+    <span style="color: white; font-size: 0.6em;">
         Click Image for PDF <i class="fas fa-arrow-down"></i>
     </span>
 </div>
