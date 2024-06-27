@@ -21,7 +21,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Topology.pdf" target="_blank" title="Topology">
-            <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the fundamental groups, covering spaces, path-connectedness, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
+            <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the fundamental groups, covering spaces, Hausdorff properties, path-connectedness, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
