@@ -8,7 +8,7 @@ title: Cheat Sheets
 </div>
 <br>
 
-## Mathematics
+<h2 style="color: #1a1a1a;">Math</h2>
 
 <table style="width:100%;">
   <tr>
@@ -97,7 +97,7 @@ title: Cheat Sheets
   </tr>
 </table>
 <br>
-## Statistics and Probability
+<h2 style="color: #1a1a1a;">Statistics & Probability</h2>
 
 <table style="width:100%;">
   <tr>
