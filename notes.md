@@ -79,7 +79,7 @@ title: Notes
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="/assets/files/Multivariable_Calculus.pdf">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_calculus_thumbnail.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: auto;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: auto;">
         </a>
     </td>
   </tr>
