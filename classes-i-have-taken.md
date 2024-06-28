@@ -78,3 +78,9 @@ title: Classes I Have Taken
 </td>
         </tr>
 </table>
+<style>
+    p {
+    line-height: 1.2; /* Reduce line height */
+    margin-bottom: 10px; /* Reduce margin between paragraphs */
+}
+<style>
