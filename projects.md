@@ -16,7 +16,7 @@ title: Projects
     </div>
     <div style="flex-shrink: 0; margin-left: 20px;">
         <a href="assets/files/Extended_Essay.pdf" target="_blank" title="Fourier Analysis Research">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/EE_thumbnail.jpg" alt="Fourier Analysis Thumbnail" style="width: 200px; height: 150;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/EE_thumbnail.jpg" alt="Fourier Analysis Thumbnail" style="width: 250px; height: 150;">
         </a>
     </div>
 </div>
