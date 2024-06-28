@@ -9,10 +9,6 @@ title: Projects
 **Research: Fourier Analysis and Laplace’s Equation** <i class="fas fa-book" style="color: #f39c12;"></i>  
 &nbsp;&nbsp;&nbsp;- Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria  
 &nbsp;&nbsp;&nbsp;- Explored the importance of Fourier Series to Laplace’s 2-D Equation solution space with 4 Boundary Dirichlet conditions  
-    <div style="flex-shrink: 0; margin-left: 20px;">
-        <a href="assets/files/Extended_Essay.pdf" target="_blank" title="Fourier Analysis Research">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/EE_thumbnail.jpg" alt="Fourier Analysis Thumbnail" style="width: 300px; height: auto;">
-
 
 **Time-Series Forecasting (Python, ongoing)** <i class="fab fa-python" style="color: #3776AB;"></i>  
 &nbsp;&nbsp;&nbsp;- Implemented a time series predictor algorithm in Python utilizing Bollinger-bands and Monte-Carlo Simulations  
