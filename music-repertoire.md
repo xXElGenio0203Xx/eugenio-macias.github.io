@@ -51,15 +51,15 @@ I started my career as a guitarist in 2010 under the tutelage of the Professor a
 <br>
 
 <h3 style="color: #1a1a1a;">FESTIVALS</h3>
+- Guitar Foundation of America XII held in Fullerton, CA.
+- Guitar Foundation of America XI held in Denver, CO.
 - Honorific Mention for Young Talent in the virtual contest within the Décimo Quinto Festival Internacional Guitarra sin Fronteras.
-- Participation in Décimo Cuarto Festival Internacional Guitarra sin Fronteras.
+- XIV Festival Internacional Guitarra sin Fronteras.
 - VIII Festival Encuentro Internacional de Guitarra Salamanca 2014.
 - IX Festival Encuentro Internacional de Guitarra Salamanca 2015.
-- Third Place in the VII Concurso Nacional de Guitarra Salamanca, Youth Category.
-- Second Place in the VI Concurso Nacional de Guitarra Salamanca, Youth Category.
-- Certificate of Participation in Guitar Foundation of America XII held in Fullerton, CA.
-- Certificate of Participation in Guitar Foundation of America XI held in Denver, CO.
-- Honorific Mention in the IV State Contest “Cleofás Villegas”.
+- VII Concurso Nacional de Guitarra Salamanca, Youth Category.
+- VI Concurso Nacional de Guitarra Salamanca, Youth Category.
+- IV State Contest “Cleofás Villegas”.
 
 <br>
 
