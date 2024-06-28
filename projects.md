@@ -6,20 +6,23 @@ title: Projects
     <h1> Projects</h1>
 </div>
 
-<div style="display: flex; justify-content: space-between;">
-    <div>
-        <strong>Research: Fourier Analysis and Laplace’s Equation</strong> <i class="fas fa-book" style="color: #f39c12;"></i>  <br>
-        <span style="color: white;">
-        &nbsp;&nbsp;&nbsp;- Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria  <br>
-        &nbsp;&nbsp;&nbsp;- Explored the importance of Fourier Series to Laplace’s 2-D Equation complete solution space with 4 Boundary Dirichlet conditions  
-        </span>
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <div>
+            <strong>Research: Fourier Analysis and Laplace’s Equation</strong> <i class="fas fa-book" style="color: #f39c12;"></i>  <br>
+            <span style="color: white;">
+            &nbsp;&nbsp;&nbsp;- Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria  <br>
+            &nbsp;&nbsp;&nbsp;- Explored the importance of Fourier Series to Laplace’s 2-D Equation complete solution space with 4 Boundary Dirichlet conditions  
+            </span>
+        </div>
+        <div style="flex-shrink: 0; margin-left: 20px;">
+            <a href="assets/files/Extended_Essay.pdf" target="_blank" title="Fourier Analysis Research">
+                <img src="{{ site.baseurl }}/assets/images/thumbnails/EE_thumbnail.jpg" alt="Fourier Analysis Thumbnail" style="width: 270px; height: auto;">
+            </a>
+        </div>
     </div>
-    <div style="flex-shrink: 0; margin-left: 20px;">
-        <a href="assets/files/Extended_Essay.pdf" target="_blank" title="Fourier Analysis Research">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/EE_thumbnail.jpg" alt="Fourier Analysis Thumbnail" style="width: 270px; height: 130;">
-        </a>
-    </div>
-    
+</div>
+
 **Time-Series Forecasting (Python, ongoing)** <i class="fab fa-python" style="color: #3776AB;"></i>  
 &nbsp;&nbsp;&nbsp;- Implemented a time series predictor algorithm in Python utilizing Bollinger-bands and Monte-Carlo Simulations  
 &nbsp;&nbsp;&nbsp;- Utilized changepoint detection, multiple linear regressions, ARIMA models, and Matplotlib-Seaborn for visualizations  
