@@ -43,7 +43,7 @@ title: Projects
 &nbsp;&nbsp;&nbsp;- Created a graph algorithm that optimizes edge-paths based on cost, distance, time-efficiency, and customizable parameters  
 &nbsp;&nbsp;&nbsp;- Employed graph structure algorithms like Dijkstra, BFS, and DFS. Tested with graphs with 500+ vertices and edges
 
-**ReasonML-Racket Interpreter (School-Related)** <i class="fas fa-code" style="color: #2ecc71;"></i>  
+**ReasonML-Racket Interpreter (ReasonML, Racket)(School-Related)** <i class="fas fa-code" style="color: #2ecc71;"></i>  
 &nbsp;&nbsp;&nbsp;- Developed an interpreter in ReasonML capable of interpreting and processing all inputs from Racket  
 &nbsp;&nbsp;&nbsp;- Implemented advanced pattern matching techniques to efficiently analyze and interpret Racket code entered into the ReasonML environment. It accurately replicates the behavior of DrRacket, providing precise Racket code output while executing within the ReasonML environment  
 &nbsp;&nbsp;&nbsp;- Successfully processed complex DrRacket programs, including those exceeding 500+ lines of code, demonstrating the scalability of the interpreter
