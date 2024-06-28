@@ -46,17 +46,18 @@ title: Classes I Have Taken
 
       <h2 style="color: #1c1c1c;">Classes I Am Taking in the Future</h2><br> 
       <h3 style="color: black;">Math Classes</h3><br> 
+      <p><strong>MATH 1060: Differential Geometry</strong></p>
       <p><strong>MATH 1460: Complex Analysis</strong></p>
       <p><strong>MATH 1540: Topics in Abstract Algebra</strong></p>
-      <p><strong>MATH 1560: Number Theory</strong></p> <br> 
+      <p><strong>MATH 1560: Number Theory</strong></p>  
+      <p><strong>MATH 1630: Real Analysis I</strong></p>
+      <p><strong>MATH 1640: Real Analysis II</strong></p> <br>
   
       <h3 style="color: black;">Applied Math Classes</h3><br> 
       <p><strong>APMA 1200: Operations Research, Probabilistic Models</strong></p>
       <p><strong>APMA 1710: Information Theory</strong></p>
       <p><strong>APMA 1720: Monte Carlo Simulation with Applications to Finance</strong></p>
       <p><strong>APMA 1930X (Capstone): Probability, Optimization and Stochastic Calculus</strong></p>
-      <p><strong>APMA 1930Z: Introduction to Mathematical Machine Learning</strong></p>
-      <p><strong>APMA 2110: Real Analysis (Graduate)</strong></p>
       <p><strong>APMA 1740: Recent Applications of Probability and Statistics</strong></p><br> 
   <h3 style="color: black;">Computer Science Classes</h3><br> 
   <p><strong>CSCI 1010: Theory of Computation</strong></p>
@@ -65,7 +66,6 @@ title: Classes I Have Taken
   <p><strong>CSCI 1440: Algorithmic Game Theory</strong></p>
   <p><strong>CSCI 1470: Deep Learning</strong></p>
   <p><strong>CSCI 1570: Design and Analysis of Algorithms</strong></p>
-  <p><strong>CSCI 1951A: Data Science</strong></p>
   <p><strong>CSCI 1951L: Blockchains and Cryptocurrencies</strong></p>
   <p><strong>CSCI 1952Q: Algorithmic Aspects of Machine Learning</strong></p>
 
