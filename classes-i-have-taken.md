@@ -75,9 +75,6 @@ title: Classes I Have Taken
   <h3 style="color: black;">English</h3><br> 
   <p><strong>ENGL 0930 Introduction to Creative Nonfiction (WRIT)</p>
 
-</td>
-        </tr>
-</table>
 <style>
     p {
     line-height: 1.2; /* Reduce line height */
