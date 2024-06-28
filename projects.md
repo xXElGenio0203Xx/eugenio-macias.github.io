@@ -52,4 +52,3 @@ title: Projects
 <br>
 <br>
 <br>
-just put all the projects in a left column, and add the fourier photo on the right column
