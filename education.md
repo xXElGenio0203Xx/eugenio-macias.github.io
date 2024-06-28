@@ -13,7 +13,7 @@ title: Education
     <td style="vertical-align:top;">
 
       <h3 style="font-weight: bold; color: black;">
-        <a href="https://www.brown.edu/" target="_blank" style="color: black; text-decoration: underline;">
+        <a href="https://www.brown.edu/" target="_blank" style="color: black;">
           Brown University (USA)
         </a>
       </h3>
@@ -25,14 +25,14 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:220px; height:auto; margin-right: 130px;">
+      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:220px; height:auto; margin-right: 150px;">
     </td>
   </tr>
   <tr>
     <td style="vertical-align:top;">
 
       <h3 style="font-weight: bold; color: black;">
-        <a href="https://www.uwc.org/" target="_blank" style="color: black; text-decoration: underline;">
+        <a href="https://www.uwc.org/" target="_blank" style="color: black;">
           United World College in Mostar (Bosnia & Herzegovina)
         </a>
       </h3>
@@ -52,7 +52,7 @@ title: Education
     <td style="vertical-align:top;">
 
       <h3 style="font-weight: bold; color: black;">
-        <a href="https://tec.mx/es" target="_blank" style="color: black; text-decoration: underline;">
+        <a href="https://tec.mx/es" target="_blank" style="color: black;">
           Tecnológico de Monterrey (Mexico)
         </a>
       </h3>
