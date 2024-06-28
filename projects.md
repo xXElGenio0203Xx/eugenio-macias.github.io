@@ -11,7 +11,7 @@ title: Projects
         <strong>Research: Fourier Analysis and Laplace’s Equation</strong> <i class="fas fa-book" style="color: #f39c12;"></i>  <br>
         <span style="color: white;">
         &nbsp;&nbsp;&nbsp;- Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria  <br>
-        &nbsp;&nbsp;&nbsp;- Explored the importance of Fourier Series to Laplace’s 2-D Equation solution space with 4 Boundary Dirichlet conditions  
+        &nbsp;&nbsp;&nbsp;- Explored the importance of Fourier Series to Laplace’s 2-D Equation complete solution space with 4 Boundary Dirichlet conditions  
         </span>
     </div>
     <div style="flex-shrink: 0; margin-left: 20px;">
