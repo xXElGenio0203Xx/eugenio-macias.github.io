@@ -54,13 +54,13 @@ title: Classes I Have Taken
       <p><strong>MATH 1640: Real Analysis II</strong></p> <br>
   
       <h3 style="color: black;">Applied Math Classes</h3><br> 
-      <p><strong>APMA 1200: Operations Research, Probabilistic Models</strong></p>
+      <p><strong>APMA 1200: Operations Research: Probabilistic Models</strong></p>
       <p><strong>APMA 1710: Information Theory</strong></p>
       <p><strong>APMA 1720: Monte Carlo Simulation with Applications to Finance</strong></p>
+      <p><strong>APMA 1740: Recent Applications of Probability and Statistics</strong></p><br>
       <p><strong>APMA 1930X (Capstone): Probability, Optimization and Stochastic Calculus</strong></p>
-      <p><strong>APMA 1740: Recent Applications of Probability and Statistics</strong></p><br> 
+      <p><strong>APMA 1930Z Introduction to Mathematical Machine Learning</strong></p> <br>
   <h3 style="color: black;">Computer Science Classes</h3><br> 
-  <p><strong>CSCI 1010: Theory of Computation</strong></p>
   <p><strong>CSCI 1411: Artificial Intelligence</strong></p>
   <p><strong>CSCI 1420: Machine Learning</strong></p>
   <p><strong>CSCI 1440: Algorithmic Game Theory</strong></p>
