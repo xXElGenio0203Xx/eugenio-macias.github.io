@@ -50,9 +50,8 @@ title: Projects
 **ReasonML-Racket Interpreter (ReasonML, Racket)(School-Related)** <i class="fas fa-code" style="color: #2ecc71;"></i>  
 &nbsp;&nbsp;&nbsp;- Developed an interpreter in ReasonML capable of interpreting and processing all inputs from Racket  
 &nbsp;&nbsp;&nbsp;- Implemented advanced pattern matching techniques to efficiently analyze and interpret Racket code entered into the ReasonML environment 
-
 &nbsp;&nbsp;&nbsp;- It replicates the behavior of DrRacket, providing precise Racket code output while executing within the ReasonML environment  
-&nbsp;&nbsp;&nbsp;- Successfully processed complex DrRacket programs, including those exceeding 500+ lines of code, demonstrating the scalability of the interpreter
+&nbsp;&nbsp;&nbsp;- Processed complex DrRacket programs, including those exceeding 500+ lines of code, demonstrating the scalability of the interpreter
 
 **Mutex-Safe Database (C) (School-Related)** <i class="fas fa-database" style="color: #3498db;"></i>  
 &nbsp;&nbsp;&nbsp;- Implemented a multithreaded server database that listens for client connections, tested to work with 100+ server clients  
