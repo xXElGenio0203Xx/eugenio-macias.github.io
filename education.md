@@ -25,7 +25,7 @@ title: Education
 
     </td>
     <td style="vertical-align:top; text-align:right;">
-      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:220px; height:auto; margin-right: 150px;">
+      <img src="{{ site.baseurl }}/assets/images/Brown_Logo.jpeg" alt="Brown University Logo" style="width:220px; height:auto; margin-right: 130px;">
     </td>
   </tr>
   <tr>
