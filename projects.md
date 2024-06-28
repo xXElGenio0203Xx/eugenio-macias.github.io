@@ -19,7 +19,7 @@ title: Projects
             <img src="{{ site.baseurl }}/assets/images/thumbnails/EE_thumbnail.jpg" alt="Fourier Analysis Thumbnail" style="width: 270px; height: 130;">
         </a>
     </div>
-</div>
+    
 **Time-Series Forecasting (Python, ongoing)** <i class="fab fa-python" style="color: #3776AB;"></i>  
 &nbsp;&nbsp;&nbsp;- Implemented a time series predictor algorithm in Python utilizing Bollinger-bands and Monte-Carlo Simulations  
 &nbsp;&nbsp;&nbsp;- Utilized changepoint detection, multiple linear regressions, ARIMA models, and Matplotlib-Seaborn for visualizations  
