@@ -13,7 +13,7 @@ title: Education
     <td style="vertical-align:top;">
 
       <h3 style="font-weight: bold; color: black;">
-        <a href="https://www.brown.edu/" target="_blank" style="color: black;">
+        <a href="https://www.brown.edu/" target="_blank" style="color: black; text-decoration: none;">
           Brown University (USA)
         </a>
       </h3>
@@ -32,7 +32,7 @@ title: Education
     <td style="vertical-align:top;">
 
       <h3 style="font-weight: bold; color: black;">
-        <a href="https://www.uwc.org/" target="_blank" style="color: black;">
+        <a href="https://www.uwc.org/" target="_blank" style="color: black; text-decoration: none;">
           United World College in Mostar (Bosnia & Herzegovina)
         </a>
       </h3>
@@ -52,7 +52,7 @@ title: Education
     <td style="vertical-align:top;">
 
       <h3 style="font-weight: bold; color: black;">
-        <a href="https://tec.mx/es" target="_blank" style="color: black;">
+        <a href="https://tec.mx/es" target="_blank" style="color: black; text-decoration: none;">
           Tecnológico de Monterrey (Mexico)
         </a>
       </h3>
