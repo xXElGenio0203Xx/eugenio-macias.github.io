@@ -73,7 +73,7 @@ title: Classes I Have Taken
   <p><strong>ECON 1630: Mathematical Econometrics</strong></p>
 
   <h3 style="color: black;">English</h3><br> 
-  <p><strong>ENGL 0930 Introduction to Creative Nonfiction (WRIT)</p>
+  <p><strong>ENGL 0930 Introduction to Creative Nonfiction (WRIT)
 
 <style>
     p {
