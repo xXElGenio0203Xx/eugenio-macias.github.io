@@ -18,9 +18,9 @@ title: Education
         </a>
       </h3>
       <p><span style="font-size: larger;"><strong>B.S. Applied Mathematics-Computer Science</strong></span>, • Class of 2026<br>
-      <span style="font-size: larger;"><strong>B.S. Mathematics</strong></span>, •Class of 2026<br>
+      <span style="font-size: larger;"><strong>B.S. Mathematics</strong></span>, • Class of 2026<br>
       &nbsp;&nbsp;&nbsp;• Recipient of full scholarship, GPA: 4.0<br>
-      &nbsp;&nbsp;&nbsp;• Clubs: Quant Trading at Brown, Poker Club, LATAM Society, Brown Chess<br>
+      &nbsp;&nbsp;&nbsp;• Clubs: Quant Trading at Brown, SHPE, LATAM Society, Brown Chess Club<br>
       &nbsp;&nbsp;&nbsp;• Brown Union of Global Students<br></p><br><br>
 
     </td>
@@ -36,7 +36,7 @@ title: Education
           United World College in Mostar (Bosnia & Herzegovina)
         </a>
       </h3>
-      <p><span style="font-size: larger;"><strong>International Baccalaureate</strong></span>, • Class of 2022<br>
+      <p><span style="font-size: larger;"><strong>International Baccalaureate (IB)</strong></span>, • Class of 2022<br>
       &nbsp;&nbsp;&nbsp;• Shelby Davis Scholar: Awarded $40,000/year scholarship<br>
       &nbsp;&nbsp;&nbsp;• IB Grade: 42/45<br>
       &nbsp;&nbsp;&nbsp;• Chess Team Leader<br>
