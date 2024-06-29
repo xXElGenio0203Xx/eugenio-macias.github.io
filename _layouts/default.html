@@ -114,16 +114,16 @@
               pathFunction = x => Math.cos(x / 10) * 10; // cosine wave
               break;
             case 2:
-              pathFunction = x => Math.pow(x / 10, 2); // x^2
+              pathFunction = x => 0.5 * Math.pow(x / 10, 2); // x^2
               break;
             case 3:
-              pathFunction = x => -Math.pow(x / 10, 2); // x^-2
+              pathFunction = x => 0.5 * -Math.pow(x / 10, 2); // x^-2
               break;
             case 4:
-              pathFunction = x => Math.pow(x / 10, 3); // x^3
+              pathFunction = x => 0.5 * Math.pow(x / 10, 3); // x^3
               break;
             case 5:
-              pathFunction = x => -Math.pow(x / 10, 3); // x^-3
+              pathFunction = x => 0.5 * -Math.pow(x / 10, 3); // x^-3
               break;
           }
 
@@ -138,7 +138,7 @@
           container.append(symbol);
         }
 
-        for (let i = 0; i < 45; i++) {
+        for (let i = 0; i < 50; i++) {
           createSymbol();
         }
       }
