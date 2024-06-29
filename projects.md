@@ -18,9 +18,6 @@ title: Projects
         <div style="flex-shrink: 0; margin-left: 20px;">
             <a href="assets/files/Extended_Essay.pdf" target="_blank" title="Fourier Analysis Research">
                 <img src="{{ site.baseurl }}/assets/images/thumbnails/EE_thumbnail.jpg" alt="Fourier Analysis Thumbnail" style="width: 270px; height: auto;">
-            <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px; font-size: 0.7em;">
-                    Click here for research paper
-                </div>
             </a>
         </div>
     </div>
