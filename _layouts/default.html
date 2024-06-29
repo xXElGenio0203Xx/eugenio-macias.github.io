@@ -105,25 +105,26 @@
 
           // Add movement animation
           const pathType = Math.floor(Math.random() * 6);
+          const amplitude = Math.floor(Math.random() * 6);
           let pathFunction;
           switch (pathType) {
             case 0:
-              pathFunction = x => 2 * Math.sin(x / 10) * 10; // sine wave
+              pathFunction = x => amplitude * Math.sin(x / 10) * 10; // sine wave
               break;
             case 1:
-              pathFunction = x => 2 * Math.cos(x / 10) * 10; // cosine wave
+              pathFunction = x => amplitude * Math.cos(x / 10) * 10; // cosine wave
               break;
             case 2:
-              pathFunction = x => 0.2 * Math.pow(x / 10, 2); // x^2
+              pathFunction = x => 0.1 * Math.pow(x / 10, 2); // x^2
               break;
             case 3:
-              pathFunction = x => 0.2 * -Math.pow(x / 10, 2); // x^-2
+              pathFunction = x => 0.1 * -Math.pow(x / 10, 2); // x^-2
               break;
             case 4:
-              pathFunction = x => 0.2 * Math.pow(x / 10, 3); // x^3
+              pathFunction = x => 0.1 * Math.pow(x / 10, 3); // x^3
               break;
             case 5:
-              pathFunction = x => 0.2 * -Math.pow(x / 10, 3); // x^-3
+              pathFunction = x => 0.1 * -Math.pow(x / 10, 3); // x^-3
               break;
           }
 
