@@ -9,7 +9,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Abstract_Algebra.pdf" target="_blank" title="Abstract Algebra">
-            <strong>Abstract Algebra:</strong> An in-depth exploration of group theory, rings, fields, integral domains, ideals, quotient and product spaces, cyclical groups (n-throots of unity, dihedral, modulos), permutations, field-extension polynomials, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
+            <strong>Abstract Algebra:</strong> An exploration of group theory, rings, fields, integral domains, ideals, quotient and product spaces, cyclical groups (n-throots of unity, dihedral, modulos), permutations, field-extension polynomials, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
