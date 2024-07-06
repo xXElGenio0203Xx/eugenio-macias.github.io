@@ -84,13 +84,12 @@ title: Classes I Have Taken
   <p><strong>MATH 1000: The Art of Writing Mathematics (WRIT)<p>
   <p><strong>MATH 1030: Graph Theory<p>
   <p><strong>MATH 1130: Functions of Several Variables<p>    
-![image](https://github.com/xXElGenio0203Xx/eugenio-macias.github.io/assets/123780513/b81f9080-e55d-4649-81c8-67578473a352)
 
 
 
 <style>
     p {
-    line-height: 1.2; /* Reduce line height */
-    margin-bottom: 10px; /* Reduce margin between paragraphs */
+    line-height: 1.0; /* Reduce line height */
+    margin-bottom: 8px; /* Reduce margin between paragraphs */
 }
 <style>
