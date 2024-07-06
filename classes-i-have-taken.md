@@ -73,7 +73,20 @@ title: Classes I Have Taken
   <p><strong>ECON 1630: Mathematical Econometrics</strong></p>
 
   <h3 style="color: black;">English</h3><br> 
-  <p><strong>ENGL 0930 Introduction to Creative Nonfiction (WRIT)
+  <p><strong>ENGL 0930 Introduction to Creative Nonfiction (WRIT)<p>
+
+  <h3 style="color: black;">Other classes I would like to take</h3><br> 
+  <p><strong>CSCI 1010: Theory of Computation<p>
+  <p><strong>CSCI 1550: Probabilistic Methods in Computer Science
+  <p><strong>APMA 1690: Computational Probability and Statistics<p>
+  <p><strong>APMA 1860: Graphs and Networks<p>
+  <p><strong>APMA 1930P: Mathematics and Climate<p>
+  <p><strong>MATH 1000: The Art of Writing Mathematics (WRIT)<p>
+  <p><strong>MATH 1030: Graph Theory<p>
+  <p><strong>MATH 1130: Functions of Several Variables<p>    
+![image](https://github.com/xXElGenio0203Xx/eugenio-macias.github.io/assets/123780513/b81f9080-e55d-4649-81c8-67578473a352)
+
+
 
 <style>
     p {
