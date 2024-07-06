@@ -75,7 +75,7 @@ title: Classes I Have Taken
   <h3 style="color: black;">English</h3><br> 
   <p><strong>ENGL 0930 Introduction to Creative Nonfiction (WRIT)<p>
 
-  <h3 style="color: black;">Other classes I would like to take</h3><br> 
+  <h3 style="color: black;">Other classes I am considering</h3><br> 
   <p><strong>CSCI 1010: Theory of Computation<p>
   <p><strong>CSCI 1550: Probabilistic Methods in Computer Science
   <p><strong>APMA 1690: Computational Probability and Statistics<p>
