@@ -78,6 +78,7 @@ title: Classes I Have Taken
   <p><strong>APMA 1690: Computational Probability and Statistics<p>
   <p><strong>APMA 1860: Graphs and Networks<p>
   <p><strong>APMA 1930P: Mathematics and Climate<p>
+  <p><strong>ENGL 1930W: Probabilities in Quantum Mechanics<p>
   <p><strong>MATH 1000: The Art of Writing Mathematics (WRIT)<p>
   <p><strong>MATH 1030: Graph Theory<p>
   <p><strong>MATH 1130: Functions of Several Variables<p>    
