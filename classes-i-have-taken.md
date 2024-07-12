@@ -72,10 +72,7 @@ title: Classes I Have Taken
   <h3 style="color: black;">Economics</h3><br> 
   <p><strong>ECON 1630: Mathematical Econometrics</strong></p>
 
-  <h3 style="color: black;">English</h3><br> 
-  <p><strong>ENGL 0930 Introduction to Creative Nonfiction (WRIT)<p>
-
-  <h3 style="color: #1c1c1c;">Other Classes I find interesting:</h3><br> 
+  <h3 style="color: black;">Other Classes I am Considering</h3><br> 
   <p><strong>CSCI 1010: Theory of Computation<p>
   <p><strong>CSCI 1550: Probabilistic Methods in Computer Science
   <p><strong>APMA 1690: Computational Probability and Statistics<p>
