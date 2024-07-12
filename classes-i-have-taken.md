@@ -58,8 +58,8 @@ title: Classes I Have Taken
       <p><strong>APMA 1710: Information Theory</strong></p>
       <p><strong>APMA 1720: Monte Carlo Simulation with Applications to Finance</strong></p>
       <p><strong>APMA 1740: Recent Applications of Probability and Statistics</strong></p>
-      <p><strong>APMA 1930X (Capstone): Probability, Optimization and Stochastic Calculus</strong></p>
-      <p><strong>APMA 1930Z Introduction to Mathematical Machine Learning</strong></p> <br>
+      <p><strong>APMA 1930X: Probability, Optimization and Stochastic Calculus (Capstone)</strong></p>
+      <p><strong>APMA 1930Z: Introduction to Mathematical Machine Learning</strong></p> <br>
   <h3 style="color: black;">Computer Science Classes</h3><br> 
   <p><strong>CSCI 1411: Artificial Intelligence</strong></p>
   <p><strong>CSCI 1420: Machine Learning</strong></p>
@@ -78,7 +78,7 @@ title: Classes I Have Taken
   <p><strong>APMA 1690: Computational Probability and Statistics<p>
   <p><strong>APMA 1860: Graphs and Networks<p>
   <p><strong>APMA 1930P: Mathematics and Climate<p>
-  <p><strong>ENGL 1930W: Probabilities in Quantum Mechanics<p>
+  <p><strong>APMA 1930W: Probabilities in Quantum Mechanics<p>
   <p><strong>MATH 1000: The Art of Writing Mathematics (WRIT)<p>
   <p><strong>MATH 1030: Graph Theory<p>
   <p><strong>MATH 1130: Functions of Several Variables<p>    
