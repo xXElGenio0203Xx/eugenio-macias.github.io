@@ -82,6 +82,8 @@ title: Classes I Have Taken
   <p><strong>MATH 1000: The Art of Writing Mathematics (WRIT)<p>
   <p><strong>MATH 1030: Graph Theory<p>
   <p><strong>MATH 1130: Functions of Several Variables<p>    
+  <p><strong>ECON 1710: Investments I<p>
+  <p><strong>MATH 1130: Investments II<p>    
 
 
 
