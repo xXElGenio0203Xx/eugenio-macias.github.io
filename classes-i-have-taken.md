@@ -83,7 +83,7 @@ title: Classes I Have Taken
   <p><strong>MATH 1030: Graph Theory<p>
   <p><strong>MATH 1130: Functions of Several Variables<p>    
   <p><strong>ECON 1710: Investments I<p>
-  <p><strong>MATH 1130: Investments II<p>    
+  <p><strong>ECON 1750: Investments II<p>    
 
 
 
