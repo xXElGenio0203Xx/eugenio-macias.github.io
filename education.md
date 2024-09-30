@@ -18,7 +18,7 @@ title: Education
         </a>
       </h3>
       <p><span style="font-size: larger;"><strong>B.S. Applied Mathematics-Computer Science</strong></span>, • Class of 2026<br>
-      <span style="font-size: larger;"><strong>B.S. Mathematics</strong></span><br>
+      <span style="font-size: larger;"><strong> M.S Applied Mathematics</strong></span><br>
       &nbsp;&nbsp;&nbsp;• Recipient of full scholarship, GPA: 4.0<br>
       &nbsp;&nbsp;&nbsp;• Clubs: Quant Trading at Brown, SHPE, LATAM Society, Brown Chess Club<br>
       &nbsp;&nbsp;&nbsp;• Brown Union of Global Students<br></p><br><br>
