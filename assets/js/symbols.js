@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         symbolsContainer.appendChild(symbolElement);
     }
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 15; i++) {
         createSymbol();
     }
 });
