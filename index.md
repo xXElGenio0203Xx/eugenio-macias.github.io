@@ -13,7 +13,7 @@ title: Home
 <p >Academically, I'm passionate about bringing complex concepts to life, particularly in the fields of probability theory and  mathematical statistics. These subjects aren't just fascinating—they're tools to solve real-world problems.</p>
 <br>
 
-<p >My adventure started in Bosnia and Herzegovina, where I completed the International Baccalaureate at one of the United World Colleges. It was there that I discovered my love for traveling and experiencing new cultures. Since then, I've explored over 30 countries, making friends from all corners of the globe. In my free time, you'll likely find me in a game of chess or playing my classical guitar. These hobbies keep me balanced and inspired\.</p>
+<p >My adventure started in Bosnia and Herzegovina, where I completed the International Baccalaureate at one of the United World Colleges. It was there that I discovered my love for traveling and experiencing new cultures. Since then, I've explored almost 30 countries, making friends from all corners of the globe. In my free time, you'll likely find me in a game of chess or playing my classical guitar. These hobbies keep me balanced and inspired\.</p>
 <br>
 
 <p class="animated-text">I'm excited to keep learning, traveling, trying new food, and making friends along the way!</p>
