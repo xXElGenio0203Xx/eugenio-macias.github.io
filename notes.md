@@ -6,6 +6,18 @@ title: Cheat Sheets
 <h2 style="color: #1a1a1a; text-align: center;">Mathematics</h2>
 Click Image for PDF <i class="fas fa-arrow-right"></i>
 <table style="width:100%;">
+ <tr>
+    <td style="width: 70%; vertical-align:top;">
+        <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
+            <strong>A comprehensive guide exploring foundational and advanced concepts in real analysis. Topics include set theory, orderings, the axiom of choice, Zorn's lemma, the Schröder-Bernstein theorem, and cardinalities. Delve into metric and compact spaces, countability, separability, and complete spaces. The study further extends to algebras, sigma-algebras, measure theory, and complete measures. It covers product spaces, Carathéodory’s procedure, Lebesgue-Stieltjes measures, and Borel algebras. Integration theory is detailed with \( L^+ \) spaces, \( L^1 \) vector spaces, the Monotone and Dominated Convergence Theorems, \( L^p \) spaces, and modes of convergence. Key theorems like Fubini-Tonelli, Egorov’s, and the Lebesgue-Radon-Nikodym theorem are included, alongside N-dimensional Lebesgue measures, Jordan content, dyadic approximations, and differentiation theory. Concluding with topics in maximal theorems, Hardy-Littlewood functions, Bolzano-Weierstrass, Heine-Borel, and the gamma function, the cheatsheet also explores invariance principles and diffeomorphisms
+        </a>
+    </td>
+    <td style="width: 30%; vertical-align:top; text-align:right;">
+        <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.07.png" alt="Real Analysis Thumbnail" style="width: 100%; height: 170px;">
+        </a>
+    </td>
+  </tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Abstract_Algebra.pdf" target="_blank" title="Abstract Algebra">
