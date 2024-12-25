@@ -54,34 +54,34 @@ title: Classes I Have Taken
       <h2 style="color: #1c1c1c;">Classes I Am Taking in the Future</h2><br>
 
 <h3 style="color: black;">Applied Math Classes</h3><br>
-<p><strong>APMA 1200: Operations Research, Probabilistic Models</strong></p>
-<p><strong>APMA 1690: Computational Probability & Statistics</strong></p>
-<p><strong>APMA 1930W: Probabilities in Quantum Mechanics</strong></p>
-<p><strong>APMA 1930X: Probability, Optimization and Stochastic Calculus</strong></p>
-<p><strong>APMA 2070: Deep Learning for Scientists & Engineers (Graduate)</strong></p>
-<p><strong>APMA 2610: Recent Applications of Probability and Statistics (Graduate)</strong></p>
-<p><strong>APMA 2630: Theory of Probability I (Graduate)</strong></p>
-<p><strong>APMA 2640: Theory of Probability II (Graduate)</strong></p>
-<p><strong>APMA 2670: Mathematical Statistics I (Graduate)</strong></p>
-<p><strong>APMA 2680: Mathematical Statistics II (Graduate)</strong></p>
-<p><strong>MATH 1560: Number Theory</strong></p><br>
+<p><mark style="background-color: #f9f9f9;">APMA 1200: Operations Research, Probabilistic Models</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 1690: Computational Probability & Statistics</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 1930W: Probabilities in Quantum Mechanics</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 1930X: Probability, Optimization and Stochastic Calculus</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2070: Deep Learning for Scientists & Engineers (Graduate)</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2610: Recent Applications of Probability and Statistics (Graduate)</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2630: Theory of Probability I (Graduate)</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2640: Theory of Probability II (Graduate)</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2670: Mathematical Statistics I (Graduate)</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2680: Mathematical Statistics II (Graduate)</mark></p>
+<p><mark style="background-color: #f9f9f9;">MATH 1560: Number Theory</mark></p><br>
 
 <h3 style="color: black;">Computer Science Classes</h3><br>
-<p><strong>CSCI 1420: Machine Learning</strong></p>
-<p><strong>CSCI 1550: Probabilistic Methods in Computer Science</strong></p>
-<p><strong>CSCI 1951L: Blockchains and Cryptocurrencies</strong></p>
-<p><strong>CSCI 2440: Advanced Algorithmic Game Theory (Graduate)</strong></p><br>
+<p><mark style="background-color: #f9f9f9;">CSCI 1420: Machine Learning</mark></p>
+<p><mark style="background-color: #f9f9f9;">CSCI 1550: Probabilistic Methods in Computer Science</mark></p>
+<p><mark style="background-color: #f9f9f9;">CSCI 1951L: Blockchains and Cryptocurrencies</mark></p>
+<p><mark style="background-color: #f9f9f9;">CSCI 2440: Advanced Algorithmic Game Theory (Graduate)</mark></p><br>
 
 <h3 style="color: black;">Other Classes I Am Considering</h3><br>
-<p><strong>APMA 1080: Inference in Genomics and Molecular Biology</strong></p>
-<p><strong>APMA 1860: Graphs and Networks</strong></p>
-<p><strong>APMA 1930P: Mathematics and Climate</strong></p>
-<p><strong>APMA 2210: Hilbert Spaces and their Applications</strong></p>
-<p><strong>APMA 2822G: Topics in Optimal Transport and High Dimensional Probability</strong></p>
-<p><strong>APMA 2822H: Topics in Approximation Theory</strong></p>
-<p><strong>CSCI 1010: Theory of Computation</strong></p>
-<p><strong>MATH 1060: Differential Geometry</strong></p>
-<p><strong>MATH 2210: Complex Function Theory</strong></p 
+<p><mark style="background-color: #f9f9f9;">APMA 1080: Inference in Genomics and Molecular Biology</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 1860: Graphs and Networks</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 1930P: Mathematics and Climate</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2210: Hilbert Spaces and their Applications</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2822G: Topics in Optimal Transport and High Dimensional Probability</mark></p>
+<p><mark style="background-color: #f9f9f9;">APMA 2822H: Topics in Approximation Theory</mark></p>
+<p><mark style="background-color: #f9f9f9;">CSCI 1010: Theory of Computation</mark></p>
+<p><mark style="background-color: #f9f9f9;">MATH 1060: Differential Geometry</mark></p>
+<p><mark style="background-color: #f9f9f9;">MATH 2210: Complex Function Theory</mark></p>
 
 
 
