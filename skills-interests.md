@@ -13,13 +13,15 @@ title: Skills
 <br>
 **Programming Tools**: Python <i class="fab fa-python python-icon"></i>, Java <i class="fab fa-java java-icon"></i>, C <i class="fas fa-code c-icon"></i>, C++ <i class="fas fa-code cpp-icon"></i>, R <i class="fab fa-r-project r-icon"></i>, LaTex <i class="fas fa-file-alt latex-icon"></i>, STATA <i class="fas fa-chart-bar stata-icon"></i>, ReasonML <i class="fas fa-code reasonml-icon"></i>, DrRacket <i class="fas fa-code drracket-icon"></i>, Docker <i class="fab fa-docker docker-icon"></i>, GitHub <i class="fab fa-github github-icon"></i>  
 <br>
+**Libraries**: TensorFlow <i class="fas fa-brain tensorflow-icon"></i>, PyTorch <i class="fas fa-flask pytorch-icon"></i>, NumPy <i class="fas fa-square-root-alt numpy-icon"></i>, Pandas <i class="fas fa-database pandas-icon"></i>, Gymnasium <i class="fas fa-running gymnasium-icon"></i>, OpenSpiel <i class="fas fa-chess openspiel-icon"></i>, Scikit-learn <i class="fas fa-graduation-cap scikit-icon"></i>, Matplotlib <i class="fas fa-chart-line matplotlib-icon"></i>  
+<br>
 **Specializations**: Data-Science (IBM) <i class="fas fa-database ibm-icon"></i>, Capital-Options (Akuna Capital) <i class="fas fa-chart-line akuna-icon"></i>  
 <br>
-**Countries I have been to**: <span class="flag">🇲🇽</span>, <span class="flag">🇺🇸</span>, <span class="flag">🇨🇦</span>, <span class="flag">🇨🇴</span>, <span class="flag">🇵🇹</span>, <span class="flag">🇪🇸</span>, <span class="flag">🇫🇷</span>, <span class="flag">🇩🇪</span>, <span class="flag">🇳🇱</span>, <span class="flag">🇨🇿</span>, <span class="flag">🇦🇹</span>, <span class="flag">🇸🇪</span>, <span class="flag">🇨🇭</span>, <span class="flag">🇱🇺</span>, <span class="flag">🇸🇮</span>, <span class="flag">🇭🇷</span>, <span class="flag">🇧🇦</span>, <span class="flag">🇲🇪</span>, <span class="flag">🇬🇷</span>, <span class="flag">🇹🇷</span>, <span class="flag">🇪🇬</span>, <span class="flag">🇪🇬</span>
+**Interests**: Competitive Chess (2000+ ELO) <i class="fas fa-chess chess-icon"></i>, Mathematical Topics (Probability Theory and Stochastic Processes) <i class="fas fa-superscript math-icon"></i>, Quantitative Strategies for Investing <i class="fas fa-chart-line investing-icon"></i>, Classical Guitar (National 2nd Place in Mexico) <i class="fas fa-guitar guitar-icon"></i>, Trying New Food <i class="fas fa-utensils food-icon"></i>  
 <br>
+**Countries I have been to**: <span class="flag">🇲🇽</span>, <span class="flag">🇺🇸</span>, <span class="flag">🇨🇦</span>, <span class="flag">🇨🇴</span>, <span class="flag">🇵🇹</span>, <span class="flag">🇪🇸</span>, <span class="flag">🇫🇷</span>, <span class="flag">🇩🇪</span>, <span class="flag">🇳🇱</span>, <span class="flag">🇨🇿</span>, <span class="flag">🇦🇹</span>, <span class="flag">🇸🇪</span>, <span class="flag">🇨🇭</span>, <span class="flag">🇱🇺</span>, <span class="flag">🇸🇮</span>, <span class="flag">🇭🇷</span>, <span class="flag">🇧🇦</span>, <span class="flag">🇲🇪</span>, <span class="flag">🇷🇸</span>, <span class="flag">🇬🇷</span>, <span class="flag">🇹🇷</span>, <span class="flag">🇪🇬</span>, <span class="flag">🇵🇷</span>, <span class="flag">🇭🇺</span>, <span class="flag">🇲🇦</span>, <span class="flag">🇵🇦</span>, <span class="flag">🇳🇴</span>, <span class="flag">🇬🇧</span>, <span class="flag">🇩🇰</span>  
 <br>
-**Countries I want to visit soon**: <span class="flag">🇱🇧</span>, <span class="flag">🇲🇦</span>, <span class="flag">🇹🇭</span>, <span class="flag">🇲🇳</span>, <span class="flag">🇻🇳</span>, <span class="flag">🇵🇭</span>, <span class="flag">🇸🇬</span>
-
+**Countries I want to visit soon**: <span class="flag">🇲🇳</span>, <span class="flag">🇱🇧</span>, <span class="flag">🇰🇷</span>, <span class="flag">🇯🇵</span>, <span class="flag">🇹🇭</span>, <span class="flag">🇻🇳</span>, <span class="flag">🇮🇳</span>, <span class="flag">🇸🇬</span>, <span class="flag">🇭🇰</span>
 
 <style>
     .center {
@@ -70,6 +72,9 @@ title: Skills
     .github-icon {
         color: #181717;
     }
+    .tensorflow-icon, .pytorch-icon, .numpy-icon, .pandas-icon, .gymnasium-icon, .openspiel-icon, .scikit-icon, .matplotlib-icon {
+        color: #FF6600;
+    }
     .ibm-icon {
         color: #006699;
     }
@@ -77,6 +82,21 @@ title: Skills
         color: #2ECC71;
     }
     .flag {
-        font-size: 1.5em; /* Adjust the size of the emojis */
+        font-size: 1.5em;
+    }
+    .chess-icon {
+        color: #000;
+    }
+    .math-icon {
+        color: #6A0DAD;
+    }
+    .investing-icon {
+        color: #2ECC71;
+    }
+    .guitar-icon {
+        color: #FF6347;
+    }
+    .food-icon {
+        color: #FF4500;
     }
 </style>
