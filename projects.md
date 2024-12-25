@@ -32,6 +32,11 @@ title: Projects
 &nbsp;&nbsp;&nbsp;- Implemented Value-Iteration for policy optimization (43% win rate), Q-Learning off-policy exploration (41% win rate).  
 &nbsp;&nbsp;&nbsp;- Conducted Monte Carlo simulations across (100,000 episodes) to evaluate policy performance and refine state-action transitions.  
 
+**Balancing a stick on a Cartpole Problem  (Python)** <i class="fab fa-python" style="color: #3776AB;"></i>  
+&nbsp;&nbsp;&nbsp;- Implemented Q-learning algorithms for solving the Cartpole problem, transitioning from discrete state spaces to continuous function approximation.  
+&nbsp;&nbsp;&nbsp;- Applied linear regression techniques with feature engineering and regularization (L1 penalty) to approximate Q-values for policy improvement.  
+&nbsp;&nbsp;&nbsp;- Designed and evaluated custom reward structures and featurization strategies, balancing exploration and exploitation for optimal policy learning. 
+
 **SAT Solving (Python)** <i class="fab fa-python" style="color: #3776AB;"></i>  
 &nbsp;&nbsp;&nbsp;- Developed GSAT and WalkSAT algorithms to solve Boolean Satisfiability (SAT) problems using local search.  
 &nbsp;&nbsp;&nbsp;- Translated Sudoku and N-Queens puzzles into Conjunctive Normal Form (CNF) and implemented SAT solvers to find solutions.  
