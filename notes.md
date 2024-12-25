@@ -9,12 +9,24 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
  <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
-            <strong>A comprehensive guide exploring foundational and advanced concepts in real analysis. Topics include set theory, orderings, the axiom of choice, Zorn's lemma, the Schröder-Bernstein theorem, and cardinalities. Delve into metric and compact spaces, countability, separability, and complete spaces. The study further extends to algebras, sigma-algebras, measure theory, and complete measures. It covers product spaces, Carathéodory’s procedure, Lebesgue-Stieltjes measures, and Borel algebras. Integration theory is detailed with L^+ spaces,  L^1 vector spaces, the Monotone and Dominated Convergence Theorems,  L^p spaces, and modes of convergence. Key theorems like Fubini-Tonelli, Egorov’s, and the Lebesgue-Radon-Nikodym theorem are included, alongside N-dimensional Lebesgue measures, Jordan content, dyadic approximations, and differentiation theory. Concluding with topics in maximal theorems, Hardy-Littlewood functions, Bolzano-Weierstrass, Heine-Borel, and the gamma function, the cheatsheet also explores invariance principles and diffeomorphisms
+            <strong>Real Analysis (Graduate Level):</strong> A comprehensive guide exploring foundational and advanced concepts in real analysis. Topics include set theory, orderings, the axiom of choice, Zorn's lemma, the Schröder-Bernstein theorem, and cardinalities. Delve into metric and compact spaces, countability, separability, and complete spaces. The study further extends to algebras, sigma-algebras, measure theory, and complete measures. It covers product spaces, Carathéodory’s procedure, Lebesgue-Stieltjes measures, and Borel algebras. Integration theory is detailed with L+ spaces,  L1 vector spaces, the Monotone and Dominated Convergence Theorems,  Lp spaces, and modes of convergence. Key theorems like Fubini-Tonelli, Egorov’s, and the Lebesgue-Radon-Nikodym theorem are included, alongside N-dimensional Lebesgue measures, Jordan content, dyadic approximations, and differentiation theory. Concluding with topics in maximal theorems, Hardy-Littlewood functions, Bolzano-Weierstrass, Heine-Borel, and the gamma function, the cheatsheet also explores invariance principles and diffeomorphisms
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
             <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.07.png" alt="Real Analysis Thumbnail" style="width: 100%; height: 170px;">
+        </a>
+    </td>
+  </tr>
+ <tr>
+    <td style="width: 70%; vertical-align:top;">
+        <a href="MATH1460, cheatsheet.pdf" target="_blank" title="Complex Analysis">
+            <strong>Complex Analysis:</strong> A detailed exploration of the complex field, covering fundamental concepts and advanced topics. This includes complex inequalities, the fundamental theorem of algebra, and Cauchy sequences with their modes of convergence. Delve into the Cauchy-Riemann differential equations, continuity, real and total differentiability, harmonic functions and the Laplacian. Also Includes rational functions, holomorphicity, and complex functions such as sine, cosine, logarithm, and exponentiation, alongside branch cuts. Complex integrability is addressed with contour integrals, parametrizations, contours, simply connected loops, and key theorems like the M-L lemma, path independence lemma, and Cauchy integral theorem. Topics extend to deformation lemma, Liouville’s theorem, Jordan curves, and series with convergence tests like the Weierstrass M-test. Power series, Taylor expansions, Laurent expansions, and concepts of uniqueness, analytic functions, annuli, disks, and uniform convergence are also explored. Singularities, poles, the identity theorem, meromorphic functions, Casorati-Weierstrass theorem, analytic continuations, and the Cauchy Residue Theorem are included, along with the argument principle, open mapping theorem, and maximum modulus principle. Additional focus is given to trigonometric integrals, Rouché’s theorem, conformal maps, Möbius transformations, the special linear group, the extended complex plane, the Riemann sphere, stereographic projections, the cross ratio, and principal values.
+        </a>
+    </td>
+    <td style="width: 30%; vertical-align:top; text-align:right;">
+        <a href="MATH1460, cheatsheet.pdf" target="_blank" title="Complex Analysis">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.32.png" alt="Complex Analysis  Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
   </tr>
