@@ -122,7 +122,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="ECON 1630, cheatsheet.pdf" target="_blank" title="Mathematical Econometrics">
-            <strong>Mathematical Econometrics:</strong> ADD DESCRIPTION HERE
+            <strong>Mathematical Econometrics:</strong> A comprehensive guide to foundational and advanced econometric concepts. Topics include estimators and estimands, potential outcomes, and the average treatment effect, alongside marginal and conditional distributions and unconfoundedness. Statistical principles such as the Law of Iterated Expectations, the Central Limit Theorem, and the Law of Large Numbers (LLN) are explored, along with convergence in distribution, asymptotic convergence, and Slutsky's theorem. Hypothesis testing is detailed with t-statistics, multiple hypothesis testing, and concepts like power and significance of tests. The study extends to multivariate normal distributions, covariance matrices, and inequalities such as Markov's, Jensen's, and Chebyshev's. Key regression methods include OLS estimators, linear and multiple regressions, instrumental variables, proxies, and their applications in first-stage and reduced-form regressions. Further topics include panel data analysis, difference-in-differences methodology, parallel trends assumptions, Frisch-Waugh-Lovell theorem, and control function approaches. Practical issues like standard errors, identification, attenuation bias, and delta methods are also covered, offering a complete framework for modern econometric analysis.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
@@ -170,7 +170,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="ECON 1750, Cheatsheet.pdf" target="_blank" title="Investments II">
-            <strong>Investments II:</strong> ADD DESCRIPTION HERE
+            <strong>Investments II:</strong> A deep dive into advanced investment theories and practices. Topics include fixed income securities and continuous compounding, with a focus on theoretical pricing of securities and delta hedging. Options theory is explored in depth, covering option spreads, put-call parity, and the Black-Scholes differential equation. The study includes pricing methodologies for futures and swaps, supported by binomial trees and Monte Carlo simulations. Core mathematical tools such as Brownian motion, Wiener processes, and Ito's lemma are integrated into financial applications. Bond mathematics is thoroughly examined, addressing duration, convexity, and financial intuitions essential for understanding market making. Statistical arbitrage strategies and hedge fund operations are also covered, alongside the dynamics of interest rates and their impact on financial instruments.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
