@@ -116,9 +116,21 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   </tr>
 </table>
 <br>
-<h2 style="color: #1a1a1a; text-align: center;" >Statistics & Probability</h2>
+<h2 style="color: #1a1a1a; text-align: center;">Probability, Statistics & Economics</h2>
 
 <table style="width:100%;">
+  <tr>
+    <td style="width: 70%; vertical-align:top;">
+        <a href="ECON 1630, cheatsheet.pdf" target="_blank" title="Mathematical Econometrics">
+            <strong>Mathematical Econometrics:</strong> ADD DESCRIPTION HERE
+        </a>
+    </td>
+    <td style="width: 30%; vertical-align:top; text-align:right;">
+        <a href="ECON 1630, cheatsheet.pdf" target="_blank" title="Mathematical Econometrics">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.23.03.png" alt="Mathematical Econometrics Thumbnail" style="width: 100%; height: 170px;">
+        </a>
+    </td>
+  </tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Statistical_InferenceII.pdf" target="_blank" title="Statistical Inference II">
@@ -146,12 +158,24 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Econometrics.pdf" target="_blank" title="Econometrics">
-            <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on linear regression models, hypothesis testing, and natural estimators. <br>
+            <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on linear regression models, hypothesis testing, and natural estimators.
         </a>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="assets/files/Econometrics.pdf" target="_blank" title="Econometrics">
             <img src="{{ site.baseurl }}/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail" style="width: 100%; height: 170px;">
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 70%; vertical-align:top;">
+        <a href="ECON 1750, Cheatsheet.pdf" target="_blank" title="Investments II">
+            <strong>Investments II:</strong> ADD DESCRIPTION HERE
+        </a>
+    </td>
+    <td style="width: 30%; vertical-align:top; text-align:right;">
+        <a href="ECON 1750, Cheatsheet.pdf" target="_blank" title="Investments II">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.23.24.png" alt="Investments II Thumbnail" style="width: 100%; height: 170px;">
         </a>
     </td>
   </tr>
