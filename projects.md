@@ -9,6 +9,25 @@ title: Projects
 <div style="display: flex; flex-direction: column; align-items: flex-start;">
     <div style="display: flex; justify-content: space-between; width: 100%;">
         <div>
+            <strong>PCA Investing: Principal Component Analysis for Stock Portfolios</strong> <i class="fas fa-chart-line" style="color: #3498db;"></i> <br>
+            <span style="color: white;">
+            &nbsp;&nbsp;&nbsp;- Conducted PCA on stock returns to identify principal components capturing the majority of variance in market data. <br>
+            &nbsp;&nbsp;&nbsp;- Built a market-neutral trading strategy based on risk-normalized eigenportfolios and factor returns.<br>
+            &nbsp;&nbsp;&nbsp;- Evaluated in-sample and out-of-sample performance, visualizing cumulative returns and computing Sharpe and Information Ratios. <br>
+            &nbsp;&nbsp;&nbsp;- Simulated dynamic portfolio allocation strategies to mitigate look-ahead bias and optimize alpha prediction.<br>
+            </span>
+        </div>
+        <div style="flex-shrink: 0; margin-left: 20px;">
+            <a href="assets/files/ECON_1750_PCA.pdf" target="_blank" title="PCA Investing Project">
+                <img src="{{ site.baseurl }}/assets/images/thumbnails/PCA_thumbnail.jpg" alt="PCA Investing Thumbnail" style="width: 270px; height: auto;">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <div>
             <strong>Research: Fourier Analysis and Laplace’s Equation</strong> <i class="fas fa-book" style="color: #f39c12;"></i>  <br>
             <span style="color: white;">
             &nbsp;&nbsp;&nbsp;- Authored a 50-page research paper in Real Analysis and Linear Algebra: complex-real function theory, convergence criteria  <br>
