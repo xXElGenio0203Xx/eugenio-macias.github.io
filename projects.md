@@ -18,7 +18,7 @@ title: Projects
             </span>
         </div>
         <div style="flex-shrink: 0; margin-left: 20px;">
-            <a href="assets/files/ECON_1750_PCA.pdf" target="_blank" title="PCA Investing Project">
+            <a href="ECON_1750_PCA (1).pdf" target="_blank" title="PCA Investing Project">
                 <img src="{{ site.baseurl }}/assets/images/thumbnails/PCA_thumbnail.jpg" alt="PCA Investing Thumbnail" style="width: 270px; height: auto;">
             </a>
         </div>
