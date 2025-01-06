@@ -26,11 +26,11 @@ title: Classes I Have Taken
       <p><strong>APMA 0360: Applied Partial Differential Equations</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>APMA 1655: Honors Statistical Inference I</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
       <p><strong>APMA 1660: Statistical Inference II</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★☆☆☆☆☆☆☆</span></p> 
-      <p><strong>APMA 2110: Graduate Real Analysis II</strong><br> Difficulty:   <span class="stars">★★★★★★★★★☆</span><br> Time Commitment:   <span class="stars">★★★☆☆☆☆☆☆☆</span></p> 
+      <p><strong>APMA 2110: Graduate Real Analysis</strong><br> Difficulty:   <span class="stars">★★★★★★★★★☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p> 
   
       <h3 style="color: black;">Computer Science Classes</h3><br> 
-      <p><strong>CSCI 0170: Computer Science, An Integrated Introduction</strong><br> Difficulty:   <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★★☆</span></p>
-      <p><strong>CSCI 0200: Programming Design, Data Structures & Algorithms</strong><br> Difficulty:   <span class="stars">★★★★★☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★☆☆</span></p>
+      <p><strong>CSCI 0170: Computer Science, An Integrated Introduction</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★☆☆</span></p>
+      <p><strong>CSCI 0200: Programming Design, Data Structures & Algorithms</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★☆☆</span></p>
       <p><strong>CSCI 0330: Introduction to Computer Systems</strong><br> Difficulty:   <span class="stars">★★★★★★★★☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★★★★</span></p>
       <p><strong>CSCI 1411: Artificial Intelligence </strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★☆☆☆</span></p>
       <p><strong>CSCI 1515: Applied Cryptography</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★★☆☆☆</span></p> 
@@ -38,7 +38,7 @@ title: Classes I Have Taken
       <h3 style="color: black;">Economics</h3><br> 
       <p><strong>ECON 1210: Intermediate Macroeconomics</strong><br> Difficulty:   <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p>
       <p><strong>ECON 1620: Introduction to Econometrics</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆☆</span></p>
-      <p><strong>ECON 1630: Mathematical Econometrics</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★★☆☆☆</span></p>
+      <p><strong>ECON 1630: Mathematical Econometrics</strong><br> Difficulty:   <span class="stars">★★★★★★★☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★★☆☆☆☆</span></p>
       <p><strong>ECON 1750: Investments II</strong><br> Difficulty:   <span class="stars">★★★★★★☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆</span></p>
       <p><strong>GRMN 0300: Intermediate German I</strong><br> Difficulty:   <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★☆☆☆☆☆☆☆</span></p>
       <p><strong>GRMN 0400: Intermediate German II (WRIT)</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p>
@@ -46,7 +46,7 @@ title: Classes I Have Taken
        <h3 style="color: black;">Other Areas</h3><br> 
       <p><strong>MUSC 0810: Strings I (AMP)</strong><br> Difficulty:   <span class="stars">★★★☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
       <p><strong>MUSC 0810: Strings II (AMP)</strong><br> Difficulty:   <span class="stars">★★★★☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★☆☆☆☆☆☆☆</span></p>
-      <p><strong>CLPS 1565: The Sense of Smell: Perception, Cognition, Health & Technology</strong><br> Difficulty:<span class="stars">★☆☆☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★☆☆☆☆☆☆☆☆</span></p>
+      <p><strong>CLPS 1565: The Sense of Smell: Perception, Cognition, Health & Technology</strong><br> Difficulty:<span class="stars">★★☆☆☆☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★☆☆☆☆☆☆☆</span></p>
       <p><strong>PHIL 0640: Logic</strong><br> Difficulty:   <span class="stars">★★★★★☆☆☆☆☆</span><br> Time Commitment:   <span class="stars">★★★★☆☆☆☆☆☆</span></p> <br> <br> <br> <br><br> <br> 
 
     </td>
