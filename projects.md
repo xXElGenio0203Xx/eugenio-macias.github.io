@@ -5,7 +5,24 @@ title: Projects
 <div class="center">
     <h1> Projects</h1>
 </div>
-
+<div style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 30px;">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <div>
+            <strong>Structure-Preserving Deep Learning for Charged Particle Dynamics</strong> <i class="fas fa-atom" style="color: #9b59b6;"></i> <br>
+            <span style="color: white;">
+            &nbsp;&nbsp;&nbsp;- Developed a framework for learning charged particle dynamics in electromagnetic fields using Symplectic, Poisson, and Physics-Informed Neural Networks (PINNs).<br>
+            &nbsp;&nbsp;&nbsp;- Modeled dynamical systems with Hamiltonian and non-canonical Poisson structure using neural architectures aligned with structure-preserving flows.<br>
+            &nbsp;&nbsp;&nbsp;- Solved inverse problems by estimating physical parameters (mass and charge) via hybrid loss minimization that balances data and physical consistency.<br>
+            &nbsp;&nbsp;&nbsp;- Implemented custom symplectic blocks, latent diffeomorphic mappings, and evaluated volume preservation to approximate symplectomorphisms in learned dynamics.
+            </span>
+        </div>
+        <div style="flex-shrink: 0; margin-left: 20px;">
+            <a href="assets/files/electron_dynamics_DL.pdf" target="_blank" title="Charged Particle Dynamics with DL">
+                <img src="{{ site.baseurl }}/assets/images/thumbnails/electron.png" alt="Electron Dynamics Thumbnail" style="width: 270px; height: auto;">
+            </a>
+        </div>
+    </div>
+</div>
 <div style="display: flex; flex-direction: column; align-items: flex-start;">
     <div style="display: flex; justify-content: space-between; width: 100%;">
         <div>
