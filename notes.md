@@ -15,7 +15,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   </td>
   <td style="width: 30%; vertical-align:top; text-align:right;">
       <a href="assets/files/APMA 2120, midterm.pdf" target="_blank" title="Hilbert and Banach Spaces">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2120_thumbnail.png" alt="Hilbert and Banach Spaces Thumbnail" style="width: 100%; height: 200px;">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2120_thumbnail.png" alt="Hilbert and Banach Spaces Thumbnail" style="width: 100%; height: 180px;">
       </a>
   </td>
 </tr>
@@ -39,7 +39,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="MATH1460, cheatsheet.pdf" target="_blank" title="Complex Analysis">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.32.png" alt="Complex Analysis  Thumbnail" style="width: 100%; height: 170px;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.32.png" alt="Complex Analysis  Thumbnail" style="width: 100%; height: 200px;">
         </a>
     </td>
   </tr>
