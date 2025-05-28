@@ -8,18 +8,20 @@ title: Experience
 </div>
 <br>
 <h3 style="font-weight: bold; font-size: 1.5em;">
+  <a href="https://www.citigroup.com/" target="_blank" style="color: black; text-decoration: none;">Citi, Quantitative Analyst Intern (Incoming)</a> <span style="color: black;">(June 2025 – August 2025)</span>
+</h3>
+- Selected for an internship within Citi’s Markets Division in New York City, focusing on quantitative research and trading strategies across global asset classes  
+- Will work alongside quantitative researchers and traders to analyze large financial datasets, identify alpha-generating signals, and develop pricing models for derivatives and fixed income products  
+- Expected to implement statistical arbitrage strategies, evaluate risk exposures, and contribute to the automation of execution algorithms using tools such as Python, NumPy, and Pandas  
+- Will gain hands-on experience in portfolio optimization, market microstructure, yield curve modeling, and scenario stress-testing across equities, FX, commodities, and credit markets
+
+<br>
+<h3 style="font-weight: bold; font-size: 1.5em;">
   <a href="https://www.davisuwcscholars.org/" target="_blank" style="color: black; text-decoration: none;">Shelby Davis Scholars, The Davis UWC Scholars Program</a> <span style="color: black;">(August 2022 - May 2026)</span>
 </h3>
 - Largest privately funded scholarship for international students in the USA
 - Contributed to transforming collegiate campuses in the USA into globally engaged environments
-
 <br>
-
-<h3 style="font-weight: bold; font-size: 1.5em;">
-  <a href="https://scale.com/" target="_blank" style="color: black; text-decoration: none;">Upcoming Software Engineer @ Scale AI</a> <span style="color: black;">(September 2024)</span>
-</h3>
-- Translate AI research into practical, scalable software solutions including integrating algorithms into existing systems.
-- Evaluate AI-generated code, develop robust test-cases, and develop new platforms for AI functionalities
 
 <br>
 
