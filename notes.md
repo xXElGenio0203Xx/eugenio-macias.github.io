@@ -15,7 +15,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   </td>
   <td style="width: 30%; vertical-align:top; text-align:right;">
       <a href="assets/files/APMA 2120, midterm.pdf" target="_blank" title="Hilbert and Banach Spaces">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2120_thumbnail.jpg" alt="Hilbert and Banach Spaces Thumbnail" style="width: 100%; height: 170px;">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2120_thumbnail.png" alt="Hilbert and Banach Spaces Thumbnail" style="width: 100%; height: 200px;">
       </a>
   </td>
 </tr>
@@ -27,7 +27,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
     </td>
     <td style="width: 30%; vertical-align:top; text-align:right;">
         <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.07.png" alt="Real Analysis Thumbnail" style="width: 100%; height: 170px;">
+            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.07.png" alt="Real Analysis Thumbnail" style="width: 100%; height: 200px;">
         </a>
     </td>
   </tr>
@@ -63,7 +63,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   </td>
   <td style="width: 30%; vertical-align:top; text-align:right;">
       <a href="assets/files/APMA 1200, chestsheet .pdf" target="_blank" title="APMA 1200 - Probabilistic Models">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_1200_thumbnail.jpg" alt="APMA 1200 Thumbnail" style="width: 100%; height: 170px;">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_1200_thumbnail.png" alt="APMA 1200 Thumbnail" style="width: 100%; height: 170px;">
       </a>
   </td>
 </tr>
@@ -111,7 +111,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   </td>
   <td style="width: 30%; vertical-align:top; text-align:right;">
       <a href="assets/files/APMA 2070, class notes.pdf" target="_blank" title="Scientific Deep Learning">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2070_thumbnail.jpg" alt="APMA 2070 Thumbnail" style="width: 100%; height: 170px;">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2070_thumbnail.png" alt="APMA 2070 Thumbnail" style="width: 100%; height: 170px;">
       </a>
   </td>
 </tr>
@@ -164,7 +164,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   </td>
   <td style="width: 30%; vertical-align:top; text-align:right;">
       <a href="assets/files/CSCI 1420, classnotes.pdf" target="_blank" title="Machine Learning">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/CSCI_1420_thumbnail.jpg" alt="Machine Learning Thumbnail" style="width: 100%; height: 170px;">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/CSCI_1420_thumbnail.png" alt="Machine Learning Thumbnail" style="width: 100%; height: 170px;">
       </a>
   </td>
 </tr>
