@@ -6,6 +6,19 @@ title: Cheat Sheets
 <h2 style="color: #1a1a1a; text-align: center;">Mathematics</h2>
 Click Image for PDF <i class="fas fa-arrow-right"></i>
 <table style="width:100%;">
+
+ <tr>
+  <td style="width: 70%; vertical-align:top;">
+      <a href="assets/files/APMA 2120, midterm.pdf" target="_blank" title="Hilbert and Banach Spaces">
+          <strong>Hilbert and Banach Spaces (Graduate Level):</strong> A deep dive into metric and Banach spaces, norms, seminorms, Baire category theorem, Hahn-Banach extension, convex analysis, weak topologies, and duality theory. Also covers orthonormal bases, Gram-Schmidt, L² spaces, Bessel’s inequality, Fourier transforms, quotient spaces, open mapping, closed graph, uniform boundedness, Sobolev spaces, convolution, Young's, Hölder’s, and Minkowski’s inequalities, Goldstine's lemma, and reflexivity in separable spaces.
+      </a>
+  </td>
+  <td style="width: 30%; vertical-align:top; text-align:right;">
+      <a href="assets/files/APMA 2120, midterm.pdf" target="_blank" title="Hilbert and Banach Spaces">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2120_thumbnail.jpg" alt="Hilbert and Banach Spaces Thumbnail" style="width: 100%; height: 170px;">
+      </a>
+  </td>
+</tr>
  <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
@@ -43,6 +56,18 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
     </td>
   </tr>
   <tr>
+  <td style="width: 70%; vertical-align:top;">
+      <a href="assets/files/APMA 1200, chestsheet .pdf" target="_blank" title="APMA 1200 - Probabilistic Models">
+          <strong>Operations Research: Probabilistic Models:</strong> Covers probability spaces, random walks, discrete and continuous Markov chains, hitting times, stationary distributions, strong Markov property, Poisson processes, Brownian motion, martingales, stopping times, and convergence theorems. Key results include Doob’s optional stopping theorem, Kolmogorov forward and backward equations, and reflection principle.
+      </a>
+  </td>
+  <td style="width: 30%; vertical-align:top; text-align:right;">
+      <a href="assets/files/APMA 1200, chestsheet .pdf" target="_blank" title="APMA 1200 - Probabilistic Models">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_1200_thumbnail.jpg" alt="APMA 1200 Thumbnail" style="width: 100%; height: 170px;">
+      </a>
+  </td>
+</tr>
+  <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Topology.pdf" target="_blank" title="Topology">
             <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the fundamental groups, covering spaces, Hausdorff properties, path-connectedness, equivalence classes, point compactifications, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
@@ -78,6 +103,18 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
         </a>
     </td>
   </tr>
+  <tr>
+  <td style="width: 70%; vertical-align:top;">
+      <a href="assets/files/APMA 2070, class notes.pdf" target="_blank" title="Scientific Deep Learning">
+          <strong>Scientific Deep Learning:</strong> Merges machine learning with physical principles. Includes topics on physics-informed neural networks (PINNs), neural ODEs, residual networks, universal approximation of PDEs, adjoint methods, energy conservation in dynamics, and learning invariant manifolds. Ideal for modeling and solving forward/inverse problems in scientific computing.
+      </a>
+  </td>
+  <td style="width: 30%; vertical-align:top; text-align:right;">
+      <a href="assets/files/APMA 2070, class notes.pdf" target="_blank" title="Scientific Deep Learning">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2070_thumbnail.jpg" alt="APMA 2070 Thumbnail" style="width: 100%; height: 170px;">
+      </a>
+  </td>
+</tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="assets/files/Linear_Algebra.pdf" target="_blank" title="Linear Algebra">
@@ -119,6 +156,18 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
 <h2 style="color: #1a1a1a; text-align: center;">Probability, Statistics & Economics</h2>
 
 <table style="width:100%;">
+  <tr>
+  <td style="width: 70%; vertical-align:top;">
+      <a href="assets/files/CSCI 1420, classnotes.pdf" target="_blank" title="Machine Learning">
+          <strong>Machine Learning:</strong> Core topics include Perceptrons, Linear & Polynomial Regression, Logistic Regression, SGD, Bias-Variance Tradeoff, Model Selection & Regularization, PAC Learning, VC Dimension, Decision Trees, KNN, SVMs, Naive Bayes, Kernel Methods, Boosting, Neural Networks, Backpropagation, Deep Learning, K-Means, Expectation-Maximization, and Principal Component Analysis.
+      </a>
+  </td>
+  <td style="width: 30%; vertical-align:top; text-align:right;">
+      <a href="assets/files/CSCI 1420, classnotes.pdf" target="_blank" title="Machine Learning">
+          <img src="{{ site.baseurl }}/assets/images/thumbnails/CSCI_1420_thumbnail.jpg" alt="Machine Learning Thumbnail" style="width: 100%; height: 170px;">
+      </a>
+  </td>
+</tr>
   <tr>
     <td style="width: 70%; vertical-align:top;">
         <a href="ECON 1630, cheatsheet.pdf" target="_blank" title="Mathematical Econometrics">
