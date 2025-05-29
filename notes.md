@@ -148,7 +148,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
   <tr>
   <td style="width: 70%; vertical-align:top;">
       <a href="APMA 2070,  class notes.pdf" target="_blank" title="Scientific Deep Learning">
-          <strong>Scientific Deep Learning:</strong> Merges machine learning with physical principles. Includes topics on physics-informed neural networks (PINNs), neural ODEs, residual networks, universal approximation of PDEs, adjoint methods, energy conservation in dynamics, and learning invariant manifolds. Ideal for modeling and solving forward/inverse problems in scientific computing.
+          <strong>Scientific Deep Learning (Graduate Level):</strong> Merges machine learning with physical principles. Includes topics on physics-informed neural networks (PINNs), neural ODEs, residual networks, universal approximation of PDEs, adjoint methods, energy conservation in dynamics, and learning invariant manifolds. Ideal for modeling and solving forward/inverse problems in scientific computing.
       </a>
   </td>
   <td style="width: 30%; vertical-align:top; text-align:right;">
