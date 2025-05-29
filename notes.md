@@ -152,7 +152,7 @@ Click Image for PDF <i class="fas fa-arrow-right"></i>
       </a>
   </td>
   <td style="width: 30%; vertical-align:top; text-align:right;">
-      <a href="assets/files/APMA 2070, class notes.pdf" target="_blank" title="Scientific Deep Learning">
+      <a href="APMA 2070, class notes.pdf" target="_blank" title="Scientific Deep Learning">
           <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2070_thumbnail.png" alt="APMA 2070 Thumbnail" style="width: 100%; height: 170px;">
       </a>
   </td>
