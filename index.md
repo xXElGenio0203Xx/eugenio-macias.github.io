@@ -17,7 +17,7 @@ title: Home
         <source type="image/webp" srcset="{{ site.baseurl }}/assets/images/profile-pic.webp" />
         <source type="image/jpeg" srcset="{{ site.baseurl }}/assets/images/profile-pic.jpg" />
         <img class="profile-pic"
-             src="{{ site.baseurl }}/assets/images/profile_pic.png"
+             src="{{ site.baseurl }}/assets/images/profile_pic.jpg"
              alt="Profile picture">
       </picture>
       <div class="ring"></div>
