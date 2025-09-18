@@ -60,7 +60,7 @@ title: Home
 </section>
 
 <!-- Highlights -->
-<section class="highlights">
+<section class="highlights compact-top">
   <h2 class="section-title">Highlights</h2>
   <div class="cards">
 
@@ -110,6 +110,7 @@ title: Home
     --g1:#7c83ff; --g2:#22d3ee; --g3:#34d399; --g4:#f59e0b;
     --shadow:0 24px 60px rgba(0,0,0,.55);
   }
+  html{ scroll-behavior:smooth; } /* nicer anchor scrolling */
   body { background: var(--bg); color: var(--ink); overflow-x:hidden; }
 
   /* Starfield & Aurora */
@@ -123,13 +124,16 @@ title: Home
       radial-gradient(55% 45% at 50% 75%, rgba(52,211,153,.12), transparent 70%),
       conic-gradient(from 210deg at 50% 50%, rgba(245,158,11,.10), transparent 70%);
     animation: drift 22s ease-in-out infinite alternate;
+    will-change: transform;
   }
   @keyframes drift{ 0%{ transform: translate3d(0,0,0) scale(1); } 100%{ transform: translate3d(2vw,-1vh,0) scale(1.04); } }
 
   /* Hero */
-  .hero{ position:relative; padding: clamp(24px, 5vw, 48px) 16px; }
-  .hero-inner{ max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:20px; align-items:center; }
-  @media (min-width:980px){ .hero-inner{ grid-template-columns:.95fr 1.65fr; gap:36px; } }
+  .hero{ position:relative; padding: clamp(20px, 4.5vw, 40px) 16px; }
+  /* tighter bottom to pull the cards up */
+  .hero{ padding-bottom: clamp(8px, 2vw, 16px); }
+  .hero-inner{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:18px; align-items:center; }
+  @media (min-width:980px){ .hero-inner{ grid-template-columns:.95fr 1.65fr; gap:28px; } }
 
   /* Profile + ring */
   .pfp-wrap{
@@ -137,6 +141,7 @@ title: Home
     border-radius:24px; overflow:hidden; border:1px solid var(--line);
     background: linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
     box-shadow:var(--shadow); transform-style:preserve-3d; transition:transform .2s ease;
+    will-change: transform;
   }
   .profile-pic{ width:100%; height:100%; object-fit:cover; display:block; opacity:.98; transform:scale(1.02); transition:transform .35s ease, opacity .35s ease; }
   .pfp-wrap:hover .profile-pic{ transform:scale(1.06); opacity:1; }
@@ -155,7 +160,7 @@ title: Home
 
   .badge{ display:inline-block; font-size:.92rem; font-weight:700; padding:6px 12px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
 
-  .typing{ margin:.4rem 0 1.2rem; color:var(--ink); opacity:.95; font-size:clamp(1rem,1.6vw,1.1rem); min-height:1.4em; }
+  .typing{ margin:.4rem 0 1.0rem; color:var(--ink); opacity:.95; font-size:clamp(1rem,1.6vw,1.1rem); min-height:1.4em; }
   .typing span{ display:inline-block; white-space:nowrap; overflow:hidden; border-right:2px solid currentColor; animation: typing 5s steps(42,end) infinite alternate, caret 700ms steps(1) infinite; }
   @keyframes typing { from { width: 0; } to { width: 42ch; } }
   @keyframes caret { 50% { border-color: transparent; } }
@@ -189,20 +194,23 @@ title: Home
   .cool-btn:hover{ transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.30); filter:saturate(1.1); }
 
   /* Highlights */
-  .highlights{ max-width:1100px; margin: 10px auto 44px; padding: 0 16px; }
-  .section-title{ margin:8px 0 14px; font-size:1.18rem; letter-spacing:.2px; color:var(--ink); }
-  .section-title::after{ content:""; display:block; height:2px; width:86px; margin-top:.4rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
+  /* pull section closer to hero */
+  .highlights.compact-top{ margin-top: -6px; }
+  .highlights{ max-width:1280px; margin: 0 auto 40px; padding: 0 16px; }
+  .section-title{ margin:4px 0 12px; font-size:1.18rem; letter-spacing:.2px; color:var(--ink); }
+  .section-title::after{ content:""; display:block; height:2px; width:86px; margin-top:.35rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
 
-  /* Bigger cards */
-  .cards{ display:grid; gap:16px; grid-template-columns:1fr; perspective:1000px; }
-  @media (min-width:980px){ .cards{ grid-template-columns:1.3fr 1fr 1fr; } }
+  /* Wider cards on desktop (2-column) */
+  .cards{ display:grid; gap:14px; grid-template-columns:1fr; perspective:1000px; }
+  @media (min-width:980px){ .cards{ grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px; } }
 
   .card{
-    background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; box-shadow:var(--shadow);
-    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    color:var(--ink); position:relative; overflow:hidden; font-size:1.02rem;
+    background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; box-shadow:var(--shadow);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, filter .18s ease;
+    color:var(--ink); position:relative; overflow:hidden; font-size:1.04rem;
+    will-change: transform;
   }
-  .card header{ font-weight:900; margin-bottom:8px; color:var(--ink); font-size:1.02rem; }
+  .card header{ font-weight:900; margin-bottom:8px; color:var(--ink); font-size:1.06rem; }
   .card ul{ margin:.2rem 0 0 1.1rem; }
   .card li{ margin:.35rem 0; color:var(--ink); opacity:.95; line-height:1.35; }
 
@@ -212,7 +220,7 @@ title: Home
     background: conic-gradient(from 0deg, var(--g1), var(--g2), var(--g3), var(--g1));
     transition: opacity .25s ease; filter: blur(16px);
   }
-  .card:hover{ transform: translateY(-3px) rotateX(1.2deg) rotateY(-1.2deg); border-color:#2a2f39; box-shadow:0 22px 52px rgba(0,0,0,.45); }
+  .card:hover{ transform: translateY(-3px) rotateX(1.2deg) rotateY(-1.2deg) scale(1.012); border-color:#2a2f39; box-shadow:0 22px 52px rgba(0,0,0,.45); }
   .card:hover::after{ opacity:.25; }
   .card:hover:before{
     content:""; position:absolute; top:0; left:-40%; width:40%; height:100%; transform:skewX(-20deg);
@@ -222,7 +230,7 @@ title: Home
   @keyframes sheen{ from{ left:-40%; } to{ left:120%; } }
 
   /* Extra tilt target on hover */
-  .tilt-card:hover{ transform: translateY(-3px) rotateX(2deg) rotateY(-2deg) scale(1.012); }
+  .tilt-card:hover{ transform: translateY(-3px) rotateX(2deg) rotateY(-2deg) scale(1.02); }
 
   /* Floating math symbols */
   .symbol-layer{
@@ -242,7 +250,6 @@ title: Home
     animation: float var(--dur,12s) ease-in-out var(--delay,0s) infinite alternate;
     will-change: transform, opacity, filter;
   }
-
   @keyframes float{
     to{
       transform: translate3d(var(--tx, 20px), var(--ty, -30px), 0) rotate(calc(var(--rot,0deg) + 12deg));
@@ -276,13 +283,14 @@ title: Home
 </style>
 
 <script>
-/* ===== Tiny Starfield (GPU-friendly) ===== */
+/* ===== Tiny Starfield (GPU-friendly + perf-aware) ===== */
 (function(){
   const canvas = document.getElementById('stars');
   if(!canvas) return;
   const ctx = canvas.getContext('2d', { alpha: true });
-  let w, h, dpr = Math.min(window.devicePixelRatio || 1, 2);
-  let stars = [], N = 160;
+  let w, h, dpr = Math.min(window.devicePixelRatio || 1, 1.35); // lower DPR for smoother scroll
+  let stars = [], N = 120; // fewer stars for better performance
+  let paused = false;
 
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -297,24 +305,47 @@ title: Home
   function spawn(){
     stars = Array.from({length: N}, ()=>({
       x: rnd(0, w), y: rnd(0, h),
-      r: rnd(0.4, 1.8)*dpr, a: rnd(.3,.9),
-      vx: rnd(-.02,.02)*dpr, vy: rnd(.02,.12)*dpr
+      r: rnd(0.4, 1.6)*dpr, a: rnd(.3,.9),
+      vx: rnd(-.02,.02)*dpr, vy: rnd(.02,.10)*dpr
     }));
   }
-  function step(){
+  function draw(){
     ctx.clearRect(0,0,w,h);
     ctx.save(); ctx.globalCompositeOperation = 'lighter';
     for(const s of stars){
       ctx.globalAlpha = s.a;
       ctx.fillStyle = '#ffffff';
       ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2); ctx.fill();
+    }
+    ctx.restore();
+  }
+  function update(){
+    for(const s of stars){
       s.x += s.vx; s.y += s.vy;
       if(s.x < -5 || s.x > w+5 || s.y > h+5) { s.x = rnd(0,w); s.y = -5; }
     }
-    ctx.restore();
+  }
+  function step(){
+    draw();
+    if(!paused) update();
     if(!reduce) requestAnimationFrame(step);
   }
+
+  // Pause heavy updates when user scrolls down the page
+  let lastY = 0, ticking = false;
+  function onScroll(){
+    lastY = window.scrollY || 0;
+    if(!ticking){
+      window.requestAnimationFrame(()=>{
+        paused = lastY > innerHeight * 0.7;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  addEventListener('scroll', onScroll, { passive:true });
   addEventListener('resize', resize, { passive: true });
+
   resize(); if(!reduce) step();
 })();
 
