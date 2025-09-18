@@ -10,11 +10,20 @@ title: Home
 <section class="hero">
   <div class="hero-inner">
 
+    <!-- Profile (with HEIC + fallbacks) -->
     <div class="pfp-wrap" data-tilt>
-      <img class="profile-pic" src="{{ site.baseurl }}/assets/images/profile_pic.png" alt="Profile picture of Eugenio Macias">
+      <picture>
+        <source type="image/heic" srcset="{{ site.baseurl }}/assets/images/profile%20pic.HEIC" />
+        <source type="image/webp" srcset="{{ site.baseurl }}/assets/images/profile-pic.webp" />
+        <source type="image/jpeg" srcset="{{ site.baseurl }}/assets/images/profile-pic.jpg" />
+        <img class="profile-pic"
+             src="{{ site.baseurl }}/assets/images/gportfolio_profile_picture.png"
+             alt="Profile picture of Eugenio Macias" />
+      </picture>
       <div class="ring"></div>
     </div>
 
+    <!-- Intro -->
     <div class="intro">
       <h1 class="title">
         Eugenio Macias
@@ -25,16 +34,22 @@ title: Home
         <span>Probability × Statistics × PDEs × ML under uncertainty</span>
       </p>
 
+      <!-- About with badge-style background -->
       <article class="glass about" data-tilt>
         <h2>About me</h2>
-        <p>
-          I’m an international student from Mexico at Brown University. I focus on the intersection of <strong>probability</strong>,
-          <strong>mathematical statistics</strong>, and <strong>differential equations</strong> with <strong>machine learning under uncertainty</strong>.
-          I enjoy pairing <em>measure-theoretic</em> foundations with <em>numerical methods</em> and <em>algorithm design</em> to build robust, data-driven models.
-          Currently, I’m writing a thesis on <strong>weak-form PDE discovery for collective stochastic dynamics</strong>—developing
-          sparse-regression (WSINDy) and equation-free approaches that recover governing laws from high-dimensional, noisy trajectories—methods directly applicable to modeling
-          <strong>complex markets and risk</strong>.
-        </p>
+        <div class="text-bg">
+          <p>
+            I’m an international student from Mexico at Brown University. I focus on the intersection of
+            <strong>probability</strong>, <strong>mathematical statistics</strong>, and <strong>differential equations</strong>
+            with <strong>machine learning under uncertainty</strong>. I pair <em>measure-theoretic</em> foundations with
+            <em>numerical methods</em> and <em>algorithm design</em> to build robust, data-driven models. I’m currently writing a thesis on
+            <strong>weak-form PDE discovery for collective stochastic dynamics</strong>—developing sparse-regression (WSINDy) and
+            equation-free approaches that recover governing laws from high-dimensional, noisy trajectories—methods directly applicable to
+            modeling <strong>complex markets and risk</strong>.
+            Outside of math, I love <strong>♟ chess</strong>, <strong>🎸 classical guitar</strong>, and <strong>✈️ traveling</strong>—
+            I’ve visited <strong>34 countries</strong>, starting from my IB at <strong>UWC Mostar</strong>.
+          </p>
+        </div>
       </article>
     </div>
   </div>
@@ -46,7 +61,7 @@ title: Home
   <div class="cards">
 
     <!-- Citi Markets -->
-    <article class="card glow">
+    <article class="card glow tilt-card" data-tilt>
       <header>Citi Markets — Quantitative Analyst Intern (NYC, Summer 2025)</header>
       <ul>
         <li>Built <strong>Python–C++ Monte Carlo & PDE solvers</strong>; validated pricing/Greeks and accelerated runtimes.</li>
@@ -56,7 +71,7 @@ title: Home
     </article>
 
     <!-- DE Shaw / Bridgewater / Buddywise -->
-    <article class="card">
+    <article class="card tilt-card" data-tilt>
       <header>D. E. Shaw · Bridgewater · Buddywise</header>
       <ul>
         <li><strong>Latitude Fellowship</strong> at The D. E. Shaw Group (NYC): multivariate time-series & sector forecasting.</li>
@@ -66,12 +81,12 @@ title: Home
     </article>
 
     <!-- Current paths -->
-    <article class="card">
+    <article class="card tilt-card" data-tilt>
       <header>What I’m pursuing</header>
       <ul>
         <li><strong>Option A:</strong> <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
         <li><strong>Option B:</strong> <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
-        <li><strong>Option C:</strong> <em>AI startup with my brother</em> — applied ML systems and decision-intelligence tooling.</li>
+        <li><strong>Option C:</strong> <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
       </ul>
       <div class="badges">
         <span class="badge">Quant</span><span class="badge">Stat ML</span><span class="badge">PDEs</span>
@@ -81,18 +96,58 @@ title: Home
   </div>
 </section>
 
+<!-- Walking ASCII Math Robot -->
+<div class="mathbot" aria-hidden="true">
+  <!-- walking frames -->
+  <pre class="frame frame-1">        __
+   ____/  \____
+  /   ∑    ∑   \
+ |      ∂        |
+ |   [ π ]       |
+ |   ────        |
+ |  √   √        |
+ |  |   |        |
+  \__∇___∇______/   </pre>
+
+  <pre class="frame frame-2">        __
+   ____/  \____
+  /   ∑    ∑   \
+ |      ∂        |
+ |   [ π ]       |
+ |   ────        |
+ |  √   √        |
+ |   |   |       |
+  \___∇___∇_____/   </pre>
+
+  <!-- waving frames (active when .wave is applied) -->
+  <pre class="frame frame-3">        __
+   ____/  \____
+  /   ∑  o/    \
+ |      ∂        |
+ |   [ π ]       |
+ |   ────        |
+ |  √   √        |
+ |  |   |        |
+  \__∇___∇______/   </pre>
+
+  <pre class="frame frame-4">        __
+   ____/  \____
+  /   ∑ \o     \
+ |      ∂        |
+ |   [ π ]       |
+ |   ────        |
+ |  √   √        |
+ |  |   |        |
+  \___∇___∇_____/   </pre>
+</div>
+
 <style>
-  /* High-contrast, white-on-deep background */
+  /* High-contrast palette */
   :root{
-    --bg:#0a0b0e;          /* page background */
-    --ink:#ffffff;         /* primary text: pure white */
-    --muted:#e5e7eb;       /* secondary text: light, still readable */
-    --line:#23262d;        /* borders */
-    --card:#0f1115;        /* panels/cards */
+    --bg:#0a0b0e; --ink:#ffffff; --muted:#e5e7eb; --line:#23262d; --card:#0f1115;
     --g1:#7c83ff; --g2:#22d3ee; --g3:#34d399; --g4:#f59e0b;
     --shadow:0 24px 60px rgba(0,0,0,.55);
   }
-
   body { background: var(--bg); color: var(--ink); overflow-x:hidden; }
 
   /* Starfield & Aurora */
@@ -111,20 +166,18 @@ title: Home
 
   /* Hero */
   .hero{ position:relative; padding: clamp(24px, 5vw, 48px) 16px; }
-  .hero-inner{
-    max-width: 1100px; margin: 0 auto;
-    display:grid; grid-template-columns: 1fr; gap: 20px; align-items:center;
-  }
-  @media (min-width: 980px){ .hero-inner{ grid-template-columns: .95fr 1.65fr; gap: 36px; } }
+  .hero-inner{ max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:20px; align-items:center; }
+  @media (min-width:980px){ .hero-inner{ grid-template-columns:.95fr 1.65fr; gap:36px; } }
 
+  /* Profile + ring */
   .pfp-wrap{
-    position: relative; width:min(340px, 78vw); aspect-ratio: 1/1; margin: 0 auto;
-    border-radius: 24px; overflow: hidden; border:1px solid var(--line);
+    position:relative; width:min(340px,78vw); aspect-ratio:1/1; margin:0 auto;
+    border-radius:24px; overflow:hidden; border:1px solid var(--line);
     background: linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
-    box-shadow: var(--shadow); transform-style: preserve-3d; transition: transform .2s ease;
+    box-shadow:var(--shadow); transform-style:preserve-3d; transition:transform .2s ease;
   }
-  .profile-pic{ width:100%; height:100%; object-fit: cover; display:block; opacity:.98; transform: scale(1.02); transition: transform .35s ease, opacity .35s ease; }
-  .pfp-wrap:hover .profile-pic{ transform: scale(1.06); opacity:1; }
+  .profile-pic{ width:100%; height:100%; object-fit:cover; display:block; opacity:.98; transform:scale(1.02); transition:transform .35s ease, opacity .35s ease; }
+  .pfp-wrap:hover .profile-pic{ transform:scale(1.06); opacity:1; }
   .ring{
     position:absolute; inset:0; pointer-events:none;
     background: conic-gradient(from 180deg, var(--g1), var(--g2), var(--g3), var(--g1));
@@ -133,78 +186,111 @@ title: Home
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* Intro */
   .intro{ position:relative; }
-  .title{
-    margin: 0 0 .35rem; font-size: clamp(1.8rem, 3.2vw, 2.6rem); line-height: 1.08;
-    color: var(--ink);
-  }
-  /* Underline accent instead of gradient text for readability */
-  .title::after{
-    content:""; display:block; height:2px; width:86px; margin-top:.4rem;
-    background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px;
-  }
+  .title{ margin:0 0 .35rem; font-size:clamp(1.8rem,3.2vw,2.6rem); line-height:1.08; color:var(--ink); }
+  .title::after{ content:""; display:block; height:2px; width:86px; margin-top:.4rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
 
-  .badge{
-    display:inline-block; margin-left:.6rem; font-size:.85rem; font-weight:600;
-    padding: 4px 10px; border-radius: 999px; color:#0b1220;
-    background: linear-gradient(90deg, var(--g2), var(--g3));
+  .badge{ display:inline-block; margin-left:.6rem; font-size:.85rem; font-weight:700; padding:4px 10px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
+
+  .typing{ margin:.2rem 0 1rem; color:var(--ink); opacity:.95; font-size:clamp(.98rem,1.6vw,1.05rem); min-height:1.4em; }
+  .typing span{ display:inline-block; white-space:nowrap; overflow:hidden; border-right:2px solid currentColor; animation: typing 5s steps(42,end) infinite alternate, caret 700ms steps(1) infinite; }
+  @keyframes typing { from { width: 0; } to { width: 42ch; } }
+  @keyframes caret { 50% { border-color: transparent; } }
+
+  /* Glass card */
+  .glass{ background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid var(--line); border-radius:16px; padding:16px 18px; box-shadow:var(--shadow); backdrop-filter: blur(8px); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+  .glass:hover{ transform: translateY(-2px) rotateX(1deg); border-color:#2a2f39; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+  .about h2{ margin:.2rem 0 .5rem; font-size:1.15rem; letter-spacing:.2px; color:var(--ink); }
+
+  /* Badge-style background for the About paragraph */
+  .text-bg{
+    position:relative; padding:12px 14px; border-radius:14px;
+    background: linear-gradient(180deg, rgba(124,131,255,.18), rgba(34,211,238,.14) 50%, rgba(52,211,153,.12) 100%);
+    border:1px solid #2a2f39;
   }
-
-  .typing{ margin:.2rem 0 1rem; color: var(--ink); opacity:.9; font-size: clamp(.98rem, 1.6vw, 1.05rem); min-height: 1.4em; }
-  .typing span{ display:inline-block; white-space:nowrap; overflow:hidden; border-right: 2px solid currentColor; animation: typing 5s steps(42, end) infinite alternate, caret 700ms steps(1) infinite; }
-  @keyframes typing { from { width: 0; } to { width: 42ch; } } @keyframes caret { 50% { border-color: transparent; } }
-
-  .glass{
-    background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-    border: 1px solid var(--line);
-    border-radius: 16px; padding: 16px 18px;
-    box-shadow: var(--shadow); backdrop-filter: blur(8px);
-    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  .text-bg::before{
+    content:""; position:absolute; inset:-1px; border-radius:14px;
+    background: conic-gradient(from 0deg, var(--g1), var(--g2), var(--g3), var(--g1));
+    filter: blur(14px); opacity:.16; pointer-events:none;
   }
-  .glass:hover{ transform: translateY(-2px); border-color: #2a2f39; box-shadow: 0 24px 60px rgba(0,0,0,.35); }
-  .about h2{ margin:.2rem 0 .35rem; font-size:1.15rem; letter-spacing:.2px; color: var(--ink); }
-  .about p{ margin:0; color: var(--ink); opacity:.9; }
+  .about p{ margin:0; color:var(--ink); opacity:.98; }
 
-  /* Highlights Section */
+  /* Highlights */
   .highlights{ max-width:1100px; margin: 6px auto 40px; padding: 0 16px; }
-  .section-title{ margin:8px 0 12px; font-size:1.12rem; letter-spacing:.2px; color: var(--ink); }
-  .section-title::after{
-    content:""; display:block; height:2px; width:76px; margin-top:.35rem;
-    background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px;
-  }
-  .cards{ display:grid; gap:12px; grid-template-columns: 1fr; }
-  @media (min-width: 980px){ .cards{ grid-template-columns: 1.2fr 1fr 1fr; } }
+  .section-title{ margin:8px 0 12px; font-size:1.12rem; letter-spacing:.2px; color:var(--ink); }
+  .section-title::after{ content:""; display:block; height:2px; width:76px; margin-top:.35rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
+
+  .cards{ display:grid; gap:12px; grid-template-columns:1fr; perspective:1000px; }
+  @media (min-width:980px){ .cards{ grid-template-columns:1.2fr 1fr 1fr; } }
 
   .card{
-    background: var(--card); border:1px solid var(--line); border-radius: 14px; padding: 12px 14px;
-    box-shadow: var(--shadow); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    color: var(--ink);
+    background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; box-shadow:var(--shadow);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    color:var(--ink); position:relative; overflow:hidden;
   }
-  .card:hover{ transform: translateY(-2px); border-color: #2a2f39; box-shadow: 0 18px 40px rgba(0,0,0,.45); }
-  .card header{ font-weight:800; margin-bottom:6px; color: var(--ink); }
+  .card header{ font-weight:800; margin-bottom:6px; color:var(--ink); }
   .card ul{ margin:.2rem 0 0 1.1rem; }
-  .card li{ margin:.25rem 0; color: var(--ink); opacity:.9; }
+  .card li{ margin:.25rem 0; color:var(--ink); opacity:.95; }
 
-  /* Animated gradient border accent */
-  .glow{
-    position:relative;
-  }
-  .glow::before{
-    content:""; position:absolute; inset:-1px; z-index:-1; border-radius: 16px;
+  /* Gradient border & sheen on hover */
+  .card::after{
+    content:""; position:absolute; inset:-1px; border-radius:16px; pointer-events:none; opacity:0;
     background: conic-gradient(from 0deg, var(--g1), var(--g2), var(--g3), var(--g1));
-    filter: blur(14px); opacity:.32; animation: hue 12s linear infinite;
+    transition: opacity .25s ease;
   }
-  @keyframes hue{ to { filter: hue-rotate(360deg) blur(14px); } }
+  .card:hover{ transform: translateY(-2px) rotateX(1.2deg) rotateY(-1.2deg); border-color:#2a2f39; box-shadow:0 18px 40px rgba(0,0,0,.45); }
+  .card:hover::after{ opacity:.25; }
+  .card:hover:before{
+    content:""; position:absolute; top:0; left:-40%; width:40%; height:100%; transform:skewX(-20deg);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.10), transparent);
+    animation: sheen .9s ease;
+  }
+  @keyframes sheen{ from{ left:-40%; } to{ left:120%; } }
 
-  /* Badges */
-  .badges{ margin-top:.6rem; display:flex; flex-wrap:wrap; gap:6px; }
-  .badge{ font-size:.72rem; padding:3px 8px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
-  .badge:nth-child(3n){ background:linear-gradient(90deg,var(--g3),var(--g1)); }
-  .badge:nth-child(3n+2){ background:linear-gradient(90deg,var(--g1),var(--g2)); }
+  /* Extra tilt target on hover */
+  .tilt-card:hover{ transform: translateY(-2px) rotateX(2deg) rotateY(-2deg) scale(1.01); }
+
+  /* Walking Math Robot (with hover speed + wave support) */
+  .mathbot{
+    --walkDur: 28s;     /* default crossing time */
+    --stepDur: 0.9s;    /* default step frame rate */
+    position:fixed; bottom:10px; left:-40vw; z-index:2;
+    pointer-events:auto;   /* enable hover for speed change */
+    font: 700 12px/12px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    color:#ffffff; text-shadow: 0 0 8px rgba(255,255,255,.35);
+    animation: walkX var(--walkDur) linear infinite;
+  }
+  .mathbot:hover{
+    --walkDur: 12s;     /* speeds up on hover */
+    --stepDur: 0.6s;    /* quicker footfall animation */
+  }
+  .mathbot .frame{ margin:0; white-space:pre; }
+
+  /* Walking (default) */
+  .mathbot .frame-1{ animation: stepA var(--stepDur) steps(1) infinite; }
+  .mathbot .frame-2{ margin-top:-12px; animation: stepB var(--stepDur) steps(1) infinite; }
+
+  /* Hide waving frames by default */
+  .mathbot .frame-3,
+  .mathbot .frame-4{ display:none; }
+
+  /* When waving: hide walking frames, show wave frames */
+  .mathbot.wave .frame-1,
+  .mathbot.wave .frame-2{ display:none; }
+  .mathbot.wave .frame-3{ display:block; animation: stepA var(--stepDur) steps(1) infinite; }
+  .mathbot.wave .frame-4{ display:block; margin-top:-12px; animation: stepB var(--stepDur) steps(1) infinite; }
+
+  @keyframes walkX{
+    0% { transform: translateX(-40vw) translateY(0); }
+    100%{ transform: translateX(120vw) translateY(0); }
+  }
+  @keyframes stepA{ 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
+  @keyframes stepB{ 0%,49% { opacity:0 } 50%,100% { opacity:1 } }
 
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce){
-    .aurora, .ring, .profile-pic, .glow::before, .pfp-wrap{ animation: none !important; transition: none !important; }
+    .aurora, .ring, .profile-pic, .glass, .card, .mathbot{ animation: none !important; transition: none !important; }
     .typing span{ animation: none; border-right: none; }
   }
 </style>
@@ -252,7 +338,7 @@ title: Home
   resize(); if(!reduce) step();
 })();
 
-/* ===== Soft 3D tilt ===== */
+/* ===== Soft 3D tilt (pfp + cards + about) ===== */
 (function(){
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(reduce) return;
@@ -269,5 +355,47 @@ title: Home
     });
     el.addEventListener('mouseleave', ()=>{ el.style.transform = ''; });
   });
+})();
+
+/* ===== Robot wave-on-hero-cross (hover speed via CSS) ===== */
+(function(){
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) return;
+
+  const bot  = document.querySelector('.mathbot');
+  const hero = document.querySelector('.hero');
+  if(!bot || !hero) return;
+
+  let waving = false;
+  let lastPassId = 0; // ensure one wave per crossing
+
+  // Increment on each animation loop
+  bot.addEventListener('animationiteration', ()=> { lastPassId++; });
+
+  function tick(){
+    const br = bot.getBoundingClientRect();
+    const hr = hero.getBoundingClientRect();
+    const botCenterX = br.left + br.width/2;
+
+    const horizontallyAligned = botCenterX > hr.left && botCenterX < hr.right;
+
+    if (horizontallyAligned && !waving){
+      waving = true;
+      const thisPass = lastPassId;
+      bot.classList.add('wave');
+      setTimeout(()=>{
+        bot.classList.remove('wave');
+        const resetOnNextPass = ()=> {
+          if(lastPassId !== thisPass){
+            waving = false;
+            bot.removeEventListener('animationiteration', resetOnNextPass);
+          }
+        };
+        bot.addEventListener('animationiteration', resetOnNextPass);
+      }, 1600);
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 })();
 </script>
