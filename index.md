@@ -11,7 +11,7 @@ title: Home
   <div class="hero-inner">
 
     <div class="pfp-wrap" data-tilt>
-      <img class="profile-pic" src="{{ site.baseurl }}/assets/images/gportfolio_profile_picture.png" alt="Profile picture of Eugenio Macias">
+      <img class="profile-pic" src="{{ site.baseurl }}/assets/images/profile_pic.png" alt="Profile picture of Eugenio Macias">
       <div class="ring"></div>
     </div>
 
