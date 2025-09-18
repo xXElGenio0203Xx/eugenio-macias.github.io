@@ -15,9 +15,9 @@ title: Home
     <!-- Profile -->
     <div class="pfp-wrap" data-tilt data-magnetic>
       <picture>
-        <source type="image/heic" srcset="{{ site.baseurl }}/assets/images/profile%20pic.HEIC" />
-        <source type="image/webp" srcset="{{ site.baseurl }}/assets/images/profile-pic.webp" />
-        <source type="image/jpeg" srcset="{{ site.baseurl }}/assets/images/profile-pic.jpg" />
+        <source type="image/heic" srcset="{{ site.baseurl }}/assets/images/profile_pic.jpg" />
+        <source type="image/webp" srcset="{{ site.baseurl }}/assets/images/profile_pic.jpg" />
+        <source type="image/jpeg" srcset="{{ site.baseurl }}/assets/images/profile_pic.jpg" />
         <img class="profile-pic"
              src="{{ site.baseurl }}/assets/images/profile_pic.jpg"
              alt="Profile picture">
