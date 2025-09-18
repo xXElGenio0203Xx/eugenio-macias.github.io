@@ -5,10 +5,13 @@ title: Home
 
 <canvas id="stars" aria-hidden="true"></canvas>
 <div class="aurora" aria-hidden="true"></div>
-<div class="spotlight" aria-hidden="true"></div> <section class="hero">
+<div class="spotlight" aria-hidden="true"></div>
+
+<section class="hero">
   <div class="hero-inner">
 
-    <div class="pfp-wrap" data-tilt data-magnetic> <picture>
+    <div class="pfp-wrap" data-tilt data-magnetic>
+      <picture>
         <source type="image/heic" srcset="{{ site.baseurl }}/assets/images/profile%20pic.HEIC" />
         <source type="image/webp" srcset="{{ site.baseurl }}/assets/images/profile-pic.webp" />
         <source type="image/jpeg" srcset="{{ site.baseurl }}/assets/images/profile-pic.jpg" />
@@ -28,7 +31,8 @@ title: Home
         <span>Probability × Statistics × PDEs × ML under uncertainty</span>
       </p>
 
-      <article class="glass about" data-tilt data-magnetic> <h2>About me</h2>
+      <article class="glass about" data-tilt data-magnetic>
+        <h2>About me</h2>
         <div class="text-bg">
           <p>
             I’m an international student from Mexico at Brown University. I focus on the intersection of
@@ -44,44 +48,44 @@ title: Home
         </div>
       </article>
 
+      <h2 class="section-title">Highlights</h2>
+      <div class="cards">
+
+        <article class="card glow tilt-card" data-tilt data-magnetic>
+          <header>Citi Markets — Quantitative Analyst Intern (NYC, Summer 2025)</header>
+          <ul>
+            <li>Built <strong>Python–C++ Monte Carlo & PDE solvers</strong>; validated pricing/Greeks and accelerated runtimes.</li>
+            <li>Trained <strong>LightGBM-DART</strong> & <strong>neural nets</strong> with Bayesian optimization on <strong>6M+ structured-note</strong> rows; used <strong>SHAP</strong> for diagnostics.</li>
+            <li><strong>1st place</strong> out of 540 in the firm-wide ML Quant competition.</li>
+          </ul>
+        </article>
+
+        <article class="card tilt-card" data-tilt data-magnetic>
+          <header>D. E. Shaw · Bridgewater · Buddywise</header>
+          <ul>
+            <li><strong>Latitude Fellowship</strong> at The D. E. Shaw Group (NYC): multivariate time-series & sector forecasting.</li>
+            <li><strong>Investment Immersion</strong> at Bridgewater Associates: macro indicators & stat-arb backtests.</li>
+            <li>Intern at <strong>Buddywise</strong> (Berlin): data tooling for safety-critical computer vision.</li>
+          </ul>
+        </article>
+
+        <article class="card tilt-card" data-tilt data-magnetic>
+          <header>What I’m pursuing</header>
+          <ul>
+            <li><strong>Option A:</strong> <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
+            <li><strong>Option B:</strong> <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
+            <li><strong>Option C:</strong> <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
+          </ul>
+          <div class="badges">
+            <span class="badge">Quant</span><span class="badge">Stat ML</span><span class="badge">PDEs</span>
+          </div>
+        </article>
+
+      </div>
       <div class="cool-trigger">
         <button id="coolBtn" class="cool-btn" type="button">Click here to see something cool ✨</button>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="highlights compact-top">
-  <h2 class="section-title">Highlights</h2>
-  <div class="cards">
-
-    <article class="card glow tilt-card" data-tilt data-magnetic> <header>Citi Markets — Quantitative Analyst Intern (NYC, Summer 2025)</header>
-      <ul>
-        <li>Built <strong>Python–C++ Monte Carlo & PDE solvers</strong>; validated pricing/Greeks and accelerated runtimes.</li>
-        <li>Trained <strong>LightGBM-DART</strong> & <strong>neural nets</strong> with Bayesian optimization on <strong>6M+ structured-note</strong> rows; used <strong>SHAP</strong> for diagnostics.</li>
-        <li><strong>1st place</strong> out of 540 in the firm-wide ML Quant competition.</li>
-      </ul>
-    </article>
-
-    <article class="card tilt-card" data-tilt data-magnetic> <header>D. E. Shaw · Bridgewater · Buddywise</header>
-      <ul>
-        <li><strong>Latitude Fellowship</strong> at The D. E. Shaw Group (NYC): multivariate time-series & sector forecasting.</li>
-        <li><strong>Investment Immersion</strong> at Bridgewater Associates: macro indicators & stat-arb backtests.</li>
-        <li>Intern at <strong>Buddywise</strong> (Berlin): data tooling for safety-critical computer vision.</li>
-      </ul>
-    </article>
-
-    <article class="card tilt-card" data-tilt data-magnetic> <header>What I’m pursuing</header>
-      <ul>
-        <li><strong>Option A:</strong> <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
-        <li><strong>Option B:</strong> <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
-        <li><strong>Option C:</strong> <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
-      </ul>
-      <div class="badges">
-        <span class="badge">Quant</span><span class="badge">Stat ML</span><span class="badge">PDEs</span>
-      </div>
-    </article>
-
   </div>
 </section>
 
@@ -123,7 +127,7 @@ title: Home
   /* Hero */
   .hero{ position:relative; padding: clamp(20px, 4.5vw, 40px) 16px; }
   .hero{ padding-bottom: clamp(8px, 2vw, 16px); } /* tighter bottom */
-  .hero-inner{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:18px; align-items:center; }
+  .hero-inner{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:18px; align-items:flex-start; } /* Changed align-items */
   @media (min-width:980px){ .hero-inner{ grid-template-columns:.95fr 1.65fr; gap:28px; } }
 
   /* Profile + ring */
@@ -174,7 +178,7 @@ title: Home
   .about p{ margin:0; color:var(--ink); opacity:.98; }
 
   /* Cool button */
-  .cool-trigger{ margin-top:14px; }
+  .cool-trigger{ margin-top:20px; text-align: right; } /* MODIFIED */
   .cool-btn{
     appearance:none; border:1px solid #2a2f39; border-radius:999px;
     padding:10px 16px; font-weight:800; letter-spacing:.2px; cursor:pointer;
@@ -183,10 +187,8 @@ title: Home
   }
   .cool-btn:hover{ transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.30); filter:saturate(1.1); }
 
-  /* Highlights section */
-  .highlights.compact-top{ margin-top: -6px; }
-  .highlights{ max-width:1280px; margin: 0 auto 40px; padding: 0 16px; }
-  .section-title{ margin:4px 0 12px; font-size:1.18rem; letter-spacing:.2px; color:var(--ink); }
+  /* Highlights section (now inside intro) */
+  .section-title{ margin:24px 0 12px; font-size:1.18rem; letter-spacing:.2px; color:var(--ink); } /* Added margin-top */
   .section-title::after{ content:""; display:block; height:2px; width:86px; margin-top:.35rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
 
   /* 3-Column Card Layout */
@@ -198,20 +200,8 @@ title: Home
   .card{
     background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; box-shadow:var(--shadow);
     color:var(--ink); position:relative; overflow:hidden; font-size:1.04rem;
-    will-change: transform, opacity;
-    /* Styles for scroll-reveal animation */
-    opacity: 0;
-    transform: translateY(30px);
-    transition: transform .5s cubic-bezier(0.215, 0.610, 0.355, 1), box-shadow .25s ease, border-color .25s ease, opacity .5s ease;
-  }
-  /* Staggered animation delay */
-  .card:nth-child(2) { transition-delay: .1s; }
-  .card:nth-child(3) { transition-delay: .2s; }
-
-  /* When card is visible (triggered by JS) */
-  .card.is-visible {
-      opacity: 1;
-      transform: translateY(0);
+    will-change: transform;
+    transition: transform .5s cubic-bezier(0.215, 0.610, 0.355, 1), box-shadow .25s ease, border-color .25s ease;
   }
 
   .card header{ font-weight:900; margin-bottom:8px; color:var(--ink); font-size:1.06rem; }
@@ -222,9 +212,10 @@ title: Home
     background: conic-gradient(from 0deg, var(--g1), var(--g2), var(--g3), var(--g1));
     transition: opacity .25s ease; filter: blur(16px);
   }
+  /* REDUCED HOVER EFFECT */
   .card:hover{
-    transform: translateY(-3px) rotateX(1.2deg) rotateY(-1.2deg) scale(1.012);
-    border-color:#2a2f39; box-shadow:0 22px 52px rgba(0,0,0,.45);
+    transform: translateY(-2px) rotateX(0.5deg) rotateY(-0.5deg) scale(1.01);
+    border-color:#2a2f39; box-shadow:0 18px 40px rgba(0,0,0,.45);
   }
   .card:hover::after{ opacity:.25; }
   .card:hover:before{
@@ -233,8 +224,9 @@ title: Home
     animation: sheen .9s ease;
   }
   @keyframes sheen{ from{ left:-40%; } to{ left:120%; } }
-
-  .tilt-card:hover{ transform: translateY(-3px) rotateX(2deg) rotateY(-2deg) scale(1.02); }
+  
+  /* REDUCED HOVER EFFECT */
+  .tilt-card:hover{ transform: translateY(-2px) rotateX(1deg) rotateY(-1deg) scale(1.015); }
 
   /* Floating math symbols (unchanged) */
   .symbol-layer{ position: fixed; inset: 0; z-index: 3; pointer-events: none; display: none; }
@@ -267,7 +259,6 @@ title: Home
   @media (prefers-reduced-motion: reduce){
     .aurora, .ring, .profile-pic, .glass, .card, .symbol, .spotlight { animation: none !important; transition: none !important; }
     .typing span{ animation: none; border-right: none; }
-    .card { opacity: 1; transform: none; } /* Disable scroll animation */
   }
 </style>
 
@@ -342,8 +333,9 @@ title: Home
 
   const tilts = document.querySelectorAll('[data-tilt]');
   tilts.forEach(el=>{
-    const r = el.hasAttribute('data-magnetic') ? 6 : 10; // Less rotation for magnetic items
-    const m = el.hasAttribute('data-magnetic') ? 0.35 : 0; // Magnetic pull factor
+    // REDUCED EFFECT VALUES HERE
+    const r = el.hasAttribute('data-magnetic') ? 3 : 8; // Was 6 : 10
+    const m = el.hasAttribute('data-magnetic') ? 0.15 : 0; // Was 0.35 : 0
 
     el.addEventListener('mousemove', (e)=>{
       const b = el.getBoundingClientRect();
@@ -438,7 +430,7 @@ title: Home
   });
 })();
 
-/* ===== NEW: Spotlight Cursor Effect ===== */
+/* ===== Spotlight Cursor Effect ===== */
 (function() {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) return;
@@ -449,24 +441,7 @@ title: Home
     });
 })();
 
-/* ===== NEW: Scroll-Reveal Animation for Cards ===== */
-(function() {
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) return;
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1 // Trigger when 10% of the element is visible
-    });
-
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => observer.observe(card));
-})();
+// Scroll reveal script is no longer needed with the new layout
+// as the cards are now visible on load.
 
 </script>
