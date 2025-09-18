@@ -2,277 +2,389 @@
 layout: default
 title: Cheat Sheets
 ---
- 
-<h2 style="color: #1a1a1a; text-align: center;">Mathematics</h2>
-Click Image for PDF <i class="fas fa-arrow-right"></i>
-<table style="width:100%;">
 
- <tr>
-  <td style="width: 70%; vertical-align:top;">
-      <a href="assets/files/APMA 2120, midterm.pdf" target="_blank" title="Hilbert and Banach Spaces">
-          <strong>Hilbert and Banach Spaces (Graduate Level):</strong> A deep dive into metric and Banach spaces, norms, seminorms, Baire category theorem, Hahn-Banach extension, convex analysis, weak topologies, and duality theory. Also covers orthonormal bases, Gram-Schmidt, L² spaces, Bessel’s inequality, Fourier transforms, quotient spaces, open mapping, closed graph, uniform boundedness, Sobolev spaces, convolution, Young's, Hölder’s, and Minkowski’s inequalities, Goldstine's lemma, and reflexivity in separable spaces.
-      </a>
-  </td>
-  <td style="width: 30%; vertical-align:top; text-align:right;">
-      <a href="assets/files/APMA 2120, midterm.pdf" target="_blank" title="Hilbert and Banach Spaces">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2120_thumbnail.png" alt="Hilbert and Banach Spaces Thumbnail" style="width: 100%; height: 180px;">
-      </a>
-  </td>
-</tr>
- <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
-            <strong>Real Analysis (Graduate Level):</strong> A comprehensive guide exploring foundational and advanced concepts in real analysis. Topics include set theory, orderings, the axiom of choice, Zorn's lemma, the Schröder-Bernstein theorem, and cardinalities. Delve into metric and compact spaces, countability, separability, and complete spaces. The study further extends to algebras, sigma-algebras, measure theory, and complete measures. It covers product spaces, Carathéodory’s procedure, Lebesgue-Stieltjes measures, and Borel algebras. Integration theory is detailed with L+ spaces,  L1 vector spaces, the Monotone and Dominated Convergence Theorems,  Lp spaces, and modes of convergence. Key theorems like Fubini-Tonelli, Egorov’s, and the Lebesgue-Radon-Nikodym theorem are included, alongside N-dimensional Lebesgue measures, Jordan content, dyadic approximations, and differentiation theory. Concluding with topics in maximal theorems, Hardy-Littlewood functions, Bolzano-Weierstrass, Heine-Borel, and the gamma function, the cheatsheet also explores invariance principles and diffeomorphisms
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="APMA 2110, cheatsheet.pdf" target="_blank" title="Real Analysis (Graduate level)">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.07.png" alt="Real Analysis Thumbnail" style="width: 100%; height: 200px;">
-        </a>
-    </td>
-  </tr>
- <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="MATH1460, cheatsheet.pdf" target="_blank" title="Complex Analysis">
-            <strong>Complex Analysis:</strong> A detailed exploration of the complex field, covering fundamental concepts and advanced topics. This includes complex inequalities, the fundamental theorem of algebra, and Cauchy sequences with their modes of convergence. Delve into the Cauchy-Riemann differential equations, continuity, real and total differentiability, harmonic functions and the Laplacian. Also Includes rational functions, holomorphicity, and complex functions such as sine, cosine, logarithm, and exponentiation, alongside branch cuts. Complex integrability is addressed with contour integrals, parametrizations, contours, simply connected loops, and key theorems like the M-L lemma, path independence lemma, and Cauchy integral theorem. Topics extend to deformation lemma, Liouville’s theorem, Jordan curves, and series with convergence tests like the Weierstrass M-test. Power series, Taylor expansions, Laurent expansions, and concepts of uniqueness, analytic functions, annuli, disks, and uniform convergence are also explored. Singularities, poles, the identity theorem, meromorphic functions, Casorati-Weierstrass theorem, analytic continuations, and the Cauchy Residue Theorem are included, along with the argument principle, open mapping theorem, and maximum modulus principle. Additional focus is given to trigonometric integrals, Rouché’s theorem, conformal maps, Möbius transformations, the special linear group, the extended complex plane, the Riemann sphere, stereographic projections, the cross ratio, and principal values.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="MATH1460, cheatsheet.pdf" target="_blank" title="Complex Analysis">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.32.png" alt="Complex Analysis  Thumbnail" style="width: 100%; height: 200px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Abstract_Algebra.pdf" target="_blank" title="Abstract Algebra">
-            <strong>Abstract Algebra:</strong> An exploration of group theory, rings, fields, integral domains, ideals, quotient and product spaces, cyclical groups (n-throots of unity, dihedral, modulos), permutations, field-extension polynomials, and the properties of homomorphisms, essential for understanding the algebraic structures that underpin modern mathematics.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Abstract_Algebra.pdf" target="_blank" title="Abstract Algebra">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-  <td style="width: 70%; vertical-align:top;">
-      <a href="assets/files/APMA 1200, chestsheet .pdf" target="_blank" title="APMA 1200 - Probabilistic Models">
-          <strong>Operations Research: Probabilistic Models:</strong> Covers probability spaces, random walks, discrete and continuous Markov chains, hitting times, stationary distributions, strong Markov property, Poisson processes, Brownian motion, martingales, stopping times, and convergence theorems. Key results include Doob’s optional stopping theorem, Kolmogorov forward and backward equations, and reflection principle.
-      </a>
-  </td>
-  <td style="width: 30%; vertical-align:top; text-align:right;">
-      <a href="assets/files/APMA 1200, chestsheet .pdf" target="_blank" title="APMA 1200 - Probabilistic Models">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_1200_thumbnail.png" alt="APMA 1200 Thumbnail" style="width: 100%; height: 170px;">
-      </a>
-  </td>
-</tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Topology.pdf" target="_blank" title="Topology">
-            <strong>Topology:</strong> Insights into the fundamental concepts of topology, including continuity, compactness, connectedness, group actions, the fundamental groups, covering spaces, Hausdorff properties, path-connectedness, equivalence classes, point compactifications, loop theory, and simplicial-complexes which are crucial for modern mathematical studies.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Topology.pdf" target="_blank" title="Topology">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Partial_Differential_Equations.pdf" target="_blank" title="Partial Differential Equations">
-            <strong>Partial Differential Equations:</strong> An examination of equations involving partial derivatives, fourier series & transform, solution of differential equations as infinite series, convergence criteria. Laplace's Equation in rectangular and polar coordinates, wave and heat equations with initial profiles. Dirichlet and Neumann boundary conditions and their applications in physics and engineering.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Partial_Differential_Equations.pdf" target="_blank" title="Partial Differential Equations">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Ordinary_Differential_Equations.pdf" target="_blank" title="Ordinary Differential Equations">
-            <strong>Ordinary Differential Equations:</strong> A thorough analysis of first-order and second-order differential equations, including methods of solutions and applications: Laplace's Transform, separation of variables, convolution methods, gradient fields, Kronecker and Dirac's Delta, eigenvalues and eigenfunctions, as well as matrix exponentials.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Ordinary_Differential_Equations.pdf" target="_blank" title="Ordinary Differential Equations">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Ordinary_Differential_Equations_thumbnail.jpg" alt="Ordinary Differential Equations Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Linear_Algebra.pdf" target="_blank" title="Linear Algebra">
-            <strong>Linear Algebra:</strong> A comprehensive study of vector spaces, linear transformations in N-Dimensional Euclidian Space, matrixes and their properties from a proof-based perspective
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Linear_Algebra.pdf" target="_blank" title="Linear Algebra">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Linear_Algebra_thumbnail.jpg" alt="Linear Algebra Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Multivariable_Calculus.pdf" target="_blank" title="Multivariable Calculus">
-            <strong>Multivariable Calculus:</strong> Detailed notes on partial derivatives, multiple integrals, vector and line integrals, mass centers, hyperplanes, vector calculus, projection functions, Lagrange Multipliers, gradient functions, focusing on functions of several variables, polar, rectangular, spherical, cylindrical coordinates and their properties in N-dimensional space.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Multivariable_Calculus.pdf" target="_blank" title="Multivariable Calculus">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus.jpg" alt="Multivariable Calculus Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cyrptography">
-            <strong>Applied Cryptography:</strong> An introduction to the principles and practices of computational cryptography, covering encryption, decryption, and cryptographic protocols.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Applied_Cyrptography.pdf" target="_blank" title="Applied Cyrptography">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-</table>
-<br>
-<h2 style="color: #1a1a1a; text-align: center;">Probability, Statistics & Economics</h2>
+<section class="cheats-hero">
+  <h1>Cheat Sheets</h1>
+  <p>Click any card to open the PDF.</p>
+</section>
 
-<table style="width:100%;">
-  <tr>
-  <td style="width: 70%; vertical-align:top;">
-      <a href="APMA 2070,  class notes.pdf" target="_blank" title="Scientific Deep Learning">
-          <strong>Scientific Deep Learning (Graduate Level):</strong> Merges machine learning with physical principles. Includes topics on physics-informed neural networks (PINNs), neural ODEs, residual networks, universal approximation of PDEs, adjoint methods, energy conservation in dynamics, and learning invariant manifolds. Ideal for modeling and solving forward/inverse problems in scientific computing.
-      </a>
-  </td>
-  <td style="width: 30%; vertical-align:top; text-align:right;">
-      <a href="APMA 2070, class notes.pdf" target="_blank" title="Scientific Deep Learning">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2070_thumbnail.png" alt="APMA 2070 Thumbnail" style="width: 100%; height: 170px;">
-      </a>
-  </td>
-</tr>
-  <tr>
-  <td style="width: 70%; vertical-align:top;">
-      <a href="assets/files/CSCI 1420, classnotes.pdf" target="_blank" title="Machine Learning">
-          <strong>Machine Learning:</strong> Core topics include Perceptrons, Linear & Polynomial Regression, Logistic Regression, SGD, Bias-Variance Tradeoff, Model Selection & Regularization, PAC Learning, VC Dimension, Decision Trees, KNN, SVMs, Naive Bayes, Kernel Methods, Boosting, Neural Networks, Backpropagation, Deep Learning, K-Means, Expectation-Maximization, and Principal Component Analysis.
-      </a>
-  </td>
-  <td style="width: 30%; vertical-align:top; text-align:right;">
-      <a href="assets/files/CSCI 1420, classnotes.pdf" target="_blank" title="Machine Learning">
-          <img src="{{ site.baseurl }}/assets/images/thumbnails/CSCI_1420_thumbnail.png" alt="Machine Learning Thumbnail" style="width: 100%; height: 170px;">
-      </a>
-  </td>
-</tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="ECON 1630, cheatsheet.pdf" target="_blank" title="Mathematical Econometrics">
-            <strong>Mathematical Econometrics:</strong> A comprehensive guide to foundational and advanced econometric concepts. Topics include estimators and estimands, potential outcomes, and the average treatment effect, alongside marginal and conditional distributions and unconfoundedness. Statistical principles such as the Law of Iterated Expectations, the Central Limit Theorem, and the Law of Large Numbers (LLN) are explored, along with convergence in distribution, asymptotic convergence, and Slutsky's theorem. Hypothesis testing is detailed with t-statistics, multiple hypothesis testing, and concepts like power and significance of tests. The study extends to multivariate normal distributions, covariance matrices, and inequalities such as Markov's, Jensen's, and Chebyshev's. Key regression methods include OLS estimators, linear and multiple regressions, instrumental variables, proxies, and their applications in first-stage and reduced-form regressions. Further topics include panel data analysis, difference-in-differences methodology, parallel trends assumptions, Frisch-Waugh-Lovell theorem, and control function approaches. Practical issues like standard errors, identification, attenuation bias, and delta methods are also covered, offering a complete framework for modern econometric analysis.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="ECON 1630, cheatsheet.pdf" target="_blank" title="Mathematical Econometrics">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.23.03.png" alt="Mathematical Econometrics Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Statistical_InferenceII.pdf" target="_blank" title="Statistical Inference II">
-            <strong>Statistical Inference II:</strong> Advanced topics in statistical inference, including estimation theory, hypothesis testing, and Bayesian methods.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Statistical_InferenceII.pdf" target="_blank" title="Statistical Inference II">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Probability.pdf" target="_blank" title="Probability">
-            <strong>Probability:</strong> Comprehensive coverage of probability theory, including random variables, expectation, and distributions, foundational for statistical inference.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Probability.pdf" target="_blank" title="Probability">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="assets/files/Econometrics.pdf" target="_blank" title="Econometrics">
-            <strong>Econometrics:</strong> Application of statistical methods to economic data, focusing on linear regression models, hypothesis testing, and natural estimators.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="assets/files/Econometrics.pdf" target="_blank" title="Econometrics">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 70%; vertical-align:top;">
-        <a href="ECON 1750, Cheatsheet.pdf" target="_blank" title="Investments II">
-            <strong>Investments II:</strong> A deep dive into advanced investment theories and practices. Topics include fixed income securities and continuous compounding, with a focus on theoretical pricing of securities and delta hedging. Options theory is explored in depth, covering option spreads, put-call parity, and the Black-Scholes differential equation. The study includes pricing methodologies for futures and swaps, supported by binomial trees and Monte Carlo simulations. Core mathematical tools such as Brownian motion, Wiener processes, and Ito's lemma are integrated into financial applications. Bond mathematics is thoroughly examined, addressing duration, convexity, and financial intuitions essential for understanding market making. Statistical arbitrage strategies and hedge fund operations are also covered, alongside the dynamics of interest rates and their impact on financial instruments.
-        </a>
-    </td>
-    <td style="width: 30%; vertical-align:top; text-align:right;">
-        <a href="ECON 1750, Cheatsheet.pdf" target="_blank" title="Investments II">
-            <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.23.24.png" alt="Investments II Thumbnail" style="width: 100%; height: 170px;">
-        </a>
-    </td>
-  </tr>
-</table>
-<br>
-<br>
-<br>
-<br>
+<h2 class="cheats-h2">Mathematics</h2>
+
+<div class="notes-grid">
+
+  <!-- APMA 2120 -->
+  <a class="note-card" href="assets/files/APMA 2120, midterm.pdf" target="_blank" rel="noopener" title="Hilbert and Banach Spaces (Graduate Level)">
+    <div class="note-text">
+      <h3>Hilbert and Banach Spaces (Graduate Level)</h3>
+      <p>A deep dive into metric and Banach spaces, norms, seminorms, Baire category theorem, Hahn–Banach, convex analysis, weak topologies, duality, orthonormal bases, L², Bessel, Fourier, quotient spaces, open mapping, closed graph, uniform boundedness, Sobolev spaces, convolution, Young/Hölder/Minkowski, Goldstine, and reflexivity.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2120_thumbnail.png" alt="Hilbert and Banach Spaces Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- APMA 2110 -->
+  <a class="note-card" href="APMA 2110, cheatsheet.pdf" target="_blank" rel="noopener" title="Real Analysis (Graduate Level)">
+    <div class="note-text">
+      <h3>Real Analysis (Graduate Level)</h3>
+      <p>Foundations of measure and integration: algebras, σ-algebras, Carathéodory construction, product measures, Lᵖ spaces, convergence theorems, Fubini–Tonelli, Egorov, Radon–Nikodym, differentiation theory, maximal theorems, and classics like Heine–Borel, Bolzano–Weierstrass, and properties of the gamma function.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.07.png" alt="Real Analysis Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Complex Analysis -->
+  <a class="note-card" href="MATH1460, cheatsheet.pdf" target="_blank" rel="noopener" title="Complex Analysis">
+    <div class="note-text">
+      <h3>Complex Analysis</h3>
+      <p>Cauchy–Riemann, harmonicity, contour integrals, Cauchy theorems, ML lemma, Liouville, power & Laurent series, singularities & residues, argument principle, maximum modulus, Rouché, conformal maps, Möbius transforms, Riemann sphere, cross-ratio, and principal values.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.22.32.png" alt="Complex Analysis Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Abstract Algebra -->
+  <a class="note-card" href="assets/files/Abstract_Algebra.pdf" target="_blank" rel="noopener" title="Abstract Algebra">
+    <div class="note-text">
+      <h3>Abstract Algebra</h3>
+      <p>Groups, rings, fields, ideals, quotients, products, permutation groups, roots of unity, dihedral groups, homomorphisms, and field extensions from a proof-based perspective.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Abstract_Algebra_thumbnail.jpg" alt="Abstract Algebra Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- APMA 1200 -->
+  <a class="note-card" href="assets/files/APMA 1200, chestsheet .pdf" target="_blank" rel="noopener" title="Operations Research: Probabilistic Models">
+    <div class="note-text">
+      <h3>Operations Research: Probabilistic Models</h3>
+      <p>Markov chains, stationary distributions, Poisson processes, Brownian motion, martingales, optional stopping, Kolmogorov equations, reflection principle, and convergence theorems.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_1200_thumbnail.png" alt="APMA 1200 Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Topology -->
+  <a class="note-card" href="assets/files/Topology.pdf" target="_blank" rel="noopener" title="Topology">
+    <div class="note-text">
+      <h3>Topology</h3>
+      <p>Continuity, compactness, connectedness, Hausdorff spaces, fundamental group, covering spaces, loop theory, point compactifications, and simplicial complexes.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Topology_thumbnail.jpg" alt="Topology Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- PDEs -->
+  <a class="note-card" href="assets/files/Partial_Differential_Equations.pdf" target="_blank" rel="noopener" title="Partial Differential Equations">
+    <div class="note-text">
+      <h3>Partial Differential Equations</h3>
+      <p>Fourier series/transform, Laplace (rectangular & polar), heat and wave equations, boundary conditions (Dirichlet/Neumann), initial profiles, and series solutions with convergence criteria.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Partial_Differential_Equations_thumbnail.jpg" alt="Partial Differential Equations Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- ODEs -->
+  <a class="note-card" href="assets/files/Ordinary_Differential_Equations.pdf" target="_blank" rel="noopener" title="Ordinary Differential Equations">
+    <div class="note-text">
+      <h3>Ordinary Differential Equations</h3>
+      <p>First/second-order methods, Laplace transform, separation, convolution, gradient fields, delta distributions, eigenpairs, and matrix exponentials.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Ordinary_Differential_Equations_thumbnail.jpg" alt="Ordinary Differential Equations Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Linear Algebra -->
+  <a class="note-card" href="assets/files/Linear_Algebra.pdf" target="_blank" rel="noopener" title="Linear Algebra">
+    <div class="note-text">
+      <h3>Linear Algebra</h3>
+      <p>Vector spaces, linear maps on ℝⁿ, matrix theory, eigen-analysis, and canonical forms with a proof-based approach.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Linear_Algebra_thumbnail.jpg" alt="Linear Algebra Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Multivariable Calculus -->
+  <a class="note-card" href="assets/files/Multivariable_Calculus.pdf" target="_blank" rel="noopener" title="Multivariable Calculus">
+    <div class="note-text">
+      <h3>Multivariable Calculus</h3>
+      <p>Partial derivatives, multiple integrals, line/surface integrals, vector calculus, projections, Lagrange multipliers, and coordinate systems (polar/spherical/cylindrical) in ℝⁿ.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Multivariable_Calculus.jpg" alt="Multivariable Calculus Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Applied Cryptography -->
+  <a class="note-card" href="assets/files/Applied_Cyrptography.pdf" target="_blank" rel="noopener" title="Applied Cryptography">
+    <div class="note-text">
+      <h3>Applied Cryptography</h3>
+      <p>Core cryptographic principles and protocols: encryption, decryption, security notions, and practical constructions.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Applied_Cryptography_thumbnail.jpg" alt="Applied Cryptography Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+</div>
+
+<h2 class="cheats-h2">Probability, Statistics & Economics</h2>
+
+<div class="notes-grid">
+
+  <!-- APMA 2070 -->
+  <a class="note-card" href="APMA 2070,  class notes.pdf" target="_blank" rel="noopener" title="Scientific Deep Learning (Graduate Level)">
+    <div class="note-text">
+      <h3>Scientific Deep Learning (Graduate Level)</h3>
+      <p>PINNs, neural ODEs, universal approximation for PDEs, adjoint methods, conservation laws, invariant manifolds, and inverse problems for scientific computing.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/APMA_2070_thumbnail.png" alt="Scientific Deep Learning Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- CSCI 1420 -->
+  <a class="note-card" href="assets/files/CSCI 1420, classnotes.pdf" target="_blank" rel="noopener" title="Machine Learning">
+    <div class="note-text">
+      <h3>Machine Learning</h3>
+      <p>Regression (linear/polynomial/logistic), SGD, bias-variance, VC/PAC, trees/KNN/SVM/Naive Bayes, kernels, boosting, NNs/backprop, deep learning, EM, K-Means, PCA.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/CSCI_1420_thumbnail.png" alt="Machine Learning Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- ECON 1630 -->
+  <a class="note-card" href="ECON 1630, cheatsheet.pdf" target="_blank" rel="noopener" title="Mathematical Econometrics">
+    <div class="note-text">
+      <h3>Mathematical Econometrics</h3>
+      <p>Estimators/estimands, potential outcomes & ATE, LLN/CLT/Slutsky, hypothesis testing & multiple testing, MVN & covariance, inequalities (Markov/Jensen/Chebyshev), OLS/IV, panels, DiD, FWL, SEs, identification & delta method.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.23.03.png" alt="Mathematical Econometrics Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Statistical Inference II -->
+  <a class="note-card" href="assets/files/Statistical_InferenceII.pdf" target="_blank" rel="noopener" title="Statistical Inference II">
+    <div class="note-text">
+      <h3>Statistical Inference II</h3>
+      <p>Advanced estimation theory, testing, Bayesian methods, and asymptotics.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Statistical_InferenceII_thumbnail.jpg" alt="Statistical Inference II Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Probability -->
+  <a class="note-card" href="assets/files/Probability.pdf" target="_blank" rel="noopener" title="Probability">
+    <div class="note-text">
+      <h3>Probability</h3>
+      <p>Random variables, expectations, distributions, and core tools for inference.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Probability_thumbnail.jpg" alt="Probability Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Econometrics -->
+  <a class="note-card" href="assets/files/Econometrics.pdf" target="_blank" rel="noopener" title="Econometrics">
+    <div class="note-text">
+      <h3>Econometrics</h3>
+      <p>Regression models, identification, hypothesis testing, and estimators on real data.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Econometrics_thumbnail.jpg" alt="Econometrics Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+  <!-- Investments II -->
+  <a class="note-card" href="ECON 1750, Cheatsheet.pdf" target="_blank" rel="noopener" title="Investments II">
+    <div class="note-text">
+      <h3>Investments II</h3>
+      <p>Fixed income math (duration/convexity), derivatives (spreads, put–call parity), Black–Scholes PDE, futures/swaps pricing, binomial/Monte Carlo, Brownian motion & Itô’s lemma, and stat-arb/hedge fund mechanics.</p>
+      <div class="note-meta"><span class="pill">PDF</span></div>
+    </div>
+    <div class="note-thumb">
+      <img src="{{ site.baseurl }}/assets/images/thumbnails/Screenshot 2024-12-22 at 10.23.24.png" alt="Investments II Thumbnail">
+      <div class="overlay">View PDF →</div>
+    </div>
+  </a>
+
+</div>
+
 <style>
-    .center {
-        text-align: center;
-        }
-    course-note {
-    margin-bottom: 20px;
-    text-align: left; /* Align text to the left within table cells */
-}
+  :root {
+    --bg: #ffffff;
+    --ink: #0f172a;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --line: #e5e7eb;
+    --pill: #0ea5e9;
+    --accent1: #3b82f6;
+    --accent2: #22c55e;
+    --shadow: 0 10px 30px rgba(0,0,0,.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0b;
+      --ink: #e5e7eb;
+      --muted: #9ca3af;
+      --card: #0f1115;
+      --line: #1f2937;
+      --pill: #38bdf8;
+      --accent1: #60a5fa;
+      --accent2: #34d399;
+      --shadow: 0 18px 40px rgba(0,0,0,.5);
+    }
+  }
 
-.course-note img {
-    width: 100%; /* Adjust the image width */
-    height: auto;
+  body { background: var(--bg); color: var(--ink); }
+
+  .cheats-hero { text-align: center; margin: 0 auto 1.25rem; max-width: 920px; }
+  .cheats-hero h1 { font-size: clamp(1.8rem, 2.6vw, 2.4rem); margin: 0; }
+  .cheats-hero p { color: var(--muted); margin-top: .25rem; }
+
+  .cheats-h2 {
+    margin: 1.5rem auto .6rem;
+    max-width: 1040px;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    letter-spacing: .2px;
+    position: relative;
+  }
+  .cheats-h2::after {
+    content: "";
     display: block;
-    margin: 0 auto 10px;
-}
+    height: 2px;
+    margin-top: .35rem;
+    width: 72px;
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    border-radius: 2px;
+  }
 
-.white-text {
-    color: #fff; /* White font for descriptions */
-}
+  .notes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 1040px;
+    margin: 0 auto 2rem;
+  }
+  @media (min-width: 860px) {
+    .notes-grid { grid-template-columns: 1fr 1fr; }
+  }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1.5px solid white;
-}
-
-td {
-    padding: 10px;
-    vertical-align: top;
-}
-
-a {
+  .note-card {
+    display: grid;
+    grid-template-columns: 1.4fr .9fr;
+    gap: 14px;
     text-decoration: none;
     color: inherit;
-}
-h2, h3, h4, h5, h6 {
-    color: black; /* Black color for headings */
-}
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: var(--shadow);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .note-card:hover {
+    transform: translateY(-2px);
+    border-color: transparent;
+    box-shadow: 0 18px 40px rgba(0,0,0,.12);
+  }
+  .note-card:focus { outline: 3px solid var(--accent1); outline-offset: 2px; }
+
+  .note-text h3 { margin: 0 0 .35rem; font-size: 1rem; line-height: 1.25; }
+  .note-text p {
+    margin: 0;
+    color: var(--muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .note-card:hover .note-text p { -webkit-line-clamp: 10; }
+
+  .note-meta { margin-top: .6rem; }
+  .pill {
+    display: inline-block;
+    font-size: .72rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    color: #fff;
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  }
+
+  .note-thumb {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #0b0b0c;
+  }
+  .note-thumb img {
+    width: 100%; height: 100%;
+    max-height: 190px;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.02);
+    transition: transform .35s ease, opacity .35s ease;
+    opacity: .92;
+  }
+  .note-card:hover .note-thumb img { transform: scale(1.06); opacity: 1; }
+
+  .overlay {
+    position: absolute; inset: 0;
+    display: grid; place-items: end;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 86%);
+    color: #fff;
+    font-weight: 600;
+    font-size: .92rem;
+    opacity: 0;
+    transition: opacity .25s ease;
+  }
+  .note-card:hover .overlay { opacity: 1; }
 </style>
