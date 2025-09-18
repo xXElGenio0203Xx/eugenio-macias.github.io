@@ -3,13 +3,16 @@ layout: default
 title: Home
 ---
 
+<!-- Background FX -->
 <canvas id="stars" aria-hidden="true"></canvas>
 <div class="aurora" aria-hidden="true"></div>
 <div class="spotlight" aria-hidden="true"></div>
 
+<!-- ===== HERO ===== -->
 <section class="hero">
   <div class="hero-inner">
 
+    <!-- Profile -->
     <div class="pfp-wrap" data-tilt data-magnetic>
       <picture>
         <source type="image/heic" srcset="{{ site.baseurl }}/assets/images/profile%20pic.HEIC" />
@@ -22,6 +25,7 @@ title: Home
       <div class="ring"></div>
     </div>
 
+    <!-- Intro -->
     <div class="intro">
       <h1 class="title">
         <span class="badge">BS Applied Mathematics–Computer Science & BA Mathematics</span>
@@ -31,6 +35,7 @@ title: Home
         <span>Probability × Statistics × PDEs × ML under uncertainty</span>
       </p>
 
+      <!-- About -->
       <article class="glass about" data-tilt data-magnetic>
         <h2>About me</h2>
         <div class="text-bg">
@@ -47,64 +52,73 @@ title: Home
           </p>
         </div>
       </article>
-
-      <h2 class="section-title">Highlights</h2>
-      <div class="cards">
-
-        <article class="card glow tilt-card" data-tilt data-magnetic>
-          <header>Citi Markets — Quantitative Analyst Intern (NYC, Summer 2025)</header>
-          <ul>
-            <li>Built <strong>Python–C++ Monte Carlo & PDE solvers</strong>; validated pricing/Greeks and accelerated runtimes.</li>
-            <li>Trained <strong>LightGBM-DART</strong> & <strong>neural nets</strong> with Bayesian optimization on <strong>6M+ structured-note</strong> rows; used <strong>SHAP</strong> for diagnostics.</li>
-            <li><strong>1st place</strong> out of 540 in the firm-wide ML Quant competition.</li>
-          </ul>
-        </article>
-
-        <article class="card tilt-card" data-tilt data-magnetic>
-          <header>D. E. Shaw · Bridgewater · Buddywise</header>
-          <ul>
-            <li><strong>Latitude Fellowship</strong> at The D. E. Shaw Group (NYC): multivariate time-series & sector forecasting.</li>
-            <li><strong>Investment Immersion</strong> at Bridgewater Associates: macro indicators & stat-arb backtests.</li>
-            <li>Intern at <strong>Buddywise</strong> (Berlin): data tooling for safety-critical computer vision.</li>
-          </ul>
-        </article>
-
-        <article class="card tilt-card" data-tilt data-magnetic>
-          <header>What I’m pursuing</header>
-          <ul>
-            <li><strong>Option A:</strong> <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
-            <li><strong>Option B:</strong> <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
-            <li><strong>Option C:</strong> <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
-          </ul>
-          <div class="badges">
-            <span class="badge">Quant</span><span class="badge">Stat ML</span><span class="badge">PDEs</span>
-          </div>
-        </article>
-
-      </div>
-      <div class="cool-trigger">
-        <button id="coolBtn" class="cool-btn" type="button">Click here to see something cool ✨</button>
-      </div>
     </div>
   </div>
 </section>
 
+<!-- ===== FULL-BLEED HIGHLIGHTS ===== -->
+<section class="highlights-bleed">
+  <div class="highlights-inner">
+    <h2 class="section-title">Highlights</h2>
+
+    <div class="cards">
+      <!-- Citi Markets -->
+      <article class="card glow tilt-card" data-tilt data-magnetic>
+        <header>Citi Markets — Quantitative Analyst Intern (NYC, Summer 2025)</header>
+        <ul>
+          <li>Built <strong>Python–C++ Monte Carlo & PDE solvers</strong>; validated pricing/Greeks and accelerated runtimes.</li>
+          <li>Trained <strong>LightGBM-DART</strong> & <strong>neural nets</strong> with Bayesian optimization on <strong>6M+ structured-note</strong> rows; used <strong>SHAP</strong> for diagnostics.</li>
+          <li><strong>1st place</strong> out of 540 in the firm-wide ML Quant competition.</li>
+        </ul>
+      </article>
+
+      <!-- DE Shaw / Bridgewater / Buddywise -->
+      <article class="card tilt-card" data-tilt data-magnetic>
+        <header>D. E. Shaw · Bridgewater · Buddywise</header>
+        <ul>
+          <li><strong>Latitude Fellowship</strong> at The D. E. Shaw Group (NYC): multivariate time-series & sector forecasting.</li>
+          <li><strong>Investment Immersion</strong> at Bridgewater Associates: macro indicators & stat-arb backtests.</li>
+          <li>Intern at <strong>Buddywise</strong> (Berlin): data tooling for safety-critical computer vision.</li>
+        </ul>
+      </article>
+
+      <!-- Current paths -->
+      <article class="card tilt-card" data-tilt data-magnetic>
+        <header>What I’m pursuing</header>
+        <ul>
+          <li><strong>Option A:</strong> <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
+          <li><strong>Option B:</strong> <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
+          <li><strong>Option C:</strong> <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
+        </ul>
+        <div class="badges">
+          <span class="badge">Quant</span><span class="badge">Stat ML</span><span class="badge">PDEs</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Math Symbols (toggle layer) -->
 <div id="symbolLayer" class="symbol-layer" aria-hidden="true"></div>
+<!-- Particle explosions -->
+<div id="boomLayer" class="boom-layer" aria-hidden="true"></div>
+
+<!-- Top-right toggle button -->
+<button id="coolBtn" class="cool-btn" type="button" aria-pressed="false" title="Toggle floating math">
+  ✨ Cool Math
+</button>
 
 <style>
-  /* High-contrast palette */
   :root{
     --bg:#0a0b0e; --ink:#ffffff; --muted:#e5e7eb; --line:#23262d; --card:#0f1115;
     --g1:#7c83ff; --g2:#22d3ee; --g3:#34d399; --g4:#f59e0b;
     --shadow:0 24px 60px rgba(0,0,0,.55);
-    /* For new spotlight effect */
-    --mouse-x: 50%;
-    --mouse-y: 50%;
+    --mouse-x: 50%; --mouse-y: 50%;
   }
-  html{ scroll-behavior:smooth; } /* nicer anchor scrolling */
+  html{ scroll-behavior:smooth; }
   body { background: var(--bg); color: var(--ink); overflow-x:hidden; }
 
-  /* Starfield, Aurora & NEW Spotlight */
+  /* Stars, Aurora, Spotlight */
   #stars{ position:fixed; inset:0; width:100%; height:100%; z-index:-3; display:block; }
   .aurora{
     position:fixed; inset:-10vmax; z-index:-2; pointer-events:none;
@@ -118,25 +132,29 @@ title: Home
     will-change: transform;
   }
   @keyframes drift{ 0%{ transform: translate3d(0,0,0) scale(1); } 100%{ transform: translate3d(2vw,-1vh,0) scale(1.04); } }
-
   .spotlight {
     position: fixed; inset: 0; z-index: -1; pointer-events: none;
     background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.045), transparent 35%);
   }
 
   /* Hero */
-  .hero{ position:relative; padding: clamp(20px, 4.5vw, 40px) 16px; }
-  .hero{ padding-bottom: clamp(8px, 2vw, 16px); } /* tighter bottom */
-  .hero-inner{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:18px; align-items:flex-start; } /* Changed align-items */
-  @media (min-width:980px){ .hero-inner{ grid-template-columns:.95fr 1.65fr; gap:28px; } }
+  .hero{ position:relative; padding: clamp(20px, 4.5vw, 40px) 16px; padding-bottom: clamp(8px, 2vw, 10px); }
+  .hero-inner{
+    max-width:min(1400px, 94vw);
+    margin:0 auto;
+    display:grid; grid-template-columns:1fr; gap:18px; align-items:flex-start;
+  }
+  @media (min-width:980px){
+    .hero-inner{ grid-template-columns:.95fr 1.65fr; gap:28px; }
+  }
 
-  /* Profile + ring */
+  /* Profile */
   .pfp-wrap{
-    position:relative; width:min(340px,78vw); aspect-ratio:1/1; margin:0 auto;
+    position:relative; width:min(360px,78vw); aspect-ratio:1/1; margin:0 auto;
     border-radius:24px; overflow:hidden; border:1px solid var(--line);
     background: linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
     box-shadow:var(--shadow); transform-style:preserve-3d;
-    transition:transform .2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
+    transition:transform .25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: transform;
   }
   .profile-pic{ width:100%; height:100%; object-fit:cover; display:block; opacity:.98; transform:scale(1.02); transition:transform .35s ease, opacity .35s ease; }
@@ -159,12 +177,9 @@ title: Home
   @keyframes typing { from { width: 0; } to { width: 42ch; } }
   @keyframes caret { 50% { border-color: transparent; } }
 
-  /* Glass card */
   .glass{ background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid var(--line); border-radius:16px; padding:18px 20px; box-shadow:var(--shadow); backdrop-filter: blur(8px); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
   .glass:hover{ transform: translateY(-2px) rotateX(1deg); border-color:#2a2f39; box-shadow:0 24px 60px rgba(0,0,0,.35); }
   .about h2{ margin:.2rem 0 .5rem; font-size:1.15rem; letter-spacing:.2px; color:var(--ink); }
-
-  /* Badge-style background */
   .text-bg{
     position:relative; padding:12px 14px; border-radius:14px;
     background: linear-gradient(180deg, rgba(124,131,255,.18), rgba(34,211,238,.14) 50%, rgba(52,211,153,.12) 100%);
@@ -177,45 +192,62 @@ title: Home
   }
   .about p{ margin:0; color:var(--ink); opacity:.98; }
 
-  /* Cool button */
-  .cool-trigger{ margin-top:20px; text-align: right; } /* MODIFIED */
+  /* ===== Top-right Cool Button ===== */
   .cool-btn{
+    position: fixed; top: 90px; right: 22px; z-index: 6;
     appearance:none; border:1px solid #2a2f39; border-radius:999px;
     padding:10px 16px; font-weight:800; letter-spacing:.2px; cursor:pointer;
     color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3));
-    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease, opacity .2s ease;
   }
   .cool-btn:hover{ transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.30); filter:saturate(1.1); }
+  .cool-btn[aria-pressed="true"]{ background:linear-gradient(90deg,var(--g1),var(--g2)); }
 
-  /* Highlights section (now inside intro) */
-  .section-title{ margin:24px 0 12px; font-size:1.18rem; letter-spacing:.2px; color:var(--ink); } /* Added margin-top */
+  /* ===== Full-bleed Highlights ===== */
+  .highlights-bleed{
+    position:relative; width:100vw;
+    left:50%; right:50%;
+    margin-left:-50vw; margin-right:-50vw;
+    padding: clamp(8px, 2vw, 12px) clamp(10px, 3vw, 22px) clamp(24px, 4vw, 44px);
+  }
+  .highlights-inner{
+    max-width: min(1680px, 96vw);
+    margin: 0 auto;
+  }
+  .section-title{
+    margin: 4px 0 14px; font-size:1.22rem; letter-spacing:.2px; color:var(--ink);
+  }
   .section-title::after{ content:""; display:block; height:2px; width:86px; margin-top:.35rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
 
-  /* 3-Column Card Layout */
-  .cards{ display:grid; gap:14px; grid-template-columns:1fr; perspective:1000px; }
-  @media (min-width: 1024px){
-    .cards{ grid-template-columns: repeat(3, minmax(0,1fr)); gap:18px; }
+  /* 3 big edge-to-edge cards */
+  .cards{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: clamp(12px, 2vw, 18px);
+    perspective:1000px;
   }
-
+  @media (min-width: 900px){
+    .cards{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+  }
   .card{
-    background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; box-shadow:var(--shadow);
-    color:var(--ink); position:relative; overflow:hidden; font-size:1.04rem;
+    background:var(--card); border:1px solid var(--line); border-radius:18px; padding: clamp(18px, 2vw, 26px);
+    color:var(--ink); position:relative; overflow:hidden; font-size:1.08rem;
+    min-height: 220px;
     will-change: transform;
     transition: transform .5s cubic-bezier(0.215, 0.610, 0.355, 1), box-shadow .25s ease, border-color .25s ease;
+    box-shadow: var(--shadow);
   }
-
-  .card header{ font-weight:900; margin-bottom:8px; color:var(--ink); font-size:1.06rem; }
+  .card header{ font-weight:900; margin-bottom:10px; color:var(--ink); font-size:1.12rem; }
   .card ul{ margin:.2rem 0 0 1.1rem; }
-  .card li{ margin:.35rem 0; color:var(--ink); opacity:.95; line-height:1.35; }
+  .card li{ margin:.42rem 0; color:var(--ink); opacity:.95; line-height:1.42; }
   .card::after{
-    content:""; position:absolute; inset:-1px; border-radius:18px; pointer-events:none; opacity:0;
+    content:""; position:absolute; inset:-1px; border-radius:20px; pointer-events:none; opacity:0;
     background: conic-gradient(from 0deg, var(--g1), var(--g2), var(--g3), var(--g1));
     transition: opacity .25s ease; filter: blur(16px);
   }
-  /* REDUCED HOVER EFFECT */
   .card:hover{
-    transform: translateY(-2px) rotateX(0.5deg) rotateY(-0.5deg) scale(1.01);
-    border-color:#2a2f39; box-shadow:0 18px 40px rgba(0,0,0,.45);
+    transform: translateY(-3px) rotateX(0.6deg) rotateY(-0.6deg) scale(1.02);
+    border-color:#2a2f39; box-shadow:0 22px 52px rgba(0,0,0,.45);
   }
   .card:hover::after{ opacity:.25; }
   .card:hover:before{
@@ -224,16 +256,16 @@ title: Home
     animation: sheen .9s ease;
   }
   @keyframes sheen{ from{ left:-40%; } to{ left:120%; } }
-  
-  /* REDUCED HOVER EFFECT */
-  .tilt-card:hover{ transform: translateY(-2px) rotateX(1deg) rotateY(-1deg) scale(1.015); }
+  .tilt-card:hover{ transform: translateY(-3px) rotateX(1.2deg) rotateY(-1.2deg) scale(1.025); }
+  .badges{ margin-top:10px; display:flex; gap:8px; flex-wrap:wrap; }
+  .badge{ display:inline-block; font-size:.88rem; font-weight:700; padding:6px 12px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
 
-  /* Floating math symbols (unchanged) */
-  .symbol-layer{ position: fixed; inset: 0; z-index: 3; pointer-events: none; display: none; }
+  /* Math symbols layer */
+  .symbol-layer{ position: fixed; inset: 0; z-index: 4; pointer-events: none; display: none; }
   .symbol-layer.active{ display:block; }
   .symbol{
     position:absolute; pointer-events:auto; user-select:none;
-    color: rgba(255,255,255,.9); text-shadow: 0 0 8px rgba(255,255,255,.28);
+    color: rgba(255,255,255,.92); text-shadow: 0 0 8px rgba(255,255,255,.28);
     font-weight: 900; filter: drop-shadow(0 6px 20px rgba(0,0,0,.35));
     transform: translate3d(0,0,0) rotate(var(--rot,0deg));
     animation: float var(--dur,12s) ease-in-out var(--delay,0s) infinite alternate;
@@ -255,15 +287,29 @@ title: Home
     100% { opacity:0;  transform: scale(1.8); }
   }
 
+  /* Particle explosion */
+  .boom-layer{ position: fixed; inset:0; pointer-events:none; z-index: 7; }
+  .particle{
+    position: absolute; width: 8px; height: 8px; border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #fff, var(--c1));
+    box-shadow: 0 0 14px var(--c1);
+    transform: translate(-50%, -50%) translate(0,0) scale(1);
+    animation: burst var(--t,700ms) cubic-bezier(.17,.67,.55,1.24) forwards;
+  }
+  @keyframes burst{
+    60%{ transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) scale(1.1); opacity:1; }
+    100%{ transform: translate(-50%, -50%) translate(calc(var(--dx) * 1.25), calc(var(--dy) * 1.25)) scale(.1); opacity:0; box-shadow: 0 0 0 transparent; }
+  }
+
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce){
-    .aurora, .ring, .profile-pic, .glass, .card, .symbol, .spotlight { animation: none !important; transition: none !important; }
+    .aurora, .ring, .profile-pic, .glass, .card, .symbol, .spotlight, .particle { animation: none !important; transition: none !important; }
     .typing span{ animation: none; border-right: none; }
   }
 </style>
 
 <script>
-/* ===== Tiny Starfield (GPU-friendly + perf-aware) ===== */
+/* ===== Stars ===== */
 (function(){
   const canvas = document.getElementById('stars');
   if(!canvas) return;
@@ -304,51 +350,26 @@ title: Home
       if(s.x < -5 || s.x > w+5 || s.y > h+5) { s.x = rnd(0,w); s.y = -5; }
     }
   }
-  function step(){
-    draw();
-    if(!paused) update();
-    if(!reduce) requestAnimationFrame(step);
-  }
-
-  let lastY = 0, ticking = false;
-  function onScroll(){
-    lastY = window.scrollY || 0;
-    if(!ticking){
-      window.requestAnimationFrame(()=>{
-        paused = lastY > innerHeight * 0.7;
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }
-  addEventListener('scroll', onScroll, { passive:true });
+  function step(){ draw(); if(!paused) update(); if(!reduce) requestAnimationFrame(step); }
+  addEventListener('scroll', ()=>{ paused = (scrollY > innerHeight * 0.7); }, { passive:true });
   addEventListener('resize', resize, { passive: true });
   resize(); if(!reduce) step();
 })();
 
-/* ===== Soft 3D tilt (pfp + cards + about) ===== */
+/* ===== 3D Tilt (gentle) ===== */
 (function(){
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(reduce) return;
-
-  const tilts = document.querySelectorAll('[data-tilt]');
-  tilts.forEach(el=>{
-    // REDUCED EFFECT VALUES HERE
-    const r = el.hasAttribute('data-magnetic') ? 3 : 8; // Was 6 : 10
-    const m = el.hasAttribute('data-magnetic') ? 0.15 : 0; // Was 0.35 : 0
-
+  document.querySelectorAll('[data-tilt]').forEach(el=>{
+    const r = el.hasAttribute('data-magnetic') ? 3 : 8;
+    const m = el.hasAttribute('data-magnetic') ? 0.15 : 0;
     el.addEventListener('mousemove', (e)=>{
       const b = el.getBoundingClientRect();
       const cx = b.left + b.width / 2, cy = b.top + b.height / 2;
       const dx = (e.clientX - cx) / (b.width / 2);
       const dy = (e.clientY - cy) / (b.height / 2);
-
-      const tx = dx * b.width * m;
-      const ty = dy * b.height * m;
-      const rotX = (-dy * r).toFixed(2);
-      const rotY = (dx * r).toFixed(2);
-
-      el.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+      const tx = dx * b.width * m, ty = dy * b.height * m;
+      el.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotateX(${(-dy*r).toFixed(2)}deg) rotateY(${(dx*r).toFixed(2)}deg)`;
     });
     el.addEventListener('mouseleave', ()=>{ el.style.transform = ''; });
   });
@@ -363,6 +384,7 @@ title: Home
 
   const SYMBOLS = ["∑","∫","π","ℝ","ℂ","ℕ","∇","∂","λ","μ","σ","ϕ","ψ","ε","δ","Θ","∞","≈","≡","⊗","⊕","→","↦","∀","∃","𝔼","𝒩","√","≤","≥"];
   const MIN = 18, MAX = 42;
+  const ACTIVE_COUNT = 40;
 
   function rand(a,b){ return a + Math.random()*(b-a); }
   function choose(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
@@ -378,8 +400,8 @@ title: Home
     s.style.left = x + 'px';
     s.style.top  = y + 'px';
     s.style.fontSize = size + 'px';
-    const tx = (Math.random() > .5 ? 1 : -1) * rand(20, 120);
-    const ty = (Math.random() > .5 ? 1 : -1) * rand(20, 120);
+    const tx = (Math.random() > .5 ? 1 : -1) * rand(20, 140);
+    const ty = (Math.random() > .5 ? 1 : -1) * rand(20, 140);
     const rot = rand(-18, 18) + 'deg';
     const dur = rand(9, 16) + 's';
     const delay = rand(-4, 2) + 's';
@@ -401,21 +423,26 @@ title: Home
     });
     layer.appendChild(s);
   }
-
   function spawnMany(n){ for(let i=0;i<n;i++) spawnOne(); }
-  let active = false;
 
-  btn.addEventListener('click', ()=>{
+  let active = false;
+  btn.addEventListener('click', (e)=>{
+    // Toggle state
     active = !active;
+    btn.setAttribute('aria-pressed', String(active));
+
+    // Explosion at click point
+    boom(e.clientX || innerWidth-40, e.clientY || 100);
+
     if(active){
       layer.classList.add('active');
       layer.innerHTML = '';
-      spawnMany(36);
-      btn.textContent = 'Hide the cool math ✨';
+      spawnMany(ACTIVE_COUNT);
+      btn.textContent = '✨ Hide Math';
     }else{
       layer.classList.remove('active');
       layer.innerHTML = '';
-      btn.textContent = 'Click here to see something cool ✨';
+      btn.textContent = '✨ Cool Math';
     }
   });
 
@@ -428,20 +455,45 @@ title: Home
       s.style.top  = Math.min(parseFloat(s.style.top)||0, innerHeight - size) + 'px';
     });
   });
+
+  /* Particle boom */
+  const boomLayer = document.getElementById('boomLayer');
+  function boom(x, y){
+    if(!boomLayer) return;
+    const n = 36;
+    for(let i=0;i<n;i++){
+      const p = document.createElement('span');
+      p.className = 'particle';
+      const ang = (Math.PI * 2) * (i / n) + Math.random() * 0.5;
+      const dist = 40 + Math.random() * 140;
+      const dx = Math.cos(ang) * dist;
+      const dy = Math.sin(ang) * dist;
+      const t  = 500 + Math.random()*500;
+
+      // random accent color
+      const palette = ['#7c83ff','#22d3ee','#34d399','#f59e0b','#ffffff'];
+      const c1 = palette[Math.floor(Math.random()*palette.length)];
+
+      p.style.left = x + 'px';
+      p.style.top  = y + 'px';
+      p.style.setProperty('--dx', dx + 'px');
+      p.style.setProperty('--dy', dy + 'px');
+      p.style.setProperty('--t', t + 'ms');
+      p.style.setProperty('--c1', c1);
+
+      p.addEventListener('animationend', ()=> p.remove());
+      boomLayer.appendChild(p);
+    }
+  }
 })();
 
-/* ===== Spotlight Cursor Effect ===== */
+/* ===== Spotlight Cursor ===== */
 (function() {
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) return;
-
-    window.addEventListener('mousemove', (e) => {
-        document.documentElement.style.setProperty('--mouse-x', e.clientX + 'px');
-        document.documentElement.style.setProperty('--mouse-y', e.clientY + 'px');
-    });
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+  window.addEventListener('mousemove', (e) => {
+    document.documentElement.style.setProperty('--mouse-x', e.clientX + 'px');
+    document.documentElement.style.setProperty('--mouse-y', e.clientY + 'px');
+  }, {passive:true});
 })();
-
-// Scroll reveal script is no longer needed with the new layout
-// as the cards are now visible on load.
-
 </script>
