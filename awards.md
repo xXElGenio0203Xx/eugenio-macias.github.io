@@ -2,69 +2,60 @@
 layout: default
 title: Awards
 ---
+
 <div class="center">
-    <h1>Awards</h1>
+  <h1>Awards & Honors</h1>
 </div>
-<br>
-**D.E. Shaw group's Latitude Fellowship**  
-&nbsp;&nbsp;- Issued by DE Shaw Group
 
-**84th PUTNAM Mathematics Competition**  
-&nbsp;&nbsp;- Issued by the Mathematical Association of America (MAA)  
-&nbsp;&nbsp;- World's leading university-level mathematics competition.  
-&nbsp;&nbsp;- Placed in top 20% of scorers.
+<!-- Quant & Math first for recruiter signal -->
+## Quant & Math Awards
 
-**POINT72 Data Scholar**  
-&nbsp;&nbsp;- Issued by Point 72  
-&nbsp;&nbsp;- Data Scholar Program by Point72 & Correlation 1
+- **D. E. Shaw Latitude Fellowship** — *The D. E. Shaw Group*.  
+  Selected for the firm’s prestigious research fellowship.
 
-**Shelby Davis Scholar 2022-2026**  
-&nbsp;&nbsp;- Issued by Shelby Davis, Phil Geier, UWC International  
-&nbsp;&nbsp;- Associated with United World College Mostar  
-&nbsp;&nbsp;- ($40,000/yearly)
+- **Putnam Mathematical Competition (84th)** — *Mathematical Association of America*.  
+  World’s leading university-level mathematics contest; **Top 20%** nationwide.
 
-**1st place: STEM Olympiad**  
-&nbsp;&nbsp;- Issued by International STEM Olympiad  
-&nbsp;&nbsp;- Associated with United World College Mostar  
-&nbsp;&nbsp;- 1st place in Bosnia and Herzegovina (Math-Geo-Tech Olympiad)
+- **Point72 Data Scholar** — *Point72 & Correlation One*.  
+  Selected for the competitive Data Scholar Program.
 
-**Silver Medal: IYMC**  
-&nbsp;&nbsp;- Issued by IYMC  
-&nbsp;&nbsp;- Silver Medal (mathematics open category 18+)
+- **Shelby Davis Scholar (2022–2026)** — *UWC International*.  
+  Full-tuition merit award (≈ **$40,000/year**) associated with UWC Mostar.
 
-**13th Place: STEM Olympiad**  
-&nbsp;&nbsp;- Issued by International STEM Olympiad  
-&nbsp;&nbsp;- 13th Global Ranking (Math-Geo-Tech Olympiad)
+- **STEM Olympiad – 1st place (Bosnia & Herzegovina)** — *International STEM Olympiad*.  
+  Math-Geo-Tech Olympiad national champion.
 
-**Brown Spring Financial Services Exploration Award 2023**  
-&nbsp;&nbsp;- Exploration award to learn from (VC, IB, PE) financial analysts working in NYC
+- **STEM Olympiad – 13th globally** — *International STEM Olympiad*.  
+  Ranked **13/4,600** worldwide.
 
-**Brown AMP**  
-&nbsp;&nbsp;- Admitted into the Brown University Applied Music Program for advanced-level classical musicians. 3 final solo-recitals (audience 150+)
+- **IYMC – Silver Medal** — *International Youth Math Challenge*.  
+  Silver medal, mathematics open category (18+).
 
-**Special Honour: IYMC**  
-&nbsp;&nbsp;- Special Honour at mathematics competition in the Youth Category
+- **IYMC – Special Honour** — *International Youth Math Challenge*.  
+  Special Honour in the youth category.
 
-**2nd Place: VI Concurso Internacional de Guitarra Salamanca**  
-&nbsp;&nbsp;- Issued by Encuentro Internacional de Guitarra Salamanca  
-&nbsp;&nbsp;- One of the most important Guitar Festivals in Mexico and Latin America.
+- **Brown Spring Financial Services Exploration Award (2023)** — *Brown University*.  
+  Exploration award to learn from VC/IB/PE analysts in NYC.
 
-**3rd Place: VII Concurso Internacional de Guitarra Salamanca, Youth Category**  
-&nbsp;&nbsp;- Issued by Encuentro Internacional de Guitarra Salamanca  
-&nbsp;&nbsp;- National-level classical guitar competition in Mexico
+- **Olimpiada del Conocimiento Infantil (2015)** — *Secretaría de Educación Pública (Mexico)*.  
+  Winner of local and regional general-knowledge Olympiad.
 
-**Academic Scholarship ITESM 2018**  
-&nbsp;&nbsp;- Tuition 50% Merit Scholarship to study the Multicultural Diploma at ITESM
 
-**Honorific Mention at GFA XI held in Denver CO.**  
-&nbsp;&nbsp;- Issued by the Guitar Foundation of America  
-&nbsp;&nbsp;- Honorific Mention at the USA International Guitar Competition
+## Music & Other Honors
 
-**Olimpiada del Conocimiento Infantil 2015**  
-&nbsp;&nbsp;- Issued by SEP  
-&nbsp;&nbsp;- Winner of the local and Regional General Knowledge Olympiad in Mexico.
-<br>
-<br>
-<br>
-<br>
-<br>
+- **Applied Music Program (AMP)** — *Brown University*.  
+  Admitted as an advanced classical guitarist; **three** solo recitals (audiences 150+).
+
+- **VI Concurso Internacional de Guitarra Salamanca — 2nd place** — *Encuentro Internacional de Guitarra Salamanca*.  
+  One of the most important guitar festivals in Mexico & Latin America.
+
+- **VII Concurso Internacional de Guitarra Salamanca (Youth) — 3rd place** — *Encuentro Internacional de Guitarra Salamanca*.  
+  National-level classical guitar competition (Mexico).
+
+- **Guitar Foundation of America (GFA XI, Denver) — Honorific Mention** — *GFA*.  
+  Honorific Mention at the USA International Guitar Competition.
+
+- **ITESM Academic Scholarship (2018)** — *Tecnológico de Monterrey (ITESM)*.  
+  50% merit scholarship for the Multicultural Diploma.
+
+<br><br>
