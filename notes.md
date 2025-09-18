@@ -264,7 +264,9 @@ title: Cheat Sheets
     --pill: #0ea5e9;
     --accent1: #3b82f6;
     --accent2: #22c55e;
-    --shadow: 0 10px 30px rgba(0,0,0,.07);
+    --glow1: #60a5fa;
+    --glow2: #34d399;
+    --shadow: 0 12px 32px rgba(0,0,0,.08);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -276,115 +278,183 @@ title: Cheat Sheets
       --pill: #38bdf8;
       --accent1: #60a5fa;
       --accent2: #34d399;
-      --shadow: 0 18px 40px rgba(0,0,0,.5);
+      --glow1: #7dd3fc;
+      --glow2: #6ee7b7;
+      --shadow: 0 18px 40px rgba(0,0,0,.50);
     }
   }
-
   body { background: var(--bg); color: var(--ink); }
 
-  .cheats-hero { text-align: center; margin: 0 auto 1.25rem; max-width: 920px; }
+  .cheats-hero { text-align: center; margin: 0 auto 1.25rem; max-width: 1200px; }
   .cheats-hero h1 { font-size: clamp(1.8rem, 2.6vw, 2.4rem); margin: 0; }
   .cheats-hero p { color: var(--muted); margin-top: .25rem; }
 
   .cheats-h2 {
-    margin: 1.5rem auto .6rem;
-    max-width: 1040px;
+    margin: 1.6rem auto .8rem;
+    width: min(96vw, 1650px);
     font-size: clamp(1.2rem, 2vw, 1.4rem);
     letter-spacing: .2px;
-    position: relative;
   }
   .cheats-h2::after {
     content: "";
     display: block;
     height: 2px;
     margin-top: .35rem;
-    width: 72px;
+    width: 92px;
     background: linear-gradient(90deg, var(--accent1), var(--accent2));
     border-radius: 2px;
   }
 
+  /* FULL-WIDTH responsive grid */
   .notes-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    max-width: 1040px;
-    margin: 0 auto 2rem;
-  }
-  @media (min-width: 860px) {
-    .notes-grid { grid-template-columns: 1fr 1fr; }
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 18px;
+    width: min(96vw, 1650px);
+    margin: 0 auto 2.2rem;
+    align-items: stretch;
   }
 
   .note-card {
+    position: relative;
     display: grid;
-    grid-template-columns: 1.4fr .9fr;
-    gap: 14px;
+    grid-template-rows: auto 1fr;         /* stack by default on small */
+    grid-template-columns: 1fr;
+    gap: 12px;
     text-decoration: none;
     color: inherit;
     background: var(--card);
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: 16px;
     padding: 14px;
     box-shadow: var(--shadow);
-    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    position: relative;
+    transform: translateZ(0);
+    transition: transform .18s ease, box-shadow .2s ease, border-color .2s ease, filter .2s ease;
+    will-change: transform;
     overflow: hidden;
+    isolation: isolate; /* keep glow inside stacking context */
+    animation: pop-in .5s ease both;
   }
-  .note-card:hover {
-    transform: translateY(-2px);
-    border-color: transparent;
-    box-shadow: 0 18px 40px rgba(0,0,0,.12);
+  /* Staggered entrance */
+  .note-card:nth-child(odd){ animation-delay: .02s; }
+  .note-card:nth-child(3n){  animation-delay: .06s; }
+  @keyframes pop-in{
+    from{ transform: translateY(10px) scale(.99); opacity: .0; }
+    to  { transform: translateY(0) scale(1);     opacity: 1; }
   }
-  .note-card:focus { outline: 3px solid var(--accent1); outline-offset: 2px; }
 
-  .note-text h3 { margin: 0 0 .35rem; font-size: 1rem; line-height: 1.25; }
+  /* Side-by-side layout on larger cards for variety */
+  @media (min-width: 860px){
+    .note-card { grid-template-columns: 1.2fr .9fr; grid-template-rows: 1fr; }
+  }
+
+  /* HOVER: bigger expansion + glow ring + sheen + tilt cursor-follow via JS */
+  .note-card:hover {
+    transform: translateY(-6px) scale(1.035);
+    border-color: transparent;
+    box-shadow: 0 26px 60px rgba(0,0,0,.18);
+    z-index: 3;
+  }
+  .note-card::after{
+    content:""; position:absolute; inset:-2px; border-radius: 18px; opacity:0;
+    background: conic-gradient(from 0deg, var(--glow1), var(--glow2), var(--glow1));
+    filter: blur(18px);
+    transition: opacity .25s ease;
+    pointer-events: none;
+  }
+  .note-card:hover::after{ opacity:.28; }
+
+  .note-card::before{
+    content:""; position:absolute; top:0; left:-40%; width:40%; height:100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent);
+    transform: skewX(-20deg); opacity:0; pointer-events:none;
+  }
+  .note-card:hover::before{ animation: sheen .9s ease; opacity:1; }
+  @keyframes sheen{ from{ left:-40%; } to{ left:120%; } }
+
+  .note-text h3 { margin: 0 0 .35rem; font-size: 1.05rem; line-height: 1.25; }
   .note-text p {
     margin: 0;
     color: var(--muted);
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .note-card:hover .note-text p { -webkit-line-clamp: 10; }
+  .note-card:hover .note-text p { -webkit-line-clamp: 12; }
 
-  .note-meta { margin-top: .6rem; }
+  .note-meta { margin-top: .7rem; }
   .pill {
     display: inline-block;
     font-size: .72rem;
-    padding: 2px 8px;
+    padding: 3px 10px;
     border-radius: 999px;
-    color: #fff;
+    color: #0b1220;
     background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    font-weight: 800;
   }
 
   .note-thumb {
     position: relative;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--line);
     background: #0b0b0c;
+    min-height: 160px;
   }
   .note-thumb img {
     width: 100%; height: 100%;
-    max-height: 190px;
+    max-height: 220px;
     object-fit: cover;
     display: block;
-    transform: scale(1.02);
-    transition: transform .35s ease, opacity .35s ease;
-    opacity: .92;
+    transform: scale(1.02) rotate(0deg);
+    transition: transform .4s ease, opacity .35s ease, filter .35s ease;
+    opacity: .94;
   }
-  .note-card:hover .note-thumb img { transform: scale(1.06); opacity: 1; }
+  .note-card:hover .note-thumb img { transform: scale(1.09) rotate(.6deg); opacity: 1; filter: saturate(1.08); }
 
   .overlay {
     position: absolute; inset: 0;
     display: grid; place-items: end;
     padding: 10px;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 86%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 88%);
     color: #fff;
-    font-weight: 600;
-    font-size: .92rem;
+    font-weight: 700;
+    font-size: .95rem;
     opacity: 0;
     transition: opacity .25s ease;
+    letter-spacing: .2px;
   }
   .note-card:hover .overlay { opacity: 1; }
+
+  /* 3D tilt origin & focus ring */
+  .note-card:focus-visible { outline: 3px solid var(--accent1); outline-offset: 3px; border-radius: 18px; }
+
+  /* Accessibility: reduce motion */
+  @media (prefers-reduced-motion: reduce){
+    .note-card, .note-thumb img { transition: none !important; animation: none !important; }
+  }
 </style>
+
+<script>
+/* Subtle pointer-tilt based on mouse position (no libraries) */
+(function(){
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) return;
+
+  const cards = document.querySelectorAll('.note-card');
+  const MAX = 8; // degrees
+  cards.forEach(card=>{
+    card.addEventListener('mousemove', e=>{
+      const r = card.getBoundingClientRect();
+      const cx = r.left + r.width/2, cy = r.top + r.height/2;
+      const dx = (e.clientX - cx) / (r.width/2);
+      const dy = (e.clientY - cy) / (r.height/2);
+      card.style.transform = `translateY(-6px) scale(1.04) perspective(900px) rotateX(${(-dy*MAX).toFixed(2)}deg) rotateY(${(dx*MAX).toFixed(2)}deg)`;
+    });
+    card.addEventListener('mouseleave', ()=>{
+      card.style.transform = '';
+    });
+  });
+})();
+</script>
