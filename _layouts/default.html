@@ -1,34 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Base CSS + Fonts -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/cascadia-code">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- jQuery (already in project) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- High-impact layout effects -->
+  <style>
+    :root{
+      /* Color tokens (dark-first, auto respects prefers-color-scheme) */
+      --bg:#07080b;
+      --ink:#e6e8ee;
+      --muted:#a7adbb;
+      --line:#21242c;
+      --card:#0c0f14;
+      --accent1:#7c83ff;
+      --accent2:#22d3ee;
+      --accent3:#34d399;
+
+      /* FX */
+      --ring: conic-gradient(from 180deg, var(--accent1), var(--accent2), var(--accent3), var(--accent1));
+      --shadow-1: 0 10px 30px rgba(0,0,0,.35);
+      --shadow-2: 0 24px 60px rgba(0,0,0,.55);
+      --blur: blur(10px);
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f9fafb;
+        --ink:#0f172a;
+        --muted:#475569;
+        --line:#e5e7eb;
+        --card:#ffffff;
+        --shadow-1: 0 14px 34px rgba(0,0,0,.08);
+        --shadow-2: 0 34px 60px rgba(0,0,0,.12);
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      margin:0; background: radial-gradient(1200px 800px at 10% -10%, rgba(124,131,255,.08), transparent 60%),
+                             radial-gradient(1000px 700px at 110% 10%, rgba(34,211,238,.08), transparent 60%),
+                             var(--bg);
+      color:var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      overflow-x:hidden;
+    }
+
+    /* Header — glass, sticky, animated border */
+    header{
+      position:sticky; top:0; z-index:50;
+      display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+      gap:12px; padding:12px clamp(12px, 3vw, 24px);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+      backdrop-filter: blur(12px);
+      border-bottom:1px solid var(--line);
+      box-shadow: var(--shadow-1);
+    }
+    header::after{
+      content:""; position:absolute; inset:0 0 auto 0; height:2px; pointer-events:none;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+      opacity:.45; transform-origin:left center; transform: scaleX(0);
+      transition: transform .8s ease;
+    }
+    body.scrolled header::after{ transform: scaleX(1); }
+
+    .header-links-left, .header-links-right{
+      display:flex; gap:12px; align-items:center;
+    }
+    header h1{
+      margin:0; font-weight:900; letter-spacing:0.4px;
+      font-family: "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: clamp(16px, 2vw, 20px);
+      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+      -webkit-background-clip: text; background-clip:text; color: transparent;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,.15));
+    }
+
+    /* Icon buttons — magnetic & glow */
+    header a{
+      --s: 38px;
+      width:var(--s); height:var(--s); display:grid; place-items:center;
+      border-radius:12px; text-decoration:none; color:var(--ink);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease, background .18s ease;
+      position:relative; overflow:hidden;
+    }
+    header a:hover{
+      transform: translateY(-2px) scale(1.03);
+      border-color: transparent;
+      box-shadow: 0 8px 28px rgba(0,0,0,.35);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+    }
+    header a::after{
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(120px 120px at var(--mx,50%) var(--my,50%), rgba(124,131,255,.15), transparent 60%);
+      opacity:0; transition: opacity .2s ease;
+    }
+    header a:hover::after{ opacity:1; }
+
+    /* Page Transition Overlay — radial warp + blur */
+    .page-transition{
+      position:fixed; inset:0; z-index:100;
+      pointer-events:none; opacity:0;
+      background: radial-gradient(120px 120px at var(--x, 50%) var(--y, 50%),
+                  rgba(124,131,255,.55), rgba(34,211,238,.55), transparent 70%);
+      filter: blur(20px) saturate(120%);
+      transform: scale(1);
+      transition: opacity .45s ease, transform .45s ease;
+    }
+    .page-transition.page-transition-active{
+      pointer-events:auto; opacity:1; transform: scale(1.12);
+      animation: warp .9s ease forwards;
+    }
+    @keyframes warp{
+      0%{ clip-path: circle(0% at var(--x,50%) var(--y,50%)); }
+      60%{ clip-path: circle(140% at var(--x,50%) var(--y,50%)); }
+      100%{ clip-path: circle(180% at var(--x,50%) var(--y,50%)); }
+    }
+
+    /* Scroll progress bar */
+    .scroll-progress{
+      position:fixed; top:0; left:0; height:3px; width:0%;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+      z-index:120; box-shadow: 0 0 16px rgba(124,131,255,.45);
+      transition: width .1s linear;
+    }
+
+    /* Main content reveal */
+    #content{
+      opacity:0; transform: translateY(6px);
+      transition: opacity .5s ease, transform .5s ease;
+      will-change: opacity, transform;
+      min-height: calc(100vh - 160px);
+    }
+    #content.visible{ opacity:1; transform: translateY(0); }
+
+    /* Footer — segmented nav */
+    footer{
+      border-top:1px solid var(--line);
+      padding:20px clamp(10px, 4vw, 24px) 36px; margin-top:40px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      backdrop-filter: blur(6px);
+    }
+    footer ul{ list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; gap:10px; justify-content:center;
+    }
+    footer li a{
+      position:relative; display:inline-flex; align-items:center;
+      gap:8px; padding:10px 14px; border-radius:11px;
+      border:1px solid var(--line); color:var(--ink); text-decoration:none;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    footer li a::before{
+      content:""; position:absolute; inset:-1px; border-radius:12px; opacity:0; pointer-events:none;
+      background: var(--ring); filter: blur(12px);
+      transition: opacity .18s ease;
+    }
+    footer li a:hover{
+      transform: translateY(-2px); border-color:transparent; box-shadow: var(--shadow-1);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+    }
+    footer li a:hover::before{ opacity:.25; }
+
+    /* Custom cursor ring (desktop only) */
+    .cursor-ring{
+      position:fixed; z-index:200; pointer-events:none;
+      width:34px; height:34px; border-radius:999px;
+      border:1.5px solid rgba(255,255,255,.55);
+      mix-blend-mode: difference; opacity:.9;
+      transform: translate(-50%, -50%) scale(1);
+      transition: transform .15s ease, width .15s ease, height .15s ease, opacity .2s ease;
+    }
+    .cursor-ring.hide{ opacity:0; }
+    .cursor-ring.grow{ width:48px; height:48px; }
+
+    /* Reduce motion accommodations */
+    @media (prefers-reduced-motion: reduce){
+      .page-transition, header, footer, #content { transition: none !important; animation: none !important; }
+      .cursor-ring{ display:none !important; }
+    }
+  </style>
 </head>
+
 <body>
-  <div id="page-transition" class="page-transition"></div>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Radial transition overlay -->
+  <div id="page-transition" class="page-transition" aria-hidden="true"></div>
+
+  <!-- Header -->
   <header>
     <div class="header-links-left">
-      <a href="https://www.linkedin.com/in/eugenio-macias/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:eugenio_macias_orozco@brown.edu" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="assets/files/resume_fall2025.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt"></i></a>
+      <a href="https://www.linkedin.com/in/eugenio-macias/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:eugenio_macias_orozco@brown.edu" target="_blank" rel="noopener" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="{{ '/assets/files/resume_fall2025.pdf' | relative_url }}" target="_blank" rel="noopener" title="Resume"><i class="fas fa-file-alt"></i></a>
     </div>
     <h1>{{ site.title }}</h1>
     <div class="header-links-right">
-      <a href="https://www.chess.com/member/eugenio_macias" target="_blank" title="Chess.com"><i class="fas fa-chess"></i></a>
-      <a href="https://open.spotify.com/user/eugenio.d.macias?si=3eaebf1bfa0e4e51" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+      <a href="https://www.chess.com/member/eugenio_macias" target="_blank" rel="noopener" title="Chess.com"><i class="fas fa-chess"></i></a>
+      <a href="https://open.spotify.com/user/eugenio.d.macias?si=3eaebf1bfa0e4e51" target="_blank" rel="noopener" title="Spotify"><i class="fab fa-spotify"></i></a>
     </div>
   </header>
+
+  <!-- Main -->
   <main id="content">
     {{ content }}
+
     {% if page.title == "Home" %}
-    <img src="/assets/images/gportfolio_profile_picture.png" class="profile-pic center">
-    <div id="math-symbols-container"></div>
+      <!-- Optional home-only extras if you still want them -->
+      <img src="{{ '/assets/images/gportfolio_profile_picture.png' | relative_url }}" class="profile-pic center" alt="" style="display:none;">
+      <div id="math-symbols-container"></div>
     {% endif %}
   </main>
+
+  <!-- Footer -->
   <footer>
     <ul>
       <li><a href="{{ '/' | relative_url }}"><span>Home</span></a></li>
@@ -39,26 +234,146 @@
       <li><a href="{{ '/skills-interests' | relative_url }}"><span>Skills & More</span></a></li>
     </ul>
   </footer>
-  <script src="{{ '/assets/js/symbols.js' | relative_url }}"></script>
-  <script>
-    $(document).ready(function() {
-      $('#content').addClass('visible');
 
-      $('nav ul li a, .header-links-left a, .header-links-right a, footer ul li a').click(function(e) {
-        e.preventDefault();
-        var link = $(this).attr('href');
-        $('#page-transition').addClass('page-transition-active');
-        setTimeout(function() {
-          window.location.href = link;
-        }, 1000); // Adjust the timing to match the CSS transition duration
+  <!-- Cursor ring -->
+  <div class="cursor-ring" id="cursor" aria-hidden="true"></div>
+
+  <!-- Your math symbols engine (kept as-is) -->
+  <script src="{{ '/assets/js/symbols.js' | relative_url }}"></script>
+
+  <!-- Layout JS: magnetic icons, progress, transition, prefetch, cursor, reveals -->
+  <script>
+    (function(){
+      const $doc = $(document);
+      const $content = $('#content');
+      const $transition = $('#page-transition');
+      const $progress = $('#scrollProgress');
+      const cursor = document.getElementById('cursor');
+
+      /* === Content reveal on load/back === */
+      function reveal() { $content.addClass('visible'); }
+      $(window).on('pageshow', reveal);
+      $doc.ready(reveal);
+
+      /* === Scroll progress & header FX === */
+      function onScroll(){
+        const h = document.documentElement;
+        const max = h.scrollHeight - h.clientHeight;
+        const pct = max ? (h.scrollTop / max) * 100 : 0;
+        $progress.css('width', pct + '%');
+        document.body.classList.toggle('scrolled', window.scrollY > 6);
+      }
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive:true });
+
+      /* === Magnetic hover for header icons === */
+      const magnets = document.querySelectorAll('header a');
+      magnets.forEach(el=>{
+        el.addEventListener('mousemove', (e)=>{
+          const r = el.getBoundingClientRect();
+          const mx = e.clientX - r.left;
+          const my = e.clientY - r.top;
+          el.style.setProperty('--mx', mx + 'px');
+          el.style.setProperty('--my', my + 'px');
+        });
       });
 
-      // Additional animations and symbol effects remain unchanged.
-    });
+      /* === Prefetch on hover (speed!) === */
+      const prefetchCache = new Set();
+      function prefetch(href){
+        if (!href || prefetchCache.has(href)) return;
+        prefetchCache.add(href);
+        const l = document.createElement('link');
+        l.rel = 'prefetch'; l.href = href; document.head.appendChild(l);
+      }
+      document.querySelectorAll('footer a, header a, a').forEach(a=>{
+        if(a.target === '_blank' || a.href.startsWith('mailto:')) return;
+        a.addEventListener('mouseenter', ()=>prefetch(a.href), {passive:true});
+      });
 
-    $(window).on('pageshow', function() {
-      $('#content').addClass('visible');
-    });
+      /* === Radial page transition on internal nav === */
+      function isInternalLink(a){
+        try {
+          const url = new URL(a.href, window.location.href);
+          return url.origin === window.location.origin;
+        } catch { return false; }
+      }
+      function startTransition(x, y){
+        $transition.css('--x', x + 'px');
+        $transition.css('--y', y + 'px');
+        $transition.addClass('page-transition-active');
+      }
+      function endTransition(){ $transition.removeClass('page-transition-active'); }
+
+      document.addEventListener('click', (e)=>{
+        const a = e.target.closest('a');
+        if(!a) return;
+
+        // Skip external, mailto, hash, and _blank links
+        if (a.target === '_blank' || a.hasAttribute('download')) return;
+        const href = a.getAttribute('href') || '';
+        if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('javascript:')) return;
+        if (!isInternalLink(a)) return;
+
+        // Smooth radial transition
+        e.preventDefault();
+        const x = e.clientX, y = e.clientY;
+        startTransition(x, y);
+        setTimeout(()=>{ window.location.href = a.href; }, 600);
+      });
+
+      window.addEventListener('pageshow', endTransition);
+
+      /* === Custom cursor ring (desktop only) === */
+      let isTouch = false;
+      window.addEventListener('touchstart', ()=>{ isTouch = true; cursor.classList.add('hide'); }, {passive:true});
+      if(!isTouch){
+        let x = window.innerWidth/2, y = window.innerHeight/2;
+        let tx = x, ty = y;
+        const speed = 0.18;
+
+        function loop(){
+          x += (tx - x) * speed;
+          y += (ty - y) * speed;
+          cursor.style.transform = `translate(${x - 0}px, ${y - 0}px) translate(-50%, -50%)`;
+          requestAnimationFrame(loop);
+        }
+        loop();
+
+        window.addEventListener('mousemove', (e)=>{
+          tx = e.clientX; ty = e.clientY;
+          cursor.classList.remove('hide');
+        }, {passive:true});
+
+        // Grow cursor when hovering interactive elements
+        const growSelectors = 'a, button, .cool-btn, .card, .glass';
+        document.addEventListener('mouseover', e=>{
+          if(e.target.closest(growSelectors)){
+            cursor.classList.add('grow');
+          } else {
+            cursor.classList.remove('grow');
+          }
+        }, {passive:true});
+      }
+
+      /* === Soft reveal on scroll for sections === */
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(ent=>{
+          if(ent.isIntersecting){
+            ent.target.style.transition = 'opacity .6s ease, transform .6s ease';
+            ent.target.style.opacity = '1';
+            ent.target.style.transform = 'translateY(0)';
+            observer.unobserve(ent.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+
+      document.querySelectorAll('section, .card, .glass').forEach(el=>{
+        el.style.opacity = .0; el.style.transform = 'translateY(6px)';
+        observer.observe(el);
+      });
+
+    })();
   </script>
 </body>
 </html>
