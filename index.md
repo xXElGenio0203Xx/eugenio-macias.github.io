@@ -3,16 +3,12 @@ layout: default
 title: Home
 ---
 
-<!-- Background FX -->
 <canvas id="stars" aria-hidden="true"></canvas>
 <div class="aurora" aria-hidden="true"></div>
-
-<section class="hero">
+<div class="spotlight" aria-hidden="true"></div> <section class="hero">
   <div class="hero-inner">
 
-    <!-- Profile (with HEIC + fallbacks) -->
-    <div class="pfp-wrap" data-tilt>
-      <picture>
+    <div class="pfp-wrap" data-tilt data-magnetic> <picture>
         <source type="image/heic" srcset="{{ site.baseurl }}/assets/images/profile%20pic.HEIC" />
         <source type="image/webp" srcset="{{ site.baseurl }}/assets/images/profile-pic.webp" />
         <source type="image/jpeg" srcset="{{ site.baseurl }}/assets/images/profile-pic.jpg" />
@@ -23,7 +19,6 @@ title: Home
       <div class="ring"></div>
     </div>
 
-    <!-- Intro -->
     <div class="intro">
       <h1 class="title">
         <span class="badge">BS Applied Mathematics–Computer Science & BA Mathematics</span>
@@ -33,9 +28,7 @@ title: Home
         <span>Probability × Statistics × PDEs × ML under uncertainty</span>
       </p>
 
-      <!-- About with badge-style background -->
-      <article class="glass about" data-tilt>
-        <h2>About me</h2>
+      <article class="glass about" data-tilt data-magnetic> <h2>About me</h2>
         <div class="text-bg">
           <p>
             I’m an international student from Mexico at Brown University. I focus on the intersection of
@@ -51,7 +44,6 @@ title: Home
         </div>
       </article>
 
-      <!-- Cool math symbols trigger -->
       <div class="cool-trigger">
         <button id="coolBtn" class="cool-btn" type="button">Click here to see something cool ✨</button>
       </div>
@@ -59,14 +51,11 @@ title: Home
   </div>
 </section>
 
-<!-- Highlights -->
 <section class="highlights compact-top">
   <h2 class="section-title">Highlights</h2>
   <div class="cards">
 
-    <!-- Citi Markets -->
-    <article class="card glow tilt-card" data-tilt>
-      <header>Citi Markets — Quantitative Analyst Intern (NYC, Summer 2025)</header>
+    <article class="card glow tilt-card" data-tilt data-magnetic> <header>Citi Markets — Quantitative Analyst Intern (NYC, Summer 2025)</header>
       <ul>
         <li>Built <strong>Python–C++ Monte Carlo & PDE solvers</strong>; validated pricing/Greeks and accelerated runtimes.</li>
         <li>Trained <strong>LightGBM-DART</strong> & <strong>neural nets</strong> with Bayesian optimization on <strong>6M+ structured-note</strong> rows; used <strong>SHAP</strong> for diagnostics.</li>
@@ -74,9 +63,7 @@ title: Home
       </ul>
     </article>
 
-    <!-- DE Shaw / Bridgewater / Buddywise -->
-    <article class="card tilt-card" data-tilt>
-      <header>D. E. Shaw · Bridgewater · Buddywise</header>
+    <article class="card tilt-card" data-tilt data-magnetic> <header>D. E. Shaw · Bridgewater · Buddywise</header>
       <ul>
         <li><strong>Latitude Fellowship</strong> at The D. E. Shaw Group (NYC): multivariate time-series & sector forecasting.</li>
         <li><strong>Investment Immersion</strong> at Bridgewater Associates: macro indicators & stat-arb backtests.</li>
@@ -84,9 +71,7 @@ title: Home
       </ul>
     </article>
 
-    <!-- Current paths -->
-    <article class="card tilt-card" data-tilt>
-      <header>What I’m pursuing</header>
+    <article class="card tilt-card" data-tilt data-magnetic> <header>What I’m pursuing</header>
       <ul>
         <li><strong>Option A:</strong> <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
         <li><strong>Option B:</strong> <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
@@ -100,7 +85,6 @@ title: Home
   </div>
 </section>
 
-<!-- Floating Math Symbols (initially hidden; enabled via button) -->
 <div id="symbolLayer" class="symbol-layer" aria-hidden="true"></div>
 
 <style>
@@ -109,11 +93,14 @@ title: Home
     --bg:#0a0b0e; --ink:#ffffff; --muted:#e5e7eb; --line:#23262d; --card:#0f1115;
     --g1:#7c83ff; --g2:#22d3ee; --g3:#34d399; --g4:#f59e0b;
     --shadow:0 24px 60px rgba(0,0,0,.55);
+    /* For new spotlight effect */
+    --mouse-x: 50%;
+    --mouse-y: 50%;
   }
   html{ scroll-behavior:smooth; } /* nicer anchor scrolling */
   body { background: var(--bg); color: var(--ink); overflow-x:hidden; }
 
-  /* Starfield & Aurora */
+  /* Starfield, Aurora & NEW Spotlight */
   #stars{ position:fixed; inset:0; width:100%; height:100%; z-index:-3; display:block; }
   .aurora{
     position:fixed; inset:-10vmax; z-index:-2; pointer-events:none;
@@ -128,10 +115,14 @@ title: Home
   }
   @keyframes drift{ 0%{ transform: translate3d(0,0,0) scale(1); } 100%{ transform: translate3d(2vw,-1vh,0) scale(1.04); } }
 
+  .spotlight {
+    position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.045), transparent 35%);
+  }
+
   /* Hero */
   .hero{ position:relative; padding: clamp(20px, 4.5vw, 40px) 16px; }
-  /* tighter bottom to pull the cards up */
-  .hero{ padding-bottom: clamp(8px, 2vw, 16px); }
+  .hero{ padding-bottom: clamp(8px, 2vw, 16px); } /* tighter bottom */
   .hero-inner{ max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr; gap:18px; align-items:center; }
   @media (min-width:980px){ .hero-inner{ grid-template-columns:.95fr 1.65fr; gap:28px; } }
 
@@ -140,7 +131,8 @@ title: Home
     position:relative; width:min(340px,78vw); aspect-ratio:1/1; margin:0 auto;
     border-radius:24px; overflow:hidden; border:1px solid var(--line);
     background: linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
-    box-shadow:var(--shadow); transform-style:preserve-3d; transition:transform .2s ease;
+    box-shadow:var(--shadow); transform-style:preserve-3d;
+    transition:transform .2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
     will-change: transform;
   }
   .profile-pic{ width:100%; height:100%; object-fit:cover; display:block; opacity:.98; transform:scale(1.02); transition:transform .35s ease, opacity .35s ease; }
@@ -157,9 +149,7 @@ title: Home
   .intro{ position:relative; }
   .title{ margin:0 0 .35rem; font-size:clamp(1.6rem,3.2vw,2.2rem); line-height:1.08; color:var(--ink); }
   .title::after{ content:""; display:block; height:2px; width:86px; margin-top:.4rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
-
   .badge{ display:inline-block; font-size:.92rem; font-weight:700; padding:6px 12px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
-
   .typing{ margin:.4rem 0 1.0rem; color:var(--ink); opacity:.95; font-size:clamp(1rem,1.6vw,1.1rem); min-height:1.4em; }
   .typing span{ display:inline-block; white-space:nowrap; overflow:hidden; border-right:2px solid currentColor; animation: typing 5s steps(42,end) infinite alternate, caret 700ms steps(1) infinite; }
   @keyframes typing { from { width: 0; } to { width: 42ch; } }
@@ -170,7 +160,7 @@ title: Home
   .glass:hover{ transform: translateY(-2px) rotateX(1deg); border-color:#2a2f39; box-shadow:0 24px 60px rgba(0,0,0,.35); }
   .about h2{ margin:.2rem 0 .5rem; font-size:1.15rem; letter-spacing:.2px; color:var(--ink); }
 
-  /* Badge-style background for the About paragraph */
+  /* Badge-style background */
   .text-bg{
     position:relative; padding:12px 14px; border-radius:14px;
     background: linear-gradient(180deg, rgba(124,131,255,.18), rgba(34,211,238,.14) 50%, rgba(52,211,153,.12) 100%);
@@ -193,34 +183,49 @@ title: Home
   }
   .cool-btn:hover{ transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.30); filter:saturate(1.1); }
 
-  /* Highlights */
-  /* pull section closer to hero */
+  /* Highlights section */
   .highlights.compact-top{ margin-top: -6px; }
   .highlights{ max-width:1280px; margin: 0 auto 40px; padding: 0 16px; }
   .section-title{ margin:4px 0 12px; font-size:1.18rem; letter-spacing:.2px; color:var(--ink); }
   .section-title::after{ content:""; display:block; height:2px; width:86px; margin-top:.35rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
 
-  /* Wider cards on desktop (2-column) */
+  /* 3-Column Card Layout */
   .cards{ display:grid; gap:14px; grid-template-columns:1fr; perspective:1000px; }
-  @media (min-width:980px){ .cards{ grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px; } }
+  @media (min-width: 1024px){
+    .cards{ grid-template-columns: repeat(3, minmax(0,1fr)); gap:18px; }
+  }
 
   .card{
     background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; box-shadow:var(--shadow);
-    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, filter .18s ease;
     color:var(--ink); position:relative; overflow:hidden; font-size:1.04rem;
-    will-change: transform;
+    will-change: transform, opacity;
+    /* Styles for scroll-reveal animation */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform .5s cubic-bezier(0.215, 0.610, 0.355, 1), box-shadow .25s ease, border-color .25s ease, opacity .5s ease;
   }
+  /* Staggered animation delay */
+  .card:nth-child(2) { transition-delay: .1s; }
+  .card:nth-child(3) { transition-delay: .2s; }
+
+  /* When card is visible (triggered by JS) */
+  .card.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
   .card header{ font-weight:900; margin-bottom:8px; color:var(--ink); font-size:1.06rem; }
   .card ul{ margin:.2rem 0 0 1.1rem; }
   .card li{ margin:.35rem 0; color:var(--ink); opacity:.95; line-height:1.35; }
-
-  /* Gradient border & sheen on hover */
   .card::after{
     content:""; position:absolute; inset:-1px; border-radius:18px; pointer-events:none; opacity:0;
     background: conic-gradient(from 0deg, var(--g1), var(--g2), var(--g3), var(--g1));
     transition: opacity .25s ease; filter: blur(16px);
   }
-  .card:hover{ transform: translateY(-3px) rotateX(1.2deg) rotateY(-1.2deg) scale(1.012); border-color:#2a2f39; box-shadow:0 22px 52px rgba(0,0,0,.45); }
+  .card:hover{
+    transform: translateY(-3px) rotateX(1.2deg) rotateY(-1.2deg) scale(1.012);
+    border-color:#2a2f39; box-shadow:0 22px 52px rgba(0,0,0,.45);
+  }
   .card:hover::after{ opacity:.25; }
   .card:hover:before{
     content:""; position:absolute; top:0; left:-40%; width:40%; height:100%; transform:skewX(-20deg);
@@ -229,40 +234,23 @@ title: Home
   }
   @keyframes sheen{ from{ left:-40%; } to{ left:120%; } }
 
-  /* Extra tilt target on hover */
   .tilt-card:hover{ transform: translateY(-3px) rotateX(2deg) rotateY(-2deg) scale(1.02); }
 
-  /* Floating math symbols */
-  .symbol-layer{
-    position: fixed; inset: 0; z-index: 3;
-    pointer-events: none; /* children can still be interactive */
-    display: none;
-  }
+  /* Floating math symbols (unchanged) */
+  .symbol-layer{ position: fixed; inset: 0; z-index: 3; pointer-events: none; display: none; }
   .symbol-layer.active{ display:block; }
-
   .symbol{
     position:absolute; pointer-events:auto; user-select:none;
-    color: rgba(255,255,255,.9);
-    text-shadow: 0 0 8px rgba(255,255,255,.28);
-    font-weight: 900;
-    filter: drop-shadow(0 6px 20px rgba(0,0,0,.35));
+    color: rgba(255,255,255,.9); text-shadow: 0 0 8px rgba(255,255,255,.28);
+    font-weight: 900; filter: drop-shadow(0 6px 20px rgba(0,0,0,.35));
     transform: translate3d(0,0,0) rotate(var(--rot,0deg));
     animation: float var(--dur,12s) ease-in-out var(--delay,0s) infinite alternate;
     will-change: transform, opacity, filter;
   }
-  @keyframes float{
-    to{
-      transform: translate3d(var(--tx, 20px), var(--ty, -30px), 0) rotate(calc(var(--rot,0deg) + 12deg));
-    }
-  }
-
-  /* Pop effect */
-  .symbol.pop{
-    animation: pop .45s ease-out forwards;
-  }
+  @keyframes float{ to{ transform: translate3d(var(--tx, 20px), var(--ty, -30px), 0) rotate(calc(var(--rot,0deg) + 12deg)); } }
+  .symbol.pop{ animation: pop .45s ease-out forwards; }
   .symbol.pop::after{
-    content:""; position:absolute; inset:-6px;
-    border-radius:999px; border:2px solid rgba(255,255,255,.5);
+    content:""; position:absolute; inset:-6px; border-radius:999px; border:2px solid rgba(255,255,255,.5);
     animation: ripple .45s ease-out forwards;
   }
   @keyframes pop{
@@ -277,8 +265,9 @@ title: Home
 
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce){
-    .aurora, .ring, .profile-pic, .glass, .card, .symbol{ animation: none !important; transition: none !important; }
+    .aurora, .ring, .profile-pic, .glass, .card, .symbol, .spotlight { animation: none !important; transition: none !important; }
     .typing span{ animation: none; border-right: none; }
+    .card { opacity: 1; transform: none; } /* Disable scroll animation */
   }
 </style>
 
@@ -288,10 +277,9 @@ title: Home
   const canvas = document.getElementById('stars');
   if(!canvas) return;
   const ctx = canvas.getContext('2d', { alpha: true });
-  let w, h, dpr = Math.min(window.devicePixelRatio || 1, 1.35); // lower DPR for smoother scroll
-  let stars = [], N = 120; // fewer stars for better performance
+  let w, h, dpr = Math.min(window.devicePixelRatio || 1, 1.35);
+  let stars = [], N = 120;
   let paused = false;
-
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function resize(){
@@ -331,7 +319,6 @@ title: Home
     if(!reduce) requestAnimationFrame(step);
   }
 
-  // Pause heavy updates when user scrolls down the page
   let lastY = 0, ticking = false;
   function onScroll(){
     lastY = window.scrollY || 0;
@@ -345,7 +332,6 @@ title: Home
   }
   addEventListener('scroll', onScroll, { passive:true });
   addEventListener('resize', resize, { passive: true });
-
   resize(); if(!reduce) step();
 })();
 
@@ -356,13 +342,21 @@ title: Home
 
   const tilts = document.querySelectorAll('[data-tilt]');
   tilts.forEach(el=>{
-    const r = 10; // max rotate deg
+    const r = el.hasAttribute('data-magnetic') ? 6 : 10; // Less rotation for magnetic items
+    const m = el.hasAttribute('data-magnetic') ? 0.35 : 0; // Magnetic pull factor
+
     el.addEventListener('mousemove', (e)=>{
       const b = el.getBoundingClientRect();
-      const cx = b.left + b.width/2, cy = b.top + b.height/2;
-      const dx = (e.clientX - cx)/ (b.width/2);
-      const dy = (e.clientY - cy)/ (b.height/2);
-      el.style.transform = `rotateX(${(-dy*r).toFixed(2)}deg) rotateY(${(dx*r).toFixed(2)}deg) translateZ(0)`;
+      const cx = b.left + b.width / 2, cy = b.top + b.height / 2;
+      const dx = (e.clientX - cx) / (b.width / 2);
+      const dy = (e.clientY - cy) / (b.height / 2);
+
+      const tx = dx * b.width * m;
+      const ty = dy * b.height * m;
+      const rotX = (-dy * r).toFixed(2);
+      const rotY = (dx * r).toFixed(2);
+
+      el.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
     });
     el.addEventListener('mouseleave', ()=>{ el.style.transform = ''; });
   });
@@ -392,26 +386,20 @@ title: Home
     s.style.left = x + 'px';
     s.style.top  = y + 'px';
     s.style.fontSize = size + 'px';
-
-    // Random motion via CSS vars
     const tx = (Math.random() > .5 ? 1 : -1) * rand(20, 120);
     const ty = (Math.random() > .5 ? 1 : -1) * rand(20, 120);
     const rot = rand(-18, 18) + 'deg';
     const dur = rand(9, 16) + 's';
     const delay = rand(-4, 2) + 's';
-
     s.style.setProperty('--tx', tx + 'px');
     s.style.setProperty('--ty', ty + 'px');
     s.style.setProperty('--rot', rot);
     s.style.setProperty('--dur', dur);
     s.style.setProperty('--delay', delay);
-
-    // Hover pop effect
     s.addEventListener('mouseenter', ()=>{
-      if(reduce) return; // respect reduced motion
+      if(reduce) return;
       s.classList.add('pop');
       s.addEventListener('animationend', function handler(){
-        // Reposition & reset for continuous fun
         s.classList.remove('pop');
         s.style.left = rand(0, window.innerWidth - size) + 'px';
         s.style.top  = rand(0, window.innerHeight - size) + 'px';
@@ -419,14 +407,10 @@ title: Home
         s.removeEventListener('animationend', handler);
       });
     });
-
     layer.appendChild(s);
   }
 
-  function spawnMany(n){
-    for(let i=0;i<n;i++) spawnOne();
-  }
-
+  function spawnMany(n){ for(let i=0;i<n;i++) spawnOne(); }
   let active = false;
 
   btn.addEventListener('click', ()=>{
@@ -434,7 +418,7 @@ title: Home
     if(active){
       layer.classList.add('active');
       layer.innerHTML = '';
-      spawnMany(36); // number of symbols
+      spawnMany(36);
       btn.textContent = 'Hide the cool math ✨';
     }else{
       layer.classList.remove('active');
@@ -443,7 +427,6 @@ title: Home
     }
   });
 
-  // Keep symbols within viewport on resize
   addEventListener('resize', ()=>{
     if(!active) return;
     const syms = layer.querySelectorAll('.symbol');
@@ -454,4 +437,36 @@ title: Home
     });
   });
 })();
+
+/* ===== NEW: Spotlight Cursor Effect ===== */
+(function() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+
+    window.addEventListener('mousemove', (e) => {
+        document.documentElement.style.setProperty('--mouse-x', e.clientX + 'px');
+        document.documentElement.style.setProperty('--mouse-y', e.clientY + 'px');
+    });
+})();
+
+/* ===== NEW: Scroll-Reveal Animation for Cards ===== */
+(function() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => observer.observe(card));
+})();
+
 </script>
