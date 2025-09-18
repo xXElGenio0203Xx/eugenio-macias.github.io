@@ -18,7 +18,7 @@ title: Home
         <source type="image/jpeg" srcset="{{ site.baseurl }}/assets/images/profile-pic.jpg" />
         <img class="profile-pic"
              src="{{ site.baseurl }}/assets/images/gportfolio_profile_picture.png"
-             alt="Profile picture of Eugenio Macias" />
+             alt="Profile picture">
       </picture>
       <div class="ring"></div>
     </div>
@@ -26,7 +26,6 @@ title: Home
     <!-- Intro -->
     <div class="intro">
       <h1 class="title">
-        Eugenio Macias
         <span class="badge">BS Applied Mathematics–Computer Science & BA Mathematics</span>
       </h1>
 
@@ -51,6 +50,11 @@ title: Home
           </p>
         </div>
       </article>
+
+      <!-- Cool math symbols trigger -->
+      <div class="cool-trigger">
+        <button id="coolBtn" class="cool-btn" type="button">Click here to see something cool ✨</button>
+      </div>
     </div>
   </div>
 </section>
@@ -96,50 +100,8 @@ title: Home
   </div>
 </section>
 
-<!-- Walking ASCII Math Robot -->
-<div class="mathbot" aria-hidden="true">
-  <!-- walking frames -->
-  <pre class="frame frame-1">        __
-   ____/  \____
-  /   ∑    ∑   \
- |      ∂        |
- |   [ π ]       |
- |   ────        |
- |  √   √        |
- |  |   |        |
-  \__∇___∇______/   </pre>
-
-  <pre class="frame frame-2">        __
-   ____/  \____
-  /   ∑    ∑   \
- |      ∂        |
- |   [ π ]       |
- |   ────        |
- |  √   √        |
- |   |   |       |
-  \___∇___∇_____/   </pre>
-
-  <!-- waving frames (active when .wave is applied) -->
-  <pre class="frame frame-3">        __
-   ____/  \____
-  /   ∑  o/    \
- |      ∂        |
- |   [ π ]       |
- |   ────        |
- |  √   √        |
- |  |   |        |
-  \__∇___∇______/   </pre>
-
-  <pre class="frame frame-4">        __
-   ____/  \____
-  /   ∑ \o     \
- |      ∂        |
- |   [ π ]       |
- |   ────        |
- |  √   √        |
- |  |   |        |
-  \___∇___∇_____/   </pre>
-</div>
+<!-- Floating Math Symbols (initially hidden; enabled via button) -->
+<div id="symbolLayer" class="symbol-layer" aria-hidden="true"></div>
 
 <style>
   /* High-contrast palette */
@@ -188,18 +150,18 @@ title: Home
 
   /* Intro */
   .intro{ position:relative; }
-  .title{ margin:0 0 .35rem; font-size:clamp(1.8rem,3.2vw,2.6rem); line-height:1.08; color:var(--ink); }
+  .title{ margin:0 0 .35rem; font-size:clamp(1.6rem,3.2vw,2.2rem); line-height:1.08; color:var(--ink); }
   .title::after{ content:""; display:block; height:2px; width:86px; margin-top:.4rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
 
-  .badge{ display:inline-block; margin-left:.6rem; font-size:.85rem; font-weight:700; padding:4px 10px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
+  .badge{ display:inline-block; font-size:.92rem; font-weight:700; padding:6px 12px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
 
-  .typing{ margin:.2rem 0 1rem; color:var(--ink); opacity:.95; font-size:clamp(.98rem,1.6vw,1.05rem); min-height:1.4em; }
+  .typing{ margin:.4rem 0 1.2rem; color:var(--ink); opacity:.95; font-size:clamp(1rem,1.6vw,1.1rem); min-height:1.4em; }
   .typing span{ display:inline-block; white-space:nowrap; overflow:hidden; border-right:2px solid currentColor; animation: typing 5s steps(42,end) infinite alternate, caret 700ms steps(1) infinite; }
   @keyframes typing { from { width: 0; } to { width: 42ch; } }
   @keyframes caret { 50% { border-color: transparent; } }
 
   /* Glass card */
-  .glass{ background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid var(--line); border-radius:16px; padding:16px 18px; box-shadow:var(--shadow); backdrop-filter: blur(8px); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+  .glass{ background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid var(--line); border-radius:16px; padding:18px 20px; box-shadow:var(--shadow); backdrop-filter: blur(8px); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
   .glass:hover{ transform: translateY(-2px) rotateX(1deg); border-color:#2a2f39; box-shadow:0 24px 60px rgba(0,0,0,.35); }
   .about h2{ margin:.2rem 0 .5rem; font-size:1.15rem; letter-spacing:.2px; color:var(--ink); }
 
@@ -216,30 +178,41 @@ title: Home
   }
   .about p{ margin:0; color:var(--ink); opacity:.98; }
 
-  /* Highlights */
-  .highlights{ max-width:1100px; margin: 6px auto 40px; padding: 0 16px; }
-  .section-title{ margin:8px 0 12px; font-size:1.12rem; letter-spacing:.2px; color:var(--ink); }
-  .section-title::after{ content:""; display:block; height:2px; width:76px; margin-top:.35rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
+  /* Cool button */
+  .cool-trigger{ margin-top:14px; }
+  .cool-btn{
+    appearance:none; border:1px solid #2a2f39; border-radius:999px;
+    padding:10px 16px; font-weight:800; letter-spacing:.2px; cursor:pointer;
+    color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3));
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  }
+  .cool-btn:hover{ transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.30); filter:saturate(1.1); }
 
-  .cards{ display:grid; gap:12px; grid-template-columns:1fr; perspective:1000px; }
-  @media (min-width:980px){ .cards{ grid-template-columns:1.2fr 1fr 1fr; } }
+  /* Highlights */
+  .highlights{ max-width:1100px; margin: 10px auto 44px; padding: 0 16px; }
+  .section-title{ margin:8px 0 14px; font-size:1.18rem; letter-spacing:.2px; color:var(--ink); }
+  .section-title::after{ content:""; display:block; height:2px; width:86px; margin-top:.4rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
+
+  /* Bigger cards */
+  .cards{ display:grid; gap:16px; grid-template-columns:1fr; perspective:1000px; }
+  @media (min-width:980px){ .cards{ grid-template-columns:1.3fr 1fr 1fr; } }
 
   .card{
-    background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; box-shadow:var(--shadow);
+    background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; box-shadow:var(--shadow);
     transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    color:var(--ink); position:relative; overflow:hidden;
+    color:var(--ink); position:relative; overflow:hidden; font-size:1.02rem;
   }
-  .card header{ font-weight:800; margin-bottom:6px; color:var(--ink); }
+  .card header{ font-weight:900; margin-bottom:8px; color:var(--ink); font-size:1.02rem; }
   .card ul{ margin:.2rem 0 0 1.1rem; }
-  .card li{ margin:.25rem 0; color:var(--ink); opacity:.95; }
+  .card li{ margin:.35rem 0; color:var(--ink); opacity:.95; line-height:1.35; }
 
   /* Gradient border & sheen on hover */
   .card::after{
-    content:""; position:absolute; inset:-1px; border-radius:16px; pointer-events:none; opacity:0;
+    content:""; position:absolute; inset:-1px; border-radius:18px; pointer-events:none; opacity:0;
     background: conic-gradient(from 0deg, var(--g1), var(--g2), var(--g3), var(--g1));
-    transition: opacity .25s ease;
+    transition: opacity .25s ease; filter: blur(16px);
   }
-  .card:hover{ transform: translateY(-2px) rotateX(1.2deg) rotateY(-1.2deg); border-color:#2a2f39; box-shadow:0 18px 40px rgba(0,0,0,.45); }
+  .card:hover{ transform: translateY(-3px) rotateX(1.2deg) rotateY(-1.2deg); border-color:#2a2f39; box-shadow:0 22px 52px rgba(0,0,0,.45); }
   .card:hover::after{ opacity:.25; }
   .card:hover:before{
     content:""; position:absolute; top:0; left:-40%; width:40%; height:100%; transform:skewX(-20deg);
@@ -249,48 +222,55 @@ title: Home
   @keyframes sheen{ from{ left:-40%; } to{ left:120%; } }
 
   /* Extra tilt target on hover */
-  .tilt-card:hover{ transform: translateY(-2px) rotateX(2deg) rotateY(-2deg) scale(1.01); }
+  .tilt-card:hover{ transform: translateY(-3px) rotateX(2deg) rotateY(-2deg) scale(1.012); }
 
-  /* Walking Math Robot (with hover speed + wave support) */
-  .mathbot{
-    --walkDur: 28s;     /* default crossing time */
-    --stepDur: 0.9s;    /* default step frame rate */
-    position:fixed; bottom:10px; left:-40vw; z-index:2;
-    pointer-events:auto;   /* enable hover for speed change */
-    font: 700 12px/12px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-    color:#ffffff; text-shadow: 0 0 8px rgba(255,255,255,.35);
-    animation: walkX var(--walkDur) linear infinite;
+  /* Floating math symbols */
+  .symbol-layer{
+    position: fixed; inset: 0; z-index: 3;
+    pointer-events: none; /* children can still be interactive */
+    display: none;
   }
-  .mathbot:hover{
-    --walkDur: 12s;     /* speeds up on hover */
-    --stepDur: 0.6s;    /* quicker footfall animation */
+  .symbol-layer.active{ display:block; }
+
+  .symbol{
+    position:absolute; pointer-events:auto; user-select:none;
+    color: rgba(255,255,255,.9);
+    text-shadow: 0 0 8px rgba(255,255,255,.28);
+    font-weight: 900;
+    filter: drop-shadow(0 6px 20px rgba(0,0,0,.35));
+    transform: translate3d(0,0,0) rotate(var(--rot,0deg));
+    animation: float var(--dur,12s) ease-in-out var(--delay,0s) infinite alternate;
+    will-change: transform, opacity, filter;
   }
-  .mathbot .frame{ margin:0; white-space:pre; }
 
-  /* Walking (default) */
-  .mathbot .frame-1{ animation: stepA var(--stepDur) steps(1) infinite; }
-  .mathbot .frame-2{ margin-top:-12px; animation: stepB var(--stepDur) steps(1) infinite; }
-
-  /* Hide waving frames by default */
-  .mathbot .frame-3,
-  .mathbot .frame-4{ display:none; }
-
-  /* When waving: hide walking frames, show wave frames */
-  .mathbot.wave .frame-1,
-  .mathbot.wave .frame-2{ display:none; }
-  .mathbot.wave .frame-3{ display:block; animation: stepA var(--stepDur) steps(1) infinite; }
-  .mathbot.wave .frame-4{ display:block; margin-top:-12px; animation: stepB var(--stepDur) steps(1) infinite; }
-
-  @keyframes walkX{
-    0% { transform: translateX(-40vw) translateY(0); }
-    100%{ transform: translateX(120vw) translateY(0); }
+  @keyframes float{
+    to{
+      transform: translate3d(var(--tx, 20px), var(--ty, -30px), 0) rotate(calc(var(--rot,0deg) + 12deg));
+    }
   }
-  @keyframes stepA{ 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
-  @keyframes stepB{ 0%,49% { opacity:0 } 50%,100% { opacity:1 } }
+
+  /* Pop effect */
+  .symbol.pop{
+    animation: pop .45s ease-out forwards;
+  }
+  .symbol.pop::after{
+    content:""; position:absolute; inset:-6px;
+    border-radius:999px; border:2px solid rgba(255,255,255,.5);
+    animation: ripple .45s ease-out forwards;
+  }
+  @keyframes pop{
+    0%   { transform: scale(1) translateZ(0); opacity:.95; filter: drop-shadow(0 8px 26px rgba(0,0,0,.35)); }
+    60%  { transform: scale(1.25) translateZ(0); }
+    100% { transform: scale(.3) translateZ(0); opacity:0; filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
+  }
+  @keyframes ripple{
+    0%   { opacity:.35; transform: scale(1); }
+    100% { opacity:0;  transform: scale(1.8); }
+  }
 
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce){
-    .aurora, .ring, .profile-pic, .glass, .card, .mathbot{ animation: none !important; transition: none !important; }
+    .aurora, .ring, .profile-pic, .glass, .card, .symbol{ animation: none !important; transition: none !important; }
     .typing span{ animation: none; border-right: none; }
   }
 </style>
@@ -357,45 +337,90 @@ title: Home
   });
 })();
 
-/* ===== Robot wave-on-hero-cross (hover speed via CSS) ===== */
+/* ===== Floating Math Symbols (toggle + pop) ===== */
 (function(){
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduce) return;
+  const layer = document.getElementById('symbolLayer');
+  const btn = document.getElementById('coolBtn');
+  if(!layer || !btn) return;
 
-  const bot  = document.querySelector('.mathbot');
-  const hero = document.querySelector('.hero');
-  if(!bot || !hero) return;
+  const SYMBOLS = ["∑","∫","π","ℝ","ℂ","ℕ","∇","∂","λ","μ","σ","ϕ","ψ","ε","δ","Θ","∞","≈","≡","⊗","⊕","→","↦","∀","∃","𝔼","𝒩","√","≤","≥"];
+  const MIN = 18, MAX = 42;
 
-  let waving = false;
-  let lastPassId = 0; // ensure one wave per crossing
+  function rand(a,b){ return a + Math.random()*(b-a); }
+  function choose(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
 
-  // Increment on each animation loop
-  bot.addEventListener('animationiteration', ()=> { lastPassId++; });
+  function spawnOne(){
+    const s = document.createElement('span');
+    s.className = 'symbol';
+    s.textContent = choose(SYMBOLS);
+    const size = rand(MIN, MAX);
+    const x = rand(0, window.innerWidth - size);
+    const y = rand(0, window.innerHeight - size);
 
-  function tick(){
-    const br = bot.getBoundingClientRect();
-    const hr = hero.getBoundingClientRect();
-    const botCenterX = br.left + br.width/2;
+    s.style.left = x + 'px';
+    s.style.top  = y + 'px';
+    s.style.fontSize = size + 'px';
 
-    const horizontallyAligned = botCenterX > hr.left && botCenterX < hr.right;
+    // Random motion via CSS vars
+    const tx = (Math.random() > .5 ? 1 : -1) * rand(20, 120);
+    const ty = (Math.random() > .5 ? 1 : -1) * rand(20, 120);
+    const rot = rand(-18, 18) + 'deg';
+    const dur = rand(9, 16) + 's';
+    const delay = rand(-4, 2) + 's';
 
-    if (horizontallyAligned && !waving){
-      waving = true;
-      const thisPass = lastPassId;
-      bot.classList.add('wave');
-      setTimeout(()=>{
-        bot.classList.remove('wave');
-        const resetOnNextPass = ()=> {
-          if(lastPassId !== thisPass){
-            waving = false;
-            bot.removeEventListener('animationiteration', resetOnNextPass);
-          }
-        };
-        bot.addEventListener('animationiteration', resetOnNextPass);
-      }, 1600);
-    }
-    requestAnimationFrame(tick);
+    s.style.setProperty('--tx', tx + 'px');
+    s.style.setProperty('--ty', ty + 'px');
+    s.style.setProperty('--rot', rot);
+    s.style.setProperty('--dur', dur);
+    s.style.setProperty('--delay', delay);
+
+    // Hover pop effect
+    s.addEventListener('mouseenter', ()=>{
+      if(reduce) return; // respect reduced motion
+      s.classList.add('pop');
+      s.addEventListener('animationend', function handler(){
+        // Reposition & reset for continuous fun
+        s.classList.remove('pop');
+        s.style.left = rand(0, window.innerWidth - size) + 'px';
+        s.style.top  = rand(0, window.innerHeight - size) + 'px';
+        s.textContent = choose(SYMBOLS);
+        s.removeEventListener('animationend', handler);
+      });
+    });
+
+    layer.appendChild(s);
   }
-  requestAnimationFrame(tick);
+
+  function spawnMany(n){
+    for(let i=0;i<n;i++) spawnOne();
+  }
+
+  let active = false;
+
+  btn.addEventListener('click', ()=>{
+    active = !active;
+    if(active){
+      layer.classList.add('active');
+      layer.innerHTML = '';
+      spawnMany(36); // number of symbols
+      btn.textContent = 'Hide the cool math ✨';
+    }else{
+      layer.classList.remove('active');
+      layer.innerHTML = '';
+      btn.textContent = 'Click here to see something cool ✨';
+    }
+  });
+
+  // Keep symbols within viewport on resize
+  addEventListener('resize', ()=>{
+    if(!active) return;
+    const syms = layer.querySelectorAll('.symbol');
+    syms.forEach(s=>{
+      const size = parseFloat(s.style.fontSize) || 24;
+      s.style.left = Math.min(parseFloat(s.style.left)||0, innerWidth - size) + 'px';
+      s.style.top  = Math.min(parseFloat(s.style.top)||0, innerHeight - size) + 'px';
+    });
+  });
 })();
 </script>
