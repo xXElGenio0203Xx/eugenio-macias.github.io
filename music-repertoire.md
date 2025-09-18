@@ -1,311 +1,289 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Repertoire | Classical Guitar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary-bg: #f9f7f6;
-            --primary-text: #2c3e50;
-            --secondary-text: #6c7a89;
-            --accent-color: #9c6c52;
-            --border-color: #e0e0e0;
-        }
+<style>
+  /* ===============================
+     Music Repertoire — Dark Glass
+     =============================== */
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--primary-bg);
-            color: var(--primary-text);
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            background-image: radial-gradient(at 0% 0%, #fffbf5 0%, #f9f7f6 100%);
-        }
+  :root{
+    /* Dark-first palette to match your new site */
+    --bg:#0a0b0e;
+    --ink:#e6e8ee;
+    --muted:#b0b6c3;
+    --line:#1f2430;
+    --card:#0f1115;
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+    /* Accents reused sitewide */
+    --accent1:#7c83ff;
+    --accent2:#22d3ee;
+    --accent3:#34d399;
 
-        header {
-            text-align: center;
-            padding: 60px 0 40px;
-            background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(249,247,246,1) 100%), url('https://images.unsplash.com/photo-1547466547-062e08a096c4?q=80&w=1974&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-        }
+    /* Shadows */
+    --shadow-1: 0 12px 32px rgba(0,0,0,.35);
+    --shadow-2: 0 28px 64px rgba(0,0,0,.55);
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f8fafc;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#e5e7eb;
+      --card:#ffffff;
+      --shadow-1: 0 10px 28px rgba(0,0,0,.08);
+      --shadow-2: 0 22px 54px rgba(0,0,0,.12);
+    }
+  }
 
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            color: var(--primary-text);
-            margin-bottom: 5px;
-            letter-spacing: 2px;
-            font-weight: 600;
-        }
-        
-        header p.subtitle {
-            font-style: italic;
-            color: var(--secondary-text);
-            font-size: 1.1rem;
-            margin: 0;
-        }
+  /* Base */
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    color:var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans";
+    line-height:1.7;
+    background:
+      radial-gradient(80% 50% at 10% -10%, rgba(124,131,255,.10), transparent 60%),
+      radial-gradient(70% 45% at 110% 10%, rgba(34,211,238,.10), transparent 60%),
+      var(--bg);
+    overflow-x:hidden;
+  }
 
-        main {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-        
-        @media (min-width: 768px) {
-            main {
-                grid-template-columns: 1fr 2fr;
-                gap: 60px;
-            }
-        }
-        
-        .sidebar {
-            order: 2;
-        }
-        
-        @media (min-width: 768px) {
-            .sidebar {
-                order: 1;
-            }
-        }
-        
-        .main-content {
-            order: 1;
-        }
+  .container{
+    max-width:1140px;
+    margin:0 auto;
+    padding: clamp(28px, 4vw, 48px) clamp(14px, 3vw, 24px);
+  }
 
-        section {
-            padding-bottom: 25px;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 25px;
-        }
+  /* ===============================
+     Hero Header — Staff Lines + Notes
+     =============================== */
+  header{
+    position:relative;
+    text-align:center;
+    padding: clamp(48px, 8vw, 84px) 16px clamp(28px, 4vw, 44px);
+    border-bottom:1px solid var(--line);
+    background:
+      /* soft glow wash */
+      radial-gradient(60% 60% at 50% -20%, rgba(124,131,255,.14), transparent 60%),
+      linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    backdrop-filter: blur(8px);
+    box-shadow: var(--shadow-1);
+    overflow:hidden;
+  }
 
-        section:last-of-type {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
+  /* Subtle animated staff lines across header */
+  header::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,.10) 0 1.5px,
+        transparent 1.5px 16px
+      );
+    mask: linear-gradient(180deg, transparent 0%, #000 20%, #000 80%, transparent 100%);
+    animation: staffSlide 22s linear infinite;
+    pointer-events:none;
+  }
+  @keyframes staffSlide{
+    0%{ transform: translateY(0); }
+    100%{ transform: translateY(16px); }
+  }
 
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: var(--accent-color);
-            margin-top: 0;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 5px;
-            display: inline-block;
-        }
-        
-        h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary-text);
-            font-size: 1.3rem;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
+  /* Floating musical notes (decorative) */
+  header::after{
+    content:"♪ ♫ ♩ ♬";
+    position:absolute;
+    left:50%; top:20%;
+    transform: translateX(-50%);
+    font-size: clamp(18px, 3vw, 28px);
+    letter-spacing:.6rem;
+    color: rgba(255,255,255,.35);
+    text-shadow: 0 6px 24px rgba(124,131,255,.35);
+    animation: notesFloat 12s ease-in-out infinite alternate;
+    pointer-events:none;
+  }
+  @keyframes notesFloat{
+    0%{ transform: translateX(-50%) translateY(0) rotate(0deg); opacity:.65; }
+    100%{ transform: translateX(-50%) translateY(-10px) rotate(-3deg); opacity:.9; }
+  }
 
-        p, ul {
-            font-size: 1rem;
-            color: var(--secondary-text);
-        }
+  header h1{
+    margin:0 0 6px;
+    font-weight:900;
+    letter-spacing: .5px;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    line-height:1.1;
+    background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    filter: drop-shadow(0 10px 24px rgba(0,0,0,.25));
+  }
+  header p.subtitle{
+    margin:0 auto;
+    max-width:720px;
+    color:var(--muted);
+    font-style:italic;
+    font-size: clamp(1rem, 1.6vw, 1.1rem);
+  }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+  /* ===============================
+     Layout Grid
+     =============================== */
+  main{
+    display:grid; grid-template-columns: 1fr;
+    gap: clamp(16px, 3vw, 26px);
+    margin-top: clamp(10px, 2vw, 16px);
+  }
+  @media (min-width: 900px){
+    main{ grid-template-columns: 1fr 1.7fr; gap: clamp(24px, 3.6vw, 36px); }
+    .sidebar{ order:1; }
+    .main-content{ order:2; }
+  }
+  .sidebar{ order:2; }
+  .main-content{ order:1; }
 
-        li {
-            padding: 8px 0;
-            border-bottom: 1px dotted var(--border-color);
-            transition: transform 0.2s ease, color 0.2s ease;
-        }
+  /* ===============================
+     Section Cards (Glass)
+     =============================== */
+  section{
+    position:relative;
+    padding: clamp(16px, 2.4vw, 22px) clamp(14px, 2.2vw, 20px);
+    border:1px solid var(--line);
+    border-radius:16px;
+    background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+    box-shadow: var(--shadow-1);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  section:hover{
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2);
+    border-color: transparent;
+  }
+  section + section{ margin-top: clamp(12px, 2vw, 18px); }
 
-        li:last-of-type {
-            border-bottom: none;
-        }
-        
-        li:hover {
-            transform: translateX(10px);
-            color: var(--primary-text);
-        }
+  /* Headings with gradient underline + mini staff ornament */
+  h2{
+    margin:0 0 10px;
+    font-weight:900;
+    font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+    color:var(--ink);
+    position:relative;
+    display:inline-block;
+  }
+  h2::after{
+    content:"";
+    display:block;
+    height:2px; margin-top:.4rem; width:84px;
+    background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+    border-radius:2px;
+    box-shadow: 0 0 20px rgba(124,131,255,.45);
+  }
+  /* Tiny staff lines behind the section title */
+  h2::before{
+    content:"";
+    position:absolute; inset:auto -8px -8px -8px; height:10px;
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,.12) 0 1px,
+        transparent 1px 4px
+      );
+    opacity:.35; border-radius:6px;
+    filter: blur(0.5px);
+  }
 
-        li i {
-            color: var(--accent-color);
-            margin-right: 10px;
-            width: 20px;
-            text-align: center;
-        }
+  h3{
+    margin:18px 0 8px;
+    font-weight:800;
+    color:var(--ink);
+    font-size: clamp(1.02rem, 1.8vw, 1.2rem);
+  }
 
-        li span.piece {
-            font-weight: 500;
-            color: var(--primary-text);
-        }
+  p, ul{ font-size:1rem; color:var(--muted); margin:0; }
+  p + p{ margin-top:.6rem; }
 
-        li span.composer {
-            font-style: italic;
-            color: var(--secondary-text);
-        }
+  /* ===============================
+     Repertoire & Performances Lists
+     =============================== */
+  ul{ list-style:none; padding:0; margin:0; }
+  .repertoire-list li,
+  .performances-list li{
+    position:relative;
+    padding:12px 12px 12px 36px;
+    border-bottom:1px dashed var(--line);
+    transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+    border-radius:10px;
+  }
+  .repertoire-list li:last-of-type,
+  .performances-list li:last-of-type{
+    border-bottom:none;
+  }
 
-        .repertoire-list li {
-            font-size: 1.1rem;
-        }
-        
-        .performances-list li {
-            padding: 15px 0;
-        }
-        
-        .performances-list li .info {
-            display: block;
-            font-size: 0.9rem;
-            color: var(--secondary-text);
-            margin-top: 5px;
-        }
+  /* Leading note icon */
+  .repertoire-list li::before,
+  .performances-list li::before{
+    content:"♪";
+    position:absolute; left:10px; top:12px;
+    color: var(--accent2);
+    opacity:.85; filter: drop-shadow(0 4px 12px rgba(34,211,238,.35));
+    transition: transform .18s ease, color .18s ease, opacity .18s ease;
+    font-weight:900;
+  }
 
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.9rem;
-            color: var(--secondary-text);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Music Repertoire</h1>
-            <p class="subtitle">A Classical Guitar Portfolio</p>
-        </div>
-    </header>
+  /* Hover: lift + glow + switch note */
+  .repertoire-list li:hover,
+  .performances-list li:hover{
+    transform: translateY(-2px);
+    color:var(--ink);
+    background: linear-gradient(90deg, rgba(124,131,255,.08), rgba(34,211,238,.06));
+    border-color: transparent;
+    box-shadow: inset 0 0 0 1px rgba(124,131,255,.18);
+  }
+  .repertoire-list li:hover::before,
+  .performances-list li:hover::before{
+    content:"♬";
+    color: var(--accent1);
+    transform: translateX(2px) rotate(-6deg);
+    opacity:1;
+  }
 
-    <div class="container">
-        <main>
-            <div class="main-content">
-                <section>
-                    <h2>TUTELAGE</h2>
-                    <p>I began my career as a guitarist in 2010 under the guidance of the Professor and Composer <strong>Carlos Alfredo Gonzales Olvera</strong>. An excellent professor whom I deeply admire for his dedication and teaching, he was the one from whom I learned the most. In 2022, I joined the Applied Music Program at Brown University, where I studied under Professor <strong>Mychal Gendron</strong>.</p>
-                </section>
-                
-                <section>
-                    <h2>REPERTOIRE</h2>
-                    <ul class="repertoire-list">
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Recuerdos de la Alhambra, Lágrima, Capricho Árabe</span> - <span class="composer">Francisco Tárrega (Spain)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Un día de Noviembre, Etude No. 1</span> - <span class="composer">Leo Brouwer (Cuba)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Choro No.1, Etude No. 1</span> - <span class="composer">Heitor Villa-lobos (Brazil)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Gymnopédie No.1, Gnossiene No.1</span> - <span class="composer">Erik Satié (France)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Suite del Plata No.1: I Preludio, II Tango, III Milonga</span> - <span class="composer">Máximo Diego Pujol (Argentina)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">El Colibrí</span> - <span class="composer">Julio Sagreras (Argentina)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Lute Suite No.4: I Prelude</span> - <span class="composer">Johan Sebastian Bach (Germany)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">El Testament d´Amèlia, Romance Anónimo</span> - <span class="composer">Miguel Llobet (Spain)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Suite Castellana: I Fandanguillo, II Arada</span> - <span class="composer">Federico Moreno Torroba (Spain)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Suite Aires de Son</span> - <span class="composer">Gerardo Támez (Mexico)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Diferencias Sobre Guárdame las Vacas</span> - <span class="composer">Luis de Narvaez (Spain)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Etude No. 7, Op. 60</span> - <span class="composer">Mateo Carcassi (Italy)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">l'ultimo caffe insieme</span> - <span class="composer">Simone Iarannelli (Italy)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Suite Montebello: Tisú I</span> - <span class="composer">Julio Cesar Oliva (Mexico)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Asturias (Leyenda)</span> - <span class="composer">Isaac Álbeniz (Spain)</span></li>
-                        <li><i class="fa-solid fa-music"></i><span class="piece">Una Limosna por el Amor de Dios</span> - <span class="composer">Agustín Pío Barrios (Paraguay)</span></li>
-                    </ul>
-                </section>
+  li i{
+    color: var(--accent3);
+    margin-right:10px;
+    width:20px; text-align:center;
+  }
 
-                <section>
-                    <h2>PERFORMANCES & MASTERCLASSES</h2>
-                    <ul class="performances-list">
-                        <li>
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <span class="piece">Final Recital (Sophomore year)</span>
-                            <span class="info"><strong>Piece:</strong> Asturias (Leyenda) by Isaac Álbeniz</span>
-                            <span class="info"><strong>Venue:</strong> Riley Hall, Brown University, December 2023</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <span class="piece">Final Recital (Freshman year)</span>
-                            <span class="info"><strong>Pieces:</strong> Una Limosna por el Amor de Dios by Agustín Barrios; Suite Castellana: Fandanguillo by Federico Moreno Torroba</span>
-                            <span class="info"><strong>Venue:</strong> Grant Recital Hall, Brown University, May 2023</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">Recuerdos de la Alhambra</span>
-                            <span class="info"><strong>Masterclass with:</strong> Javier Xara (USA) at Guitar Foundation of America XII, Denver, CO</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">Diferencias Sobre Guárdame las Vacas</span>
-                            <span class="info"><strong>Masterclass with:</strong> Marek Pasiesczny (Poland) at Guitar Foundation of America XII, Fullerton, CA</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">Choro No.1</span>
-                            <span class="info"><strong>Masterclass with:</strong> Mark Delpriora (USA) at Guitar Foundation of America XII, Denver, CO</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">Milonga from Suite del Plata</span>
-                            <span class="info"><strong>Masterclass with:</strong> Rodrigo Nefthalí (Mexico) at Décimo Cuarto Festival Internacional Guitarra sin Fronteras</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">Choro No. 1</span>
-                            <span class="info"><strong>Masterclass with:</strong> Juan Carlos López (México) at Décimo Cuarto Festival Internacional Guitarra sin Fronteras</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">Recuerdos de la Alhambra</span>
-                            <span class="info"><strong>Masterclass with:</strong> Omán Kaminsky (Mexico) at Décimo Cuarto Festival Internacional Guitarra sin Fronteras</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">El Colibrí</span>
-                            <span class="info"><strong>Masterclass with:</strong> Hugo Gracián (Mexico) at Décimo Quinto Festival Internacional Guitarra sin Fronteras</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-certificate"></i>
-                            <span class="piece">Suite del Plata</span>
-                            <span class="info"><strong>Masterclass with:</strong> Cecilia Siqueira (Uruguay) at Guitar Foundation of America XII, Fullerton, CA</span>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            
-            <div class="sidebar">
-                <section>
-                    <h2>FESTIVALS</h2>
-                    <ul>
-                        <li><i class="fa-solid fa-trophy"></i>Guitar Foundation of America XII (Fullerton, CA)</li>
-                        <li><i class="fa-solid fa-trophy"></i>Guitar Foundation of America XI (Denver, CO)</li>
-                        <li><i class="fa-solid fa-trophy"></i>Honorific Mention for Young Talent at Décimo Quinto Festival Internacional Guitarra sin Fronteras</li>
-                        <li><i class="fa-solid fa-trophy"></i>XIV Festival Internacional Guitarra sin Fronteras</li>
-                        <li><i class="fa-solid fa-trophy"></i>VIII & IX Festival Encuentro Internacional de Guitarra Salamanca</li>
-                        <li><i class="fa-solid fa-trophy"></i>VII & VI Concurso Nacional de Guitarra Salamanca, Youth Category</li>
-                        <li><i class="fa-solid fa-trophy"></i>IV State Contest “Cleofás Villegas”</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>ENSEMBLE EXPERIENCE</h2>
-                    <p>Youth Orchestra directed by Chuck Hulihan, performing “Around the World” by Patrick Roux (1962) in Fullerton, CA:</p>
-                    <ul>
-                        <li><i class="fa-solid fa-users"></i>II C Ayre (Homage to the Air and the Sea)</li>
-                        <li><i class="fa-solid fa-users"></i>III Ama-zone-E (Homage to the Forests)</li>
-                        <li><i class="fa-solid fa-users"></i>IV A Round for the World (Homage to the world)</li>
-                    </ul>
-                </section>
-            </div>
-        </main>
-    </div>
+  li span.piece{ font-weight:700; color:var(--ink); }
+  li span.composer{ font-style:italic; color:var(--muted); }
 
-    <footer>
-        <p>This page is dedicated to the study and performance of classical guitar repertoire.</p>
-    </footer>
-</body>
-</html>
+  .repertoire-list li{ font-size:1.05rem; }
+  .performances-list li{ padding:14px 12px 14px 36px; }
+  .performances-list li .info{
+    display:block; font-size:.92rem; color:var(--muted); margin-top:4px;
+  }
+
+  /* ===============================
+     Footer
+     =============================== */
+  footer{
+    text-align:center;
+    padding:28px 16px 46px;
+    color:var(--muted);
+  }
+
+  /* ===============================
+     Focus states (keyboard a11y)
+     =============================== */
+  a, button, [tabindex]:not([tabindex="-1"]){
+    outline:none;
+  }
+  a:focus-visible, button:focus-visible, li:focus-within{
+    box-shadow: 0 0 0 3px rgba(124,131,255,.35);
+    border-radius:12px;
+  }
+
+  /* ===============================
+     Reduced Motion Respect
+     =============================== */
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; }
+  }
+</style>
