@@ -14,22 +14,60 @@ title: Projects
   <!-- ====== HONORS THESIS (HERO CARD) ====== -->
   <article class="project-card hero-card">
     <div class="pc-text">
-      <h2 class="pc-title">Honors Thesis — Weak-Form Sparse Cell-to-Cell Interaction PDE Discovery on Curved Manifolds</h2>
+      <h2 class="pc-title">Honors Thesis — Weak-Form Sparse Cell-to-Cell Interaction PDE Discovery from Noisy Trajectories on Curved Manifolds: WSINDy & Equation-Free Latent Model</h2>
       <p class="pc-sub">Aug 2025 – Present · Brown University</p>
       <p class="pc-desc">
-        Data-driven identification of interaction laws in collective dynamics on Riemannian manifolds,
-        grounded in measure-theoretic probability and operator-theoretic dynamical systems (curvature,
-        geodesics, Laplace–Beltrami).
+        Data-driven identification of interaction laws in collective dynamics on curved Riemannian manifolds;
+        grounded in measure-theoretic probability and operator-theoretic dynamical systems (curvature, geodesics, Laplace–Beltrami).
       </p>
 
       <details>
-        <summary>Key components</summary>
+        <summary>Full technical scope</summary>
         <ul class="bullets">
-          <li><strong>WSINDy (primary):</strong> Sobolev/Galerkin weak form with compactly supported tests; convolutional weak derivatives; sparse regression over flux-form operators (Vicsek alignment, Morse attraction–repulsion, manifold diffusion); MSTLS with nondimensional preconditioning.</li>
-          <li><strong>Equation-Free ROM (benchmark):</strong> Geodesic KDE → smooth densities → POD/SVD (with mass mode) → latent evolution (MVAR; LSTM as nonlinear comparator) → mass-conserving lifting for fast forecasts.</li>
-          <li><strong>Spectral & topological diagnostics:</strong> Koopman/transfer operator eigenstructure; persistent homology (VR complexes, barcodes; bottleneck/Wasserstein robustness).</li>
-          <li><strong>Stochastic evaluation:</strong> Finite-sample/bootstrapped uncertainty; parameter recovery; OOS generalization across initial conditions/manifolds.</li>
-          <li><strong>Tooling:</strong> Python/Matlab (NumPy/SciPy, scikit-learn, PyTorch or JAX); modular, reproducible benchmarking pipeline.</li>
+          <li>
+            <strong>WSINDy (primary)</strong>
+            <ul>
+              <li>Sobolev/Galerkin weak formulation with inner products against compactly supported test functions (e.g., Bernstein polynomials or smooth partition-of-unity families).</li>
+              <li>Convolutional weak form replacing unstable pointwise derivatives — robust to noise.</li>
+              <li>Sparse regression over a flux-form operator library: Vicsek alignment transport, Morse-type attraction–repulsion, manifold diffusion.</li>
+              <li>Stability/identifiability via multi-step thresholded least squares (MSTLS) with nondimensional preconditioning & column standardization.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Equation-Free Reduced-Order Model (EF-ROM, benchmark)</strong>
+            <ul>
+              <li>Trajectory restriction with geodesic KDE → smooth density “movies”.</li>
+              <li>Compression using POD/SVD, including explicit mass/mean mode for conservation.</li>
+              <li>Latent evolution via MVAR; LSTM sequence models as nonlinear comparators.</li>
+              <li>Mass-conserving lifting back to full density fields for fast forecasts.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Spectral & topological diagnostics</strong>
+            <ul>
+              <li>Koopman/transfer-operator eigenstructure to reveal coherent modes.</li>
+              <li>Persistent homology (Vietoris–Rips, barcodes) with bottleneck/Wasserstein distances to quantify geometric robustness under noise.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Stochastic/statistical evaluation</strong>
+            <ul>
+              <li>Finite-sample analysis & bootstrap uncertainty quantification.</li>
+              <li>Parameter recovery under subsampling/observation noise.</li>
+              <li>Out-of-sample generalization across initial conditions & manifolds.</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Tooling & reproducibility</strong>
+            <ul>
+              <li>Python/Matlab with NumPy/SciPy, scikit-learn, and GPU-accelerated PyTorch or JAX.</li>
+              <li>Modular, reproducible benchmarking pipeline for WSINDy vs EF-ROM.</li>
+            </ul>
+          </li>
         </ul>
       </details>
 
@@ -330,6 +368,8 @@ title: Projects
 
   .bullets{ margin:.35rem 0 0 1.1rem; padding:0; }
   .bullets li{ margin:.25rem 0; }
+  /* nested list spacing */
+  .bullets ul{ margin:.35rem 0 .25rem 1.1rem; }
 
   .badges{ margin-top:.6rem; display:flex; flex-wrap:wrap; gap:6px; }
   .badge{ font-size:.72rem; padding:3px 8px; border-radius:999px; color:#fff; background:linear-gradient(90deg,var(--grad1),var(--grad2)); }
