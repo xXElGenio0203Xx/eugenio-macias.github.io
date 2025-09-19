@@ -47,8 +47,8 @@ title: Home
             <strong>Galerkin/Solobev weak-form PDE discovery for collective stochastic dynamics</strong>—developing sparse-regression (WSINDy) and
             equation-free reduced order modelinh approaches that recover governing laws from high-dimensional, Gaussian-noisy trajectories—methods directly applicable to
             modeling <strong>dynamical systems & complex markets.</strong>.
-            Outside of math, I love <strong>♟ chess</strong>, <strong>🎸 classical guitar</strong>, and <strong>✈️ traveling</strong>—
-            I’ve visited <strong>34 countries</strong>, starting from my IB at <strong>UWC Mostar in Bosnia and Herzegovina</strong>.
+            Outside of math, I love <strong>♟ chess</strong>, <strong>🎸 classical guitar</strong>, <strong>✈️ traveling</strong>, and trying all kind of new food—
+            I’ve visited <strong>32 countries </strong>, starting from my IB at <strong>UWC Mostar in Bosnia and Herzegovina</strong>.
           </p>
         </div>
       </article>
@@ -86,9 +86,9 @@ title: Home
       <article class="card tilt-card" data-tilt data-magnetic>
         <header>What I’m pursuing</header>
         <ul>
-          <li><strong>Option</strong>A: <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
-          <li><strong>Option</strong>B: <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
-          <li><strong>Option</strong>C: <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
+          <li><strong>Option</strong> A: <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
+          <li><strong>Option</strong> B: <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
+          <li><strong>Option</strong> C: <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
         </ul>
         <div class="badges">
           <span class="badge">Quant</span><span class="badge">Stat ML</span><span class="badge">PDEs</span>
