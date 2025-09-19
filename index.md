@@ -31,7 +31,7 @@ title: Home
         <span class="badge">BS Applied Mathematics–Computer Science & BA Mathematics</span>
       </h1>
 
-      <p class="typing" aria-label="Probability × Statistics × PDEs × Machine Learning under uncertainty">
+      <p class="typing" aria-label="Probability × Statistics × PDEs × ML">
         <span>Probability × Statistics × PDEs × ML under uncertainty</span>
       </p>
 
@@ -173,7 +173,7 @@ title: Home
   .title::after{ content:""; display:block; height:2px; width:86px; margin-top:.4rem; background:linear-gradient(90deg,var(--g1),var(--g2),var(--g3)); border-radius:2px; }
   .badge{ display:inline-block; font-size:.92rem; font-weight:700; padding:6px 12px; border-radius:999px; color:#0b1220; background:linear-gradient(90deg,var(--g2),var(--g3)); }
   .typing{ margin:.4rem 0 1.0rem; color:var(--ink); opacity:.95; font-size:clamp(1rem,1.6vw,1.1rem); min-height:1.4em; }
-  .typing span{ display:inline-block; white-space:nowrap; overflow:hidden; border-right:2px solid currentColor; animation: typing 5s steps(42,end) infinite alternate, caret 700ms steps(1) infinite; }
+  .typing span{ display:inline-block; white-space:nowrap; overflow:hidden; border-right:2px solid currentColor; animation: typing 3s steps(42,end) infinite alternate, caret 700ms steps(1) infinite; }
   @keyframes typing { from { width: 0; } to { width: 42ch; } }
   @keyframes caret { 50% { border-color: transparent; } }
 
