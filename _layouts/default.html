@@ -33,7 +33,7 @@
       --blur: blur(10px);
 
       /* Dock */
-      --dock-h: 72px;
+      --dock-h: 78px;
     }
     @media (prefers-color-scheme: light){
       :root{
@@ -232,21 +232,22 @@
     }
     footer ul::-webkit-scrollbar{ display:none; }
 
-    /* Neon pills */
+    /* ===== HYPERFLUX BUTTONS (insane background) ===== */
     footer li a{
       --mx:50%; --my:50%;
       --c1:#7c83ff; --c2:#22d3ee; --c3:#34d399;
-      position:relative; display:inline-flex; align-items:center; justify-content:center;
-      gap:10px; padding:10px 14px; min-width: max(120px, 11ch);
-      color:#fff; text-decoration:none; font-weight:800; letter-spacing:.2px;
-      border-radius:14px; border:1px solid rgba(255,255,255,.14);
+      position:relative;
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; padding:10px 16px; min-width: max(120px, 11ch);
+      color:#fff; text-decoration:none; font-weight:900; letter-spacing:.2px;
+      border-radius:16px; border:1px solid rgba(255,255,255,.14);
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.08), 0 10px 28px rgba(0,0,0,.35);
-      background: linear-gradient(120deg, var(--c1), var(--c2), var(--c3));
-      background-size: 200% 200%;
-      animation: gradMove 6s ease-in-out infinite alternate;
-      transition: transform .25s ease, box-shadow .25s ease, filter .25s ease, border-color .25s ease;
-      overflow:hidden; will-change: transform, box-shadow, filter;
+      isolation:isolate; /* keep inner glows contained */
+      overflow:hidden;
+      transform: translateZ(0); /* gpu hint */
+      will-change: transform, filter;
     }
+    /* per-tab palettes (cycled) */
     #footerNav li:nth-child(1) a{ --c1:#7c83ff; --c2:#22d3ee; --c3:#34d399; }
     #footerNav li:nth-child(2) a{ --c1:#34d399; --c2:#7c83ff; --c3:#22d3ee; }
     #footerNav li:nth-child(3) a{ --c1:#22d3ee; --c2:#34d399; --c3:#7c83ff; }
@@ -254,55 +255,119 @@
     #footerNav li:nth-child(5) a{ --c1:#fb7185; --c2:#f59e0b; --c3:#34d399; }
     #footerNav li:nth-child(6) a{ --c1:#f472b6; --c2:#7c83ff; --c3:#22d3ee; }
 
-    @keyframes gradMove{
-      from{ background-position: 0% 50%; } to{ background-position: 100% 50%; }
+    /* TEXT glow */
+    footer li a span.label{
+      position:relative; z-index:5;
+      text-shadow:
+        0 0 6px rgba(255,255,255,.6),
+        0 0 16px rgba(124,131,255,.55),
+        0 0 26px rgba(34,211,238,.45);
     }
 
-    footer li a::before{
-      content:""; position:absolute; inset:-2px; border-radius:16px; pointer-events:none;
-      background: var(--ring); filter: blur(14px); opacity:.18; mix-blend-mode: screen;
+    /* base rainbow motion */
+    footer li a .rainbow{
+      position:absolute; inset:-40% -10%;
+      background: conic-gradient(from 0deg at 50% 50%, var(--c1), var(--c2), var(--c3), var(--c1));
+      animation: spin 9s linear infinite;
+      filter: blur(26px) saturate(140%);
+      opacity:.35;
+      z-index:0;
     }
+    @keyframes spin{ to{ transform: rotate(360deg); } }
+
+    /* liquid flux blobs */
+    footer li a .flux{
+      position:absolute; inset:-20% -10%;
+      background:
+        radial-gradient(130% 200% at 0% 50%, var(--c1) 0%, transparent 60%),
+        radial-gradient(130% 200% at 100% 50%, var(--c2) 0%, transparent 60%),
+        radial-gradient(160% 240% at 50% 120%, var(--c3) 0%, transparent 60%);
+      background-size: 200% 200%, 200% 200%, 200% 200%;
+      background-position: 0% 50%, 100% 50%, 50% 100%;
+      filter: blur(20px) saturate(200%);
+      mix-blend-mode: screen;
+      opacity:.85;
+      animation: fluxShift 6.6s ease-in-out infinite alternate;
+      z-index:1;
+    }
+    @keyframes fluxShift{
+      0%  { background-position: 0% 50%, 100% 50%, 50% 100%; transform: scale(1); }
+      50% { background-position: 50% 0%, 50% 100%, 0% 50%;   transform: scale(1.02); }
+      100%{ background-position: 100% 50%, 0% 50%, 50% 0%;  transform: scale(1.04); }
+    }
+
+    /* starry sparkles */
+    footer li a .sparks{
+      position:absolute; inset:-1px; border-radius:inherit; pointer-events:none;
+      background:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.9) 0 60%, transparent 70%),
+        radial-gradient(1.8px 1.8px at 70% 60%, rgba(255,255,255,.8) 0 60%, transparent 70%),
+        radial-gradient(1.6px 1.6px at 40% 80%, rgba(255,255,255,.85) 0 60%, transparent 70%),
+        radial-gradient(1.6px 1.6px at 85% 25%, rgba(255,255,255,.9) 0 60%, transparent 70%);
+      filter: drop-shadow(0 0 6px rgba(255,255,255,.8));
+      opacity:.75;
+      mix-blend-mode: screen;
+      animation: twinkle 2.2s ease-in-out infinite alternate;
+      z-index:3;
+    }
+    @keyframes twinkle{
+      0% { transform: translate3d(0,0,0) scale(1); opacity:.55; }
+      100%{ transform: translate3d(1px,-1px,0) scale(1.06); opacity:.95; }
+    }
+
+    /* glossy sweep + scan overlays */
+    footer li a .sheen{
+      position:absolute; top:0; left:-50%; width:40%; height:100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.24), transparent);
+      transform: skewX(-20deg);
+      opacity:0; pointer-events:none; z-index:4;
+    }
+    footer li a .scan{
+      position:absolute; inset:1px; border-radius:14px; pointer-events:none;
+      background: repeating-linear-gradient(to bottom, rgba(255,255,255,.12) 0 1px, transparent 1px 6px);
+      opacity: 0; transition: opacity .25s ease; z-index:2;
+    }
+
+    /* edge glow ring */
+    footer li a::before{
+      content:""; position:absolute; inset:-2px; border-radius:18px; pointer-events:none;
+      background: var(--ring); filter: blur(14px); opacity:.2; mix-blend-mode: screen;
+      z-index:2;
+    }
+    /* magnetic inner glow (follows cursor) */
     footer li a::after{
       content:""; position:absolute; inset:0; pointer-events:none; opacity:0;
       background: radial-gradient(160px 160px at var(--mx) var(--my), rgba(255,255,255,.22), transparent 60%);
-      transition: opacity .25s ease;
+      transition: opacity .25s ease; z-index:2;
     }
 
-    footer li a .sheen{
-      position:absolute; top:0; left:-50%; width:40%; height:100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
-      transform: skewX(-20deg); opacity:0; pointer-events:none;
-    }
-    footer li a .scan{
-      position:absolute; inset:1px; border-radius:12px; pointer-events:none;
-      background: repeating-linear-gradient(to bottom, rgba(255,255,255,.10) 0 1px, transparent 1px 6px);
-      opacity: 0; transition: opacity .25s ease;
-    }
-    footer li a span{ position:relative; z-index:1; }
-
+    /* Hovers = louder + faster + hue shift */
     footer li a:hover{
       transform: translateY(-3px) scale(1.05);
       box-shadow: 0 18px 44px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.18);
-      border-color: transparent; filter: saturate(1.2) brightness(1.05);
+      border-color: transparent; filter: saturate(1.25) brightness(1.07) hue-rotate(8deg);
     }
     footer li a:hover::after{ opacity:1; }
     footer li a:hover .sheen{ opacity:1; animation: sweep .9s ease; }
     footer li a:hover .scan{ opacity:.35; }
+    footer li a:hover .rainbow{ animation-duration: 6.5s; filter: blur(24px) saturate(160%); }
+    footer li a:hover .flux{ animation-duration: 3.2s; filter: blur(18px) saturate(230%); }
+    footer li a:hover .sparks{ animation-duration: 1.6s; }
 
     @keyframes sweep{ from{ left:-50%; } to{ left:130%; } }
 
     /* Ripple (click) */
     .rip{
       position:absolute; width:10px; height:10px; border-radius:999px;
-      background: radial-gradient(circle at center, rgba(255,255,255,.9), rgba(124,131,255,.25) 60%, transparent 70%);
+      background: radial-gradient(circle at center, rgba(255,255,255,.95), rgba(124,131,255,.3) 60%, transparent 70%);
       transform: translate(-50%, -50%) scale(0);
       pointer-events:none;
       animation: ripExpand .8s ease-out forwards;
-      mix-blend-mode: screen;
+      mix-blend-mode: screen; z-index:6;
     }
     @keyframes ripExpand{
       0%{ transform: translate(-50%, -50%) scale(0); opacity:.95; }
-      70%{ transform: translate(-50%, -50%) scale(12); opacity:.35; }
+      70%{ transform: translate(-50%, -50%) scale(12); opacity:.4; }
       100%{ transform: translate(-50%, -50%) scale(16); opacity:0; }
     }
 
@@ -363,12 +428,66 @@
   <!-- Floating Neon Dock -->
   <footer>
     <ul id="footerNav">
-      <li><a href="{{ '/' | relative_url }}"><span>Home</span><span class="sheen"></span><span class="scan"></span></a></li>
-      <li><a href="{{ '/projects' | relative_url }}"><span>Projects</span><span class="sheen"></span><span class="scan"></span></a></li>
-      <li><a href="{{ '/notes' | relative_url }}"><span>Cheat Sheets</span><span class="sheen"></span><span class="scan"></span></a></li>
-      <li><a href="{{ '/classes-i-have-taken' | relative_url }}"><span>Classes I Have Taken</span><span class="sheen"></span><span class="scan"></span></a></li>
-      <li><a href="{{ '/music-repertoire' | relative_url }}"><span>Music Repertoire</span><span class="sheen"></span><span class="scan"></span></a></li>
-      <li><a href="{{ '/skills-interests' | relative_url }}"><span>Skills & More</span><span class="sheen"></span><span class="scan"></span></a></li>
+      <li>
+        <a href="{{ '/' | relative_url }}">
+          <span class="rainbow"></span>
+          <span class="flux"></span>
+          <span class="sparks"></span>
+          <span class="sheen"></span>
+          <span class="scan"></span>
+          <span class="label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/projects' | relative_url }}">
+          <span class="rainbow"></span>
+          <span class="flux"></span>
+          <span class="sparks"></span>
+          <span class="sheen"></span>
+          <span class="scan"></span>
+          <span class="label">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/notes' | relative_url }}">
+          <span class="rainbow"></span>
+          <span class="flux"></span>
+          <span class="sparks"></span>
+          <span class="sheen"></span>
+          <span class="scan"></span>
+          <span class="label">Cheat Sheets</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/classes-i-have-taken' | relative_url }}">
+          <span class="rainbow"></span>
+          <span class="flux"></span>
+          <span class="sparks"></span>
+          <span class="sheen"></span>
+          <span class="scan"></span>
+          <span class="label">Classes I Have Taken</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/music-repertoire' | relative_url }}">
+          <span class="rainbow"></span>
+          <span class="flux"></span>
+          <span class="sparks"></span>
+          <span class="sheen"></span>
+          <span class="scan"></span>
+          <span class="label">Music Repertoire</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/skills-interests' | relative_url }}">
+          <span class="rainbow"></span>
+          <span class="flux"></span>
+          <span class="sparks"></span>
+          <span class="sheen"></span>
+          <span class="scan"></span>
+          <span class="label">Skills & More</span>
+        </a>
+      </li>
     </ul>
   </footer>
 
@@ -442,7 +561,6 @@
         $transition.removeClass('page-transition-active');
         $content.removeClass('leaving');
       }
-
       document.addEventListener('click', (e)=>{
         const a = e.target.closest('a');
         if(!a) return;
@@ -512,7 +630,9 @@
             const dy = (e.clientY - (r.top + r.height/2)) / (r.height/2);
             a.style.transform = `translateY(-3px) scale(1.05) rotateX(${(-dy*2).toFixed(2)}deg) rotateY(${(dx*2).toFixed(2)}deg)`;
           }, {passive:true});
+
           a.addEventListener('mouseleave', ()=>{ a.style.transform=''; });
+
           a.addEventListener('click', (e)=>{
             const rip = document.createElement('span');
             rip.className = 'rip';
