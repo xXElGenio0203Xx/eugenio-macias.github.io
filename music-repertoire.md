@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eugenio Macias - Classical Guitarist</title>
+  <title>Eugenio Macias - Classical Guitar</title>
 
   <style>
     /* ===============================
@@ -339,9 +339,13 @@
         <section id="recitals">
           <h2>University Recitals</h2>
           <ul class="data-list performances-list">
+          <li tabindex="0">
+              <span class="piece">Final Recital (Junior year)</span>
+              <span class="info"> (i) Etude no. 1 Heitor Villalobos, (ii) Capricho Árabe Fráncisco Tárrega — Riley Hall, May2 025</span>
+            </li>
             <li tabindex="0">
               <span class="piece">Final Recital (Sophomore year)</span>
-              <span class="info">Asturias (Leyenda) by Isaac Álbeniz — Riley Hall, December, 2023</span>
+              <span class="info">Asturias (Leyenda) by Isaac Álbeniz — Lindemann Hall, December 2023</span>
             </li>
             <li tabindex="0">
               <span class="piece">Final Recital (Freshman year)</span>
