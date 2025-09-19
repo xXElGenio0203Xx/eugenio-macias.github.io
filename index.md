@@ -105,7 +105,7 @@ title: Home
 
 <!-- Top-right toggle button -->
 <button id="coolBtn" class="cool-btn" type="button" aria-pressed="false" title="Toggle floating math">
-  ✨ Cool Math
+  ✨ Click for cool math
 </button>
 
 <style>
