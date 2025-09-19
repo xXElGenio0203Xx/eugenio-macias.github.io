@@ -32,7 +32,7 @@ title: Home
       </h1>
 
       <p class="typing" aria-label="Probability × Statistics × PDEs × ML">
-        <span>Probability × Statistics × PDEs × ML under uncertainty</span>
+        <span>Probability × Statistics × PDEs × ML</span>
       </p>
 
       <!-- About -->
@@ -40,12 +40,12 @@ title: Home
         <h2>About me</h2>
         <div class="text-bg">
           <p>
-            I’m an international student at Brown University. I like to focus on the intersection of
+            I’m an international student at Brown University. Currently in my senior year, I like to focus on the intersection of
             <strong>probability</strong>, <strong>mathematical statistics</strong>, and <strong>differential equations</strong>
             with <strong>machine learning and uncertainty quantification</strong>. I am interested in <em>measure-theoretic</em> analysis foundations with
             <em>numerical methods</em> and <em>algorithm design</em> to build data-driven models. I’m currently writing a thesis on
             <strong>Galerkin/Solobev weak-form PDE discovery for collective stochastic dynamics</strong>—developing sparse-regression (WSINDy) and
-            equation-free reduced order modelinh approaches that recover governing laws from high-dimensional, Gaussian-noisy trajectories—methods directly applicable to
+            equation-free reduced order modeling approaches that recover governing laws from high-dimensional, Gaussian-noisy trajectories—methods directly applicable to
             modeling <strong>dynamical systems & complex markets.</strong>.
             Outside of math, I love <strong>♟ chess</strong>, <strong>🎸 classical guitar</strong>, <strong>✈️ traveling</strong>, and trying all kind of new food—
             I’ve visited <strong>32 countries </strong>, starting from my IB at <strong>UWC Mostar in Bosnia and Herzegovina</strong>.
