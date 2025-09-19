@@ -99,17 +99,22 @@ title: Skills
       <span class="flag-chip">🇹🇷</span><span class="flag-chip">🇪🇬</span><span class="flag-chip">🇵🇷</span><span class="flag-chip">🇭🇺</span>
       <span class="flag-chip">🇲🇦</span><span class="flag-chip">🇵🇦</span><span class="flag-chip">🇳🇴</span><span class="flag-chip">🇬🇧</span>
       <span class="flag-chip">🇩🇰</span>
+      <!-- Newly added visited countries -->
+      <span class="flag-chip">🇵🇭</span><span class="flag-chip">🇰🇷</span><span class="flag-chip">🇮🇳</span>
     </div>
-    <p class="note">Currently at <strong>34 countries</strong> total traveled.</p>
+    <p class="note">Currently at <strong><span id="visited-total">0</span> countries</strong> total traveled.</p>
   </article>
 
   <!-- Countries wishlist -->
   <article class="glass card tilt flags" aria-label="Countries wishlist">
     <h2 class="card-title">Next on my list <span class="count" id="wish-count">(0)</span></h2>
     <div class="flag-grid wishlist" id="wishlist">
-      <span class="flag-chip">🇲🇳</span><span class="flag-chip">🇱🇧</span><span class="flag-chip">🇰🇷</span><span class="flag-chip">🇯🇵</span>
-      <span class="flag-chip">🇹🇭</span><span class="flag-chip">🇻🇳</span><span class="flag-chip">🇮🇳</span><span class="flag-chip">🇸🇬</span>
+      <!-- Keep your existing wishlist (minus SK + IN moved to visited), plus new requests -->
+      <span class="flag-chip">🇲🇳</span><span class="flag-chip">🇱🇧</span><span class="flag-chip">🇯🇵</span>
+      <span class="flag-chip">🇹🇭</span><span class="flag-chip">🇻🇳</span><span class="flag-chip">🇸🇬</span>
       <span class="flag-chip">🇭🇰</span>
+      <!-- Newly added wishlist countries -->
+      <span class="flag-chip">🇧🇷</span><span class="flag-chip">🇫🇮</span><span class="flag-chip">🇵🇱</span><span class="flag-chip">🇨🇷</span>
     </div>
   </article>
 
@@ -283,13 +288,15 @@ title: Skills
     });
   })();
 
-  // Auto-count flags
+  // Auto-count flags + dynamic total text
   (function(){
     const visited = document.querySelectorAll('#visited .flag-chip').length;
-    const wish = document.querySelectorAll('#wishlist .flag-chip').length;
+    const wish    = document.querySelectorAll('#wishlist .flag-chip').length;
     const vc = document.getElementById('visited-count');
     const wc = document.getElementById('wish-count');
+    const vt = document.getElementById('visited-total');
     if(vc) vc.textContent = `(${visited})`;
     if(wc) wc.textContent = `(${wish})`;
+    if(vt) vt.textContent = visited;
   })();
 </script>
