@@ -42,13 +42,13 @@ title: Home
           <p>
             I’m an international student from Mexico at Brown University. I focus on the intersection of
             <strong>probability</strong>, <strong>mathematical statistics</strong>, and <strong>differential equations</strong>
-            with <strong>machine learning under uncertainty</strong>. I pair <em>measure-theoretic</em> foundations with
-            <em>numerical methods</em> and <em>algorithm design</em> to build robust, data-driven models. I’m currently writing a thesis on
-            <strong>weak-form PDE discovery for collective stochastic dynamics</strong>—developing sparse-regression (WSINDy) and
-            equation-free approaches that recover governing laws from high-dimensional, noisy trajectories—methods directly applicable to
-            modeling <strong>complex markets and risk</strong>.
+            with <strong>machine learning under uncertainty</strong>. I am interested in <em>measure-theoretic</em> foundations with
+            <em>numerical methods</em> and <em>algorithm design</em> to build data-driven models. I’m currently writing a thesis on
+            <strong>Galerkin/Solobev weak-form PDE discovery for collective stochastic dynamics</strong>—developing sparse-regression (WSINDy) and
+            equation-free reduced order modelinh approaches that recover governing laws from high-dimensional, Gaussian-noisy trajectories—methods directly applicable to
+            modeling <strong>dynamical systems & complex markets.</strong>.
             Outside of math, I love <strong>♟ chess</strong>, <strong>🎸 classical guitar</strong>, and <strong>✈️ traveling</strong>—
-            I’ve visited <strong>34 countries</strong>, starting from my IB at <strong>UWC Mostar</strong>.
+            I’ve visited <strong>34 countries</strong>, starting from my IB at <strong>UWC Mostar in Bosnia and Herzegovina</strong>.
           </p>
         </div>
       </article>
@@ -86,9 +86,9 @@ title: Home
       <article class="card tilt-card" data-tilt data-magnetic>
         <header>What I’m pursuing</header>
         <ul>
-          <li><strong>Option A:</strong> <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
-          <li><strong>Option B:</strong> <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
-          <li><strong>Option C:</strong> <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
+          <li><strong>Option</strong>A: <em>MSc in Mathematical Statistics / Applied Mathematics</em>.</li>
+          <li><strong>Option</strong>B: <em>Quant full-time</em> (research / trading / developer) starting 2026.</li>
+          <li><strong>Option</strong>C: <em>AI startup with my brother</em> — applied ML systems & decision-intelligence tooling.</li>
         </ul>
         <div class="badges">
           <span class="badge">Quant</span><span class="badge">Stat ML</span><span class="badge">PDEs</span>
